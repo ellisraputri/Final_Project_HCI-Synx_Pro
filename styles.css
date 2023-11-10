@@ -1,0 +1,40 @@
+.topnav{
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+.tosca{
+  background-color: #166174;
+}
+
+a:hover, .nav-active{
+  background-color: #339ab2;
+}
+
+.body{
+  font-family: Montserrat;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bg-plblack{
+  background-color: rgba(0, 0, 0, 0.328);
+}
+
+.teko{
+  font-family: 'teko';
+}
+
+.grey{
+  background-color: rgba(133, 133, 133, 0.425);
+}
+
+.footer img{
+  margin: 10px;
+}
+
+.nav-item{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
