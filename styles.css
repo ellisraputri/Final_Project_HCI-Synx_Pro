@@ -42,6 +42,19 @@ a:hover, .nav-active{
   text-align: right;
 }
 
+.content1{
+  line-height:2.6;
+  text-align: justify;
+}
+
+.bigcontent{
+  padding-left: 8%;
+}
+
+.buttonn{
+  margin-top: 7px;
+}
+
 @media (max-width:768px) {
   .centerin{
     text-align: center;
@@ -53,5 +66,9 @@ a:hover, .nav-active{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .buttonn1{
+    margin-bottom: 15px;
   }
 }
