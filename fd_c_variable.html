@@ -163,6 +163,7 @@
       You can review C's data type in the section above.</p>
       <p><code class="fs-6">variable_name</code> is the name that you want to give to your variable.</p>
       <p>Example:
+      <div class="bg-plblack codee">
       <pre>
         <code class="fs-6">
         #include &lt;stdio.h&gt;
@@ -173,11 +174,14 @@
         }
         </code>
       </pre>
+      </div>
     </p>
+    <pre></pre>
     <p>We can also declare multiple variables at once.</p>
     <p><div class='fw-bold d-inline-flex'>Note:</div> the variables' data type must be the same to do this.</p>
     <p>Syntax: <code class="fs-6">data_type variable_name1, variable_name2, variable_name3;</code></p>  
     <p>Example:
+    <div class="bg-plblack codee">
     <pre>
         <code class="fs-6">
         #include &lt;stdio.h&gt;
@@ -188,6 +192,7 @@
         } 
         </code>
     </pre>
+    </div>
     </p>
 
     <pre></pre><pre></pre><pre></pre>
@@ -197,6 +202,7 @@
         You can assign a value when declaring a variable.</p>
     <p>Syntax: <code class="fs-6">data_type variable_name = value;</code></p>
     <p>Example:
+    <div class="bg-plblack codee">
     <pre>
         <code class="fs-6">
         #include &lt;stdio.h&gt;
@@ -207,12 +213,14 @@
         }
         </code>
     </pre>
+    </div>
     </p>
 
     <pre></pre>
     <p>We can also assign a value after declaring a variable.</p>
     <p>Syntax: <code class="fs-6">variable_name = value;</code></p>
     <p>Example:
+    <div class="bg-plblack codee">
     <pre>
         <code class="fs-6">
         #include &lt;stdio.h&gt;
@@ -224,6 +232,7 @@
         }
         </code>
     </pre>
+    </div>
     </p>
 
     <pre></pre>
@@ -231,6 +240,7 @@
         The new assigned value will overwrite the previous value.
     </p>
     <p>Example:
+    <div class="bg-plblack codee">
     <pre>
         <code class="fs-6">
         #include &lt;stdio.h&gt;
@@ -242,24 +252,27 @@
         }
         </code>
     </pre>
+    </div>
     </p>
 
     <pre></pre>
     <p>We can also copy the value of a variable to another variable.</p>
     <p>Syntax: <code class="fs-6">variable_name1 = variable_name2;</code></p>
     <p>Example:
-        <pre>
-            <code class="fs-6">
-            #include &lt;stdio.h&gt;
-    
-            int main() {
-                int myNum1 = 10; 
-                int myNum2;
-                myNum2 = myNum1; //myNum2 value is now 10;
-                return 0;
-            }
-            </code>
-        </pre>
+    <div class="bg-plblack codee">
+    <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNum1 = 10; 
+            int myNum2;
+            myNum2 = myNum1; //myNum2 value is now 10;
+            return 0;
+        }
+        </code>
+    </pre>
+    </div>
     </p>
 
     <pre></pre>
@@ -269,69 +282,96 @@
     </p>
     <p>Syntax: <code class="fs-6">const data_type variable_name = value;</code></p>
     <p>Example:
-        <pre>
-            <code class="fs-6">
-            #include &lt;stdio.h&gt;
-    
-            int main() {
-                const int myNum1 = 10; 
-                return 0;
-            }
-            </code>
-        </pre>
+    <div class="bg-plblack codee">
+    <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            const int myNum1 = 10; 
+            return 0;
+        }
+        </code>
+    </pre>
+    </div>
     </p>
 
 
     <pre></pre><pre></pre><pre></pre>
 
-    Casting
-Casting, also known as type conversion is an action of converting a value of one data type to another data type. For example, the conversion of int to float or vice versa. There are two types of conversion in C:
-Implicit conversion 
-This conversion occurs automatically when we assign a value to a variable. 
-Example:
-#include <stdio.h>
-
-int main() {
-int myNum = 9.8;
-printf(“%d”,myNum); //the output is 9
-return 0;
-}
-
-Explicit conversion
-This conversion is done manually by placing the parentheses symbol in front of the value. So, the data type of the value will only be changed when we put the parentheses symbol.
-Example:
-#include <stdio.h>
-
-int main() {
-int myNum1 = 10;
-float myNum2 = (float) myNum1;
-printf(“%f”,myNum2); //myNum2 will show as 10.0000
-return 0;
-}
-
-
-Variable scope
-Scope is the area in which a variable can be used or can be accessed. For C variables, there are 2 types of scopes, local and global. Local variable exists and can only be accessed in a particular function, while global variable can be accessed by all functions in the entire program. However, the global variable takes up much more memory than the local variable. So, it is advisable to avoid using too many global variables.
-Example:
-#include <stdio.h>
-int phi = 3.14; //this is a global variable
-
-int sum (int a, int b){
-	int result; //this is a local variable inside the sum function
-}
-
-int main() {
-int myNum1; //this is a local variable inside the main function
-return 0;
-}
-
-
-
-
-
-
-
+    <h4 class="fs-3 fw-bolder">Casting</h4>
+    <p>Casting, also known as type conversion is an action of converting a value of one data type to another data type. For example, the conversion of int to float or vice versa. 
+        There are two types of conversion in C:</p>
+    <ol>
+        <li class="fw-bold fs-5">Implicit Conversion</li>
+        <p>This conversion occurs automatically when we assign a value to a variable.</p>
+        <p>Example:
+        <div class="bg-plblack codee">
+        <pre>
+            <code class="fs-6">
+            #include &lt;stdio.h&gt;
     
+            int main() {
+                int myNum = 9.8;
+                printf("%d",myNum); //the output is 9
+                return 0;
+            }
+            </code>
+        </pre>
+        </div>
+        </p>
+        <pre></pre>
+
+        <li class="fw-bold fs-5">Explicit conversion</li>
+        <p>This conversion is done manually by placing the parentheses symbol in front of the value.
+            So, the data type of the value will only be changed when we put the parentheses symbol.
+        </p>
+        <p>Example:
+        <div class="bg-plblack codee">
+        <pre>
+            <code class="fs-6">
+            #include &lt;stdio.h&gt;
+    
+            int main() {
+                int myNum1 = 10;
+                float myNum2 = (float) myNum1;
+                printf("%f",myNum2); //myNum2 will show as 10.0000
+                return 0;
+            }
+            </code>
+        </pre>
+        </div>
+        </p>
+    </ol>
+
+    <pre></pre><pre></pre><pre></pre>
+
+    <h4 class="fs-3 fw-bolder">Variable Scope</h4>
+    <p>Scope is the area in which a variable can be used or can be accessed.
+        For C variables, there are 2 types of scopes, local and global.
+        Local variable exists and can only be accessed in a particular function, while global variable can be accessed by all functions in the entire program. However, the global variable takes up much more memory than the local variable.
+        So, it is advisable to avoid using too many global variables.
+    </p>
+    <p>Example:
+    <div class="bg-plblack codee">
+    <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int phi = 3.14; //global variable
+
+        int sum (int a, int b){
+            int result; //local variable inside the sum function
+        }
+
+        int main() {
+            int myNum1; //local variable inside the main function
+            return 0;
+        }
+        </code>
+    </pre>
+    </div>
+    </p>
 
     </div>
   </div>
