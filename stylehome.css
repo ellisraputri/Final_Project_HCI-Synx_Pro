@@ -45,6 +45,15 @@
   .underline11{
     border-bottom: 2px solid white;
   }
+
+  .content2{
+    padding-left:10%;
+  }
+
+  .buttonn{
+    margin-top: 5px;
+  }
+
   
   @media (max-width:768px) {
     .centerin{
