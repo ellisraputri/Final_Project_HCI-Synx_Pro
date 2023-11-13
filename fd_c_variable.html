@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C - Variable and Data Type</title>
+    <link rel="stylesheet" href="stylefundict.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <nav class="navbar navbar-expand-xl tosca fixed-top">
+          <div class="container-fluid fw-bold tata">
+            <a class="navbar-brand text-uppercase" href="index.html">
+              <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <a class="nav-link text-white"  href="index.html">Home</a>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index_about.html">Syntax Comparison</a>
+                </li>
+                <li class="nav-item dropdown underline11">
+                  <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active " aria-current="page" href="fd_c_home.html">C</a></li> 
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
+                  <ul class="dropdown-menu tosca-hover">
+                    <li><a class="dropdown-item" href="#">C</a></li>
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">C</a></li>
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>             
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    
+    <div class="body">
+    <div class="content2">
+    <h1 class="fs-1 kanit header">Variable and Data Type</h1>
+    <pre></pre>
+    
+    <h4 class="fs-3 fw-bolder">Data Type</h4>
+    <p>There are several data types for C, but these are the frequently used ones:</p>
+    <table class="table table-light table-hover table-striped table-bordered w-auto">
+        <thead>
+          <tr class="table-secondary">
+            <th scope="col" class="text-center align-middle">Data Type</th>
+            <th scope="col" class="text-center align-middle">Size</th>
+            <th scope="col" class="text-center align-middle">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-center align-middle">int</th>
+            <td class="text-center align-middle">2 or 4 bytes</td>
+            <td class="align-middle">Stores whole numbers (integers)</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-center align-middle">float</th>
+            <td class="text-center align-middle">4 bytes</td>
+            <td class="align-middle">Stores floating point numbers, but only sufficient for storing 6-7 decimal digits</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-center align-middle">double</th>
+            <td class="text-center align-middle">8 bytes</td>
+            <td class="align-middle">Stores floating point numbers, with the ability to store until 15 decimal digits.</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-center align-middle">bool</th>
+            <td class="text-center align-middle">1 byte</td>
+            <td class="align-middle">Stores only two kinds of values: True or False.</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-center align-middle">char</th>
+            <td class="text-center align-middle">1 byte</td>
+            <td class="align-middle">Stores a single character. The character can be a letter, number, or ASCII value.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><div class='fw-bold d-inline-flex'>Note:</div> in C, to declare a boolean data type, we need to include the library 
+        <code class="fs-6">&lt;stdbool.h&gt;</code></p>
+    
+      <pre></pre>
+      <p>In C, we also have format specifiers to specify which data type we use.</p>
+      <table class="table table-light table-hover table-striped table-bordered w-auto">
+        <thead>
+          <tr class="table-secondary">
+            <th scope="col" class="text-center align-middle">Format Specifier</th>
+            <th scope="col" class="text-center align-middle">Data Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-center align-middle">%d</th>
+            <td class="text-center align-middle">int</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">%f</th>
+            <td class="text-center align-middle">float</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">%lf</th>
+            <td class="text-center align-middle">double</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">%c</th>
+            <td class="text-center align-middle">char</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">%s</th>
+            <td class="text-center align-middle">string (also called 'text')</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">%d</th>
+            <td class="text-center align-middle">bool</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <pre></pre><pre></pre><pre></pre>
+      <h4 class="fs-3 fw-bolder">Variable Name</h4>
+      <p>The general rules for naming variables are:</p>
+      <ul>
+        <li>Names can contain letters, digits, and underscores</li>
+        <li>Names must begin with a letter or an underscore (_)</li>
+        <li>Names are case-sensitive (lowercase and uppercase letters have different meanings)</li>
+        <li>Names cannot contain whitespaces or special characters ($, #, %, etc.)</li>
+        <li>Names cannot contain reserved words, such as int, printf, etc.</li>
+      </ul>
+
+      <pre></pre><pre></pre><pre></pre>
+      <h4 class="fs-3 fw-bolder">Creating Variable</h4>
+      <p>Creating variables also known as declaring variables is an action of making a variable to store data.</p>
+      <p>Syntax: <code class="fs-6">data_type variable_name;</code></p>
+      <p><code class="fs-6">data_type</code> is the type of data that you want to store in the variable.
+      You can review C's data type in the section above.</p>
+      <p><code class="fs-6">variable_name</code> is the name that you want to give to your variable.</p>
+      <p>Example:
+      <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNum;
+            return 0;
+        }
+        </code>
+      </pre>
+    </p>
+    <p>We can also declare multiple variables at once.</p>
+    <p><div class='fw-bold d-inline-flex'>Note:</div> the variables' data type must be the same to do this.</p>
+    <p>Syntax: <code class="fs-6">data_type variable_name1, variable_name2, variable_name3;</code></p>  
+    <p>Example:
+    <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNum1, myNum2, myNum3;
+            return 0;
+        } 
+        </code>
+    </pre>
+    </p>
+
+    <pre></pre><pre></pre><pre></pre>
+
+    <h4 class="fs-3 fw-bolder">Assign Value to Variable</h4>
+    <p>Assigning value means storing a value in a variable. 
+        You can assign a value when declaring a variable.</p>
+    <p>Syntax: <code class="fs-6">data_type variable_name = value;</code></p>
+    <p>Example:
+    <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNum = 10;
+            return 0;
+        }
+        </code>
+    </pre>
+    </p>
+
+    <pre></pre>
+    <p>We can also assign a value after declaring a variable.</p>
+    <p>Syntax: <code class="fs-6">variable_name = value;</code></p>
+    <p>Example:
+    <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNum;
+            myNum = 10;
+            return 0;
+        }
+        </code>
+    </pre>
+    </p>
+
+    <pre></pre>
+    <p>To change a variable value, we just need to assign a new value to an existing variable.
+        The new assigned value will overwrite the previous value.
+    </p>
+    <p>Example:
+    <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNum = 10; //myNum is 10
+            myNum = 20; //myNum is now 20
+            return 0;
+        }
+        </code>
+    </pre>
+    </p>
+
+    <pre></pre>
+    <p>We can also copy the value of a variable to another variable.</p>
+    <p>Syntax: <code class="fs-6">variable_name1 = variable_name2;</code></p>
+    <p>Example:
+        <pre>
+            <code class="fs-6">
+            #include &lt;stdio.h&gt;
+    
+            int main() {
+                int myNum1 = 10; 
+                int myNum2;
+                myNum2 = myNum1; //myNum2 value is now 10;
+                return 0;
+            }
+            </code>
+        </pre>
+    </p>
+
+    <pre></pre>
+    <p>There is also a variable type called constant. 
+        Constant is used when you do not want the value of the variable to change.
+        We just need to add the <code class="fs-6">const</code> keyword before the data type in the variable. 
+    </p>
+    <p>Syntax: <code class="fs-6">const data_type variable_name = value;</code></p>
+    <p>Example:
+        <pre>
+            <code class="fs-6">
+            #include &lt;stdio.h&gt;
+    
+            int main() {
+                const int myNum1 = 10; 
+                return 0;
+            }
+            </code>
+        </pre>
+    </p>
+
+
+    <pre></pre><pre></pre><pre></pre>
+
+    Casting
+Casting, also known as type conversion is an action of converting a value of one data type to another data type. For example, the conversion of int to float or vice versa. There are two types of conversion in C:
+Implicit conversion 
+This conversion occurs automatically when we assign a value to a variable. 
+Example:
+#include <stdio.h>
+
+int main() {
+int myNum = 9.8;
+printf(“%d”,myNum); //the output is 9
+return 0;
+}
+
+Explicit conversion
+This conversion is done manually by placing the parentheses symbol in front of the value. So, the data type of the value will only be changed when we put the parentheses symbol.
+Example:
+#include <stdio.h>
+
+int main() {
+int myNum1 = 10;
+float myNum2 = (float) myNum1;
+printf(“%f”,myNum2); //myNum2 will show as 10.0000
+return 0;
+}
+
+
+Variable scope
+Scope is the area in which a variable can be used or can be accessed. For C variables, there are 2 types of scopes, local and global. Local variable exists and can only be accessed in a particular function, while global variable can be accessed by all functions in the entire program. However, the global variable takes up much more memory than the local variable. So, it is advisable to avoid using too many global variables.
+Example:
+#include <stdio.h>
+int phi = 3.14; //this is a global variable
+
+int sum (int a, int b){
+	int result; //this is a local variable inside the sum function
+}
+
+int main() {
+int myNum1; //this is a local variable inside the main function
+return 0;
+}
+
+
+
+
+
+
+
+    
+
+    </div>
+  </div>
+       
+  <pre></pre><pre></pre><pre></pre>
+  
+    <div class="footer">
+    <div class="row">
+        <div class="col-md-8 tosca centerin">
+        <p>© Copyright 2023 return 0;</p>
+        </div>
+        <div class="col-md-4 tosca centerin2">
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
+        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
+        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

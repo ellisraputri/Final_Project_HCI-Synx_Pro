@@ -1,0 +1,75 @@
+.topnav{
+    font-family: 'Montserrat';
+    font-size: 20px;
+  }
+  
+  .tosca{
+    background-color: #166174;
+  }
+  
+  a:hover, .nav-active{
+    background-color: #339ab2;
+  }
+  
+  .body{
+    font-family: Montserrat;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .bg-plblack{
+    background-color: rgba(0, 0, 0, 0.328);
+  }
+  
+  .kanit{
+    font-family: 'kanit', sans-serif;
+  }
+  
+  .grey{
+    background-color: rgba(133, 133, 133, 0.425);
+  }
+  
+  .footer img{
+    margin: 10px;
+  }
+  
+  .nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .centerin2{
+    text-align: right;
+  }
+  
+  .underline11{
+    border-bottom: 2px solid white;
+  }
+
+  .content2{
+    padding-left:10%;
+  }
+
+  td,th{
+    padding: 50px;
+  }
+
+
+  .header{
+    color:#339ab2;
+  }
+  
+  @media (max-width:768px) {
+    .centerin{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .centerin2{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
