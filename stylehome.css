@@ -79,6 +79,8 @@
     max-width: 50%;
   }
 
+
+
   @media (max-width:768px) {
     .centerin{
       text-align: center;
@@ -92,4 +94,10 @@
       margin-right: auto;
     }
 
+  }
+
+  @media (max-width:993px){
+    .codee{
+      max-width: 100%;
+    }
   }

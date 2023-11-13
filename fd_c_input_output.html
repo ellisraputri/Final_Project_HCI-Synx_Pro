@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C - Variable and Data Type</title>
+    <link rel="stylesheet" href="stylefundict.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <nav class="navbar navbar-expand-xl tosca fixed-top">
+          <div class="container-fluid fw-bold tata">
+            <a class="navbar-brand text-uppercase" href="index.html">
+              <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <a class="nav-link text-white"  href="index.html">Home</a>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index_about.html">Syntax Comparison</a>
+                </li>
+                <li class="nav-item dropdown underline11">
+                  <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active " aria-current="page" href="fd_c_home.html">C</a></li> 
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
+                  <ul class="dropdown-menu tosca-hover">
+                    <li><a class="dropdown-item" href="#">C</a></li>
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">C</a></li>
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>             
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    
+    <div class="body">
+    <div class="content2">
+    <h1 class="fs-1 kanit header">Input and Output</h1>
+    <pre></pre>
+    
+    <h4 class="fs-3 fw-bolder">Output</h4>
+    <p>C uses <code>printf()</code> to print output text or values to the console. 
+        <code>printf()</code> does not insert a new line at the end of the output. </p>
+      <p>Syntax: &nbsp;
+        <code class="fs-6">printf("some random text")</code> is used to print text inside the " ".
+    </p>
+
+    <p><code>printf("format specifier", variable_name)</code> is used to print the variable specified. 
+        Format specifier is used to specify which data type that you want to use. You can 
+        see what is a format specifier in the variable and data type page.</p>
+
+      <p>Example:
+      <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNum;
+            
+            printf("Hello World!");
+            printf(“%d”,myNum);
+              return 0;
+            }            
+        </code>
+      </pre>
+    </p>
+
+    <h4 class="fs-3 fw-bolder">Input</h4>
+    <p>In C, you can use the <code>scanf()</code> function to get user input. </p>
+      <p>Syntax: &nbsp;
+        <code class="fs-6">scanf("format specifier", &variable_name)</code>
+    </p>
+
+    <p>Format specifier is used to specify which data type that you want to use. 
+        You can see what is a format specifier in the variable and data type page.
+        <code>scanf()</code> can also accept multiple inputs.
+    </p>
+
+      <p>Example:
+      <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNum;
+            char myChar;
+
+            printf("Input a number and a character:");
+            scanf("%d %c",&myNum, &myChar);
+            return 0;
+        }            
+        </code>
+      </pre>
+    </p>
+
+    <p> <code>scanf()</code> can also take string input, but it will only accept the string until it sees a 
+        white space. To avoid this error, we use <code>fgets(fullName, sizeof(fullName), stdin)</code>
+        instead of <code>scanf()</code>. We can still 
+        use <code>scanf("%s", &variable_name)</code> if the string does 
+        not contain any white space between the contents.</p>
+    
+    <p>Example:
+      <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            char myName[20];
+
+            printf("Input a name:");
+            fgets(myName, sizeof(myName), stdin);
+            return 0;
+        }            
+        </code>
+      </pre>
+    </p>
+
+    <h4 class="fs-3 fw-bolder">Comments</h4>
+    <p>Comments can be used to explain what does a block of code do. Comments can 
+        also be used to prevent the execution of some lines of code.
+        There are two types of comments in C:</p>
+    <ul>
+        <li>Single Line Comment</li>
+        <p>Any text between <code>//</code> and the end of the line will not be 
+            executed by the compiler. <br/>
+            Syntax: <code class="fs-6">//some comments here</code> 
+        </p>
+
+        <li>Multiple Line Comments</li>
+        <p>Syntax:  Any text between <code>/*</code> and <code>*/</code> will not be 
+            executed by the compiler.<pre>
+            <code class="fs-6">
+/*	Hello world!
+    Some comment here
+*/                       
+            </code>
+          </pre></p>
+    </ul>
+    
+    <p>Example:
+        <pre><code class="fs-6">
+          #include &lt;stdio.h&gt;
+  
+          int main() {
+            char myName[20];
+
+            //this line will not be executed
+            printf("Input a name:");
+            fgets(myName, sizeof(myName), stdin);
+            
+            /*
+            printf("hello")
+            The console will not show "hello" because the
+            printf("hello") is in the comment and will not 
+            Be executed.
+            */
+            return 0;
+          }            
+          </code>
+        </pre>
+    </p>
+
+    <h4 class="fs-3 fw-bolder">Escape Sequences</h4>
+    <p>Escape sequences are mostly used to control or format the output.
+        Example:
+        <pre><code class="fs-6">
+          #include &lt;stdio.h&gt;
+  
+          int main() {
+            printf("Hello,\nWorld!");
+
+            /*The output will be
+            Hello,
+            World!
+            Instead of 
+            Hello,World!
+            */
+
+            return 0;
+          }            
+          </code></pre>
+    </p>
+
+    <p>Below are the most commonly used escape sequences.</p>
+    <table class="table table-light table-hover table-striped table-bordered w-auto">
+        <thead>
+          <tr class="table-secondary">
+            <th scope="col" class="text-center align-middle">Escape Sequences</th>
+            <th scope="col" class="text-center align-middle">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-center align-middle">\n (newline)</th>
+            <td class="text-center align-middle">Insert a new line on the output.</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">\t (tab)</th>
+            <td class="text-center align-middle">Insert a horizontal tab on the output.</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">\\ (backslash)</th>
+            <td class="text-center align-middle">Backslash can't be printed directly as it 
+                is used for escape sequences in C, so we have to place another backslash following 
+                the backslash used for an escape sequence. So, to print backslash, we type \\ not \</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">\' (single quote)</th>
+            <td class="text-center align-middle">Print a single quote in the output</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">\" (double quote)</th>
+            <td class="text-center align-middle">Print a double quote in the output</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">\? (question mark)</th>
+            <td class="text-center align-middle">Print a question mark in the output</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">\b (backspace)</th>
+            <td class="text-center align-middle">Move the cursor one position back in the current line of text.</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">\a (alert or bell)</th>
+            <td class="text-center align-middle">A beep is generated by the computer on execution.</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">\r (carriage return)</th>
+            <td class="text-center align-middle">Move the cursor to the beginning of the current line.</td>
+          </tr>
+          <tr>
+            <th class="text-center align-middle">\v (vertical tab)</th>
+            <td class="text-center align-middle">Insert a vertical tab on the output.</td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+    </div>
+  </div>
+       
+  <pre></pre><pre></pre><pre></pre>
+  
+    <div class="footer">
+    <div class="row">
+        <div class="col-md-8 tosca centerin">
+        <p>© Copyright 2023 return 0;</p>
+        </div>
+        <div class="col-md-4 tosca centerin2">
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
+        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
+        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
