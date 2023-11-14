@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C - Array</title>
+    <link rel="stylesheet" href="stylefundict.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <nav class="navbar navbar-expand-xl tosca fixed-top">
+          <div class="container-fluid fw-bold tata">
+            <a class="navbar-brand text-uppercase" href="index.html">
+              <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <a class="nav-link text-white"  href="index.html">Home</a>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index_about.html">Syntax Comparison</a>
+                </li>
+                <li class="nav-item dropdown underline11">
+                  <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active " aria-current="page" href="fd_c_home.html">C</a></li> 
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
+                  <ul class="dropdown-menu tosca-hover">
+                    <li><a class="dropdown-item" href="#">C</a></li>
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">C</a></li>
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>             
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    
+    <div class="body">
+    <div class="content2">
+    <h1 class="fs-1 kanit header">Conditional and Loops</h1>
+    <pre></pre>
+    
+    <h4 class="fs-3 fw-bolder">Conditional</h4>
+    <p>Conditional statement enables a program to execute only specific block of code. 
+        There are two type of conditional statement in general:
+    </p>
+
+    <h5 class="fs-5 fw-bold">If, Else, and Else If</h5>
+    <p>If statement specifies a block of code to be executed when a condition is true.</p>
+    <p>
+        Syntax:<div class='bg-plblack codee2'>
+        <pre><code class="fs-6 ">
+        if (condition) {
+        // block of code to be executed if the condition is true
+        }
+        </code></pre></div>
+    </p>
+    <p>
+        Example:<div class="bg-plblack codee">
+        <pre><code class="fs-6 ">
+        #include&lt;stdio.h&gt;
+        int main() {
+            int myNum = 10;
+            if(myNum == 10){
+                printf(“myNum is 10”); 
+            }
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+    <p>
+        In the example, the code <code class="fs-6">printf(“myNum is 10”);</code> 
+        will only be executed when the value of <code class="fs-6">myNum</code> is 10.
+    </p>
+
+    <pre></pre><pre></pre>
+    <p>
+        However, in other cases, we need another statement to specify code to be executed
+        when the condition is false. Then, we can use <code class="fs-6">else</code> for this case.
+    </p>
+    <p>
+        Syntax:<div class='bg-plblack codee2'>
+        <pre><code class="fs-6 ">
+        if (condition) {
+            // block of code to be executed if the condition is true
+        } else {
+            // block of code to be executed if the condition is false
+        }
+        </code></pre></div>
+    </p>
+    <p>
+        Example:<div class="bg-plblack codee">
+        <pre><code class="fs-6 ">
+        #include&lt;stdio.h&gt;
+        int main() {
+            int myNum = 10;
+            if(myNum == 10){
+	            printf(“myNum is 10”); 
+            }else{
+	            printf(“myNum is not 10”);
+            }
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+
+    <pre></pre><pre></pre>
+    <p>
+        Lastly, the <code class="fs-6">else if</code> statement is used when there are more than two conditions that may occurred.
+        <code class="fs-6">Else if</code> statement specifies a new condition if the first condition is false.
+    </p>
+
+  
+Syntax:
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+
+example:
+#include<stdio.h>
+int main() {
+int myNum = 10;
+if(myNum < 1){
+	printf(“myNum is less than 1”); 
+}else if (myNum < 10){
+	printf(“myNum is less than 10”);
+}else{
+	printf(“myNum is greater than or equal with 10”);
+}
+  return 0;
+}
+
+Short Hand If-Else
+Short-hand if-else, also called ternary operator, is a simple construction of an if-else statement. The ternary operator is used to simplify a block of if-else statements to a single line of code.
+Syntax: variable = (condition) ? expressionTrue : expressionFalse;
+
+Below is the simplified version of the previous if-else example:
+#include<stdio.h>
+int main() {
+int myNum = 10;
+myNum = (myNum == 10)? printf(“myNum is 10”):printf(“myNum is not 10”);
+  return 0;
+}
+
+
+    <pre></pre><pre></pre><pre></pre>
+
+    <h5 class="fs-5 fw-bold">Access and Set the Values of Elements of an Array</h5>
+    <p>To access an array's element, we need to refer to its index number. 
+        Index number 0 is for the first element, index number 1 is for the second element, and so on.
+    </p>
+    <p>
+        Syntax: <code class="fs-6">array_name[index_number] = new_value;</code>
+    </p>
+    <p>
+        Example:<div class="bg-plblack codee">
+        <pre><code class="fs-6">myNumber[0] = 10;</code></pre></div>
+    </p>
+    <p>
+        If the array's elements are still not defined like in the yourNumber array in syntax2 in defining array, 
+        then the system will automatically set the values according to the new value.
+    </p>
+    <p>
+        Example code:
+        <div class="bg-plblack codee2">
+        <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNumber[] = {25, 50, 75, 100};
+            int yourNumber[4]; 
+            //yourNumber doesn't contain any value
+            //you can't change the size of the array after creation
+            
+            myNumber[0] = 30; //change the value 25 to 30
+            //myNumber will contain 30,50,75,100 now
+            
+            yourNumber[0] = 40;
+            yourNumber[1] = 50;
+            yourNumber[2] = 45;
+            yourNumber[3] = 55;
+            //yourNumber will contain 40,50,45,55 now
+            
+            return 0;
+        }
+        </code>
+        </pre>
+        </div>
+    </p>
+    
+    <pre></pre><pre></pre><pre></pre>
+
+    <h5 class="fs-5 fw-bold">Loop through an Array</h5>
+    <p>You can loop through the array elements with the for loop.
+        For loop will be explained in the conditional and loops page.
+    </p>
+    <p>
+        Example code:
+        <div class="bg-plblack codee">
+        <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNumbers[] = {25, 50, 75, 100};
+            int i;
+
+            for (i = 0; i < 4; i++) {
+                printf("%d\n", myNumbers[i]);
+            }
+            return 0;
+        } 
+        </code>
+        </pre>
+        </div>
+    </p>
+
+    <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
+    <h4 class="fs-3 fw-bolder">Structures</h4>
+    <p>Structures (also called structs) are a way to group several related variables into one place.
+        Each variable in the structure is known as a member of the structure.
+        The variables in struct can have several different data types.
+    </p>
+    <p>
+        To access the structure, you must create a variable of it.
+        Use the <code class="fs-6">struct</code> keyword inside the <code class="fs-6">main()</code> method,
+        followed by the name of the structure and then the name of the structure variable:
+    </p>
+    <p>
+        Syntax:
+        <div class="bg-plblack codee">
+        <pre>
+        <code class="fs-6">
+        struct struct_name{
+            Variable_type1 variable_name1;
+            Variable_type2 variable_name2;
+            …
+        };
+
+        int main(){
+            Struct struct_name structure_variable_name;
+        }
+        </code>
+        </pre>
+        </div>
+    </p>
+
+    <pre></pre><pre></pre><pre></pre>
+    <p>
+        To access the members of a structure, you have to use dot (.) 
+        in <code class="fs-6">int main()</code> after you declare the name of the structure variable.
+    </p>
+    <p>
+        Syntax: <code class="fs-6">structure_variable_name.variable_name1 = value;</code>
+    </p>
+    <p>
+        For string, as it is an array of characters, when we want to access them,
+        we have to use strcpy instead of just assigning it with the operator “=”. 
+        To use the function <code class="fs-6">strcpy()</code>, 
+        we need to include the header file <code class="fs-6">&lt;string.h&gt;</code>.
+    </p>
+    <p>
+        Syntax:
+        <div class="bg-plblack codee2">
+        <pre>
+        <code class="fs-6">
+        #include &lt;string.h&gt;
+            strcpy(structure_variable_name.variable_name1, "text");
+        </code>
+        </pre>
+        </div>
+    </p>
+    <pre></pre><pre></pre>
+
+    <p>
+        We can also assign values to multiple variables at once with this syntax.
+    </p>
+    <p>
+        Syntax: <code class="fs-6">struct struct_name structure_variable_name = {value1, value2, …, valuen};</code>
+    </p>
+    <pre></pre><pre></pre>
+
+    <p>We can also assign the values of a structure variable to another structure variable.</p>
+    <p>
+        Syntax:
+        <div class="bg-plblack codee2">
+        <pre>
+        <code class="fs-6">
+        struct struct_name structure_variable_name1 = {value1, value2, …, valuen};
+        struct struct_name structure_variable_name2;
+        
+        structure_variable_name2 = structure_variable_name1;
+        </code>
+        </pre>
+        </div>
+    </p>
+    <pre></pre><pre></pre>
+
+    <p>
+        Example code:
+        <div class="bg-plblack codee2">
+        <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        struct Phone {
+            int price;
+            char brand[10];
+            int year;
+        };
+        
+        int main() {
+            struct Phone phone1 = {5000, "Aster", 2019};
+            struct Phone phone2 = {3000, "Bianca", 2022};
+            struct Phone phone3 = {2000, "Charlie", 2021};
+            struct Phone phone4;
+            
+            phone4 = phone3; //assign the value of phone3 to phone4
+            phone4.year = 2022; //change phone4's year to 2022
+            
+            printf("%d %s %d\n", phone1.price, phone1.brand, phone1.year);
+            printf("%d %s %d\n", phone2.price, phone2.brand, phone2.year);
+            printf("%d %s %d\n", phone3.price, phone3.brand, phone3.year);
+            printf("%d %s %d\n", phone4.price, phone4.brand, phone4.year);
+        
+            return 0;
+        }
+        </code>
+        </pre>
+        </div>
+    </p>
+
+    <pre></pre>
+    <p>
+        Output:
+        <div class="bg-plblack codee">
+        <pre>
+        <code class="fs-6">
+            5000 Aster 2019
+            3000 Bianca 2022
+            2000 Charlie 2021
+            2000 Charlie 2022
+        </code>
+        </pre>
+        </div>
+    </p>
+
+    <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
+
+    <h4 class="fs-3 fw-bolder">Strings</h4>
+    <p>
+        C does not have a string type variable,
+        so we have to use array of characters when we want to make a string variable.
+    </p>
+    <p>
+        Syntax:
+        <div class="bg-plblack codee2">
+        <pre>
+        <code class="fs-6">
+        char variable_name1[] = “some text”;
+        char variable_name2[] = {'s', 'o', 'm', 'e', ' ', 't', 'e', 'x', 't', '\0'};
+        </code>
+        </pre>
+        </div>
+    </p>
+    <p>
+        Every C string has a null character inside them so the size of the string “some text”
+        is not 9, but instead 10. We can use <code class="fs-6">sizeof(variable_name)</code> 
+        in the <code class="fs-6">printf</code> statement to know the array size.
+        If we assign it like how we assign <code class="fs-6">variable_name2</code>,
+        then we have to assign a null character too, so the first way is easier.
+    </p>
+    <p>
+        Because a string in C is an array of characters, to modify strings,
+        you can use the same method when we modify the array earlier.
+        You can also loop through strings with for loops because they are arrays.
+    </p>
+    <p>
+        Syntax:
+        <div class="bg-plblack codee">
+        <pre>
+        <code class="fs-6">
+        char variable_name1[] = “some text”;
+        Variable_name1[index_number] = 'value';
+        </code>
+        </pre>
+        </div>
+    </p>
+    <pre></pre><pre></pre><pre></pre>
+    <p>
+        Example code:
+        <div class="bg-plblack codee2">
+        <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main(){
+            char string1[] = {'s', 'o', 'm', 'e', ' ', 't', 'e', 'x', 't', '\0'};
+            char string2[] = "some text";
+            
+            string2[1] = 'a'; //changing o in some to a
+            printf("%s\n", string1);  
+            
+            for (int i = 0; i < sizeof(string2)-1; ++i) {
+                printf("%c,", string2[i]);
+            } 
+            
+            printf("\nSize of string1 is %lu\n", sizeof(string1));   
+            printf("Size of string2 is %lu\n", sizeof(string2));
+            return 0;
+        }
+        </code>
+        </pre>
+        </div>
+    </p>
+    <p>
+        Output:
+        <div class="bg-plblack codee">
+        <pre>
+        <code class="fs-6">
+        some text
+        s,a,m,e, ,t,e,x,t,
+        Size of string1 is 10
+        Size of string2 is 10
+        </code>
+        </pre>
+        </div>
+    </p>
+
+    </div>
+  </div>
+       
+  <pre></pre><pre></pre><pre></pre>
+  
+    <div class="footer">
+    <div class="row">
+        <div class="col-md-8 tosca centerin">
+        <p>© Copyright 2023 return 0;</p>
+        </div>
+        <div class="col-md-4 tosca centerin2">
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
+        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
+        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
