@@ -15,7 +15,7 @@
     font-family: Montserrat;
     padding-left: 20px;
     padding-right: 20px;
-    line-height: 2.5;
+    line-height: 2.0;
     text-align: justify;
   }
   
@@ -25,6 +25,10 @@
 
   .codee{
     max-width: 50%;
+  }
+
+  .codee2{
+    max-width: 70%;
   }
   
   .kanit{
@@ -54,6 +58,7 @@
 
   .content2{
     padding-left:10%;
+    padding-right: 10%;
   }
 
   td,th{
@@ -68,6 +73,9 @@
   @media(max-width:1280px){
     .codee{
         max-width: 80%;
+    }
+    .codee2{
+        max-width: 100%;
     }
   }
 

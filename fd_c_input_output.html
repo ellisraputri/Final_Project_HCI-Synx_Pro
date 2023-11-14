@@ -78,6 +78,7 @@
         see what is a format specifier in the variable and data type page.</p>
 
       <p>Example:
+      <div class="bg-plblack codee">
       <pre>
         <div class="bg-plblack">
         <code class="fs-6">
@@ -92,10 +93,13 @@
             }            
         </code></div>
       </pre>
+      </div>
     </p>
 
+    <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
+
     <h4 class="fs-3 fw-bolder">Input</h4>
-    <p>In C, you can use the <code>scanf()</code> function to get user input. </p>
+    <p>In C, you can use the <code class="fs-6">scanf()</code> function to get user input. </p>
       <p>Syntax: &nbsp;
         <code class="fs-6">scanf("format specifier", &variable_name)</code>
     </p>
@@ -106,6 +110,7 @@
     </p>
 
       <p>Example:
+      <div class="bg-plblack codee">
       <pre><div class="bg-plblack">
         <code class="fs-6">
         #include &lt;stdio.h&gt;
@@ -120,6 +125,7 @@
         }            
         </code></div>
       </pre>
+      </div>
     </p>
 
     <p> <code>scanf()</code> can also take string input, but it will only accept the string until it sees a 
@@ -129,7 +135,8 @@
         not contain any white space between the contents.</p>
     
     <p>Example:
-      <pre><div class="bg-plblack">
+      <div class="bg-plblack codee">
+      <pre>
         <code class="fs-6">
         #include &lt;stdio.h&gt;
 
@@ -142,7 +149,10 @@
         }            
         </code></div>
       </pre>
+      </div>
     </p>
+
+    <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
 
     <h4 class="fs-3 fw-bolder">Comments</h4>
     <p>Comments can be used to explain what does a block of code do. Comments can 
@@ -157,17 +167,23 @@
 
         <li>Multiple Line Comments</li>
         <p>Syntax:  Any text between <code>/*</code> and <code>*/</code> will not be 
-            executed by the compiler.<pre><div class="bg-plblack">
+            executed by the compiler.
+            <div class="bg-plblack codee">
+            <pre>
             <code class="fs-6">
-/*	Hello world!
-    Some comment here
-*/                       
-            </code></div>
-          </pre></p>
+        /*	Hello world!
+            Some comment here
+        */                       
+            </code>
+          </pre>
+        </div>
+        </p>
     </ul>
+    <pre></pre>
     
     <p>Example:
-        <pre><code class="fs-6"><div class="bg-plblack">
+      <div class="bg-plblack codee">
+        <pre><code class="fs-6">
           #include &lt;stdio.h&gt;
   
           int main() {
@@ -185,14 +201,18 @@
             */
             return 0;
           }            
-          </code></div>
+          </code>
         </pre>
+      </div>
     </p>
+
+    <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
 
     <h4 class="fs-3 fw-bolder">Escape Sequences</h4>
     <p>Escape sequences are mostly used to control or format the output.
-        Example:
-        <pre><div class="bg-plblack"><code class="fs-6">
+        Example:        
+        <div class="bg-plblack codee">
+        <pre><code class="fs-6">
           #include &lt;stdio.h&gt;
   
           int main() {
@@ -207,8 +227,11 @@
 
             return 0;
           }            
-          </code></div></pre>
+          </code></pre>
+        </div>
+
     </p>
+    <pre></pre><pre></pre>
 
     <p>Below are the most commonly used escape sequences.</p>
     <table class="table table-light table-hover table-striped table-bordered w-auto">
@@ -230,8 +253,8 @@
           <tr>
             <th class="text-center align-middle">\\ (backslash)</th>
             <td class="text-center align-middle">Backslash can't be printed directly as it 
-                is used for escape sequences in C, so we have to place another backslash following 
-                the backslash used for an escape sequence. So, to print backslash, we type \\ not \</td>
+                is used for escape sequences in C, so <br>we have to place another backslash following 
+                the backslash used for <br>an escape sequence. So, to print backslash, we type \\ not \</td>
           </tr>
           <tr>
             <th class="text-center align-middle">\' (single quote)</th>
