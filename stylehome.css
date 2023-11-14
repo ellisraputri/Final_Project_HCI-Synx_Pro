@@ -79,6 +79,10 @@
     max-width: 50%;
   }
 
+  .codee2{
+    max-width: 70%;
+  }
+
 
 
   @media (max-width:768px) {
@@ -96,8 +100,13 @@
 
   }
 
-  @media (max-width:993px){
-    .codee{
+  @media (max-width:1280px){
+    .codee2{
       max-width: 100%;
+      overflow-x: scroll;
     }
+
+    .codee{
+      max-width: 80%;
+  }
   }
