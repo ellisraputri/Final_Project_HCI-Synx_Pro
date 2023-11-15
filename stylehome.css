@@ -89,6 +89,7 @@
 
   .sidenavv-active{
     padding: 15px;
+    padding-left: 5px;
     border-radius: 10px;
     background-color: #339ab2 ;
   }

@@ -69,6 +69,43 @@
   .header{
     color:#339ab2;
   }
+
+  .btn-primary{
+    background-color: #166174 !important
+  }
+
+  .sidenavv {
+    height: 100%; 
+    margin-top: 100px;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+  }
+
+  .sidenavv a{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 30px;
+
+  }
+
+  .sidenavv-active{
+    padding: 15px;
+    padding-left: 5px;
+    border-radius: 10px;
+    background-color: #339ab2 ;
+  }
+
+  .sidenavv a:hover{
+    color: white;
+  }
+
+  .dummy{
+    height: 300px;
+  }
   
   @media(max-width:1280px){
     .codee{
@@ -95,5 +132,6 @@
     .codee{
         max-width: 100%;
     }
+
 
   }
