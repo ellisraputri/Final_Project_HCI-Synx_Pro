@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C - Pointer</title>
+    <link rel="stylesheet" href="stylefundict.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <nav class="navbar navbar-expand-xl tosca fixed-top">
+          <div class="container-fluid fw-bold tata">
+            <a class="navbar-brand text-uppercase" href="index.html">
+              <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white"  href="index.html">Home</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index_about.html">Syntax Comparison</a>
+                </li>
+                <li class="nav-item dropdown underline11">
+                  <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active " aria-current="page" href="fd_c_home.html">C</a></li> 
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
+                  <ul class="dropdown-menu tosca-hover">
+                    <li><a class="dropdown-item" href="#">C</a></li>
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">C</a></li>
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                  </ul>
+                </li>             
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    
+    <div class="body">
+    <div class="content2">
+    <h1 class="fs-1 kanit header">Pointer</h1>
+    <pre></pre>
+    
+    <h4 class="fs-3 fw-bolder">Memory Address</h4>
+    <p>Every variable that is created has its own memory address. 
+        A memory address is the location where a variable is stored on the computer.
+        When we assign a value to the variable, it is stored in this memory address.
+        To access the memory address of a variable, we can use the operator <code class="fs-6">&</code>. 
+        In C, a variable that stores the memory address of a variable is called a pointer
+        and the format specifier for a pointer is <code class="fs-6">%p</code>.
+    </p>
+    <p>
+        Syntax:
+        <code class="fs-6 ">
+        printf(“%p”, &variable_name)
+        </code>
+    </p>
+    <p>
+        Example:<div class="bg-plblack codee">
+        <pre><code class="fs-6 ">
+        #include&lt;stdio.h&gt;
+        int main() {
+            int myNum = 16;
+            printf("%p", &myNum);
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+    <p>
+        Output:<div class="bg-plblack codee">
+        <pre><code class="fs-6 ">
+        0x7ffc89b6e084
+        </code></pre></div>
+    </p>
+    <p>
+        The memory address is represented in hexadecimal form and
+        the variable's memory address may differ from a computer to another,
+        so when you run this code on your computer, it's likely to have a different result
+        from the one in the output example.
+    </p>
+
+    <pre></pre><pre></pre><pre></pre>
+    
+    <h4 class="fs-3 fw-bolder">Pointers</h4>
+    <p>
+        As explained in the memory address section,
+        a variable that stores the memory address of a variable is called a pointer
+        and the format specifier for a pointer is <code class="fs-6">%p</code>.
+        Defining a pointer variable is the same as defining other variables,
+        except you have to write <code class="fs-6">*</code> after the variable type
+        and before the variable name. The variable type of the pointer has to
+        be the same as the variable type of the variable that the pointer points to.
+    </p>
+    <p>
+        Syntax:<div class="bg-plblack codee">
+        <pre><code class="fs-6 ">
+        variable_type variable_name1;
+        variable_type* pointer_name1 = &variable_name1;
+        </code></pre></div>
+    </p>
+    <p>
+        You can also print the variable that the pointer points by dereferencing by using
+        <code class="fs-6">*</code> before the variable name in the <code class='fs-6'>printf</code> statement.
+        If we don't use <code class="fs-6">*</code>, then the compiler will print the memory address of the variable.
+    </p>
+    <p>
+        Syntax:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        variable_type variable_name1;
+        variable_type* pointer_name1 = &variable_name1;
+        printf(“%p”, pointer_name1); //print the memory address of variable_name1
+        printf(“format specifier of variable_name1”, *pointer_name1); 
+        //print variable_name1
+        </code></pre></div>
+    </p>
+    <p>
+        Example code:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        #include&lt;stdio.h&gt;
+        int main() {
+            /variable declaration
+            char myChar = 'C';
+            int myAge = 18;
+
+            //pointer declaration
+            char* myptr1 = &myChar;
+            int* myptr2 = &myAge;
+
+            printf("%p\n", myptr1); //print memory address of myChar
+            printf("%c\n", *myptr1); //dereferencing (print myChar)
+
+            printf("%p\n", myptr2); //print memory address of myAge
+            printf("%d", *myptr2); //dereferencing (print myAge)
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+    <p>
+        Output:<div class="bg-plblack codee">
+        <pre><code class="fs-6 ">
+        0x7ffdb8071ed3
+        C
+        0x7ffdb8071ed4
+        18
+        </code></pre></div>
+    </p>
+
+    <pre></pre><pre></pre>
+    <p>
+        In C, the name of an array is actually a pointer to the first element of the array.
+        In other words, when we print <code class="fs-6">array_name</code> as a pointer by the
+        format specifier <code class="fs-6">%p</code> is actually the same value as printing
+        <code class="fs-6">&array_name[0]</code>. Therefore, we can access the elements in an array by dereferencing.
+    </p>
+    <p>
+        Example code:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        #include&lt;stdio.h&gt;
+        int main() {
+            int myNumbers[4] = {25, 50, 75, 100};
+
+            // Change the value of the second element to 23
+            *(myNumbers + 1) = 23;
+
+            printf("%d ", *myNumbers); //print myNumbers[0]
+            printf("%d", *(myNumbers + 1)); //print myNumbers[1]
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+    <p>
+        Output:<div class="bg-plblack codee">
+        <pre><code class="fs-6 ">
+        25 23
+        </code></pre></div>
+    </p>
+
+    </div>
+  </div>
+       
+  <pre></pre><pre></pre><pre></pre>
+  
+    <div class="footer">
+    <div class="row">
+        <div class="col-md-8 tosca centerin">
+        <p>© Copyright 2023 return 0;</p>
+        </div>
+        <div class="col-md-4 tosca centerin2">
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
+        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
+        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
