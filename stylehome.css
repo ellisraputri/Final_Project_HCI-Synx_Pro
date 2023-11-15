@@ -83,7 +83,15 @@
     max-width: 70%;
   }
 
+  .btn-primary{
+    background-color: #166174 !important
+  }
 
+  .sidenavv-active{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #339ab2 ;
+  }
 
   @media (max-width:768px) {
     .centerin{
