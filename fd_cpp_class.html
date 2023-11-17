@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ - Classes</title>
+    <link rel="stylesheet" href="stylefundict.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <nav class="navbar navbar-expand-xl tosca fixed-top">
+          <div class="container-fluid fw-bold tata">
+            <a class="navbar-brand text-uppercase" href="index.html">
+              <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="syntaxcomp.html">Syntax Comparison</a>
+                </li>
+                <li class="nav-item dropdown underline11">
+                  <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="fd_c_home.html">C</a></li> 
+                    <li><a class="dropdown-item active" aria-current="page" href="fd_cpp_home.html">C++</a></li>
+                    <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
+                  <ul class="dropdown-menu tosca-hover">
+                    <li><a class="dropdown-item" href="tips_c.html">C</a></li>
+                    <li><a class="dropdown-item" href="tips_cpp.html">C++</a></li>
+                    <li><a class="dropdown-item" href="tips_py.html">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="faq_c.html">C</a></li>
+                    <li><a class="dropdown-item" href="faq_cpp.html">C++</a></li>
+                    <li><a class="dropdown-item" href="faq_py.html">Python</a></li>
+                  </ul>
+                </li>             
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    
+    <div class="body">
+      <div class="row">
+        <div class="col-2 sidenavv sticky-top d-none d-lg-block">
+          <nav  class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="fd_cpp_home.html">Home</a>
+              <a class="nav-link " href="fd_cpp_variable.html">Variable and Data Type</a>
+              <a class="nav-link" href="fd_cpp_input.html">Input Output</a>
+              <a class="nav-link" href="fd_cpp_operator.html">Operators</a>
+              <a class="nav-link" href="fd_cpp_array.html">Arrays</a>
+              <a class="nav-link" href="fd_cpp_condloop.html">Conditional and Loops</a>
+              <a class="nav-link" href="fd_cpp_pointer.html">Pointers</a>
+              <a class="nav-link" href="fd_cpp_function.html">Functions</a>
+              <a class="nav-link" href="fd_cpp_class.html"><div class="sidenavv-active">Classes</div></a>
+              <a class="nav-link" href="fd_cpp_module.html">Modules</a>
+              <a class="nav-link" href="fd_cpp_file.html">File Handling</a>
+              <a class="nav-link" href="fd_cpp_cheatsheet.html">Cheat Sheet</a>
+            </nav>
+          </nav>
+        </div>
+  
+        <div class="col-1 d-md-block d-lg-none d-sm-block d-xs-block">
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <pre></pre><pre></pre>
+          <div class="offcanvas-lg offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Navigation Bar</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body sidenavv">
+              <nav class="nav flex-column nav-pills">
+                <a class="nav-link" href="fd_cpp_home.html">Home</a>
+                <a class="nav-link " href="fd_cpp_variable.html">Variable and Data Type</a>
+                <a class="nav-link" href="fd_cpp_input.html">Input Output</a>
+                <a class="nav-link" href="fd_cpp_operator.html">Operators</a>
+                <a class="nav-link" href="fd_cpp_array.html">Arrays</a>
+                <a class="nav-link" href="fd_cpp_condloop.html">Conditional and Loops</a>
+                <a class="nav-link" href="fd_cpp_pointer.html">Pointers</a>
+                <a class="nav-link" href="fd_cpp_function.html">Functions</a>
+                <a class="nav-link" href="fd_cpp_class.html"><div class="sidenavv-active">Classes</div></a>
+                <a class="nav-link" href="fd_cpp_module.html">Modules</a>
+                <a class="nav-link" href="fd_cpp_file.html">File Handling</a>
+                <a class="nav-link" href="fd_cpp_cheatsheet.html">Cheat Sheet</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+  
+    <div class="col-lg-10">
+    <div class="content2">
+    <h1 class="fs-1 kanit">Classes</h1>
+    <pre></pre>
+
+    <p>
+        Class is a crucial part of a type of programming called the Object-Oriented Programming
+        (OOP). Programming itself has two common types: procedural programming (writing procedures
+        and functions) and OOP (using classes and objects). OOP has several advantages over procedural programming:
+    </p>
+    <ul>
+        <li>OOP is easier and faster</li>
+        <li>OOP has clearer structure</li>
+        <li>OOP makes the code easier to maintain, modify, and debug</li>
+        <li>OOP makes it easier to reuse a program.</li>
+    </ul>
+    <p>
+        First, let's learn what are classes and objects in OOP. Classes are
+        templates for objects, while objects are instances of the class. For example,
+        we have a basket of fruit containing apple, mango, and orange. The class is the
+        'fruit', while the objects are 'apple', 'mango', and 'orange'. In the class,
+        there are also attributes and methods. To put it simply, the attributes are variables
+        belonging to a class, while methods are functions belonging to the class.
+    </p>
+
+    <pre></pre><pre></pre><pre></pre>
+    <h4 class="fs-3 kanit header">Create Classes and Objects</h4>
+    <h5 class="fs-5 fw-bold">Create a Class</h5>
+    <p>
+        Syntax:<div class='bg-plblack codee'>
+        <pre><code class="fs-6 ">
+        class class_name{
+            access_specifier:
+                //class members (attributes or methods)
+        };
+        </code></pre></div>
+    </p>
+    <p>
+        Access specifier is the keyword that specifies the scope of the members of the class.
+        There are three access specifiers in C++:
+    </p>
+    <ul>
+        <li><code class="'fs-6">public</code>: members are accessible from outside of the class</li>
+        <li><code class="'fs-6">private</code>: members cannot be accessed from outside the class</li>
+        <li><code class="'fs-6">protected</code>: members cannot be accessed from outside the class,
+            but they can be accessed in the inherited classes.</li>
+    </ul>
+    <p>
+        Example:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        #include&lt;iostream&gt;
+        class MyClass {       // The class
+            public:             // Access specifier
+              int myNum;        // Attribute (int variable)
+              string myString;  // Attribute (string variable)
+        };
+          int main() {
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+    
+    <pre></pre><pre></pre>
+    <h5 class="fs-5 fw-bold">Create an Object</h5>
+    <p>Syntax: <code class="fs-6">class_name object_name;</code></p>
+    <p>To access the attributes of the class, we have to use the <code class="fs-6">dot</code> syntax
+        <code class="fs-6">(object_name.attribute)</code>.
+    </p>
+    <p>
+        Example:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        #include&lt;iostream&gt;
+        class MyClass {       // The class
+            public:             // Access specifier
+              int myNum;        // Attribute (int variable)
+              string myString;  // Attribute (string variable)
+        };
+        int main() {
+            MyClass myObj;  // Create an object of MyClass
+          
+            // Access attributes and set values
+            myObj.myNum = 15; 
+            myObj.myString = "Some text";
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+
+    <pre></pre><pre></pre>
+    <h5 class="fs-5 fw-bold">Create Methods</h5>
+    <p>
+        We can declare methods inside of the class or outside of the class definition.
+        And, to call the method, we use the same way as calling attributes (using the 
+        <code class="fs-6">dot</code> syntax). 
+    </p>
+    <p>
+        Example of the inside of the class method:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        #include&lt;iostream&gt;
+        class MyClass {       // The class
+            public:             // Access specifier
+              int myNum;        // Attribute (int variable)
+              void greet(){
+                std::cout<<”Hello!”;
+              }
+        };
+        int main() {
+            MyClass myObj;  // Create an object of MyClass
+          
+            // Access attributes and set values
+            myObj.myNum = 15; 
+            myObj.greet();
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+    <p>
+        Example of the outside of the class method:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        #include&lt;iostream&gt;
+        class MyClass {       // The class
+            public:             // Access specifier
+              int myNum;        // Attribute (int variable)
+        };
+          
+        void MyClass::greet(){
+            std::cout<<”Hello!”;
+        }
+          
+        int main() {
+            MyClass myObj;  // Create an object of MyClass
+        
+            // Access attributes and set values
+            myObj.myNum = 15; 
+            myObj.greet();
+            return 0;
+          }
+        </code></pre></div>
+    </p>
+    <pre></pre><pre></pre>
+    <h5 class="fs-5 fw-bold">Constructors</h5>
+    <p>
+        Constructors is a special method that is automatically called when an object of a class
+        is created. Constructors have the same name as the class and it is always public.
+        Constructors also do not have any return value.
+    </p>
+    <p>
+        Syntax:<div class='bg-plblack codee'>
+        <pre><code class="fs-6 ">
+        class_name (){
+            //lines of code	
+        }
+        </code></pre></div>
+    </p>
+    <p>
+        Example:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        #include&lt;iostream&gt;
+        class MyClass {     // The class
+            public:           // Access specifier
+              MyClass() {     // Constructor
+                std::cout << "Hello World!";
+            }
+        };
+          
+        int main() {
+            MyClass myObj;   // Create an object of MyClass (this will call the constructor)
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+
+    <pre></pre><pre></pre><pre></pre>
+    <h4 class="fs-3 kanit header">Encapsulation</h4>
+    <p>
+        Encapsulation ensures sensitive data hidden from users. To do this,
+        we just need to make the class access specifiers <code class="fs-6">private</code>.
+        And, if you want others to read or modify the value of a
+        <code class="fs-6">private</code> member, you can provide <code class="fs-6">public</code>
+        <code class="fs-6">get</code> and <code class="fs-6">set</code> methods.
+    </p>
+    <p>
+        Example:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        #include&lt;iostream&gt;
+        class Cube {
+            private:
+              // Private attribute
+              int side;
+          
+            public:
+              // Setter
+              void setSide(int s) {
+                side = s;
+              }
+              // Getter
+              int getSide() {
+                return side;
+              }
+        };
+          
+        int main() {
+            Cube myObj;
+            myObj.setSide(5);
+            cout << myObj.getSide();
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+
+    <pre></pre><pre></pre><pre></pre>
+    <h4 class="fs-3 kanit header">Inheritance</h4>
+    <p>
+        Inheritance means inheriting the attributes and methods from one class to another.
+        We say that the class that inherits from another class is a derived class (child class),
+        while the class being inherited from is the base class (parent class). 
+    </p>
+    <p>
+        Example:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        #include&lt;iostream&gt;
+        class MySchool {     // The base class
+            public:           
+                int members;
+                void welcome(){
+                    std::cout<< ”Welcome!”;
+                }
+        };
+          
+        class MyClass: public MySchool {     // The derived class
+            public:           				
+                char name = 'b';
+        };
+          
+        int main() {
+            MyClass myObj;
+            myObj.welcome();   
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+
+    <pre></pre><pre></pre><pre></pre>
+    <h4 class="fs-3 kanit header">Polymorphism</h4>
+    <p>
+        Polymorphism enables users to use methods to perform different tasks.
+        This allows users to perform a single action in different ways.
+    </p>
+    <p>
+        Example:<div class="bg-plblack codee2">
+        <pre><code class="fs-6 ">
+        #include&lt;iostream&gt;
+        #include&lt;string&gt;
+
+        // Base class
+        class Animal {
+            public:
+                void animalSound() {
+                    std::cout << "The animal makes a sound \n";
+                }
+        };
+            
+        // Derived class
+        class Pig : public Animal {
+            public:
+                void animalSound() {
+                    std::cout << "The pig says: wee wee \n";
+                }
+        };
+            
+        // Derived class
+        class Dog : public Animal {
+            public:
+                void animalSound() {
+                    std::cout << "The dog says: bow wow \n";
+                }
+        };
+            
+        int main() {
+            Animal myAnimal;
+            Pig myPig;
+            Dog myDog;
+            
+            myAnimal.animalSound();
+            myPig.animalSound();
+            myDog.animalSound();
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+
+    </div>
+    </div>
+    </div>
+    </div>
+  
+       
+  <pre></pre><pre></pre><pre></pre>
+  
+    <div class="footer">
+    <div class="row">
+        <div class="col-md-8 tosca centerin">
+        <p>© Copyright 2023 return 0;</p>
+        </div>
+        <div class="col-md-4 tosca centerin2">
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
+        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
+        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
