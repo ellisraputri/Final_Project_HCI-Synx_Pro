@@ -75,7 +75,7 @@
               <a class="nav-link" href="fd_c_pointer.html">Pointers</a>
               <a class="nav-link" href="fd_c_function.html">Functions</a>
               <a class="nav-link" href="fd_c_module.html">Modules</a>
-              <a class="nav-link" href="fd_c_file.html">Files</a>
+              <a class="nav-link" href="fd_c_file.html">File Handling</a>
               <a class="nav-link" href="fd_c_cheatsheet.html">Cheat Sheet</a>
             </nav>
           </nav>
@@ -102,7 +102,7 @@
                 <a class="nav-link" href="fd_c_pointer.html">Pointers</a>
                 <a class="nav-link" href="fd_c_function.html">Functions</a>
                 <a class="nav-link" href="fd_c_module.html">Modules</a>
-                <a class="nav-link" href="fd_c_file.html">Files</a>
+                <a class="nav-link" href="fd_c_file.html">File Handling</a>
                 <a class="nav-link" href="fd_c_cheatsheet.html">Cheat Sheet</a>
               </nav>
             </div>
@@ -111,10 +111,10 @@
   
     <div class="col-lg-10">
     <div class="content2">
-    <h1 class="fs-1 kanit header">Array</h1>
+    <h1 class="fs-1 kanit">Arrays</h1>
     <pre></pre>
     
-    <h4 class="fs-3 fw-bolder">Array</h4>
+    <h4 class="fs-3 kanit header">Arrays</h4>
     <p>Arrays are used to store multiple values in a single variable.</p>
 
     <h5 class="fs-5 fw-bold">Define an Array</h5>
@@ -205,7 +205,7 @@
     </p>
 
     <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
-    <h4 class="fs-3 fw-bolder">Structures</h4>
+    <h4 class="fs-3 kanit header">Structures</h4>
     <p>Structures (also called structs) are a way to group several related variables into one place.
         Each variable in the structure is known as a member of the structure.
         The variables in struct can have several different data types.
@@ -275,7 +275,7 @@
         <div class="bg-plblack codee2">
         <pre>
         <code class="fs-6">
-        struct struct_name structure_variable_name1 = {value1, value2, …, valuen};
+        struct struct_name structure_variable_name1 = {value1, …};
         struct struct_name structure_variable_name2;
         
         structure_variable_name2 = structure_variable_name1;
@@ -336,7 +336,7 @@
 
     <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
 
-    <h4 class="fs-3 fw-bolder">Strings</h4>
+    <h4 class="fs-3 kanit header">Strings</h4>
     <p>
         C does not have a string type variable,
         so we have to use array of characters when we want to make a string variable.
@@ -346,8 +346,8 @@
         <div class="bg-plblack codee2">
         <pre>
         <code class="fs-6">
-        char variable_name1[] = “some text”;
-        char variable_name2[] = {'s', 'o', 'm', 'e', ' ', 't', 'e', 'x', 't', '\0'};
+        char variable_name1[] = “text”;
+        char variable_name2[] = {'t', 'e', 'x', 't', '\0'};
         </code>
         </pre>
         </div>
