@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ - Input Output</title>
+    <link rel="stylesheet" href="stylefundict.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <nav class="navbar navbar-expand-xl tosca fixed-top">
+          <div class="container-fluid fw-bold tata">
+            <a class="navbar-brand text-uppercase" href="index.html">
+              <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="syntaxcomp.html">Syntax Comparison</a>
+                </li>
+                <li class="nav-item dropdown underline11">
+                  <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="fd_c_home.html">C</a></li> 
+                    <li><a class="dropdown-item active" aria-current="page" href="fd_cpp_home.html">C++</a></li>
+                    <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
+                  <ul class="dropdown-menu tosca-hover">
+                    <li><a class="dropdown-item" href="tips_c.html">C</a></li>
+                    <li><a class="dropdown-item" href="tips_cpp.html">C++</a></li>
+                    <li><a class="dropdown-item" href="tips_py.html">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="faq_c.html">C</a></li>
+                    <li><a class="dropdown-item" href="faq_cpp.html">C++</a></li>
+                    <li><a class="dropdown-item" href="faq_py.html">Python</a></li>
+                  </ul>
+                </li>             
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    
+    <div class="body">
+      <div class="row">
+        <div class="col-2 sidenavv sticky-top d-none d-lg-block">
+          <nav  class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="fd_cpp_home.html">Home</a>
+              <a class="nav-link " href="fd_cpp_variable.html">Variable and Data Type</a>
+              <a class="nav-link" href="fd_cpp_input.html"><div class="sidenavv-active">Input Output</div></a>
+              <a class="nav-link" href="fd_cpp_operator.html">Operators</a>
+              <a class="nav-link" href="fd_cpp_array.html">Arrays</a>
+              <a class="nav-link" href="fd_cpp_condloop.html">Conditional and Loops</a>
+              <a class="nav-link" href="fd_cpp_pointer.html">Pointers</a>
+              <a class="nav-link" href="fd_cpp_function.html">Functions</a>
+              <a class="nav-link" href="fd_cpp_class.html">Classes</a>
+              <a class="nav-link" href="fd_cpp_module.html">Modules</a>
+              <a class="nav-link" href="fd_cpp_file.html">Files</a>
+              <a class="nav-link" href="fd_cpp_cheatsheet.html">Cheat Sheet</a>
+            </nav>
+          </nav>
+        </div>
+  
+        <div class="col-1 d-md-block d-lg-none d-sm-block d-xs-block">
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <pre></pre><pre></pre>
+          <div class="offcanvas-lg offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Navigation Bar</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body sidenavv">
+              <nav class="nav flex-column nav-pills">
+                <a class="nav-link" href="fd_cpp_home.html">Home</a>
+                <a class="nav-link " href="fd_cpp_variable.html">Variable and Data Type</a>
+                <a class="nav-link" href="fd_cpp_input.html"><div class="sidenavv-active">Input Output</div></a>
+                <a class="nav-link" href="fd_cpp_operator.html">Operators</a>
+                <a class="nav-link" href="fd_cpp_array.html">Arrays</a>
+                <a class="nav-link" href="fd_cpp_condloop.html">Conditional and Loops</a>
+                <a class="nav-link" href="fd_cpp_pointer.html">Pointers</a>
+                <a class="nav-link" href="fd_cpp_function.html">Functions</a>
+                <a class="nav-link" href="fd_cpp_class.html">Classes</a>
+                <a class="nav-link" href="fd_cpp_module.html">Modules</a>
+                <a class="nav-link" href="fd_cpp_file.html">Files</a>
+                <a class="nav-link" href="fd_cpp_cheatsheet.html">Cheat Sheet</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+  
+    <div class="col-lg-10">
+    <div class="content2">
+    <h1 class="fs-1 kanit header">Input and Output</h1>
+    <pre></pre>
+        <h4 class="fs-3 fw-bolder">Output</h4>
+        <p>C++ uses <code class="fs-6">std::cout</code> to print output text or values to the console. 
+            <code class="fs-6">std::cout</code> does not insert a new line at the end of the output. 
+            If we want to insert a new line to the output, we have to use <code class="fs-6">std::endl</code>. 
+        </p>
+        <p>Syntax: &nbsp;
+            <code class="fs-6">std::cout &lt;&lt; ”Some random text” &lt;&lt; std::endl;</code>
+        </p>
+        <p>The syntax above is used to print the text inside the “ “ and insert a new line after 
+            the word text. The output will be “some random text” and a new line below it. The 
+            word <code class="fs-6">std</code> means we can use names and objects from the standard library. In this case, 
+            the <code class="fs-6">cout</code> function.</p>
+        
+        <p><code class="fs-6">std::cout</code> can also be used to print the value of a variable.<br/>
+            Syntax: <code class='fs-6'>std::cout &lt;&lt; variable_name;</code> 
+        </p>
+
+        <p>Example:
+        <div class="bg-plblack codee">
+        <pre>
+            <code class="fs-6">
+            #include &lt;iostream&gt;
+
+            int main() {
+                int myNum = 19;
+    
+                std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
+                std::cout &lt;&lt; myNum;
+
+                return 0;
+                }            
+            </code>
+        </pre>
+        </div>
+
+        Output:
+        <div class="bg-plblack codee">
+            <pre>
+                <code class="fs-6">
+                Hello World!
+                19  
+                </code>
+            </pre>
+            </div>
+        </p>
+
+        We can also omit the <code class="fs-6">std::</code> in front of the <code class="fs-6">cout</code>. 
+        But, we have to replace it with <code class="fs-6">using namespace std;</code> before the main function. 
+        The code below has the same output as the previous code, but it uses <code class="fs-6">using namespace std;</code>
+         instead.
+         <p><div class="bg-plblack codee">
+            <pre>
+                <code class="fs-6">
+                #include &lt;iostream&gt;
+                using namespace std;
+
+                int main() {
+                  int myNum = 19;
+                    
+                  cout &lt;&lt; "Hello World!" &lt;&lt; endl;
+                  cout &lt;&lt; myNum;
+                    
+                  return 0;
+                
+                }            
+                </code>
+            </pre>
+            </div></p>
+
+
+        <pre></pre><pre></pre><pre></pre><pre></pre>
+
+        <h4 class="fs-3 fw-bolder">Input</h4>
+        <p>In C++, you can use the <code class="fs-6">cin</code> function to get user input.
+            <code class="fs-6">cin</code> can also get multiple inputs by separating the inputs 
+            by the operator <code class="fs-6">&gt;&gt;</code>.
+            Remember that <code class="fs-6">cin</code> uses the operator <code class="fs-6">&gt;&gt;</code>, 
+            while <code class="fs-6">cout</code> uses the operator <code class="fs-6">&lt;&lt;</code>;.
+        </p>
+        <p>Syntax: &nbsp;
+            <code class="fs-6">std::cin &gt;&gt; input1 &gt;&gt; input2 &gt;&gt; inputn;</code>
+        </p>
+
+        <p>Example:
+        <div class="bg-plblack codee">
+        <pre>
+            <code class="fs-6">
+            #include &lt;iostream&gt;
+
+            int main() {
+                int myNum;
+                char myChar;
+
+                std::cout &lt;&lt; "Input a number and a character: ";
+                std::cin &gt;&gt; myNum &gt;&gt; myChar;
+                std::cout &lt;&lt; myNum &lt;&lt; myChar;
+                return 0;
+            }            
+            </code></pre></div>
+        </p>
+        <p>
+            Output:
+            <div class="bg-plblack codee">
+                <pre>
+                    <code class="fs-6">
+                Input a number and a character: 23 C
+                23C
+                    </code>
+                </pre>
+            </div>
+        </p>
+
+        <p> <code class="fs-6">cin</code> can also take string input, but it will only accept the string until it sees a 
+            white space. To avoid this error, we use <code class="fs-6">getline(std::cin, variable_name)</code> to get the
+            whole line of input
+            instead of just <code class="fs-6">cin</code>. We can still 
+            use <code class="fs-6">cin</code> only if the string does 
+            not contain any white space between the contents. Be sure to 
+            include the <code class="fs-6">&lt;string&gt;</code> library too because 
+                we are using the <code class="fs-6">std::string</code> type of variable.</p>
+        
+        <p>Example:
+        <div class="bg-plblack codee">
+        <pre>
+            <code class="fs-6">
+            #include &lt;iostream&gt;
+            #include &lt;string&gt;
+
+            int main() {
+                std::string myName;
+
+                std::cout &lt;&lt; "Input your full name: ";
+                getline(std::cin, myName);
+                std::cout &lt;&lt; myName;
+                return 0;
+            }            
+            </code>
+        </pre>
+        </div>
+        </p>
+
+        <p>
+            Output:
+            <div class="bg-plblack codee">
+                <pre>
+                    <code class="fs-6">
+                Input your full name: John Doe
+                John Doe
+                    </code>
+                </pre>
+            </div>
+            If we don't use the getline function, the myName variable will only contains John, not John Doe.
+        </p>
+
+        <pre></pre><pre></pre><pre></pre><pre></pre>
+
+        <h4 class="fs-3 fw-bolder">Comments</h4>
+        <p>Comments can be used to explain what does a block of code do. Comments can 
+            also be used to prevent the execution of some lines of code.
+            There are two types of comments in C++:</p>
+        <ul>
+            <li>Single Line Comment</li>
+            <p>Any text between <code class="fs-6">//</code> and the end of the line will not be 
+                executed by the compiler. <br/>
+                Syntax: <code class="fs-6">//some comments here</code> 
+            </p>
+
+            <li>Multiple Line Comments</li>
+            <p>Any text between <code class="fs-6">/*</code> and <code class="fs-6">*/</code> will not be 
+                executed by the compiler. <br/>Syntax:  
+                <div class="bg-plblack codee">
+                <pre>
+                <code class="fs-6">
+            /*	Hello world!
+                Some comment here
+            */                       
+                </code>
+            </pre>
+            </div>
+            </p>
+        </ul>
+        <pre></pre>
+        
+        <p>Example:
+        <div class="bg-plblack codee2">
+            <pre><code class="fs-6">
+            #include &lt;iostream&gt;
+            #include &lt;string&gt;
+    
+            int main() {
+                std::string myName;
+
+                //this line will not be executed
+                std::cout &lt;&lt; "Input your full name: ";
+                getline(std::cin, myName);
+
+                /*
+                std::cout &lt;&lt; "hello";
+                The console will not show "hello" because the
+                std::cout &lt;&lt; "hello" is in the comment and will not 
+                be executed.
+                */
+
+                return 0;
+            }            
+            </code>
+            </pre>
+        </div>
+        </p>
+
+        <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
+
+        <h4 class="fs-3 fw-bolder">Escape Sequences</h4>
+        <p>Escape sequences are mostly used to control or format the output.
+            It started with a backslash (\) and followed by another character.
+            Example:        
+            <div class="bg-plblack codee">
+            <pre><code class="fs-6">
+            #include &lt;stdio.h&gt;
+    
+            int main() {
+                std::cout &lt;&lt; "Hello,\nWorld!";
+
+                /*The output will be
+                Hello,
+                World!
+                Instead of 
+                Hello,World!
+                */
+
+                return 0;
+            }            
+            </code></pre>
+            </div>
+
+        </p>
+        <pre></pre><pre></pre>
+
+        <p>Below are the most commonly used escape sequences.</p>
+        <table class="table table-light table-hover table-striped table-bordered w-auto">
+            <thead>
+            <tr class="table-secondary">
+                <th scope="col" class="text-center align-middle">Escape Sequences</th>
+                <th scope="col" class="text-center align-middle">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th class="text-center align-middle">\n (newline)</th>
+                <td class="text-center align-middle">Insert a new line on the output (have the same use as std::endl).</td>
+            </tr>
+            <tr>
+                <th class="text-center align-middle">\t (tab)</th>
+                <td class="text-center align-middle">Insert a horizontal tab on the output.</td>
+            </tr>
+            <tr>
+                <th class="text-center align-middle">\\ (backslash)</th>
+                <td class="text-center align-middle">Backslash can't be printed directly as it 
+                    is used for escape sequences in C, so <br>we have to place another backslash following 
+                    the backslash used for <br>an escape sequence. So, to print backslash, we type \\ not \</td>
+            </tr>
+            <tr>
+                <th class="text-center align-middle">\' (single quote)</th>
+                <td class="text-center align-middle">Print a single quote in the output</td>
+            </tr>
+            <tr>
+                <th class="text-center align-middle">\" (double quote)</th>
+                <td class="text-center align-middle">Print a double quote in the output</td>
+            </tr>
+            <tr>
+                <th class="text-center align-middle">\? (question mark)</th>
+                <td class="text-center align-middle">Print a question mark in the output</td>
+            </tr>
+            <tr>
+                <th class="text-center align-middle">\b (backspace)</th>
+                <td class="text-center align-middle">Move the cursor one position back in the current line of text.</td>
+            </tr>
+            <tr>
+                <th class="text-center align-middle">\a (alert or bell)</th>
+                <td class="text-center align-middle">A beep is generated by the computer on execution.</td>
+            </tr>
+            <tr>
+                <th class="text-center align-middle">\r (carriage return)</th>
+                <td class="text-center align-middle">Move the cursor to the beginning of the current line.</td>
+            </tr>
+            <tr>
+                <th class="text-center align-middle">\v (vertical tab)</th>
+                <td class="text-center align-middle">Insert a vertical tab on the output.</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <pre></pre><pre></pre><pre></pre><pre></pre>
+        <h4 class="fs-3 fw-bolder">Exception Handling</h4>
+        <p>An exception is an exceptional circumstance that appears when a program is executed. 
+            For example, division by zero, invalid inputs, and many more. C++ exception handling 
+            consists of three major keywords:
+            <ul>
+                <li>throw</li>
+                A program throws an exception when a problem shows up.
+                Syntax: throw n;
+                n can be a variable, a value, or even a function.
+
+                <li>try</li>
+                A try block identifies which block of code will be tested 
+                and performed exception-catching.  The keyword try has to be 
+                followed by one or more catch keywords to perform the exception-catching.
+                
+                <li>catch</li>
+                The catch keyword indicates the catching of an exception.
+                Syntax:        
+                <div class="bg-plblack codee">
+                <pre><code class="fs-6">
+                try {
+                // protected code
+                } catch( ExceptionName e1 ) {
+                // code to handle the exception e1
+                } catch( ExceptionName e2 ) {
+                //code to handle the exception e2
+                } catch( ExceptionName eN ) {
+                // code to handle the exception eN
+                }
+                </code></pre>
+                </div>
+            </ul>
+           
+        </p>
+<br/>
+        <p> Example:        
+            <div class="bg-plblack">
+            <pre><code class="fs-6">
+            #include &lt;stdio.h&gt;
+
+            /*below is the division function that is defined by the user. You can learn 
+            more about defining your own function in the function page */
+
+            double division(int a, int b) {
+                if( b == 0 ){
+                    throw "Division by zero!";
+                }
+                return (a/b);
+            }
+
+            int main () {
+                int x = 50;
+                int y = 0;
+                double z = 0;
+ 
+                try { 
+                    z = division(x, y);
+                    std::cout &lt;&lt; z &lt;&lt; std::endl; 
+                } //test the above code block
+
+                catch (const char* msg) {
+                    std::cerr &lt;&lt; msg &lt;&lt; std::endl;
+                } 
+                
+                /*if the result type is const char* (the result is the message “Division by zero!”), 
+                then cerr (print error message) of the msg. In this case, msg is “Division by zero!” */
+
+                return 0;
+            }
+            </code></pre>
+            </div>
+            The output of this block of code is "Division by zero!"
+        </p>
+
+    </div> <!--content2-->
+    </div> <!--col 10-->
+    </div> <!--row-->
+    </div> <!--body-->
+  
+       
+  <pre></pre><pre></pre><pre></pre>
+  
+    <div class="footer">
+    <div class="row">
+        <div class="col-md-8 tosca centerin">
+        <p>© Copyright 2023 return 0;</p>
+        </div>
+        <div class="col-md-4 tosca centerin2">
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
+        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
+        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

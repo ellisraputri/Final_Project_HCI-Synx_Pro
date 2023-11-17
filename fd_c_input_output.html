@@ -117,13 +117,13 @@
     <pre></pre>
     
     <h4 class="fs-3 fw-bolder">Output</h4>
-    <p>C uses <code>printf()</code> to print output text or values to the console. 
-        <code>printf()</code> does not insert a new line at the end of the output. </p>
+    <p>C uses <code class="fs-6">printf()</code> to print output text or values to the console. 
+        <code class="fs-6">printf()</code> does not insert a new line at the end of the output. </p>
       <p>Syntax: &nbsp;
         <code class="fs-6">printf("some random text")</code> is used to print text inside the " ".
     </p>
 
-    <p><code>printf("format specifier", variable_name)</code> is used to print the variable specified. 
+    <p><code class="fs-6">printf("format specifier", variable_name)</code> is used to print the variable specified. 
         Format specifier is used to specify which data type that you want to use. You can 
         see what is a format specifier in the variable and data type page.</p>
 
@@ -155,7 +155,7 @@
 
     <p>Format specifier is used to specify which data type that you want to use. 
         You can see what is a format specifier in the variable and data type page.
-        <code>scanf()</code> can also accept multiple inputs.
+        <code class="fs-6">scanf()</code> can also accept multiple inputs.
     </p>
 
       <p>Example:
@@ -177,10 +177,10 @@
       </div>
     </p>
 
-    <p> <code>scanf()</code> can also take string input, but it will only accept the string until it sees a 
-        white space. To avoid this error, we use <code>fgets(fullName, sizeof(fullName), stdin)</code>
-        instead of <code>scanf()</code>. We can still 
-        use <code>scanf("%s", &variable_name)</code> if the string does 
+    <p> <code class="fs-6">scanf()</code> can also take string input, but it will only accept the string until it sees a 
+        white space. To avoid this error, we use <code class="fs-6">fgets(fullName, sizeof(fullName), stdin)</code>
+        instead of <code class="fs-6">scanf()</code>. We can still 
+        use <code class="fs-6">scanf("%s", &variable_name)</code> if the string does 
         not contain any white space between the contents.</p>
     
     <p>Example:
@@ -209,13 +209,13 @@
         There are two types of comments in C:</p>
     <ul>
         <li>Single Line Comment</li>
-        <p>Any text between <code>//</code> and the end of the line will not be 
+        <p>Any text between <code class="fs-6">//</code> and the end of the line will not be 
             executed by the compiler. <br/>
             Syntax: <code class="fs-6">//some comments here</code> 
         </p>
 
         <li>Multiple Line Comments</li>
-        <p>Syntax:  Any text between <code>/*</code> and <code>*/</code> will not be 
+        <p>Syntax:  Any text between <code class="fs-6">/*</code> and <code class="fs-6">*/</code> will not be 
             executed by the compiler.
             <div class="bg-plblack codee">
             <pre>
