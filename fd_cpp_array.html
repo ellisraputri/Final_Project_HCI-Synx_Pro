@@ -225,8 +225,47 @@
             </code></pre></div>
         </p>
 
+        <p> For example, the for loops in previous example, 
+          <div class='bg-plblack codee2'>
+          <pre><code class="fs-6 ">
+          for (i = 0; i &lt; 4; i++) {
+              std::cout &lt;&lt; myNumbers[i] &lt;&lt; std::endl;
+          } 
+          </code></pre></div>
+        </p>
 
-        <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
+        <p> Can be simplified to this and they still have the same output.
+          <div class='bg-plblack codee2'>
+          <pre><code class="fs-6 ">
+          for (int i : myNumbers) {
+            std::cout &lt;&lt; i &lt;&lt; std::endl;
+          }
+          </code></pre></div>
+        </p>
+
+        <p> We can also use the <code class="fs-6 ">sizeof()</code> function to return the 
+          size of an array in 
+          byte, so we have to divide the <code class="fs-6 ">sizeof(array)</code> with 
+          <code class="fs-6 ">sizeof(array_type)</code> to know 
+          how many elements that exist in the array. If you want to use easier method, 
+          you can directly use <code class="fs-6 ">std::size(array)</code> to know the amount of the elements in an array.
+          <div class='bg-plblack codee2'>
+          <pre><code class="fs-6 ">
+            #include &lt;iostream&gt;
+
+              int main() {
+              int myNumbers[5] = {20, 30, 40, 50, 60};
+              
+              int byte_size = sizeof(myNumbers); //value is 20
+              int array_size = sizeof(myNumbers)/sizeof(int); //value is 5
+              int array_size2 = std::size(myNumbers); //value is 5
+              
+              return 0;
+            }    
+          </code></pre></div>
+        </p>
+
+        <pre></pre><pre></pre><pre></pre><pre></pre>
         <h4 class="fs-3 kanit header">Structures</h4>
         <p>Structures (also called structs) are a way to group several related variables into one place.
             Each variable in the structure is known as a member of the structure.
@@ -234,22 +273,21 @@
         </p>
         <p>
             To access the structure, you must create a variable of it.
-            Use the <code class="fs-6">struct</code> keyword inside the <code class="fs-6">main()</code> method,
-            followed by the name of the structure and then the name of the structure variable:
+            Use the <code class="fs-6">struct</code> keyword and build your struct inside the 
+            <code class="fs-6">{}</code> and 
+            then followed by the struct variable names that you want to use in your program.
         </p>
         <p>
             Syntax:
-            <div class="bg-plblack codee">
+            <div class="bg-plblack ">
             <pre>
             <code class="fs-6">
-            struct struct_name{
+            int main(){
+                struct {
                 Variable_type1 variable_name1;
                 Variable_type2 variable_name2;
-                …
-            };
-
-            int main(){
-                Struct struct_name structure_variable_name;
+                Variable_typen variable_namen;
+                }struct_variable_name1, struct_variable_name2, struct_variable_namen;
             }
             </code>
             </pre>
@@ -258,65 +296,62 @@
 
         <pre></pre><pre></pre><pre></pre>
         <p>
-            To access the members of a structure, you have to use dot (.) 
-            in <code class="fs-6">int main()</code> after you declare the name of the structure variable.
+          You can also declare the structure outside the main function and give it 
+          a name, so it can be treated as a datatype.
         </p>
         <p>
-            Syntax: <code class="fs-6">structure_variable_name.variable_name1 = value;</code>
+          Syntax:
+          <div class="bg-plblack ">
+          <pre>
+          <code class="fs-6">
+            struct struct_name{
+              Variable_type1 variable_name1;
+              Variable_type2 variable_name2;
+              Variable_typen variable_namen;
+            };
+
+            int main(){
+              struct_name struct_variable_name;
+            }            
+          </code>
+          </pre>
+          </div>
+        </p>
+
+        <p>
+          To access the members of a structure, you have to use dot (.) in <code class="fs-6">int main()</code> 
+          after you declare the name of the structure variable.<br/>
+          Syntax: <code class="fs-6">struct_variable_name.variable_name1 = value;</code>
         </p>
         <p>
-            For string, as it is an array of characters, when we want to access them,
-            we have to use strcpy instead of just assigning it with the operator “=”. 
-            To use the function <code class="fs-6">strcpy()</code>, 
-            we need to include the header file <code class="fs-6">&lt;string.h&gt;</code>.
+          We can also assign values to multiple variables at once with this syntax.<br/>
+          Syntax: <code class="fs-6">struct_variable_name = {value1, value2, …, valuen};</code>
         </p>
         <p>
-            Syntax:
+          We can also assign the values of a structure variable to another structure variable.<br/>
+          Syntax: 
             <div class="bg-plblack codee2">
             <pre>
             <code class="fs-6">
-            #include &lt;string.h&gt;
-                strcpy(structure_variable_name.variable_name1, "text");
+            struct_name structure_variable_name1 = {value1, value2, …, valuen};
+            struct_name structure_variable_name2;      
+            structure_variable_name2 = structure_variable_name1;        
             </code>
             </pre>
             </div>
         </p>
-        <pre></pre><pre></pre>
-
-        <p>
-            We can also assign values to multiple variables at once with this syntax.
-        </p>
-        <p>
-            Syntax: <code class="fs-6">struct struct_name structure_variable_name = {value1, value2, …, valuen};</code>
-        </p>
-        <pre></pre><pre></pre>
-
-        <p>We can also assign the values of a structure variable to another structure variable.</p>
-        <p>
-            Syntax:
-            <div class="bg-plblack codee2">
-            <pre>
-            <code class="fs-6">
-            struct struct_name structure_variable_name1 = {value1, value2, …, valuen};
-            struct struct_name structure_variable_name2;
-            
-            structure_variable_name2 = structure_variable_name1;
-            </code>
-            </pre>
-            </div>
-        </p>
-        <pre></pre><pre></pre>
 
         <p>
             Example code:
-            <div class="bg-plblack codee2">
+            <div class="bg-plblack">
             <pre>
             <code class="fs-6">
-            #include &lt;stdio.h&gt;
+            #include &lt;iostream.h&gt;
+            #include &lt;string.h&gt;
 
             struct Phone {
                 int price;
-                char brand[10];
+                std::string brand;
                 int year;
             };
             
@@ -329,10 +364,11 @@
                 phone4 = phone3; //assign the value of phone3 to phone4
                 phone4.year = 2022; //change phone4's year to 2022
                 
-                printf("%d %s %d\n", phone1.price, phone1.brand, phone1.year);
-                printf("%d %s %d\n", phone2.price, phone2.brand, phone2.year);
-                printf("%d %s %d\n", phone3.price, phone3.brand, phone3.year);
-                printf("%d %s %d\n", phone4.price, phone4.brand, phone4.year);
+                std::cout&lt;&lt; " " &lt;&lt; phone1.price&lt;&lt; " " &lt;&lt; phone1.brand &lt;&lt; " " &lt;&lt;  phone1.year &lt;&lt; std::endl;
+                std::cout&lt;&lt; " " &lt;&lt; phone2.price&lt;&lt; " " &lt;&lt; phone2.brand &lt;&lt; " " &lt;&lt;  phone2.year &lt;&lt; std::endl;
+                std::cout&lt;&lt; " " &lt;&lt; phone3.price&lt;&lt; " " &lt;&lt; phone3.brand &lt;&lt; " " &lt;&lt;  phone3.year &lt;&lt; std::endl;
+                std::cout&lt;&lt; " " &lt;&lt; phone4.price&lt;&lt; " " &lt;&lt; phone4.brand &lt;&lt; " " &lt;&lt;  phone4.year &lt;&lt; std::endl;
+
             
                 return 0;
             }
@@ -360,65 +396,63 @@
 
         <h4 class="fs-3 kanit header">Strings</h4>
         <p>
-            C does not have a string type variable,
-            so we have to use array of characters when we want to make a string variable.
+          Unlike C, C++ have a string type variable and we can operate C++ 
+          string like how we operate other types of variable.
         </p>
+        <h5 class="fs-5 fw-bold">Concatenation</h5>
+        <p>C++ uses the operator + to concatenate strings. Another way is to use 
+          <code class="fs-6">append()</code> function. The different is append can only 
+          take one string or parameter at a time. 
+        </p>
+
         <p>
             Syntax:
             <div class="bg-plblack codee2">
             <pre>
             <code class="fs-6">
-            char variable_name1[] = “some text”;
-            char variable_name2[] = {'s', 'o', 'm', 'e', ' ', 't', 'e', 'x', 't', '\0'};
+            variable_result = string1 + string2 + stringn;
+            variable_result = string1.append(string2);  
             </code>
             </pre>
             </div>
         </p>
-        <p>
-            Every C string has a null character inside them so the size of the string “some text”
-            is not 9, but instead 10. We can use <code class="fs-6">sizeof(variable_name)</code> 
-            in the <code class="fs-6">printf</code> statement to know the array size.
-            If we assign it like how we assign <code class="fs-6">variable_name2</code>,
-            then we have to assign a null character too, so the first way is easier.
+
+        <br/>
+        <h5 class="fs-5 fw-bold">Access String Elements</h5>
+        <p>String in C++ can be accessed just like an array by using the index number. 
+          We can then change the value of an element of the string. <br/>
+          Syntax: <code class="fs-6">string1[index_number] = value;</code>
         </p>
-        <p>
-            Because a string in C is an array of characters, to modify strings,
-            you can use the same method when we modify the array earlier.
-            You can also loop through strings with for loops because they are arrays.
+
+        <br/>
+        <h5 class="fs-5 fw-bold">Length of the String</h5>
+        <p>To know a string length, we can use <code class="fs-6">size()</code> 
+          function or <code class="fs-6">length()</code> function.<br/>
+          Syntax: <code class="fs-6">string1,size()</code> or
+          <code class="fs-6">string1.length()</code>
         </p>
-        <p>
-            Syntax:
-            <div class="bg-plblack codee">
-            <pre>
-            <code class="fs-6">
-            char variable_name1[] = “some text”;
-            Variable_name1[index_number] = 'value';
-            </code>
-            </pre>
-            </div>
-        </p>
-        <pre></pre><pre></pre><pre></pre>
+
         <p>
             Example code:
-            <div class="bg-plblack codee2">
+            <div class="bg-plblack ">
             <pre>
             <code class="fs-6">
-            #include &lt;stdio.h&gt;
+            #include &lt;iostream&gt;
+            #include &lt;string&gt;
 
             int main(){
-                char string1[] = {'s', 'o', 'm', 'e', ' ', 't', 'e', 'x', 't', '\0'};
-                char string2[] = "some text";
-                
-                string2[1] = 'a'; //changing o in some to a
-                printf("%s\n", string1);  
-                
-                for (int i = 0; i < sizeof(string2)-1; ++i) {
-                    printf("%c,", string2[i]);
-                } 
-                
-                printf("\nSize of string1 is %lu\n", sizeof(string1));   
-                printf("Size of string2 is %lu\n", sizeof(string2));
-                return 0;
+              std::string string1= "hello";
+              std::string string2 = "world!";
+              
+              std::string concat1 = string1 + " " + string2; 
+              
+              std::string concat2 = string1.append(string2);
+              concat2[1] = 'a'; //change e in hello to a
+              
+              std::cout&lt;&lt; concat1 &lt;&lt; " has a length of " &lt;&lt; concat1.size() &lt;&lt; std::endl;
+              std::cout&lt;&lt; concat2 &lt;&lt; " has a length of " &lt;&lt; concat2.length() &lt;&lt; std::endl;
+              
+              return 0;
             }
             </code>
             </pre>
@@ -429,16 +463,13 @@
             <div class="bg-plblack codee">
             <pre>
             <code class="fs-6">
-            some text
-            s,a,m,e, ,t,e,x,t,
-            Size of string1 is 10
-            Size of string2 is 10
+            hello world! has a length of 12
+            halloworld! has a length of 11
             </code>
             </pre>
             </div>
         </p>
-    
-
+   
     </div> <!--content2-->
     </div> <!--col 10-->
     </div> <!--row-->
