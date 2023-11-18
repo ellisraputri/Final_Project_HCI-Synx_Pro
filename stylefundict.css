@@ -18,6 +18,16 @@
     line-height: 2.0;
     text-align: justify;
   }
+
+  .footer a:hover{
+    padding: 5px;
+    padding-bottom: 8px;
+  }
+  
+  .footer p{
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
   
   .bg-plblack{
     background-color: rgba(0, 0, 0, 0.328);

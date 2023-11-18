@@ -17,6 +17,16 @@ a:hover, .nav-active{
   padding-right: 20px;
 }
 
+.footer a:hover{
+  padding: 5px;
+  padding-bottom: 8px;
+}
+
+.footer p{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
 .bg-plblack{
   background-color: rgba(0, 0, 0, 0.328);
 }
