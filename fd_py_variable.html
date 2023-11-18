@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Variable and Data Type</title>
+    <link rel="stylesheet" href="stylefundict.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <nav class="navbar navbar-expand-xl tosca fixed-top">
+          <div class="container-fluid fw-bold tata">
+            <a class="navbar-brand text-uppercase" href="index.html">
+              <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="syntaxcomp.html">Syntax Comparison</a>
+                </li>
+                <li class="nav-item dropdown underline11">
+                  <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="fd_c_home.html">C</a></li> 
+                    <li><a class="dropdown-item" href="fd_cpp_home.html">C++</a></li>
+                    <li><a class="dropdown-item active" aria-current="page" href="fd_py_home.html">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
+                  <ul class="dropdown-menu tosca-hover">
+                    <li><a class="dropdown-item" href="tips_c.html">C</a></li>
+                    <li><a class="dropdown-item" href="tips_cpp.html">C++</a></li>
+                    <li><a class="dropdown-item" href="tips_py.html">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="faq_c.html">C</a></li>
+                    <li><a class="dropdown-item" href="faq_cpp.html">C++</a></li>
+                    <li><a class="dropdown-item" href="faq_py.html">Python</a></li>
+                  </ul>
+                </li>             
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    
+    <div class="body">
+      <div class="row">
+        <div class="col-2 sidenavv sticky-top d-none d-lg-block">
+            <nav  class="h-100 flex-column align-items-stretch pe-4 border-end">
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="fd_py_home.html">Home</a>
+                <a class="nav-link " href="fd_py_variable.html"><div class="sidenavv-active">Variable and Data Type</div></a>
+                <a class="nav-link" href="fd_py_input.html">Input Output</a>
+                <a class="nav-link" href="fd_py_operator.html">Operators</a>
+                <a class="nav-link" href="fd_py_array.html">Arrays</a>
+                <a class="nav-link" href="fd_py_condloop.html">Conditional and Loops</a>
+                <a class="nav-link" href="fd_py_function.html">Functions</a>
+                <a class="nav-link" href="fd_py_class.html">Classes</a>
+                <a class="nav-link" href="fd_py_module.html">Modules</a>
+                <a class="nav-link" href="fd_py_file.html">Files</a>
+                <a class="nav-link" href="fd_py_cheatsheet.html">Cheat Sheet</a>
+              </nav>
+            </nav>
+          </div>
+    
+          <div class="col-1 d-md-block d-lg-none d-sm-block d-xs-block">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <pre></pre><pre></pre>
+            <div class="offcanvas-lg offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Navigation Bar</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body sidenavv">
+                <nav class="nav flex-column nav-pills">
+                  <a class="nav-link" href="fd_py_home.html">Home</a>
+                  <a class="nav-link " href="fd_py_variable.html"><div class="sidenavv-active">Variable and Data Type</div></a>
+                  <a class="nav-link" href="fd_py_input.html">Input Output</a>
+                  <a class="nav-link" href="fd_py_operator.html">Operators</a>
+                  <a class="nav-link" href="fd_py_array.html">Arrays</a>
+                  <a class="nav-link" href="fd_py_condloop.html">Conditional and Loops</a>
+                  <a class="nav-link" href="fd_py_function.html">Functions</a>
+                  <a class="nav-link" href="fd_py_class.html">Classes</a>
+                  <a class="nav-link" href="fd_py_module.html">Modules</a>
+                  <a class="nav-link" href="fd_py_file.html">Files</a>
+                  <a class="nav-link" href="fd_py_cheatsheet.html">Cheat Sheet</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+  
+    <div class="col-lg-10">
+    <div class="content2">
+    <h1 class="fs-1 kanit">Variable and Data Type</h1>
+    <pre></pre>
+        <h4 class="fs-3 kanit header">Data Type</h4>
+        <p>There are several data types for Python:</p>
+        <table class="table table-light table-hover table-striped table-bordered w-auto">
+            <thead>
+            <tr class="table-secondary">
+                <th scope="col" class="text-center align-middle">Data Type</th>
+                <th scope="col" class="text-center align-middle">Categories</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row" class="text-center align-middle">Text Type </th>
+                <td class="text-center align-middle">str</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">Numeric Type</th>
+                <td class="text-center align-middle">int, float, complex</td>
+        
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">Sequence Type</th>
+                <td class="text-center align-middle">list, tuple, range</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">Mapping Type</th>
+                <td class="text-center align-middle">dict</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">Set Type</th>
+                <td class="text-center align-middle">set, frozenset</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">Boolean Type</th>
+                <td class="text-center align-middle">bool</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">Binary Type</th>
+                <td class="text-center align-middle">bytes, bytearray, memoryview</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">None Type</th>
+                <td class="text-center align-middle">NoneType</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p>To get a data type in Python, we use the type() function. Example:
+            <div class= 'bg-plblack codee'><pre>
+                <code class="fs-6">
+            x=6
+            print(type(x)) #the output will be int
+                </code>
+           </pre> </div> 
+        </p>
+        
+        <pre></pre><pre></pre><pre></pre>
+        <h4 class="fs-3 kanit header">Variable Name</h4>
+        <p>The general rules for naming variables are:</p>
+        <ul>
+            <li>Names can contain letters, digits, and underscores</li>
+            <li>Names must begin with a letter or an underscore (_)</li>
+            <li>Names are case-sensitive (lowercase and uppercase letters have different meanings)</li>
+            <li>Names cannot contain whitespaces or special characters ($, #, %, etc.)</li>
+            <li>Names cannot contain reserved words, such as int, float, etc.</li>
+        </ul>
+
+        <pre></pre><pre></pre><pre></pre>
+        <h4 class="fs-3 kanit header">Creating Variable</h4>
+        <p>Creating variables also known as declaring variables is an action of making a variable to store data.</p>
+        <p>Example: <code class="fs-6">x = 5</code></p>
+        
+        <pre></pre><pre></pre><pre></pre>
+
+        <h4 class="fs-3 kanit header">Assign Value to Variable</h4>
+        <p>Assigning value means storing a value in a variable. 
+            You can assign a value when declaring a variable.</p>
+        <p>Syntax: <code class="fs-6">variable_name = value;</code></p>
+        <p>Example:
+        <div class="bg-plblack codee">
+        <pre>
+            <code class="fs-6">
+            x = 5
+            y = 'me'
+            </code>
+        </pre>
+        </div>
+        </p>
+
+        <pre></pre>
+        <p>To change a variable value, we just need to assign a new value to an existing variable.
+            The new assigned value will overwrite the previous value.
+        </p>
+        <p>Example:
+        <div class="bg-plblack codee">
+        <pre>
+            <code class="fs-6">
+            x = 20 	#the value of x is 20
+            x = 100 	#the value of x is now 100
+            </code>
+        </pre>
+        </div>
+        </p>
+
+        <pre></pre>
+        <p>We can also copy the value of a variable to another variable.</p>
+        <p>Syntax: <code class="fs-6">variable_name1 = variable_name2;</code></p>
+        <p>Example:
+        <div class="bg-plblack codee">
+        <pre>
+            <code class="fs-6">
+            x = 10
+            y = x		#the value of y becomes 10
+            </code>
+        </pre>
+        </div>
+        </p>
+
+        <pre></pre>
+        <p>In Python, the data type is set automatically when we assign a value to a variable.</p>
+        <table class="table table-light table-hover table-striped table-bordered w-auto">
+            <thead>
+            <tr class="table-secondary">
+                <th scope="col" class="text-center align-middle">Example</th>
+                <th scope="col" class="text-center align-middle">Data Type</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = 'Hello'</code> </th>
+                <td class="text-center align-middle">str</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = 20</code></th>
+                <td class="text-center align-middle">int</td>
+        
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = 10.9</code></th>
+                <td class="text-center align-middle">float</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = 3j</code></th>
+                <td class="text-center align-middle">complex</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = [1,2,3,5] </code></th>
+                <td class="text-center align-middle">list</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = (1,2,3) </code></th>
+                <td class="text-center align-middle">tuple</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = range(9) </code></th>
+                <td class="text-center align-middle">range</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = {"name" : "John", "age" : 19} </code></th>
+                <td class="text-center align-middle">dict</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = {1,2,3} </code></th>
+                <td class="text-center align-middle">set</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = frozenset({1,2,3}) </code></th>
+                <td class="text-center align-middle">frozenset</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = bytearray(5) </code></th>
+                <td class="text-center align-middle">bytearray</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = True </code></th>
+                <td class="text-center align-middle">bool</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = memoryview(bytes(5)) </code></th>
+                <td class="text-center align-middle">memoryview</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle"><code class="fs-6">x = None </code></th>
+                <td class="text-center align-middle">NoneType</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <pre></pre><pre></pre><pre></pre>
+
+        <h4 class="fs-3 kanit header">Casting</h4>
+        <p>Casting, also known as type conversion is an action of converting a value of one data type 
+            to another data type. 
+            For example, the conversion of int to float or vice versa. 
+            There are two types of conversion in Python:</p>
+        <ol>
+            <li class="fw-bold fs-5">Implicit Conversion</li>
+            <p>This conversion occurs automatically when we assign a value to a variable.</p>
+            <p>Example:<br/>
+            <div class="bg-plblack"><code class="fs-6">x=8 	#x is automatically set to int</code></div>
+            </p>
+            <pre></pre>
+
+            <li class="fw-bold fs-5">Explicit Conversion</li>
+            <p>This conversion is done manually by using constructor functions. There are three 
+                well-known constructor functions:
+                <ul>
+                    <li>int() - constructs an integer number</li> 
+                    <li>float() - constructs a float number</li>   
+                    <li>str() - constructs a string </li>           
+                </ul><br/>
+            </p>
+            <p>Example:
+            <div class="bg-plblack codee2">
+            <pre>
+                <code class="fs-6">
+                x = int(9.12)	#x will be 9
+                y = float(8)	#y will be 8.0
+                z = str(100)	#z will be '100'
+                </code>
+            </pre>
+            </div>
+            </p>
+        </ol>
+
+        <pre></pre><pre></pre><pre></pre>
+
+        <h4 class="fs-3 kanit header">Variable Scope</h4>
+        <p>Scope is the area in which a variable can be used or can be accessed. For Python 
+            variables, there are 2 types of scopes, local and global. Local variable exists and 
+            can only be accessed in a particular function, while global variable can be accessed 
+            by all functions in the entire program. 
+        </p>
+        <p>Example:
+        <div class="bg-plblack codee2">
+        <pre>
+            <code class="fs-6">
+        x = "Hello!" 	#this is a global variable
+
+        def myFunc(){
+            y = "Hi!"	#this is a local variable
+        } </code>
+        </pre>
+        </div>
+        </p>
+        
+        <p>We can also use the global keyword to make a local variable become global variable.
+            Example:            
+            <div class="bg-plblack codee2">
+            <pre>
+                <code class="fs-6">
+            def myFunc(){
+                global y
+                y = "Hi!"	#y is now a global variable
+            } </code>
+            </pre>
+            </div>
+            </p>
+
+    </div> <!--content2-->
+    </div> <!--col 10-->
+    </div> <!--row-->
+    </div> <!--body-->
+  
+       
+  <pre></pre><pre></pre><pre></pre>
+  
+    <div class="footer">
+    <div class="row">
+        <div class="col-md-8 tosca centerin">
+        <p>© Copyright 2023 return 0;</p>
+        </div>
+        <div class="col-md-4 tosca centerin2">
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
+        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
+        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
