@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Functions</title>
+    <link rel="stylesheet" href="stylefundict.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <nav class="navbar navbar-expand-xl tosca fixed-top">
+          <div class="container-fluid fw-bold tata">
+            <a class="navbar-brand text-uppercase" href="index.html">
+              <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="syntaxcomp.html">Syntax Comparison</a>
+                </li>
+                <li class="nav-item dropdown underline11">
+                  <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="fd_c_home.html">C</a></li> 
+                    <li><a class="dropdown-item "  href="fd_cpp_home.html">C++</a></li>
+                    <li><a class="dropdown-item active"  aria-current="page" href="fd_py_home.html">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
+                  <ul class="dropdown-menu tosca-hover">
+                    <li><a class="dropdown-item" href="tips_c.html">C</a></li>
+                    <li><a class="dropdown-item" href="tips_cpp.html">C++</a></li>
+                    <li><a class="dropdown-item" href="tips_py.html">Python</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="faq_c.html">C</a></li>
+                    <li><a class="dropdown-item" href="faq_cpp.html">C++</a></li>
+                    <li><a class="dropdown-item" href="faq_py.html">Python</a></li>
+                  </ul>
+                </li>             
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    <pre></pre><pre></pre><pre></pre><pre></pre>
+    
+    <div class="body">
+      <div class="row">
+        <div class="col-2 sidenavv sticky-top d-none d-lg-block">
+          <nav  class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="fd_py_home.html">Home</a>
+              <a class="nav-link " href="fd_py_variable.html">Variable and Data Type</a>
+              <a class="nav-link" href="fd_py_input.html">Input Output</a>
+              <a class="nav-link" href="fd_py_operator.html">Operators</a>
+              <a class="nav-link" href="fd_py_array.html">Arrays</a>
+              <a class="nav-link" href="fd_py_condloop.html">Conditional and Loops</a>
+              <a class="nav-link" href="fd_py_function.html"><div class="sidenavv-active">Functions</div></a>
+              <a class="nav-link" href="fd_py_class.html">Classes</a>
+              <a class="nav-link" href="fd_py_module.html">Modules</a>
+              <a class="nav-link" href="fd_py_file.html">File Handling</a>
+              <a class="nav-link" href="fd_py_cheatsheet.html">Cheat Sheet</a>
+            </nav>
+          </nav>
+        </div>
+  
+        <div class="col-1 d-md-block d-lg-none d-sm-block d-xs-block">
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <pre></pre><pre></pre>
+          <div class="offcanvas-lg offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Navigation Bar</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body sidenavv">
+              <nav class="nav flex-column nav-pills">
+                <a class="nav-link" href="fd_py_home.html">Home</a>
+                <a class="nav-link " href="fd_py_variable.html">Variable and Data Type</a>
+                <a class="nav-link" href="fd_py_input.html">Input Output</a>
+                <a class="nav-link" href="fd_py_operator.html">Operators</a>
+                <a class="nav-link" href="fd_py_array.html">Arrays</a>
+                <a class="nav-link" href="fd_py_condloop.html">Conditional and Loops</a>
+                <a class="nav-link" href="fd_py_function.html"><div class="sidenavv-active">Functions</div></a>
+                <a class="nav-link" href="fd_py_class.html">Classes</a>
+                <a class="nav-link" href="fd_py_module.html">Modules</a>
+                <a class="nav-link" href="fd_py_file.html">File Handling</a>
+                <a class="nav-link" href="fd_py_cheatsheet.html">Cheat Sheet</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-10">
+        <div class="content2">
+        <h1 class="fs-1 kanit">Functions</h1>
+        <pre></pre>
+        
+        <h4 class="fs-3 kanit header">Create Function</h4>
+        <p>We create a function with the keyword <code class="fs-6">def</code>.</p>
+        <p>
+            Syntax:<div class="bg-plblack codee2">
+            <pre><code class="fs-6 ">
+            def function_name (parameters):  
+                //line of codes to be executed 
+            </code></pre></div>
+        </p>
+        <p>
+            Example:<div class="bg-plblack codee">
+            <pre><code class="fs-6 ">
+            total=10
+            def store(a):
+                total+=a
+            
+            goods=10
+            store(goods)
+            </code></pre></div>
+        </p>
+        <p>
+            The function above will not return any value, but it will change the variable <code class="fs-6">total</code>.
+        </p>
+        <p>
+            Example:<div class="bg-plblack codee">
+            <pre><code class="fs-6 ">
+            def store (a):
+                total = 10
+                total +=a
+                return total
+            
+            goods=10
+            result = store (goods)            
+            </code></pre></div>
+        </p>
+        <pre></pre><pre></pre>
+        <p>
+            Notice that the function above has the <code class="fs-6">return</code> statement.
+            The <code class="fs-6">return</code> statement is used to return value to other functions.
+            And, because the function has a return value, we need to prepare a variable
+            to store the return value (in this case, 
+            the variable name is <code class="fs-6">result</code>).
+        </p>
+    
+        <pre></pre><pre></pre><pre></pre><pre></pre>
+    
+        <h4 class="fs-3 kanit header">Calling Function</h4>
+        <p>
+            Declared functions are not executed when we don't call them. So,
+            to execute them, we need to call them. To call a function,
+            we merely need to write the function name with parentheses.
+            If the function needs parameters, we need to also include parameters in the parentheses.
+        </p>
+        <p>
+            Syntax:
+            <code class="fs-6">function_name (parameters)</code>
+        </p>
+        <p>
+            Example:<div class="bg-plblack codee2">
+            <pre><code class="fs-6 ">
+            total=10
+            def store(a):
+                total+=a
+            
+            goods=10
+            store(goods)	#calling the function
+            </code></pre></div>
+        </p>
+    
+        <pre></pre><pre></pre><pre></pre><pre></pre>
+    
+        <h4 class="fs-3 kanit header">Arguments</h4>
+        <p>
+            Information can be passed to functions as a parameter. Parameters are variables
+            inside a function that are useful for operations inside the function. There is
+            also another type of parameter called arguments. The argument is a parameter
+            that has been passed to a function, or we can say that the argument is the input
+            from other functions to a particular function.
+        </p>
+        <p>
+            Example:<div class="bg-plblack codee2">
+            <pre><code class="fs-6 ">
+            def displayInfo(age, phone):
+                print(f"This is your age, {age}")
+                print(f"This is your phone number, {phone}")
+            
+            displayInfo(10, 9912);
+            </code></pre></div>
+        </p>
+        <p>
+            In this example, <code class="fs-6">10</code> and <code class="fs-6">9912</code> are the arguments, 
+            while <code class="fs-6">age</code> and <code class="fs-6">phone</code> are the parameters.
+        </p>
+        <pre></pre><pre></pre>
+        <p>
+            We can also set a default parameter value for a function. So, if you call a
+            function but do not provide an argument to it, it will automatically use the default value.
+            A parameter with a default value is called an optional parameter.
+        </p>
+        <p>
+            Example:<div class="bg-plblack codee2">
+                <pre><code class="fs-6 ">
+                def displayInfo(age, phone):
+                    print(f"This is your age, {age}")
+                    print(f"This is your phone number, {phone}")
+                
+                displayInfo(10, 9912);
+                </code></pre></div>
+        </p>
+        <pre></pre><pre></pre>
+        <p>
+            Sometimes when we make a program, we do not know how many arguments that will 
+            be passed into a function. So, we can add arbitrary arguments 
+            (<code class="fs-6">*args</code>). We just need to add asterisk symbol in front 
+            of the parameter's name. 
+        </p>
+        <p>Syntax: <code class="fs-6">*parameter_name</code></p>
+        <p>
+            Example:<div class="bg-plblack codee">
+                <pre><code class="fs-6 ">
+                def display (*toys):
+                    for toy in toys:
+                        print(toy)
+                
+                display("car", "plane", "doll")
+                </code></pre></div>
+        </p>
+        <pre></pre><pre></pre>
+        <p>
+            In Python, we can also pass a parameter using 
+            keyword arguments. So, the order of the arguments passed does not matter.
+        </p>
+        <p>
+            Example:<div class="bg-plblack codee">
+            <pre><code class="fs-6 ">
+            def displayInfo(age, phone):
+                print(f"This is your age, {age}")
+                print(f"This is your phone number, {phone}")
+            
+            displayInfo(phone = 9912, age = 10)
+            </code></pre></div>
+        </p>
+        <pre></pre><pre></pre>
+        <p>
+            If you do not know how many keyword arguments that will be passed into your 
+            function, just use the arbitrary keyword arguments (<code class="fs-6">**kwargs</code>). 
+            This way the function will receive a dictionary of arguments and access them.
+        </p>
+        <p>Syntax: <code class="fs-6">**parameter_name</code></p>
+        <p>
+            Example:<div class="bg-plblack codee">
+            <pre><code class="fs-6 ">
+            def display (**name):
+                print(f"Hello {fname} {lname}!") 
+            
+            display(fname="Jane", lname="Houston")
+            </code></pre></div>
+        </p>
+    
+        <pre></pre><pre></pre><pre></pre><pre></pre>
+        <h4 class="fs-3 kanit header">Lambda</h4>
+        <p>
+            Lambda is an expression that allows us to define function objects which can be
+            used inline. 
+        </p>
+        <p>
+            Syntax:<div class="bg-plblack codee">
+            <pre><code class="fs-6 ">
+            lambda arguments : expression
+            </code></pre></div>
+        </p>
+        <p>
+            Example:<div class="bg-plblack codee">
+            <pre><code class="fs-6 ">
+            x = lambda a : a + 10
+            print(x(5))                
+            </code></pre></div>
+            The output will be 15.
+        </p>
+    
+
+    </div> <!--content2-->
+    </div> <!--col 10-->
+    </div> <!--row-->
+    </div> <!--body-->
+  
+       
+  <pre></pre><pre></pre><pre></pre>
+  
+    <div class="footer">
+    <div class="row">
+        <div class="col-md-8 tosca centerin">
+        <p>© Copyright 2023 return 0;</p>
+        </div>
+        <div class="col-md-4 tosca centerin2">
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
+        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
+        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
