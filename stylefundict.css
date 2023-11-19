@@ -118,6 +118,30 @@
   .dummy{
     height: 300px;
   }
+
+  .toc{
+    border: 1px solid rgb(133, 133, 133);
+    background-color: rgba(133, 133, 133, 0.302);
+    width: fit-content;
+    padding: 10px;
+    padding-right: 20px;
+  }
+
+  .toc a{
+    color: white;
+  }
+
+  .toc a:hover{
+    color:#40c0dd;
+  }
+
+  .toch{
+    color:#40c0dd;
+  }
+
+  #sub1, #sub2, #sub3, #sub4, #sub5, #sub6, #sub7{
+    height: 80px;
+  }
   
   @media(max-width:1280px){
     .codee{
