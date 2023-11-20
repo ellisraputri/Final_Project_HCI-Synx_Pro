@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synx Pro</title>
+    <title>Synx Pro - Syntax Comparison</title>
     <link rel="stylesheet" href="stylesyncomp.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -69,9 +69,26 @@
     <pre></pre><pre></pre>
 
     
-    <div class="container text-center">
-        <div class="row justify-content-evenly roww">
-          <div class="col-md-5 columnn">
+    <div class="container text-center ">
+        <div class="row">
+          <div class="col-lg-3 first_column">
+            <div class="column1">
+              <p>What to Compare?</p>
+            </div>
+
+            <div class="dropdown column3">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Choose one below.
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">C</a></li>
+                  <li><a class="dropdown-item" href="#">C++</a></li>
+                  <li><a class="dropdown-item" href="#">Python</a></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
             <div class="dropdown column1">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Language #1
@@ -83,24 +100,21 @@
                 </ul>
             </div>
 
-            <div class="col tosca column2">
+            <div class="column2">
                 1 of 2
             </div>
           </div>
 
-          <div class="col-md-2 columni">
-            <div class="columni1 text-center">
+          <div class="col-lg-1">
+            <div class="text-center">
                 <button type="button" class="btn">
                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 </button>
             </div>
-
-            <div class="col tosca columni2">
-                
-            </div>
           </div>
 
-          <div class="col-md-5 columnn">
+
+          <div class="col-lg-4">
             <div class="dropdown column1">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Language #2
@@ -112,7 +126,7 @@
                 </ul>
             </div>
             
-            <div class="col tosca column2">
+            <div class="column2">
                 2 of 2
             </div>
 
@@ -122,8 +136,7 @@
     
   </div>
   
-
-  <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
+  <div class="dummy"></div>
 
   <div class="footer">
     <div class="row">
