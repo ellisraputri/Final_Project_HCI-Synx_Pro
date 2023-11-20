@@ -138,6 +138,10 @@
   #sub1, #sub2, #sub3, #sub4, #sub5, #sub6, #sub7{
     height: 80px;
   }
+
+  .dummy{
+    height: 300px;
+  }
   
   @media(max-width:1280px){
     .codee{

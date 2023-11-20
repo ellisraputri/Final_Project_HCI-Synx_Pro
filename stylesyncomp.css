@@ -21,8 +21,6 @@ a:hover, .nav-active{
 
 .body{
     font-family: Montserrat;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .footer a:hover{
@@ -64,34 +62,32 @@ a:hover, .nav-active{
     border-bottom: 2px solid white;
 }
 
-.buttonn{
-    margin-top: 5px;
-}
-
-.columnn{
-    margin: 20px;
-}
 
 .column1{
     background-color: rgba(133, 133, 133, 0.616);
-    
-    margin-bottom: 20px;
+    height: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .column2{
-    min-height: 200px;
-    width: 100%
-    margin: 20px;
-    padding:5px;
     background-color: rgba(186, 185, 185, 0.616);
-}
-
-.columni1{
+    height: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
+
+.dummy{
+    height: 200px;
+}
+
+.convert{
+    padding: 10px;
+    border-color: #166174;
+}
+
 
 @media (max-width:768px) {
     .centerin{
@@ -105,19 +101,20 @@ a:hover, .nav-active{
         margin-left: auto;
         margin-right: auto;
     }
-
-    .columnn, .columni{
-        width: 100%;
-    }
-
-    .roww{
-        display: block;
-    }
-
 }
 
-@media (max-width:400px) {
-    .kotak{
-        max-width: 55%;
+@media (max-width:992px) {
+    .first_column{
+        margin-bottom: 20px;
+    }
+
+    i{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .dummy{
+        height: 50px;
     }
 }
+
