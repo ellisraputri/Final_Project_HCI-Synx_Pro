@@ -16,6 +16,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+      .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+    </style>
 </head>
 
 <body>    
@@ -170,7 +192,7 @@
         </div>
     </div>
 
-    <br>
+    <br/>
 
     <div class="d-flex align-items-center">
         <div class="container align-middle cap">
@@ -183,20 +205,50 @@
             </button>
         </div>
     </div>
+
+    <br/><br/><br/>
+
+    <h4 class="fs-2 fw-bold text-center">Tips and Tricks Videos</h4><br/><br/>
+  
+  </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="tips_video/cpp1.png" class="card-img-top" alt="Tips 1 CPP">
+            <div class="card-body">
+              <p class="card-text fs-5">Top 3 Tips from Stefan Mischook.</p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=dBZd93QviZU">Learn More</a></button>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="tips_video/cpp1.png" class="card-img-top" alt="Tips 1 CPP">
+            <div class="card-body">
+              <p class="card-text fs-5">Top 3 Tips from Stefan Mischook.</p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=dBZd93QviZU">Learn More</a></button>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="tips_video/cpp1.png" class="card-img-top" alt="Tips 1 CPP">
+            <div class="card-body">
+              <p class="card-text fs-5">Top 3 Tips from Stefan Mischook.</p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=dBZd93QviZU">Learn More</a></button>
+            </div>
+          </div>
+      </div>
+    </div>
     
-    
-    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
   </div>
   
 
-  <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
-  <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
-  <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
-  <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
-  <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
-  <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
-  <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
-  <pre></pre><pre></pre><pre></pre><pre></pre><pre></pre><pre></pre>
+  <div class="dummy"></div>
 
   <div class="footer">
     <div class="row">
@@ -211,6 +263,30 @@
       </div>
     </div>
   </div>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 </body>
 </html>

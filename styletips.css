@@ -68,6 +68,8 @@ a:hover, .nav-active{
     margin-top: 5px;
 }
 
+
+/*Flashcardsss*/
 .flip {
     width: 50%;
     aspect-ratio: 16 / 9;
@@ -115,6 +117,32 @@ a:hover, .nav-active{
 button:hover{
     background-color:#c8c8c8b3;
 }
+
+.dummy{
+    height: 400px;
+}
+
+
+/*Video Card Sliderrr*/
+.learn{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card11:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.486), 0 6px 20px 0 rgba(0, 0, 0, 0.52);
+}
+
+.card11 a{
+    color: white;
+    text-decoration: none;
+}
+
+.card11 a:hover{
+    background-color: rgba(0,0,0,0);
+}
+
+
 
 @media (max-width:880px) {
     .flip .kk{
