@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-bs-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <link rel="stylesheet" href="styletips.css"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips and Tricks - C++</title>
+    <link rel="stylesheet" href="styletips.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +19,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Demo styles -->
-  <style>
-    .swiper {
+    <style>
+      .swiper {
       width: 100%;
       padding-top: 50px;
       padding-bottom: 50px;
@@ -42,96 +37,348 @@
       display: block;
       width: 100%;
     }
-  </style>
+
+    .swiper-pagination-bullet{
+    background-color: #fff!important;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+      color: #fff;
+    }
+    </style>
 </head>
 
-<body>
+<body>    
+  <div class="topnav">
+    <nav class="navbar navbar-expand-xl tosca fixed-top">
+      <div class="container-fluid fw-bold">
+        <a class="navbar-brand text-uppercase" href="index.html">
+          <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item nav-underline">
+              <a class="nav-link text-white"  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white"  href="syntaxcomp.html">Syntax Comparison</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="fd_c_home.html">C</a></li>
+                <li><a class="dropdown-item" href="fd_cpp_home.html">C++</a></li>
+                <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown underline11">
+              <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
+              <ul class="dropdown-menu tosca-hover">
+                <li><a class="dropdown-item "  href="tips_c.html">C</a></li>
+                <li><a class="dropdown-item active" aria-current="page"href="tips_cpp.html">C++</a></li>
+                <li><a class="dropdown-item" href="tips_py.html">Python</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="faq_c.html">C</a></li>
+                <li><a class="dropdown-item" href="faq_cpp.html">C++</a></li>
+                <li><a class="dropdown-item" href="faq_py.html">Python</a></li>
+              </ul>
+            </li>             
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <pre></pre><pre></pre><pre></pre><pre></pre>
+  <pre></pre><pre></pre>
+  
+  <div class="body">
+    <h1 class="text-center kanit header">Tips and Tricks (C++)</h1>
+    <pre></pre><pre></pre>
 
+    <h2 class="fs-2 text-center kanit">Tips and Tricks (Flash Cards)</h2>
+    <p class="text-center">Click to flip and see the description!</p>
+    <br/>
     <div class="flip page1">
         <div class="front d-flex align-items-center">
             <div class="container align-middle">
-                <h3 class="text-center fw-bold fs-3">Learn the Variable Types</h3>
+                <h3 class="text-center fw-bold fs-3">Understand the Fundamentals</h3>
             </div>
         </div>
 
         <div class="back d-flex align-items-center">
             <div class="container align-middle kk">
                 <p class="fw-bold">
-                    It is advisable to learn and memorize some of the most commonly used 
-                    variable types. This is because C is a programming language based on 
-                    data types. We need to know the data type to declare a variable's name. 
-                    So, learning variable type is the foundation of writing a C program.
+                  Before starting to code in C++, it is useful to learn about the variable type, 
+                  the syntax, the function, and object-oriented programming. You can test simple 
+                  codes and solve simple problems while learning the fundamentals.
                 </p>
             </div>
         </div>
     </div>
     
 
-    <h1>hello</h1>
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
+    <div class="flip page2">
+        <div class="front d-flex align-items-center">
+            <div class="container align-middle">
+                <h3 class="text-center fw-bold fs-3">Use Online Resources</h3>
+            </div>
+        </div>
+
+        <div class="back d-flex align-items-center">
+            <div class="container align-middle kk">
+                <p class="fw-bold">
+                  There are many online resources available in the internet that can help you 
+                  to learn C++. Most of them are free and some of them also has paid courses. There are
+                  also online communities that can help you answer if you encounter some problems
+                   when coding in C++.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip page3">
+        <div class="front d-flex align-items-center">
+            <div class="container align-middle">
+                <h3 class="text-center fw-bold fs-3">Consistency is the Key</h3>
+            </div>
+        </div>
+
+        <div class="back d-flex align-items-center">
+            <div class="container align-middle kk">
+                <p class="fw-bold">
+                  You have to be consistent to take out some time daily or weekly if you 
+                  want to master C++. You can also plan/set target to complete some milestones
+                   in C++ after some period of time to measure your study.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip page4">
+        <div class="front d-flex align-items-center">
+            <div class="container align-middle">
+                <h3 class="text-center fw-bold fs-3">Learn from Other People Codes</h3>
+            </div>
+        </div>
+
+        <div class="back d-flex align-items-center">
+            <div class="container align-middle kk">
+                <p class="fw-bold">
+                  Sometimes when you don't know what's the algorithm to solve a problem and is confused whatsoever, 
+                  it is better for you to try searching your problem in the internet and learn from other's 
+                  codes. Don't dwell too long on a problem as it will waste your time.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip page5">
+        <div class="front d-flex align-items-center">
+            <div class="container align-middle">
+                <h3 class="text-center fw-bold fs-3">Use C++ Standard Libraries</h3>
+            </div>
+        </div>
+
+        <div class="back d-flex align-items-center">
+            <div class="container align-middle kk">
+                <p class="fw-bold">
+                  To be more efficient in coding and to save more time, you can use built-in functions 
+                  from the C++ Standard Libraries. You can find out more about C++ Standars Libraries 
+                  or Modules in C++ through Function Dictionary. In there, there will be a link that 
+                  will direct you to the documentations of some C++ libraries.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="d-flex align-items-center">
+        <div class="container align-middle cap">
+            <button class="buttonprev">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            &emsp;<div class="mid d-inline">1 / 5</div>&emsp;
+            <button class="buttonnext">
+                <i class="fa-solid fa-arrow-right"></i> 
+            </button>
+        </div>
+    </div>
+
+    <br/><br/><br/>
+  </div>
+
+  <div class="swiper mySwiper body">
+    <h2 class="fs-2 text-center kanit">Tips and Tricks Videos</h2><br/>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="card text-center mx-auto card11" style="width: 18rem;">
-            <img src="tips_video/cpp1.png" class="card-img-top" alt="Tips 1 CPP">
+            <img src="tips_video/cpp1.png" class="card-img-top" alt="Tips 1 Cpp">
             <div class="card-body">
-              <p class="card-text fs-5">Top 3 Tips from Stefan Mischook.</p>
-              <button class="learn"><a href="https://www.youtube.com/watch?v=dBZd93QviZU">Learn More</a></button>
+              <h6 class="fw-bold fs-4">Creator: Stefan Mischook</h6><br/>
+              <p class="card-text">This video is about top 3 C++ learning tips according to the video creator 
+              </p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=dBZd93QviZU">View Video</a></button>
             </div>
           </div>
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="tips_video/cpp2.png" class="card-img-top" alt="Tips 2 Cpp">
+            <div class="card-body">
+              <h6 class="fw-bold fs-4">Creator: Coding with Mat</h6><br/>
+              <p class="card-text">This video is about 7 tips for learning C++ in 2023 
+              </p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=E8Ce6uZ4Ld4">View Video</a></button>
+            </div>
+          </div>
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="tips_video/cpp3.png" class="card-img-top" alt="Tips 3 Cpp">
+            <div class="card-body">
+              <h6 class="fw-bold fs-4">Creator: The Cherno</h6><br/>
+              <p class="card-text">This video is about how to really learn C++ according to the video creator 
+              </p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=_zQqN5OYCCM">View Video</a></button>
+            </div>
+          </div>
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="tips_video/cpp4.png" class="card-img-top" alt="Tips 4 Cpp">
+            <div class="card-body">
+              <h6 class="fw-bold fs-4">Creator: PVS-Studio</h6><br/>
+              <p class="card-text">This video is about how to write better codes in C++ 
+              </p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=KvCmvcnOJdo">View Video</a></button>
+            </div>
+          </div>
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="tips_video/cpp5.png" class="card-img-top" alt="Tips 5 Cpp">
+            <div class="card-body">
+              <h6 class="fw-bold fs-4">Creator: Sync Main</h6><br/>
+              <p class="card-text">This video is about advice for new C++ programmers from the creator's 15 years of experience
+              </p>
+              <button class="learn"><a href="https://youtu.be/37VZu3b045k?si=HNUJ-7PWEe_A1Zxn">View Video</a></button>
+            </div>
+          </div>
       </div>
     </div>
+    <pre></pre><pre></pre>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  
+  <br/><br/>
+  <div class="swiper mySwiper body">
+    <h2 class="fs-2 text-center kanit">Course Videos</h2><br/>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="course_vid/cpp1.png" class="card-img-top" alt="Course 1 Cpp">
+            <div class="card-body">
+              <h6 class="fw-bold fs-4">Creator: freeCodeCamp.org</h6><br/>
+              <p class="card-text">A C++20 programming course from beginner to advanced
+              </p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=8jLOx1hD3_o&pp=ygUQY291cnNlIHZpZGVvIEMrKw%3D%3D">View Video</a></button>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="course_vid/cpp2.png" class="card-img-top" alt="Course 2 Cpp">
+            <div class="card-body">
+              <h6 class="fw-bold fs-4">Creator: Fireship</h6><br/>
+              <p class="card-text">A brief introduction of the programming language C++
+              </p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=MNeX4EGtR5Y&pp=ygUQY291cnNlIHZpZGVvIEMrKw%3D%3D">View Video</a></button>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="course_vid/cpp3.png" class="card-img-top" alt="Course 3 Cpp">
+            <div class="card-body">
+              <h6 class="fw-bold fs-4">Creator: Programming with Mosh</h6><br/>
+              <p class="card-text">An 1 hour C++ tutorials for beginners
+              </p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=ZzaPdXTrSb8&pp=ygUQY291cnNlIHZpZGVvIEMrKw%3D%3D">View Video</a></button>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="course_vid/cpp4.png" class="card-img-top" alt="Course 4 Cpp">
+            <div class="card-body">
+              <h6 class="fw-bold fs-4">Creator: Bro Code</h6><br/>
+              <p class="card-text">Free C++ full course for beginners
+              </p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=-TkoO8Z07hI&pp=ygUQY291cnNlIHZpZGVvIEMrKw%3D%3D">View Video</a></button>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card text-center mx-auto card11" style="width: 18rem;">
+            <img src="course_vid/cpp5.png" class="card-img-top" alt="Course 5 Cpp">
+            <div class="card-body">
+              <h6 class="fw-bold fs-4">Creator: Caleb Curry</h6><br/>
+              <p class="card-text">A C++ programming all-in-one tutorials
+              </p>
+              <button class="learn"><a href="https://www.youtube.com/watch?v=_bYFu9mBnr4&pp=ygUQY291cnNlIHZpZGVvIEMrKw%3D%3D">View Video</a></button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <pre></pre><pre></pre><pre></pre><pre></pre><br/>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
 
-  
 
-  <!-- Swiper JS -->
-  
+  <br/><br/><br/><br/><br/>
+  <div class="footer">
+    <div class="row">
+      <div class="col-md-8 tosca centerin">
+        <p>© Copyright 2023 return 0;</p>
+      </div>
+      <div class="col-md-4 tosca centerin2">
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
+        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
+        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
+      </div>
+    </div>
+  </div>
 
-  <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: "auto",
+      loop: true,
       coverflowEffect: {
-        rotate: 50,
+        rotate: 35,
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
       },
       pagination: {
         el: ".swiper-pagination",
-        type: "progressbar",
+        dynamicBullets: true,
       },
       navigation: {
         nextEl: ".swiper-button-next",
@@ -139,6 +386,6 @@
       },
     });
   </script>
-</body>
 
+</body>
 </html>
