@@ -7,7 +7,7 @@
     background-color: #166174;
 }
 
-a:hover, .nav-active{
+.topnav a:hover, .nav-active{
     background-color: #339ab2;
 }
 
@@ -66,8 +66,9 @@ a:hover, .nav-active{
 .column1{
     background-color: rgba(133, 133, 133, 0.616);
     height: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
 }
 
 .column2{
@@ -80,7 +81,7 @@ a:hover, .nav-active{
 }
 
 .dummy{
-    height: 200px;
+    height: 600px;
 }
 
 .convert{
@@ -88,6 +89,107 @@ a:hover, .nav-active{
     border-color: #166174;
 }
 
+#nav{
+	border-radius: 3px;
+    background-color: rgba(133, 133, 133, 0.616);
+    height: 50px;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}	
+
+#nav li{
+	list-style: none;
+	display: block;
+	text-align: center;
+	height: 40px;
+	position: relative;
+    width:max-content;
+}
+
+#nav li a{
+	margin: 0px 0;
+	line-height: 40px;
+	height: 40px;
+    color: rgba(255, 255, 255, 0.914);
+    text-decoration: none;
+    padding: 0 5px 0 5px;
+    text-align: left;
+}
+
+#nav ul{
+	padding: 0px;
+    background-color: #222529;
+    border-radius: 5px;
+}
+
+#nav li a{
+	display: block;
+}
+#nav ul li {
+	background-color:#222529;
+	width:220px;
+	height:39px;
+    border-radius: 5px;
+    padding:3px;
+}
+
+/* Sub menus */
+#nav ul{
+	display: none;
+    visibility:hidden;
+	position: absolute;
+	top: 40px;
+    border-radius: 5px;
+}
+
+/* Third-level menus */
+#nav ul ul{
+	top: 20px;
+	left:150px;
+	display: none;
+    visibility:hidden;
+	background-color: #222529;
+    border-radius: 5px;
+    z-index:3;
+    padding: 5px;
+    padding-bottom: 8px;
+}
+
+#nav ul li{
+	display: block;
+    visibility:visible;
+}
+
+#nav li:hover > ul{
+	display: block;
+    visibility:visible;
+    background-color: #222529;
+    border: 1px solid rgba(133, 133, 133, 0.375);
+}
+
+.centerin3{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav a:hover{
+    background-color: rgba(133, 133, 133, 0.616);
+}
+
+.activ{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+
+#nav i{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 @media (max-width:768px) {
     .centerin{
@@ -101,6 +203,11 @@ a:hover, .nav-active{
         margin-left: auto;
         margin-right: auto;
     }
+
+    #nav ul ul{
+        top: 40px;
+        left:50px;
+    }
 }
 
 @media (max-width:992px) {
@@ -108,7 +215,11 @@ a:hover, .nav-active{
         margin-bottom: 20px;
     }
 
-    i{
+    .naikk{
+        z-index: 2;
+    }
+
+    .flipping i{
         margin-top: 10px;
         margin-bottom: 10px;
     }
