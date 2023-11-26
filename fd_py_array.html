@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
 </head>
@@ -32,10 +34,10 @@
                 </li>
                 <li class="nav-item dropdown underline11">
                   <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu menuactive">
                     <li><a class="dropdown-item " href="fd_c_home.html">C</a></li> 
                     <li><a class="dropdown-item" href="fd_cpp_home.html">C++</a></li>
-                    <li><a class="dropdown-item active" aria-current="page" href="fd_py_home.html">Python</a></li>
+                    <li><a class="dropdown-item active" style="background-color: #339ab2;" aria-current="page" href="fd_py_home.html">Python</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -146,12 +148,12 @@
         <h5 class="fs-5 fw-bold">Define a List</h5>
 
         <p>
-            Syntax:
-            <div class="bg-plblack ">
+            <p class="beforee">Syntax: </p>
+            <div class=" ">
             <pre>
             <code class="fs-6">
             list_name1 = [] #empty list
-            list_name2 = [3, “hello”, 22.5, [True, False]]
+            list_name2 = [3, "hello", 22.5, [True, False]]
             </code></pre>
         </div>
         </p><br/>
@@ -165,20 +167,20 @@
             Syntax: <code class="fs-6">list_name[index_number] = new_value</code>
         </p>
         <p>
-            Example:<div class="bg-plblack codee">
-            <pre><code class="fs-6">myNumber[0] = 10</code></pre></div>
+            Example:<div class=" codee">
+            <pre><code class="fs-6 language-python">myNumber[0] = 10</code></pre></div>
         </p>
         <p>
             If the list is still empty, then the system will be an error, so make sure that you use the 
             syntax only to change the list with an available element.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Example code: </p>
+            <div class=" codee2">
             <pre>
-            <code class="fs-6">
+            <code class="fs-6 language-python">
             myNumber= [25, 50, 75, 100];
-            myNumber[0] = 30; //change the value 25 to 30
+            myNumber[0] = 30; #change the value 25 to 30
             #myNumber will contain 30,50,75,100 now
             </code></pre>
             </div>
@@ -188,13 +190,13 @@
 
         <h5 class="fs-5 fw-bold">Slicing a List</h5>
         <p>To access elements from a list only from range a to b or elements with index a until index b-1, 
-            we can use the syntax list_name[a:b]. If the a is not specified, then by default, Python will 
+            we can use the syntax <code class="fs-6">list_name[a:b]</code>. If the a is not specified, then by default, Python will 
             start at index 0. If b is not specified, then by default, Python will stop at the last element. 
             We can also use negative index here.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Example code: </p>
+            <div class=" codee3 language-python">
             <pre>
             <code class="fs-6">
             myList = ["alpha", "beta", "delta", "gamma", "epsilon", "theta"]
@@ -207,8 +209,8 @@
         </p>
 
         <p> Output:
-            <div class='bg-plblack codee2'>
-            <pre><code class="fs-6 ">
+            <div class=' codee2'>
+            <pre><code class="fs-6 language-plaintext">
             ['beta', 'delta', 'gamma']
             ['alpha', 'beta', 'delta', 'gamma']
             ['beta', 'delta', 'gamma', 'epsilon', 'theta']
@@ -232,8 +234,8 @@
             <ul>
                 <li><code class="fs-6">insert()</code> </li>
                 We can insert a new list item without replacing any elements in the list.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class=" ">
                 <pre>
           <code class="fs-6">
             myList = ["alpha", "beta", "delta", "gamma"]
@@ -246,10 +248,10 @@
             <li><code class="fs-6">append() </code> </li>
             We can add new elements to a list, including an empty list by using <code class="fs-6">append()</code>. 
             The element that is appended will automatically be added as the last element in a list.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class=" ">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             myList = ["gamma"]
             myList.append("epsilon") 
             #myList will become ["gamma", "epsilon"]
@@ -259,10 +261,10 @@
             <br/>
             <li><code class="fs-6">remove() </code> </li>
             <code class="fs-6">remove()</code> is used to remove the specified element of a list.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class=" ">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             myList = ["alpha", "beta", "delta", "gamma"]
             myList.remove("delta") 
             #myList will become ["alpha", "beta", "gamma"]
@@ -274,10 +276,10 @@
             <code class="fs-6">pop()</code> is used to remove elements of a specified index. If we don't specify 
             the index of the <code class="fs-6">pop()</code> function, then it will automatically remove the last 
             element of a list. Additionally, we can store the element that we pop in another variable.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class=" ">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             myList = ["alpha", "beta", "delta", "gamma"]
             myList.pop() 
             #myList will become ["alpha", "beta", "delta"]
@@ -294,10 +296,10 @@
             it will delete it permanently (can't be stored in another variable). 
             <code class="fs-6">del</code> can also delete a list completely by using the syntax 
             <code class="fs-6">del list_name </code>.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class=" ">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             myList = ["alpha", "beta", "delta", "gamma"]
             del myList[0]
             #myList will become ["beta", "delta", "gamma"]            
@@ -307,10 +309,10 @@
             <br/>
             <li><code class="fs-6">clear() </code> </li>
             <code class="fs-6">clear()</code> is used to clear all elements in a list, so that the list will become empty.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class=" ">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             myList = ["alpha", "beta", "delta", "gamma"]
             myList.clear()
             #myList will become []            
@@ -322,10 +324,10 @@
             <code class="fs-6">sort()</code> is used to sort the list alphanumerically, ascending, by 
             default. If we want to sort it descending, then we just need to type <code class="fs-6">reverse=True</code> 
             inside the brackets.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class="codee2">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             myList = ["alpha", "gamma", "delta", "beta"]
             myList.sort()
             #myList will become ["alpha", "beta", "delta", "gamma"]
@@ -339,10 +341,10 @@
             <li><code class="fs-6">copy() </code> </li>
             You cannot copy a list just by using the syntax <code class="fs-6">list2 = list1</code> as list2 
             will only be a reference to list1. To avoid this, we use the <code class="fs-6">copy()</code> function.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class=" ">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             myList = ["alpha", "beta", "delta", "gamma"]
             myList2 = myList.copy()
             #myList will become ["alpha", "beta", "delta", "gamma"]
@@ -353,10 +355,10 @@
             <br/>
             <li><code class="fs-6">extend()</code> </li>
             We can join a list with another list by using the <code class="fs-6">extend()</code> function or the operator +
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class="codee2">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             myList = ["alpha", "beta"]
             myList2 = ["delta"]
             myList.extend(myList2)
@@ -378,12 +380,12 @@
         <h5 class="fs-5 fw-bold">Define a Tuple</h5>
 
         <p>
-            Syntax:
-            <div class="bg-plblack ">
+          <p class="beforee">Syntax: </p>
+            <div class=" ">
             <pre>
             <code class="fs-6">
             tuple_name1 = () #empty tuple
-            tuple_name2 = (3, “hello”, 22.5, [True, False])
+            tuple_name2 = (3, "hello", 22.5, [True, False])
             tuple_name3 = (1,) #if we want to make a tuple with 1 element, we have to put a comma 
             </code></pre>
         </div>
@@ -419,8 +421,8 @@
             We can also use negative index here.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Example code: </p>
+            <div class=" codee3">
             <pre>
             <code class="fs-6">
             mytuple = ("alpha", "beta", "delta", "gamma", "epsilon", "theta")
@@ -432,9 +434,9 @@
             </div>
         </p>
 
-        <p> Output:
-            <div class='bg-plblack codee2'>
-            <pre><code class="fs-6 ">
+        <p> Output: 
+            <div class=' codee2'>
+            <pre><code class="fs-6 language-plaintext">
             ('beta', 'delta', 'gamma')
             ('alpha', 'beta', 'delta', 'gamma')
             ('beta', 'delta', 'gamma', 'epsilon', 'theta')
@@ -446,8 +448,8 @@
         <p>The + operator can be used to join tuples.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Example code: </p>
+            <div class=" codee2">
             <pre>
             <code class="fs-6">
             myTuple = ("alpha", "beta")
@@ -462,8 +464,8 @@
         <p>The * operator can be used to multiply or duplicate the elements inside the tuple.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Example code: </p>
+            <div class=" codee2">
             <pre>
             <code class="fs-6">
             myTuple = ("alpha", "beta")
@@ -471,14 +473,14 @@
             #result will become ("alpha", "beta", "alpha", "beta")
             </code></pre>
             </div>
-        </p><br/>
+        </p><br/><br>
 
         <h5 class="fs-5 fw-bold">The <code class="fs-5">count()</code> function</h5>
         <p><code class="fs-6">count()</code> is used to return number of occurrences that a value has in a tuple.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Example code: </p>
+            <div class=" codee2">
             <pre>
             <code class="fs-6">
             myTuple = ("alpha", "beta", "alpha")
@@ -497,12 +499,12 @@
 
         <h5 class="fs-5 fw-bold">Define a Set</h5>
         <p>
-            Syntax:
-            <div class="bg-plblack ">
+          <p class="beforee">Syntax: </p>
+            <div class="codee2 ">
             <pre>
             <code class="fs-6">
             set_name1 = {} #empty set
-            set_name2 = {3, “hello”, 22.5, [True, False]}
+            set_name2 = {3, "hello", 22.5, [True, False]}
             #1 and True are considered the same in sets.
             #0 and False are also considered the same in sets.
             </code></pre>
@@ -515,7 +517,7 @@
              a set is using the for loop.
         </p>
         <p>
-            Syntax: <div class="bg-plblack"><pre><code class="fs-6">
+            Syntax: <div class="codee"><pre><code class="fs-6">
             for item in set_name:
                 #code block
             </code></pre></div>
@@ -531,10 +533,10 @@
             <ul>
                 <li><code class="fs-6">add()</code> </li>
                 <code class="fs-6">add()</code> is used to add an element to the set.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class="codee3">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             mySet = {"alpha", "beta", "delta", "gamma"}
             mySet.add("epsilon")
             #mySet will become {'gamma', 'delta', 'alpha', 'epsilon', 'beta'}
@@ -545,10 +547,10 @@
             <br/>
             <li><code class="fs-6">update()</code> </li>
             <code class="fs-6">update()</code> is used to update the sets by adding any iterable (can be sets, lists, etc).
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class="codee2 ">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             mySet = {"alpha", "beta"}
             myList = ["delta", "gamma"]
             mySet.update(myList)
@@ -560,10 +562,10 @@
             <li><code class="fs-6">remove() or discard()</code> </li>
             <code class="fs-6">remove() or discard()</code> is used to remove the specified element of a set. The difference is 
             <code class="fs-6">discard()</code> will not raise an error when the item to remove is not exist.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class="codee2">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             mySet = {"alpha", "beta", "delta", "gamma"}
             mySet.remove("delta") 
             mySet.discard("gamma")
@@ -579,10 +581,10 @@
             <br/><br/>
             <li><code class="fs-6">clear() </code> </li>
             <code class="fs-6">clear()</code> is used to clear all elements in a set, so that the set will become empty.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class="codee2">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 langugae-python">
             mySet = {"alpha", "beta", "delta", "gamma"}
             mySet.clear()
             #mySet will become empty                      
@@ -592,10 +594,10 @@
             <br/>
             <li><code class="fs-6">union()</code> </li>
             <code class="fs-6">union()</code> returns a new set with all items from both sets.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class="codee2">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             mySet = {"alpha", "beta"}
             mySet2 = {"beta", "delta", "gamma"}
             result = mySet.union(mySet2)
@@ -607,10 +609,10 @@
             <li><code class="fs-6">intersection()</code> </li>
             The <code class="fs-6">intersection()</code> method will return a new set, that only contains the 
             items that are present in both sets.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class=" codee">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             mySet = {"alpha", "beta"}
             mySet2 = {"beta", "delta", "gamma"}
             result = mySet.intersection(mySet2)
@@ -622,10 +624,10 @@
             <li><code class="fs-6">symmetric_difference()</code> </li>
             The <code class="fs-6">symmetric_difference()</code> method will return a new set, that contains 
             only the elements that are not present in both sets.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class=" codee2">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             mySet = {"alpha", "beta"}
             mySet2 = {"beta", "delta", "gamma"}
             result = mySet.symmetric_difference(mySet2)
@@ -644,8 +646,8 @@
 
         <h5 class="fs-5 fw-bold">Define a Dictionary</h5>
         <p>
-            Syntax:
-            <div class="bg-plblack ">
+          <p class="beforee">Syntax: </p>
+            <div class=" codee3">
             <pre>
             <code class="fs-6">
             dict_name1 = {} #empty dictionary
@@ -659,7 +661,7 @@
             element of a dictionary by using its keys.
         </p>
         <p>
-            Syntax: <div class="bg-plblack"><pre><code class="fs-6">
+            Syntax: <div class="codee3"><pre><code class="fs-6">
             dict_name2 = {"name": "Mega", "age" : 18, "gender" : "female"}
             print(dict_name2["name"]) #the output will be Mega
             </code></pre></div>
@@ -667,7 +669,7 @@
         <p> If we access a key that is still not available in the dictionary, then the new key 
             and new value will automatically be appended to the dictionary. If the key is available, 
             then we can change the value. <br/>
-            Syntax:<code class="fs-6">dict_name[key] = new_value</code>
+            Syntax: <code class="fs-6">dict_name[key] = new_value</code>
         </p>
         <p> We use <code class="fs-6">dict_name.keys()</code> to access the keys in a dictionary, 
             <code class="fs-6">dict_name.values()</code> to access the values in a dictionary, and 
@@ -685,10 +687,10 @@
             <li><code class="fs-6">del </code> </li>
             <code class="fs-6">del </code> is used to delete a a dictionary keys 
             and values by specifying its key.
-            <br/>Example code:
-                <div class="bg-plblack ">
+            <br/><p class="beforee">Example code: </p>
+                <div class=" codee3">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             dict_name2 = {"name": "Mega", "age" : 18, "gender" : "female"}
             del dict_name2["name"]
             #dict_name2 will become {"age" : 18, "gender" : "female"}                                 
@@ -698,10 +700,10 @@
             <br/>
             <li><code class="fs-6">clear() </code> </li>
             <code class="fs-6">clear()</code> is used to clear all elements in a dictionary, so that it will become empty.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class="codee3">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             dict_name2 = {"name": "Mega", "age" : 18, "gender" : "female"}
             dict_name2.clear()
             #dict_name2 will become {}                                
@@ -713,10 +715,10 @@
             <code class="fs-6">pop()</code> is used to remove elements of a specified key. Meanwhile, 
             <code class="fs-6">popitem()</code> is used to remove the last item in a dictionary. 
             Additionally, we can store the element that we pop in another variable.
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class=" codee3">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             dict_name2 = {"name": "Mega", "age" : 18, "gender" : "female"}
             dict_name2.pop("name")
             #dict_name2 will become {'age': 18, 'gender': 'female'}
@@ -731,10 +733,10 @@
             <li><code class="fs-6">copy()</code> </li>
             <code class="fs-6">copy()</code> is used to make a duplicate of a dictionary. We can also 
             use the <code class="fs-6">dict()</code> keyword to make a copy of a dictionary
-                <br/>Example code:
-                <div class="bg-plblack ">
+                <br/><p class="beforee">Example code: </p>
+                <div class="codee3 ">
                 <pre>
-          <code class="fs-6">
+          <code class="fs-6 language-python">
             dict_name2 = {"name": "Mega", "age" : 18, "gender" : "female"}
             myDict = dict_name2.copy()
             thisDict = dict(dict_name2)
@@ -752,8 +754,8 @@
             by using three quotes. It can be three single quotes or three double quotes.
         </p>
         <p>
-            Syntax:
-            <div class="bg-plblack ">
+          <p class="beforee">Syntax: </p>
+            <div class=" ">
             <pre>
             <code class="fs-6">
             string1 = """
@@ -791,8 +793,8 @@
             We can also use negative index here.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Example code: </p>
+            <div class=" codee2">
             <pre>
             <code class="fs-6">
             myString = "hello world"
@@ -805,7 +807,7 @@
         </p>
 
         <p> Output:
-            <div class='bg-plblack codee2'>
+            <div class=' codee2'>
             <pre><code class="fs-6 ">
             ell
             hell
@@ -818,8 +820,8 @@
         <p>The + operator can be used to concatenate strings.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Example code: </p>
+            <div class=" codee2">
             <pre>
             <code class="fs-6">
             myString1 = "hello"
@@ -834,8 +836,8 @@
         <p>The * operator can be used to multiply or duplicate the string.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Example code: </p>
+            <div class=" codee2">
             <pre>
             <code class="fs-6">
             myString1 = "hello"
@@ -852,8 +854,8 @@
             <code class="fs-6">strip()</code> to remove white space before/after the actual text.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Example code: </p>
+            <div class=" codee2">
             <pre>
             <code class="fs-6">
             myString1 = " heLLo wORld."
@@ -867,8 +869,8 @@
             </div>
         </p>
         <p>
-           Output:
-            <div class="bg-plblack codee2">
+          <p class="beforee">Output: </p>
+            <div class=" codee2">
             <pre>
             <code class="fs-6">
             heLLo wORld.
@@ -901,5 +903,7 @@
     </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

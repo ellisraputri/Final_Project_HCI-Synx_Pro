@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
 
@@ -33,8 +35,8 @@
                 </li>
                 <li class="nav-item dropdown underline11">
                   <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item active " aria-current="page" href="fd_c_home.html">C</a></li> 
+                  <ul class="dropdown-menu menuactive">
+                    <li><a class="dropdown-item active " style="background-color: #339ab2;" aria-current="page" href="fd_c_home.html">C</a></li> 
                     <li><a class="dropdown-item" href="fd_cpp_home.html">C++</a></li>
                     <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
                   </ul>
@@ -115,20 +117,20 @@
     <div class="col-lg-10">
     <div class="content2">
     <h2 class="fs-1 kanit">Introduction</h2>
-    <p>Let's see one simple example of C program and learn some basic syntax of it.</p>
+    <p class="beforee">Let's see one simple example of C program and learn some basic syntax of it.</p>
     <pre>
-    <div class="bg-plblack codee">
+    <div class="codee">
       <code class="fs-6">
-        #include &lt;stdio.h&gt;
-        
-        int main() {
-          printf("Hello World!");
-          return 0;
-        }
+  #include &lt;stdio.h&gt;
+  
+  int main() {
+      printf("Hello World!");
+      return 0;
+  }
       </code>
     </div>
     </pre>
-    <p>Line 1: &nbsp; <code class="fs-6">#include &lt;stdio.h&gt;</code> &nbsp; is a statement to include the header file library. 
+    <p class="afterr">Line 1: &nbsp; <code class="fs-6">#include &lt;stdio.h&gt;</code> &nbsp; is a statement to include the header file library. 
       <code class="fs-6">&lt;stdio.h&gt;</code> is a library that lets us work with input and output functions, such as <code class="fs-6">printf()</code>.</p>
     <p>Line 2: blank space. C ignores white space, but we need white spaces to increase our code readability.</p>
     <p>Line 3: the <code class="fs-6">main()</code> function. As its name implies, <code class="fs-6">main()</code> function consists of the main code to be executed. 
@@ -286,6 +288,9 @@
         </div>
     </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
 </body>
 </html>

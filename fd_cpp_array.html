@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
@@ -32,9 +34,9 @@
                 </li>
                 <li class="nav-item dropdown underline11">
                   <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu menuactive">
                     <li><a class="dropdown-item " href="fd_c_home.html">C</a></li> 
-                    <li><a class="dropdown-item active" aria-current="page" href="fd_cpp_home.html">C++</a></li>
+                    <li><a class="dropdown-item active" aria-current="page" style="background-color: #339ab2;" href="fd_cpp_home.html">C++</a></li>
                     <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
                   </ul>
                 </li>
@@ -134,14 +136,14 @@
         <h5 class="fs-5 fw-bold">Define an Array</h5>
         <p>Syntax1 : <code class="fs-6">array_type array_name[] = {content1, content2, content3};</code></p>
         <p>
-            Example:<div class='bg-plblack codee'>
+            Example:<div class='  codee'>
             <pre><code class="fs-6 ">int myNumber[] = {1,2,3,4,5};</code></pre></div>
         </p>
         <p>
             Syntax2: <code class="fs-6">array_type array_name[array_size];</code>
         </p>
         <p>
-            Example:<div class="bg-plblack codee">
+            Example:<div class="  codee">
             <pre><code class="fs-6 ">int yourNumber[6];</code></pre></div>
             You can also specify the size and the elements of the array at once when
              declaring or defining an array.
@@ -157,7 +159,7 @@
             Syntax: <code class="fs-6">array_name[index_number] = new_value;</code>
         </p>
         <p>
-            Example:<div class="bg-plblack codee">
+            Example:<div class="  codee">
             <pre><code class="fs-6">myNumber[0] = 10;</code></pre></div>
         </p>
         <p>
@@ -165,8 +167,8 @@
             then the system will automatically set the values according to the new value.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee2">
+            <p class="beforee">Example code:</p>
+            <div class="codee2">
             <pre>
             <code class="fs-6">
             #include &lt;iostream&gt;
@@ -195,15 +197,15 @@
         
         <pre></pre><pre></pre><pre></pre>
 
-        <h5 class="fs-5 fw-bold">Loop through an Array</h5>
+        <h5 class="fs-5 fw-bold afterr">Loop through an Array</h5>
         <p>You can loop through the array elements with the for loop.
             For loop will be explained in the conditional and loops page.
         </p>
         <p>
-            Example code:
-            <div class="bg-plblack codee">
+          <p class="beforee">Example code:</p>
+            <div class=" codee2">
             <pre>
-            <code class="fs-6">
+            <code class="fs-6 language-c++">
             #include &lt;iostream&gt;
 
             int main() {
@@ -228,8 +230,8 @@
 
         <p> In C++ 2011, there is also a new kind of for loops for array. <br/>
             Syntax : 
-            <div class='bg-plblack codee2'>
-            <pre><code class="fs-6 ">
+            <div class='codee2'>
+            <pre><code class="fs-6 language-c++">
             for (variable_type random_variable_name : array_name){
                 //code block
             }
@@ -237,8 +239,8 @@
         </p>
 
         <p> For example, the for loops in previous example, 
-          <div class='bg-plblack codee2'>
-          <pre><code class="fs-6 ">
+          <div class='codee2'>
+          <pre><code class="fs-6 language-c++">
           for (i = 0; i &lt; 4; i++) {
               std::cout &lt;&lt; myNumbers[i] &lt;&lt; std::endl;
           } 
@@ -246,13 +248,15 @@
         </p>
 
         <p> Can be simplified to this and they still have the same output.
-          <div class='bg-plblack codee2'>
-          <pre><code class="fs-6 ">
+          <div class='codee2'>
+          <pre><code class="fs-6 language-c++">
           for (int i : myNumbers) {
             std::cout &lt;&lt; i &lt;&lt; std::endl;
           }
           </code></pre></div>
         </p>
+
+        <pre></pre><pre></pre>
 
         <p> We can also use the <code class="fs-6 ">sizeof()</code> function to return the 
           size of an array in 
@@ -260,18 +264,18 @@
           <code class="fs-6 ">sizeof(array_type)</code> to know 
           how many elements that exist in the array. If you want to use easier method, 
           you can directly use <code class="fs-6 ">std::size(array)</code> to know the amount of the elements in an array.
-          <div class='bg-plblack codee2'>
+          <div class='  codee3'>
           <pre><code class="fs-6 ">
             #include &lt;iostream&gt;
 
               int main() {
-              int myNumbers[5] = {20, 30, 40, 50, 60};
-              
-              int byte_size = sizeof(myNumbers); //value is 20
-              int array_size = sizeof(myNumbers)/sizeof(int); //value is 5
-              int array_size2 = std::size(myNumbers); //value is 5
-              
-              return 0;
+                int myNumbers[5] = {20, 30, 40, 50, 60};
+                
+                int byte_size = sizeof(myNumbers); //value is 20
+                int array_size = sizeof(myNumbers)/sizeof(int); //value is 5
+                int array_size2 = std::size(myNumbers); //value is 5
+                
+                return 0;
             }    
           </code></pre></div>
         </p>
@@ -289,8 +293,8 @@
             then followed by the struct variable names that you want to use in your program.
         </p>
         <p>
-            Syntax:
-            <div class="bg-plblack ">
+            <p class="beforee">Syntax:</p>
+            <div class="codee3">
             <pre>
             <code class="fs-6">
             int main(){
@@ -306,13 +310,13 @@
         </p>
 
         <pre></pre><pre></pre><pre></pre>
-        <p>
+        <p class="afterr">
           You can also declare the structure outside the main function and give it 
           a name, so it can be treated as a datatype.
         </p>
         <p>
-          Syntax:
-          <div class="bg-plblack ">
+          <p class="beforee">Syntax:</p>
+          <div class="codee3">
           <pre>
           <code class="fs-6">
             struct struct_name{
@@ -329,7 +333,8 @@
           </div>
         </p>
 
-        <p>
+
+        <p class="afterr">
           To access the members of a structure, you have to use dot (.) in <code class="fs-6">int main()</code> 
           after you declare the name of the structure variable.<br/>
           Syntax: <code class="fs-6">struct_variable_name.variable_name1 = value;</code>
@@ -339,11 +344,11 @@
           Syntax: <code class="fs-6">struct_variable_name = {value1, value2, …, valuen};</code>
         </p>
         <p>
-          We can also assign the values of a structure variable to another structure variable.<br/>
-          Syntax: 
-            <div class="bg-plblack codee2">
+          <p class="beforee">We can also assign the values of a structure variable to another structure variable.<br/>
+          Syntax:</p> 
+            <div class="  codee3">
             <pre>
-            <code class="fs-6">
+            <code class="fs-6 language-c++">
             struct_name structure_variable_name1 = {value1, value2, …, valuen};
             struct_name structure_variable_name2;      
             structure_variable_name2 = structure_variable_name1;        
@@ -352,11 +357,11 @@
             </div>
         </p>
 
-        <p>
-            Example code:
-            <div class="bg-plblack">
+        <p class="afterr">
+            <p class="beforee">Example code:</p>
+            <div class="codee3">
             <pre>
-            <code class="fs-6">
+            <code class="fs-6 language-c++">
             #include &lt;iostream.h&gt;
             #include &lt;string.h&gt;
 
@@ -375,11 +380,10 @@
                 phone4 = phone3; //assign the value of phone3 to phone4
                 phone4.year = 2022; //change phone4's year to 2022
                 
-                std::cout&lt;&lt; " " &lt;&lt; phone1.price&lt;&lt; " " &lt;&lt; phone1.brand &lt;&lt; " " &lt;&lt;  phone1.year &lt;&lt; std::endl;
-                std::cout&lt;&lt; " " &lt;&lt; phone2.price&lt;&lt; " " &lt;&lt; phone2.brand &lt;&lt; " " &lt;&lt;  phone2.year &lt;&lt; std::endl;
-                std::cout&lt;&lt; " " &lt;&lt; phone3.price&lt;&lt; " " &lt;&lt; phone3.brand &lt;&lt; " " &lt;&lt;  phone3.year &lt;&lt; std::endl;
-                std::cout&lt;&lt; " " &lt;&lt; phone4.price&lt;&lt; " " &lt;&lt; phone4.brand &lt;&lt; " " &lt;&lt;  phone4.year &lt;&lt; std::endl;
-
+                std::cout&lt;&lt; phone1.price&lt;&lt; " " &lt;&lt; phone1.brand &lt;&lt; " " &lt;&lt;  phone1.year;
+                std::cout&lt;&lt; "\n" &lt;&lt; phone2.price&lt;&lt; " " &lt;&lt; phone2.brand &lt;&lt; " " &lt;&lt;  phone2.year;
+                std::cout&lt;&lt; "\n" &lt;&lt; phone3.price&lt;&lt; " " &lt;&lt; phone3.brand &lt;&lt; " " &lt;&lt;  phone3.year;
+                std::cout&lt;&lt; "\n" &lt;&lt; phone4.price&lt;&lt; " " &lt;&lt; phone4.brand &lt;&lt; " " &lt;&lt;  phone4.year;
             
                 return 0;
             }
@@ -389,11 +393,11 @@
         </p>
 
         <pre></pre>
-        <p>
-            Output:
-            <div class="bg-plblack codee">
+        <p class="afterr">
+            <p class="beforee">Output:</p>
+            <div class="  codee">
             <pre>
-            <code class="fs-6">
+            <code class="fs-6 language-plaintext">
                 5000 Aster 2019
                 3000 Bianca 2022
                 2000 Charlie 2021
@@ -403,7 +407,7 @@
             </div>
         </p>
 
-        <div id="sub3"></div>
+        <div id="sub3" class='afterr'></div>
 
         <h4 class="fs-3 kanit header">Strings</h4>
         <p>
@@ -417,8 +421,8 @@
         </p>
 
         <p>
-            Syntax:
-            <div class="bg-plblack codee2">
+            <p class="beforee">Syntax:</p>
+            <div class="  codee2">
             <pre>
             <code class="fs-6">
             variable_result = string1 + string2 + stringn;
@@ -429,7 +433,7 @@
         </p>
 
         <br/>
-        <h5 class="fs-5 fw-bold">Access String Elements</h5>
+        <h5 class="fs-5 fw-bold afterr">Access String Elements</h5>
         <p>String in C++ can be accessed just like an array by using the index number. 
           We can then change the value of an element of the string. <br/>
           Syntax: <code class="fs-6">string1[index_number] = value;</code>
@@ -444,10 +448,10 @@
         </p>
 
         <p>
-            Example code:
-            <div class="bg-plblack ">
+            <p class="beforee">Example code:</p>
+            <div class="codee3">
             <pre>
-            <code class="fs-6">
+            <code class="fs-6 language-c++">
             #include &lt;iostream&gt;
             #include &lt;string&gt;
 
@@ -469,11 +473,11 @@
             </pre>
             </div>
         </p>
-        <p>
-            Output:
-            <div class="bg-plblack codee">
+        <p class='afterr'>
+            <p class="beforee">Output:</p>
+            <div class="  codee">
             <pre>
-            <code class="fs-6">
+            <code class="fs-6 language-plaintext">
             hello world! has a length of 12
             halloworld! has a length of 11
             </code>
@@ -503,5 +507,7 @@
     </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

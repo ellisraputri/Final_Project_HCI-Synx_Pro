@@ -7,8 +7,12 @@
     background-color: #166174;
 }
 
-a:hover, .nav-active{
+.topnav a:hover, .nav-active{
     background-color: #339ab2;
+}
+
+.menuactive a:hover{
+    background-color: #339bb223;
 }
 
 .header{

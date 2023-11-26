@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
@@ -32,9 +34,9 @@
                 </li>
                 <li class="nav-item dropdown underline11">
                   <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu menuactive">
                     <li><a class="dropdown-item " href="fd_c_home.html">C</a></li> 
-                    <li><a class="dropdown-item active" aria-current="page" href="fd_cpp_home.html">C++</a></li>
+                    <li><a class="dropdown-item active" style="background-color: #339ab2;" aria-current="page" href="fd_cpp_home.html">C++</a></li>
                     <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
                   </ul>
                 </li>
@@ -139,15 +141,15 @@
         This type of function will use the return type of <code class="fs-6">void</code>.
     </p>
     <p>
-        Syntax:<div class="bg-plblack codee2">
-        <pre><code class="fs-6 ">
+        Syntax:<div class=" codee3">
+        <pre><code class="fs-6 language-c++">
         return_type function_name (data_type parameter_name){  //declaration
             //line of codes to be executed or definition
         }
         </code></pre></div>
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class=" codee">
         <pre><code class="fs-6 ">
         #include&lt;iostream&gt;
         total=10;
@@ -165,7 +167,7 @@
         The function above will not return any value, but it will change the variable <code class="fs-6">total</code>.
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class=" codee">
         <pre><code class="fs-6 ">
         #include&lt;iostream&gt;
         int store (int a){
@@ -204,7 +206,7 @@
         <code class="fs-6">function_name (parameters);</code>
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class=" codee">
         <pre><code class="fs-6 ">
         #include&lt;iostream&gt;
         total=10;
@@ -230,11 +232,11 @@
         from other functions to a particular function.
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
-        <pre><code class="fs-6 ">
+        Example:<div class=" codee2">
+        <pre><code class="fs-6 language-c++">
         #include &lt;iostream&gt;
         void displayInfo(int age, int phone){
-            std::cout << "This is your age, ” << age;
+            std::cout << "This is your age, " << age;
             std::cout << "\nThis is your phone number, " << phone;
         }
         int main() {
@@ -254,8 +256,8 @@
         A parameter with a default value is called an optional parameter.
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
-            <pre><code class="fs-6 ">
+        Example:<div class=" codee">
+            <pre><code class="fs-6 language-c++">
             #include &lt;iostream&gt;
             void display(int age=20){
                 std::cout << age << std::endl;
@@ -274,8 +276,8 @@
         This is called <em>pass by reference</em>. 
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
-            <pre><code class="fs-6 ">
+        Example:<div class=" codee2">
+            <pre><code class="fs-6 language-c++">
             #include &lt;iostream&gt;
             void swap(int &x, int &y) {
                 int temp = x;
@@ -305,8 +307,8 @@
         with different parameters.
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
-        <pre><code class="fs-6 ">
+        Example:<div class=" codee">
+        <pre><code class="fs-6 language-c++">
         #include &lt;iostream&gt;
         int adding(int x, int y) {
             return x+y;
@@ -335,7 +337,7 @@
         <code class="fs-6">main()</code>.
     </p>
     <p>
-        Syntax:<div class="bg-plblack codee">
+        Syntax:<div class=" codee">
         <pre><code class="fs-6 ">
         data_type function_name = [] () {
             //lines of code
@@ -349,8 +351,8 @@
         <li><code class="fs-6">()</code> is the parameter list</li>
     </ul>
     <p>
-        Example:<div class="bg-plblack codee">
-        <pre><code class="fs-6 ">
+        Example:<div class=" codee">
+        <pre><code class="fs-6 language-c++">
         #include &lt;iostream&gt;
         int main() {
             auto display = [](int age=20){
@@ -384,6 +386,7 @@
         </div>
     </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

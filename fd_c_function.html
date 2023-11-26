@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
 </head>
@@ -32,8 +34,8 @@
                 </li>
                 <li class="nav-item dropdown underline11">
                   <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item active " aria-current="page" href="fd_c_home.html">C</a></li> 
+                  <ul class="dropdown-menu menuactive">
+                    <li><a class="dropdown-item active " aria-current="page" style="background-color: #339ab2;" href="fd_c_home.html">C</a></li> 
                     <li><a class="dropdown-item" href="fd_cpp_home.html">C++</a></li>
                     <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
                   </ul>
@@ -136,7 +138,7 @@
         This type of function will use the return type of <code class="fs-6">void</code>.
     </p>
     <p>
-        Syntax:<div class="bg-plblack codee2">
+        Syntax:<div class="codee3">
         <pre><code class="fs-6 ">
         return_type function_name (data_type parameter_name){  //declaration
             //line of codes to be executed or definition
@@ -144,7 +146,7 @@
         </code></pre></div>
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class="codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         total=10;
@@ -162,7 +164,7 @@
         The function above will not return any value, but it will change the variable <code class="fs-6">total</code>.
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class=" codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int store (int a){
@@ -201,7 +203,7 @@
         <code class="fs-6">function_name (parameters);</code>
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class="codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         total=10;
@@ -227,7 +229,7 @@
         from other functions to a particular function.
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class="codee2">
         <pre><code class="fs-6 ">
         #include &lt;stdio.h&gt;
         void displayInfo(int age, int phone){
@@ -251,7 +253,7 @@
         A parameter with a default value is called an optional parameter.
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class=" codee">
             <pre><code class="fs-6 ">
             #include &lt;stdio.h&gt;
             void display(int age=20){
@@ -286,5 +288,7 @@
     </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

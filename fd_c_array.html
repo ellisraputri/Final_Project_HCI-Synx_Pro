@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="stylefundict.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -30,8 +32,8 @@
                 </li>
                 <li class="nav-item dropdown underline11">
                   <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item active " aria-current="page" href="fd_c_home.html">C</a></li> 
+                  <ul class="dropdown-menu menuactive">
+                    <li><a class="dropdown-item active " aria-current="page" style="background-color: #339ab2;" href="fd_c_home.html">C</a></li> 
                     <li><a class="dropdown-item" href="fd_cpp_home.html">C++</a></li>
                     <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
                   </ul>
@@ -131,14 +133,14 @@
     <h5 class="fs-5 fw-bold">Define an Array</h5>
     <p>Syntax1 : <code class="fs-6">array_type array_name[] = {content1, content2, content3};</code></p>
     <p>
-        Example:<div class='bg-plblack codee'>
+        Example:<div class='codee'>
         <pre><code class="fs-6 ">int myNumber[] = {1,2,3,4,5};</code></pre></div>
     </p>
     <p>
         Syntax2: <code class="fs-6">array_type array_name[array_size];</code>
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class=" codee">
         <pre><code class="fs-6 ">int yourNumber[6];</code></pre></div>
     </p>
 
@@ -152,7 +154,7 @@
         Syntax: <code class="fs-6">array_name[index_number] = new_value;</code>
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class="codee">
         <pre><code class="fs-6">myNumber[0] = 10;</code></pre></div>
     </p>
     <p>
@@ -160,8 +162,8 @@
         then the system will automatically set the values according to the new value.
     </p>
     <p>
-        Example code:
-        <div class="bg-plblack codee2">
+        <p class="beforee">Example code:</p>
+        <div class="codee2">
         <pre>
         <code class="fs-6">
         #include &lt;stdio.h&gt;
@@ -188,15 +190,15 @@
         </div>
     </p>
     
-    <pre></pre><pre></pre><pre></pre>
+    <pre></pre>
 
     <h5 class="fs-5 fw-bold">Loop through an Array</h5>
     <p>You can loop through the array elements with the for loop.
         For loop will be explained in the conditional and loops page.
     </p>
     <p>
-        Example code:
-        <div class="bg-plblack codee">
+        <p class="beforee">Example code:</p>
+        <div class="codee">
         <pre>
         <code class="fs-6">
         #include &lt;stdio.h&gt;
@@ -215,7 +217,7 @@
         </div>
     </p>
 
-    <div id="sub2"></div>
+    <div id="sub2" class="afterr"></div>
     <h4 class="fs-3 kanit header">Structures</h4>
     <p>Structures (also called structs) are a way to group several related variables into one place.
         Each variable in the structure is known as a member of the structure.
@@ -227,8 +229,8 @@
         followed by the name of the structure and then the name of the structure variable:
     </p>
     <p>
-        Syntax:
-        <div class="bg-plblack codee">
+        <p class="beforee">Syntax:</p>
+        <div class="codee">
         <pre>
         <code class="fs-6">
         struct struct_name{
@@ -245,8 +247,8 @@
         </div>
     </p>
 
-    <pre></pre><pre></pre><pre></pre>
-    <p>
+    <pre></pre>
+    <p class="afterr">
         To access the members of a structure, you have to use dot (.) 
         in <code class="fs-6">int main()</code> after you declare the name of the structure variable.
     </p>
@@ -260,8 +262,8 @@
         we need to include the header file <code class="fs-6">&lt;string.h&gt;</code>.
     </p>
     <p>
-        Syntax:
-        <div class="bg-plblack codee2">
+        <p class="beforee">Syntax:</p>
+        <div class="codee2">
         <pre>
         <code class="fs-6">
         #include &lt;string.h&gt;
@@ -272,18 +274,16 @@
     </p>
     <pre></pre><pre></pre>
 
-    <p>
+    <p class="afterr">
         We can also assign values to multiple variables at once with this syntax.
     </p>
     <p>
         Syntax: <code class="fs-6">struct struct_name structure_variable_name = {value1, value2, …, valuen};</code>
     </p>
-    <pre></pre><pre></pre>
-
     <p>We can also assign the values of a structure variable to another structure variable.</p>
     <p>
-        Syntax:
-        <div class="bg-plblack codee2">
+        <p class="beforee">Syntax:</p>
+        <div class="codee2">
         <pre>
         <code class="fs-6">
         struct struct_name structure_variable_name1 = {value1, …};
@@ -294,11 +294,11 @@
         </pre>
         </div>
     </p>
-    <pre></pre><pre></pre>
+    <pre></pre>
 
     <p>
-        Example code:
-        <div class="bg-plblack codee2">
+        <p class="beforee">Example code:</p>
+        <div class="codee2">
         <pre>
         <code class="fs-6">
         #include &lt;stdio.h&gt;
@@ -331,11 +331,11 @@
     </p>
 
     <pre></pre>
-    <p>
-        Output:
-        <div class="bg-plblack codee">
+    <p class="afterr">
+        <p class="beforee">Output:</p>
+        <div class=" codee">
         <pre>
-        <code class="fs-6">
+        <code class="fs-6 language-plaintext">
             5000 Aster 2019
             3000 Bianca 2022
             2000 Charlie 2021
@@ -347,14 +347,14 @@
 
     <div id="sub3"></div>
 
-    <h4 class="fs-3 kanit header">Strings</h4>
+    <h4 class="fs-3 kanit header afterr">Strings</h4>
     <p>
         C does not have a string type variable,
         so we have to use array of characters when we want to make a string variable.
     </p>
     <p>
-        Syntax:
-        <div class="bg-plblack codee2">
+        <p class="beforee">Syntax:</p>
+        <div class="codee2">
         <pre>
         <code class="fs-6">
         char variable_name1[] = “text”;
@@ -363,7 +363,7 @@
         </pre>
         </div>
     </p>
-    <p>
+    <p class="afterr">
         Every C string has a null character inside them so the size of the string “some text”
         is not 9, but instead 10. We can use <code class="fs-6">sizeof(variable_name)</code> 
         in the <code class="fs-6">printf</code> statement to know the array size.
@@ -376,20 +376,20 @@
         You can also loop through strings with for loops because they are arrays.
     </p>
     <p>
-        Syntax:
-        <div class="bg-plblack codee">
+        <p class="beforee">Syntax:</p>
+        <div class="codee">
         <pre>
         <code class="fs-6">
-        char variable_name1[] = “some text”;
+        char variable_name1[] = "some text";
         Variable_name1[index_number] = 'value';
         </code>
         </pre>
         </div>
     </p>
     <pre></pre><pre></pre><pre></pre>
-    <p>
-        Example code:
-        <div class="bg-plblack codee2">
+    <p class="afterr">
+        <p class="beforee">Example code:</p>
+        <div class="codee3">
         <pre>
         <code class="fs-6">
         #include &lt;stdio.h&gt;
@@ -413,11 +413,11 @@
         </pre>
         </div>
     </p>
-    <p>
-        Output:
-        <div class="bg-plblack codee">
+    <p class="afterr"> 
+        <p class="beforee">Output:</p>
+        <div class=" codee">
         <pre>
-        <code class="fs-6">
+        <code class="fs-6 language-plaintext">
         some text
         s,a,m,e, ,t,e,x,t,
         Size of string1 is 10
@@ -447,6 +447,9 @@
         </div>
     </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
 </body>
 </html>

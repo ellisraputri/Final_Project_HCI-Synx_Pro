@@ -7,8 +7,12 @@
     background-color: #166174;
   }
   
-  a:hover, .nav-active{
+  .topnav a:hover, .nav-active{
     background-color: #339ab2;
+  }
+
+  .menuactive a:hover{
+    background-color: #339bb223;
   }
 
   .header{
@@ -23,6 +27,7 @@
     font-family: Montserrat;
     padding-left: 20px;
     padding-right: 20px;
+    line-height: 2.0;
   }
 
   .footer a:hover{
@@ -97,6 +102,19 @@
     max-width: 50%;
   }
 
+  pre{
+    overflow: auto;
+    white-space: pre-wrap;
+  }
+
+  .afterr{
+    margin-top: -100px;
+  }
+
+  .beforee{
+    margin-bottom: -70px;
+  }
+
   .codee2{
     max-width: 70%;
   }
@@ -111,7 +129,6 @@
     border-radius: 10px;
     background-color: #339ab2 ;
   }
-
   
 
   @media (max-width:768px) {

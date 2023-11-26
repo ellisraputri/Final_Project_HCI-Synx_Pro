@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
@@ -32,8 +34,8 @@
                 </li>
                 <li class="nav-item dropdown underline11">
                   <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item active " aria-current="page" href="fd_c_home.html">C</a></li> 
+                  <ul class="dropdown-menu menuactive">
+                    <li><a class="dropdown-item active " aria-current="page" style="background-color: #339ab2;" href="fd_c_home.html">C</a></li> 
                     <li><a class="dropdown-item" href="fd_cpp_home.html">C++</a></li>
                     <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
                   </ul>
@@ -133,21 +135,21 @@
     <h5 class="fs-5 fw-bold">If, Else, and Else If</h5>
     <p>If statement specifies a block of code to be executed when a condition is true.</p>
     <p>
-        Syntax:<div class='bg-plblack codee2'>
-        <pre><code class="fs-6 ">
+        Syntax:<div class='codee2'>
+        <pre><code class="fs-6 language-c">
         if (condition) {
         // block of code to be executed if the condition is true
         }
         </code></pre></div>
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class="codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int main() {
             int myNum = 10;
             if(myNum == 10){
-                printf(“myNum is 10”); 
+                printf("myNum is 10"); 
             }
             return 0;
         }
@@ -164,7 +166,7 @@
         when the condition is false. Then, we can use <code class="fs-6">else</code> for this case.
     </p>
     <p>
-        Syntax:<div class='bg-plblack codee2'>
+        Syntax:<div class='codee2'>
         <pre><code class="fs-6 ">
         if (condition) {
             // block of code to be executed if the condition is true
@@ -174,15 +176,15 @@
         </code></pre></div>
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class="codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int main() {
             int myNum = 10;
             if(myNum == 10){
-	            printf(“myNum is 10”); 
+	            printf("myNum is 10"); 
             }else{
-	            printf(“myNum is not 10”);
+	            printf("myNum is not 10");
             }
             return 0;
         }
@@ -195,19 +197,19 @@
         <code class="fs-6">Else if</code> statement specifies a new condition if the first condition is false.
     </p>
     <p>
-        Syntax:<div class='bg-plblack codee2'>
-        <pre><code class="fs-6 ">
+        Syntax:<div class='codee2'>
+        <pre><code class="fs-6 language-c">
         if (condition1) {
-            // block of code to be executed if condition1 is true
+            //block of code to be executed if condition1 is true
         } else if (condition2) {
-        // block of code to be executed if the condition1 is false and condition2 is true
+        //block of code to be executed if the condition1 is false and condition2 is true
         } else {
-        // block of code to be executed if the condition1 is false and condition2 is false
+        //block of code to be executed if the condition1 is false and condition2 is false
         }
         </code></pre></div>
     </p>
     <p>
-        Example:<div class="bg-plblack codee2">
+        Example:<div class="codee2">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int main() {
@@ -231,19 +233,19 @@
         <code class="fs-6">if-else</code> statements to a single line of code.
     </p>
     <p>
-        Syntax:<div class='bg-plblack codee2'>
-        <pre><code class="fs-6 ">
+        Syntax:<div class='codee2'>
+        <pre><code class="fs-6 language-c">
         variable = (condition) ? expressionTrue : expressionFalse;
         </code></pre></div>
     </p>
     <p>
         Below is the simplified version of the previous 
-        <code class="fs-6">if-else</code> example:<div class="bg-plblack codee2">
+        <code class="fs-6">if-else</code> example:<div class="bg-plblack codee3">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int main() {
             int myNum = 10;
-            myNum = (myNum == 10)? printf(“myNum is 10”):printf(“myNum is not 10”);
+            myNum = (myNum == 10)? printf("myNum is 10"):printf("myNum is not 10");
             return 0;
         }
         </code></pre></div>
@@ -258,7 +260,7 @@
         Instead of using many <code class="fs-6">if-else</code> statements, you can use the <code class="fs-6">switch</code> statement.
     </p>
     <p>
-        Syntax:<div class='bg-plblack codee2'>
+        Syntax:<div class='codee2'>
         <pre><code class="fs-6 ">
         switch(expression) {
             case x:
@@ -281,7 +283,7 @@
     </p>
     <p><div class='fw-bold d-inline-flex'>Note:</div> the <code class="fs-6">default</code> code block is optional. </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class=" codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int main() {
@@ -326,7 +328,7 @@
     <p><code class="fs-6">While</code> loop loops through a block of code as 
         long as the specified condition is true.</p>
     <p>
-        Syntax:<div class='bg-plblack codee'>
+        Syntax:<div class=' codee'>
         <pre><code class="fs-6 ">
         while (condition) {
             // code block to be executed
@@ -334,13 +336,13 @@
         </code></pre></div>
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class=" codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int main() {
             int a = 1;
             while(a < 5){
-	            printf(“a is %d\n”, a);
+	            printf("a is %d\n", a);
 	            a++;
             }
             return 0;
@@ -351,8 +353,8 @@
         The loop in the example will produce the output below:
     </p>
     <p>
-        Output:<div class="bg-plblack codee">
-        <pre><code class="fs-6 ">
+        Output:<div class="codee">
+        <pre><code class="fs-6 language-plaintext">
         a is 1
         a is 2
         a is 3
@@ -360,8 +362,8 @@
         </code></pre></div>
     </p>
     <p>
-        Notice that the loop while keeps looping until a < 5.
-        When the loop reaches a = 5, it will stop looping and the program is terminated.
+        Notice that the loop while keeps looping until <code class="fs-6">a < 5</code>.
+        When the loop reaches <code class="fs-6">a = 5</code>, it will stop looping and the program is terminated.
     </p>
     
     <pre></pre><pre></pre><pre></pre><pre></pre>
@@ -375,7 +377,7 @@
         (even if the condition is false).
     </p>
     <p>
-        Syntax:<div class='bg-plblack codee'>
+        Syntax:<div class=' codee'>
         <pre><code class="fs-6 ">
         do {
             // code block to be executed
@@ -383,14 +385,14 @@
         </code></pre></div>
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class=" codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int main() {
             int a = 1;
             do{
-	            printf(“Hello!”);
-	            a++;
+	        printf("Hello!");
+	        a++;
             } while (a < 1);
             return 0;
         }
@@ -406,8 +408,8 @@
     <h5 class="fs-5 fw-bold">For Loop</h5>
     <p><code class="fs-6">For</code> loop is used when we know how many times we want to loop through a block.</p>
     <p>
-        Syntax:<div class='bg-plblack codee'>
-        <pre><code class="fs-6 ">
+        Syntax:<div class=' codee'>
+        <pre><code class="fs-6 language-c">
         for (statement 1; statement 2; statement 3) {
             // code block to be executed
         }
@@ -420,19 +422,19 @@
         Statement 3 is usually an increment or decrement of a value.</li>
     </ul>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class="codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int main() {
             for(int i = 0; i < 5 ; i++){
-                printf(“Hello”);
+                printf("Hello");
             }
             return 0;
         }
         </code></pre></div>
     </p>
     <p>The output of the program above will be a “Hello” text repeated five times.</p>
-    <p>Code explanation:</p>
+    <p><b>Code explanation:</b></p>
     <ul>
         <li>Statement 1 initializes the variable i = 0</li>
         <li>Statement 2 specifies the condition for the loop. 
@@ -440,7 +442,7 @@
         <li>
             Statement 3 increases the value of i each time the code block has been executed. 
             So, each time a code block has been executed, the value of i also increases by 1. 
-            Then, when the code already runs 5 times (the value of i =5), 
+            Then, when the code already runs 5 times (the value of i = 5), 
             the loop will stop (because the condition of i < 5 is not true anymore). 
         </li>
     </ul>
@@ -453,15 +455,15 @@
         A <code class="fs-6">break</code> statement can also be used to jump out of a loop. 
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class="codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int main() {
             int a = 1;
             while(a < 10){
-	            printf(“Hello!”);
-	            if(a == 4){
-		            break;
+	        printf("Hello!");
+	        if(a == 4){
+		    break;
                 }
                 a++;
             }
@@ -481,7 +483,7 @@
         to the next iteration in the loop.
     </p>
     <p>
-        Example:<div class="bg-plblack codee">
+        Example:<div class="codee">
         <pre><code class="fs-6 ">
         #include&lt;stdio.h&gt;
         int main() {
@@ -499,7 +501,7 @@
         If we run the code above, we will get the output
         “0124” with no '3'. This is because when i reaches 3,
         we use the <code class="fs-6">continue</code> statement to skip the rest of the loop and 
-        move on to the next iteration (i=4).
+        move on to the next iteration (<code class="fs-6">i = 4</code>).
     </p>
 
     </div>
@@ -523,5 +525,7 @@
     </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

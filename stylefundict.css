@@ -7,8 +7,12 @@
     background-color: #166174;
   }
   
-  a:hover, .nav-active{
+  .topnav a:hover, .nav-active{
     background-color: #339ab2;
+  }
+
+  .menuactive a:hover{
+    background-color: #339bb223;
   }
   
   .body{
@@ -37,8 +41,25 @@
     max-width: 60%;
   }
 
+  pre{
+    overflow: auto;
+    white-space: pre-wrap;
+  }
+
+  .afterr{
+    margin-top: -40px;
+  }
+
+  .beforee{
+    margin-bottom: -20px;
+  }
+
   .codee2{
     max-width: 75%;
+  }
+
+  .codee3{
+    max-width: 95%;
   }
   
   .kanit{
@@ -79,7 +100,6 @@
   .header{
     color:#339ab2;
   }
-
   
 
   .btn-primary{
@@ -147,7 +167,7 @@
     .codee{
         max-width: 85%;
     }
-    .codee2{
+    .codee2, .codee3{
         max-width: 100%;
     }
   }

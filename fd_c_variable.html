@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
@@ -32,8 +34,8 @@
                 </li>
                 <li class="nav-item dropdown underline11">
                   <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item active " aria-current="page" href="fd_c_home.html">C</a></li> 
+                  <ul class="dropdown-menu menuactive">
+                    <li><a class="dropdown-item active " style="background-color: #339ab2;" aria-current="page" href="fd_c_home.html">C</a></li> 
                     <li><a class="dropdown-item" href="fd_cpp_home.html">C++</a></li>
                     <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
                   </ul>
@@ -225,8 +227,9 @@
           <p><code class="fs-6">data_type</code> is the type of data that you want to store in the variable.
           You can review C's data type in the section above.</p>
           <p><code class="fs-6">variable_name</code> is the name that you want to give to your variable.</p>
-          <p>Example:
-          <div class="bg-plblack codee">
+          <p>
+            <p class="beforee">Example:</p>
+          <div class="codee">
           <pre>
             <code class="fs-6">
             #include &lt;stdio.h&gt;
@@ -240,11 +243,12 @@
           </div>
         </p>
         <pre></pre>
-        <p>We can also declare multiple variables at once.</p>
+        <p class="afterr">We can also declare multiple variables at once.</p>
         <p><div class='fw-bold d-inline-flex'>Note:</div> the variables' data type must be the same to do this.</p>
         <p>Syntax: <code class="fs-6">data_type variable_name1, variable_name2, variable_name3;</code></p>  
-        <p>Example:
-        <div class="bg-plblack codee">
+        <p>
+          <p class="beforee">Example:</p>
+        <div class="codee">
         <pre>
             <code class="fs-6">
             #include &lt;stdio.h&gt;
@@ -258,14 +262,15 @@
         </div>
         </p>
 
-        <div id="sub4"></div>
+        <div id="sub4" class="afterr"></div>
 
         <h4 class="fs-3 kanit header">Assign Value to Variable</h4>
         <p>Assigning value means storing a value in a variable. 
             You can assign a value when declaring a variable.</p>
         <p>Syntax: <code class="fs-6">data_type variable_name = value;</code></p>
-        <p>Example:
-        <div class="bg-plblack codee">
+        <p>
+          <p class="beforee">Example:</p>
+        <div class=" codee">
         <pre>
             <code class="fs-6">
             #include &lt;stdio.h&gt;
@@ -280,10 +285,11 @@
         </p>
 
         <pre></pre>
-        <p>We can also assign a value after declaring a variable.</p>
+        <p class="afterr">We can also assign a value after declaring a variable.</p>
         <p>Syntax: <code class="fs-6">variable_name = value;</code></p>
-        <p>Example:
-        <div class="bg-plblack codee">
+        <p>
+          <p class="beforee">Example:</p>
+        <div class="codee">
         <pre>
             <code class="fs-6">
             #include &lt;stdio.h&gt;
@@ -299,11 +305,12 @@
         </p>
 
         <pre></pre>
-        <p>To change a variable value, we just need to assign a new value to an existing variable.
+        <p class="afterr">To change a variable value, we just need to assign a new value to an existing variable.
             The new assigned value will overwrite the previous value.
         </p>
-        <p>Example:
-        <div class="bg-plblack codee">
+        <p>
+          <p class="beforee">Example:</p>
+        <div class=" codee">
         <pre>
             <code class="fs-6">
             #include &lt;stdio.h&gt;
@@ -319,10 +326,11 @@
         </p>
 
         <pre></pre>
-        <p>We can also copy the value of a variable to another variable.</p>
+        <p class="afterr">We can also copy the value of a variable to another variable.</p>
         <p>Syntax: <code class="fs-6">variable_name1 = variable_name2;</code></p>
-        <p>Example:
-        <div class="bg-plblack codee">
+        <p>
+          <p class="beforee">Example:</p>
+        <div class=" codee">
         <pre>
             <code class="fs-6">
             #include &lt;stdio.h&gt;
@@ -339,13 +347,14 @@
         </p>
 
         <pre></pre>
-        <p>There is also a variable type called constant. 
+        <p class="afterr">There is also a variable type called constant. 
             Constant is used when you do not want the value of the variable to change.
             We just need to add the <code class="fs-6">const</code> keyword before the data type in the variable. 
         </p>
         <p>Syntax: <code class="fs-6">const data_type variable_name = value;</code></p>
-        <p>Example:
-        <div class="bg-plblack codee">
+        <p>
+          <p class="beforee">Example:</p>
+        <div class=" codee">
         <pre>
             <code class="fs-6">
             #include &lt;stdio.h&gt;
@@ -360,7 +369,7 @@
         </p>
 
 
-        <div id="sub5"></div>
+        <div id="sub5" class="afterr"></div>
 
         <h4 class="fs-3 kanit header">Casting</h4>
         <p>Casting, also known as type conversion is an action of converting a value of one data type to another data type. For example, the conversion of int to float or vice versa. 
@@ -368,46 +377,47 @@
         <ol>
             <li class="fw-bold fs-5">Implicit Conversion</li>
             <p>This conversion occurs automatically when we assign a value to a variable.</p>
-            <p>Example:
-            <div class="bg-plblack codee">
+            <p>
+              <p class="beforee">Example:</p>
+            <div class="codee2">
             <pre>
                 <code class="fs-6">
-                #include &lt;stdio.h&gt;
-        
-                int main() {
-                    int myNum = 9.8;
-                    printf("%d",myNum); //the output is 9
-                    return 0;
-                }
+            #include &lt;stdio.h&gt;
+    
+            int main() {
+                int myNum = 9.8;
+                printf("%d",myNum); //the output is 9
+                return 0;
+            }
                 </code>
             </pre>
             </div>
             </p>
             <pre></pre>
 
-            <li class="fw-bold fs-5">Explicit Conversion</li>
+            <li class="fw-bold fs-5 afterr">Explicit Conversion</li>
             <p>This conversion is done manually by placing the parentheses symbol in front of the value.
                 So, the data type of the value will only be changed when we put the parentheses symbol.
             </p>
-            <p>Example:
-            <div class="bg-plblack codee2">
+            <p><p class="beforee">Example:</p>
+            <div class=" codee2">
             <pre>
                 <code class="fs-6">
-                #include &lt;stdio.h&gt;
-        
-                int main() {
-                    int myNum1 = 10;
-                    float myNum2 = (float) myNum1;
-                    printf("%f",myNum2); //myNum2 will show as 10.0000
-                    return 0;
-                }
+            #include &lt;stdio.h&gt;
+    
+            int main() {
+                int myNum1 = 10;
+                float myNum2 = (float) myNum1;
+                printf("%f",myNum2); //myNum2 will show as 10.0000
+                return 0;
+            }
                 </code>
             </pre>
             </div>
             </p>
         </ol>
 
-        <div id="sub6"></div>
+        <div id="sub6" class="afterr"></div>
 
         <h4 class="fs-3 kanit header">Variable Scope</h4>
         <p>Scope is the area in which a variable can be used or can be accessed.
@@ -415,8 +425,8 @@
             Local variable exists and can only be accessed in a particular function, while global variable can be accessed by all functions in the entire program. However, the global variable takes up much more memory than the local variable.
             So, it is advisable to avoid using too many global variables.
         </p>
-        <p>Example:
-        <div class="bg-plblack codee2">
+        <p><p class="beforee">Example:</p>
+        <div class=" codee2">
         <pre>
             <code class="fs-6">
             #include &lt;stdio.h&gt;
@@ -457,5 +467,7 @@
     </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

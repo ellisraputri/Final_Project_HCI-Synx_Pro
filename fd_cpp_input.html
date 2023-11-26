@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
@@ -32,9 +34,9 @@
                 </li>
                 <li class="nav-item dropdown underline11">
                   <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu menuactive">
                     <li><a class="dropdown-item " href="fd_c_home.html">C</a></li> 
-                    <li><a class="dropdown-item active" aria-current="page" href="fd_cpp_home.html">C++</a></li>
+                    <li><a class="dropdown-item active" style="background-color: #339ab2;" aria-current="page" href="fd_cpp_home.html">C++</a></li>
                     <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
                   </ul>
                 </li>
@@ -147,60 +149,62 @@
             Syntax: <code class='fs-6'>std::cout &lt;&lt; variable_name;</code> 
         </p>
 
-        <p>Example:
-        <div class="bg-plblack codee">
+        <p>
+            <p class="beforee">Example:</p>
+        <div class=" codee">
         <pre>
-            <code class="fs-6">
-            #include &lt;iostream&gt;
+        <code class="fs-6 language-c++">
+        #include &lt;iostream&gt;
 
-            int main() {
-                int myNum = 19;
-    
-                std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
-                std::cout &lt;&lt; myNum;
+        int main() {
+            int myNum = 19;
 
-                return 0;
-                }            
-            </code>
+            std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
+            std::cout &lt;&lt; myNum;
+
+            return 0;
+            }            
+        </code>
         </pre>
         </div>
 
-        Output:
-        <div class="bg-plblack codee">
-            <pre>
-                <code class="fs-6">
-                Hello World!
-                19  
-                </code>
-            </pre>
-            </div>
+        <p class="beforee afterr">Output:</p>
+        <div class=" codee">
+        <pre>
+            <code class="fs-6 language-plaintext">
+            Hello World!
+            19  
+            </code>
+        </pre>
+        </div>
         </p>
+        <br>
 
-        We can also omit the <code class="fs-6">std::</code> in front of the <code class="fs-6">cout</code>. 
+        <p class="afterr beforee">We can also omit the <code class="fs-6">std::</code> in front of the <code class="fs-6">cout</code>. 
         But, we have to replace it with <code class="fs-6">using namespace std;</code> before the main function. 
         The code below has the same output as the previous code, but it uses <code class="fs-6">using namespace std;</code>
-         instead.
-         <p><div class="bg-plblack codee">
-            <pre>
-                <code class="fs-6">
-                #include &lt;iostream&gt;
-                using namespace std;
+         instead.</p>
+         <p><div class=" codee">
+        <pre>
+        <code class="fs-6 language-c++">
+        #include &lt;iostream&gt;
+        using namespace std;
 
-                int main() {
-                  int myNum = 19;
-                    
-                  cout &lt;&lt; "Hello World!" &lt;&lt; endl;
-                  cout &lt;&lt; myNum;
-                    
-                  return 0;
-                
-                }            
-                </code>
-            </pre>
-            </div></p>
+        int main() {
+            int myNum = 19;
+            
+            cout &lt;&lt; "Hello World!" &lt;&lt; endl;
+            cout &lt;&lt; myNum;
+            
+            return 0;
+        
+        }            
+        </code>
+        </pre>
+        </div></p>
 
 
-        <div id="sub2"></div>
+        <div id="sub2" class="afterr"></div>
 
         <h4 class="fs-3 kanit header">Input</h4>
         <p>In C++, you can use the <code class="fs-6">cin</code> function to get user input.
@@ -213,32 +217,32 @@
             <code class="fs-6">std::cin &gt;&gt; input1 &gt;&gt; input2 &gt;&gt; inputn;</code>
         </p>
 
-        <p>Example:
-        <div class="bg-plblack codee2">
+        <p><p class="beforee">Example:</p>
+        <div class=" codee2">
         <pre>
-            <code class="fs-6">
-            #include &lt;iostream&gt;
+        <code class="fs-6 language-c++" >
+        #include &lt;iostream&gt;
 
-            int main() {
-                int myNum;
-                char myChar;
+        int main() {
+            int myNum;
+            char myChar;
 
-                std::cout &lt;&lt; "Input a number and a character: ";
-                std::cin &gt;&gt; myNum &gt;&gt; myChar;
-                std::cout &lt;&lt; myNum &lt;&lt; myChar;
-                return 0;
-            }            
-            </code></pre></div>
+            std::cout &lt;&lt; "Input a number and a character: ";
+            std::cin &gt;&gt; myNum &gt;&gt; myChar;
+            std::cout &lt;&lt; myNum &lt;&lt; myChar;
+            return 0;
+        }            
+        </code></pre></div>
         </p>
-        <p>
-            Output:
-            <div class="bg-plblack codee">
-                <pre>
-                    <code class="fs-6">
-                Input a number and a character: 23 C
-                23C
-                    </code>
-                </pre>
+        <p >
+            <p class="beforee">Example:</p>
+            <div class=" codee">
+            <pre>
+            <code class="fs-6 language-plaintext">
+            Input a number and a character: 23 C
+            23C
+            </code>
+            </pre>
             </div>
         </p>
 
@@ -251,37 +255,39 @@
             include the <code class="fs-6">&lt;string&gt;</code> library too because 
                 we are using the <code class="fs-6">std::string</code> type of variable.</p>
         
-        <p>Example:
-        <div class="bg-plblack codee">
+        <p><p class="beforee">Example:</p>
+        <div class=" codee">
         <pre>
-            <code class="fs-6">
-            #include &lt;iostream&gt;
-            #include &lt;string&gt;
+        <code class="fs-6 language-c++">
+        #include &lt;iostream&gt;
+        #include &lt;string&gt;
 
-            int main() {
-                std::string myName;
+        int main() {
+            std::string myName;
 
-                std::cout &lt;&lt; "Input your full name: ";
-                getline(std::cin, myName);
-                std::cout &lt;&lt; myName;
-                return 0;
-            }            
-            </code>
+            std::cout &lt;&lt; "Input your full name: ";
+            getline(std::cin, myName);
+            std::cout &lt;&lt; myName;
+            return 0;
+        }            
+        </code>
         </pre>
         </div>
         </p>
 
-        <p>
-            Output:
-            <div class="bg-plblack codee">
-                <pre>
-                    <code class="fs-6">
-                Input your full name: John Doe
-                John Doe
-                    </code>
-                </pre>
+        <p class='afterr'>
+            <p class="beforee">Output:</p>
+            <div class=" codee">
+            <pre>
+            <code class="fs-6 language-plaintext">
+            Input your full name: John Doe
+            John Doe
+            </code>
+            </pre>
             </div>
-            If we don't use the getline function, the myName variable will only contains John, not John Doe.
+            <p class="afterr">If we don't use the <code class="fs-6">getline</code> function, the 
+               <code class="fs-6">myName</code> variable will only contains John, not John Doe.
+            </p> 
         </p>
 
         <div id="sub3"></div>
@@ -299,10 +305,11 @@
 
             <li>Multiple Line Comments</li>
             <p>Any text between <code class="fs-6">/*</code> and <code class="fs-6">*/</code> will not be 
-                executed by the compiler. <br/>Syntax:  
-                <div class="bg-plblack codee">
+                executed by the compiler. <br/>
+                <p class="beforee">Syntax:</p>  
+                <div class=" codee">
                 <pre>
-                <code class="fs-6">
+                <code class="fs-6 language-c++">
             /*	Hello world!
                 Some comment here
             */                       
@@ -313,9 +320,9 @@
         </ul>
         <pre></pre>
         
-        <p>Example:
-        <div class="bg-plblack codee2">
-            <pre><code class="fs-6">
+        <p class='afterr'>Example:
+        <div class=" codee2">
+            <pre><code class="fs-6 language-c++">
             #include &lt;iostream&gt;
             #include &lt;string&gt;
     
@@ -340,14 +347,14 @@
         </div>
         </p>
 
-        <div id="sub4"></div>
+        <div id="sub4" class="afterr"></div>
 
         <h4 class="fs-3 kanit header">Escape Sequences</h4>
         <p>Escape sequences are mostly used to control or format the output.
             It started with a backslash (\) and followed by another character.
             Example:        
-            <div class="bg-plblack codee">
-            <pre><code class="fs-6">
+            <div class=" codee">
+            <pre><code class="fs-6 language-c++">
             #include &lt;stdio.h&gt;
     
             int main() {
@@ -441,8 +448,8 @@
                 <li><code class="fs-6">catch</code></li>
                 The <code class="fs-6">catch</code> keyword indicates the catching of an exception.
                 Syntax:        
-                <div class="bg-plblack codee">
-                <pre><code class="fs-6">
+                <div class=" codee">
+                <pre><code class="fs-6 language-c++">
                 try {
                 // protected code
                 } catch( ExceptionName e1 ) {
@@ -459,8 +466,8 @@
         </p>
 <br/>
         <p> Example:        
-            <div class="bg-plblack">
-            <pre><code class="fs-6">
+            <div class="codee3">
+            <pre><code class="fs-6 language-c++">
             #include &lt;stdio.h&gt;
 
             /*below is the division function that is defined by the user. You can learn 
@@ -487,8 +494,11 @@
                     std::cerr &lt;&lt; msg &lt;&lt; std::endl;
                 } 
                 
-                /*if the result type is const char* (the result is the message “Division by zero!”), 
-                then cerr (print error message) of the msg. In this case, msg is “Division by zero!” */
+            /*if the result type is const char* 
+            (the result is the message "Division by zero!"), 
+            
+            then cerr (print error message) of the msg. 
+            In this case, msg is "Division by zero!" */
 
                 return 0;
             }
@@ -518,6 +528,8 @@
         </div>
     </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+	<script>hljs.highlightAll();</script>
 
 </body>
 </html>

@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
@@ -32,10 +34,10 @@
                 </li>
                 <li class="nav-item dropdown underline11">
                   <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu menuactive">
                     <li><a class="dropdown-item " href="fd_c_home.html">C</a></li> 
                     <li><a class="dropdown-item "  href="fd_cpp_home.html">C++</a></li>
-                    <li><a class="dropdown-item active"  aria-current="page" href="fd_py_home.html">Python</a></li>
+                    <li><a class="dropdown-item active" style="background-color: #339ab2;"  aria-current="page" href="fd_py_home.html">Python</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -132,14 +134,14 @@
         <h5 class="fs-5 fw-bold">If, Else, and Else If</h5>
         <p>If statement specifies a block of code to be executed when a condition is true.</p>
         <p>
-            Syntax:<div class='bg-plblack codee2'>
-            <pre><code class="fs-6 ">
+            Syntax:<div class=' codee2'>
+            <pre><code class="fs-6 language-python">
             if condition:
-            // block of code to be executed if the condition is true
+            #block of code to be executed if the condition is true
             </code></pre></div>
         </p>
         <p>
-            Example:<div class="bg-plblack codee">
+            Example:<div class=" codee">
             <pre><code class="fs-6 ">
             a = 400
             b = 20
@@ -161,16 +163,16 @@
             when the condition is false. Then, we can use <code class="fs-6">else</code> for this case.
         </p>
         <p>
-            Syntax:<div class='bg-plblack codee2'>
-            <pre><code class="fs-6 ">
+            Syntax:<div class=' codee2'>
+            <pre><code class="fs-6 language-python">
             if condition:
-                // block of code to be executed if the condition is true
+                #block of code to be executed if the condition is true
             else:
-                // block of code to be executed if the condition is false
+                #block of code to be executed if the condition is false
             </code></pre></div>
         </p>
         <p>
-            Example:<div class="bg-plblack codee">
+            Example:<div class=" codee">
             <pre><code class="fs-6 ">
             a = 400
             b = 20
@@ -187,18 +189,18 @@
             <code class="fs-6">Elif</code> statement specifies a new condition if the first condition is false.
         </p>
         <p>
-            Syntax:<div class='bg-plblack codee2'>
-            <pre><code class="fs-6 ">
+            Syntax:<div class=' codee3'>
+            <pre><code class="fs-6 language-python">
             if condition1:
-                // block of code to be executed if condition1 is true
+                #block of code to be executed if condition1 is true
             elif condition2:
-            // block of code to be executed if the condition1 is false and condition2 is true
+                #block of code to be executed if the condition1 is false and condition2 is true
             else:
-            // block of code to be executed if the condition1 is false and condition2 is false
+              #block of code to be executed if the condition1 is false and condition2 is false
             </code></pre></div>
         </p>
         <p>
-            Example:<div class="bg-plblack codee2">
+            Example:<div class=" codee2">
             <pre><code class="fs-6 ">
             myNum = 10;
             if myNum < 1:
@@ -218,9 +220,8 @@
             Syntax: <code class="fs-6">if condition: expression</code>
         </p>
         <p>
-            Example:<div class="bg-plblack codee">
+            Example:<div class=" codee">
             <pre><code class="fs-6 ">
-            Example:
             a = 400
             b = 20
             if a>b: print("a is greater than b") 
@@ -233,14 +234,14 @@
             <code class="fs-6">if-else</code> statements to a single line of code.
         </p>
         <p>
-            Syntax:<div class='bg-plblack codee2'>
-            <pre><code class="fs-6 ">
+            Syntax:<div class=' codee2'>
+            <pre><code class="fs-6 language-python">
             expressionTrue if condition else expressionFalse
             </code></pre></div>
         </p>
         <p>
             Below is the simplified version of the previous 
-            <code class="fs-6">if-else</code> example:<div class="bg-plblack codee2">
+            <code class="fs-6">if-else</code> example:<div class=" codee3">
             <pre><code class="fs-6 ">
             a = 400
             b = 20
@@ -257,15 +258,15 @@
             Instead of using many <code class="fs-6">if-else</code> statements, you can use <code class="fs-6">match case</code>.
         </p>
         <p>
-            Syntax:<div class='bg-plblack codee2'>
-            <pre><code class="fs-6 ">
+            Syntax:<div class=' codee'>
+            <pre><code class="fs-6 language-python">
             match parameter:
             case x:
-                // code block
+                #code block
             case y:
-                // code block
+                #code block
             default:
-                // code block
+                #code block
             </code></pre></div>
         </p>
         <p>
@@ -275,8 +276,8 @@
         </p>
         <p><div class='fw-bold d-inline-flex'>Note:</div> the <code class="fs-6">default</code> code block is optional. </p>
         <p>
-            Example:<div class="bg-plblack codee">
-            <pre><code class="fs-6 ">
+            Example:<div class=" codee">
+            <pre><code class="fs-6 language-python">
             day = 2;
             match day:
             case 1:
@@ -308,18 +309,18 @@
         <p><code class="fs-6">While</code> loop loops through a block of code as 
             long as the specified condition is true.</p>
         <p>
-            Syntax:<div class='bg-plblack codee'>
+            Syntax:<div class=' codee'>
             <pre><code class="fs-6 ">
             while condition:
-                // code block to be executed
+                #code block to be executed
             </code></pre></div>
         </p>
         <p>
-            Example:<div class="bg-plblack codee">
+            Example:<div class=" codee">
             <pre><code class="fs-6 ">
             a = 1
             while(a < 5):
-	            print(f"a is {a}")
+	        print(f"a is {a}")
 	        a++
             </code></pre></div>
         </p>
@@ -327,8 +328,8 @@
             The loop in the example will produce the output below:
         </p>
         <p>
-            Output:<div class="bg-plblack codee">
-            <pre><code class="fs-6 ">
+            Output:<div class=" codee">
+            <pre><code class="fs-6 language-plaintext">
             a is 1
             a is 2
             a is 3
@@ -345,21 +346,21 @@
         <h5 class="fs-5 fw-bold">For Loop</h5>
         <p><code class="fs-6">For</code> loop is used when we know how many times we want to loop through a block.</p>
         <p>
-            Syntax:<div class='bg-plblack codee'>
-            <pre><code class="fs-6 ">
-            for variable in variable:
-                // code block to be executed              
+            Syntax:<div class=' codee'>
+            <pre><code class="fs-6 language-python">
+            for variable in variables:
+                #code block to be executed              
             </code></pre></div>
         </p>
         <p>
-            Example:<div class="bg-plblack codee">
+            Example:<div class=" codee">
             <pre><code class="fs-6 ">
             fruits=['apple', 'mango', 'banana']
             for i in fruits:
                 print(i)
             </code></pre></div>
         </p>
-        <p>The output of the program above will be:<div class="bg-plblack codee">
+        <p>The output of the program above will be:<div class=" codee">
             <pre><code class="fs-6 ">
             apple
             mango
@@ -369,14 +370,14 @@
         <pre></pre><pre></pre><pre></pre>
         <p>
             Python also enables a loop to loop through a string. For example:
-            <div class="bg-plblack codee">
+            <div class=" codee">
             <pre><code class="fs-6 ">
             for i in 'mango':
                 print(i)
             </code></pre></div>
         </p>
-        <p>The result will be:<div class="bg-plblack codee">
-            <pre><code class="fs-6 ">
+        <p>The result will be:<div class=" codee">
+            <pre><code class="fs-6 language-plaintext">
             m
             a
             n 
@@ -401,13 +402,13 @@
         </p>
         <p>
             Example:
-            <div class="bg-plblack codee">
-            <pre><code class="fs-6 ">
+            <div class=" codee">
+            <pre><code class="fs-6 language-python">
             for i in range (3):
                 print(i)
             </code></pre></div>
         </p>
-        <p>The output will be:<div class="bg-plblack codee">
+        <p>The output will be:<div class=" codee">
             <pre><code class="fs-6 ">
             0
             1
@@ -422,11 +423,11 @@
             A <code class="fs-6">break</code> statement can be used to jump out of a loop.
         </p>
         <p>
-            Example:<div class="bg-plblack codee">
-            <pre><code class="fs-6 ">
+            Example:<div class=" codee">
+            <pre><code class="fs-6 language-python">
             a = 1
             while a < 10:
-            print(”Hello!”)
+            print("Hello!")
             if(a == 4):
                 break
             a++
@@ -444,8 +445,8 @@
             to the next iteration in the loop.
         </p>
         <p>
-            Example:<div class="bg-plblack codee">
-            <pre><code class="fs-6 ">
+            Example:<div class=" codee">
+            <pre><code class="fs-6 language-python">
             for i in range(5):
             if i==3:
                 continue
@@ -482,5 +483,7 @@
     </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
