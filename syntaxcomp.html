@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="syncomp.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -76,11 +78,11 @@
           <div class="col-lg-3 first_column">
             <ul id="nav">
               <li class="centerin3">
-                <a class="lala" href="#">What to Compare?&ensp;
+                <a class="lala1" href="#">What to Compare?&ensp;
                   <i class="fa-solid fa-caret-down downsym"></i>
                   <i class="fa-solid fa-caret-up upsym"></i>
                 </a>
-                  <ul class="naikk">
+                  <ul class="naikk menulala1">
                   <li><a href="#">Basic Syntax</a></li>
                   <li><a href="#">Variable and Data Type <i class="fa-solid fa-caret-right"></i></a>
                     <ul>
@@ -197,16 +199,22 @@
             </ul>
           </div>
 
+          
           <div class="col-lg-4">
-            <div class="dropdown column1">
-                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Language #1
-                </button>
-                <ul class="dropdown-menu naikk">
+            <div class="dropdown column1 columnlala2">
+              <div class="buttons">
+              <a class="lala2" href="#">Language #1&ensp;
+                <i class="fa-solid fa-caret-down downsym"></i>
+                <i class="fa-solid fa-caret-up upsym"></i>
+              </a>
+            </div>
+            <div class="mnlala2">
+                <ul class="dropdown-menu naikk menulala2">
                   <li><a class="dropdown-item" href="#">C</a></li>
                   <li><a class="dropdown-item" href="#">C++</a></li>
                   <li><a class="dropdown-item" href="#">Python</a></li>
                 </ul>
+              </div>
             </div>
           </div>
 
@@ -220,15 +228,20 @@
 
 
           <div class="col-lg-4">
-            <div class="dropdown column1">
-                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Language #2
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">C</a></li>
-                  <li><a class="dropdown-item" href="#">C++</a></li>
-                  <li><a class="dropdown-item" href="#">Python</a></li>
-                </ul>
+            <div class="dropdown column1 columnlala3">
+              <div class="buttons">
+              <a class="lala3" href="#">Language #2&ensp;
+                <i class="fa-solid fa-caret-down downsym"></i>
+                <i class="fa-solid fa-caret-up upsym"></i>
+              </a>
+            </div>
+            <div class="mnlala3">
+              <ul class="dropdown-menu naikk menulala3">
+                <li><a class="dropdown-item" href="#">C</a></li>
+                <li><a class="dropdown-item" href="#">C++</a></li>
+                <li><a class="dropdown-item" href="#">Python</a></li>
+              </ul>
+            </div>
             </div>
           </div>
         </div>
@@ -237,19 +250,586 @@
         <div class="text-end">
           <button class="tosca convert">Compare</button>
         </div>
-
+ 
         <br/><br/>
         <h2 class="fs-3 fw-bold">Result</h2><br/>
+
+        <!--basic syntax-->
         <div class="row">
-          <div class="col-lg-6">
-            <div class="column2"></div>
+          <div class="col-lg-6">    <!--C-->
+            <div class="column2">
+              <div class="beforeeh"></div>
+              <pre>                   
+                <div class="codee">
+                  <code class="fs-6">
+              #include &lt;stdio.h&gt;
+
+              int main() {
+                printf("Hello World!");
+                return 0;
+              }
+                  </code>
+                </div>
+                </pre>
+              
+                <p class="afterrh">Line 1: &nbsp; <code class="fs-6">#include &lt;stdio.h&gt;</code> &nbsp; is a statement to include the header file library. 
+                  <code class="fs-6">&lt;stdio.h&gt;</code> is a library that lets us work with input and output functions, such as <code class="fs-6">printf()</code>.</p>
+                <p>Line 2: blank space. C ignores white space, but we need white spaces to increase our code readability.</p>
+                <p>Line 3: the <code class="fs-6">main()</code> function. As its name implies, <code class="fs-6">main()</code> function consists of the main code to be executed. 
+                  Any code inside the curly brackets { } is called “inside the <code class="fs-6">main()</code> function”</p>
+                <p>Line 4: <code class="fs-6">printf()</code> is a function used to output or print text to the screen.</p>
+                <p>Line 5: code class="fs-6">return 0;</code> ends the <code class="fs-6">main()</code> function.</p>
+                <p>Note: every C statement ends with a semicolon (;)</p>
+            </div>
           </div>
 
           <div class="col-lg-6">
-            <div class="column2"></div>
+            <div class="column2">   <!--Cpp-->
+              <div class="beforeeh"></div>
+              <br>
+              <pre>
+                <div class="codee">
+                <code class="fs-6 language-c++">
+                  #include &lt;iostream&gt;
+                  int main() {
+                      std::cout &lt;&lt; "Hello World!";
+                      return 0;
+                  }
+                </code>
+                </div>
+                </pre>
+                <p class="afterrh">Line 1: &nbsp; <code class="fs-6">#include &lt;iostream&gt;</code> &nbsp; is a statement to include the header file library. 
+                    &lt;iostream&gt; is a library that lets us work with input and output functions, such as <code class="fs-6">cout</code>.</p>
+                <p>Line 2: blank space. C++ ignores white space, but we need white spaces to increase our code readability.</p>
+                <p>Line 3: the <code class="fs-6">main()</code> function. As its name implies, <code class="fs-6">main()</code> function consists of the main code to be executed. 
+                  Any code inside the curly brackets { } is called “inside the <code class="fs-6">main()</code> function”</p>
+                <p>Line 4: <code class="fs-6">std::cout</code> is a function used to output or print text to the screen.</p>
+                <p>Line 5: <code class="fs-6">return 0;</code> ends the <code class="fs-6">main()</code> function.</p>
+                <p>Note: every C++ statement ends with a semicolon (;)</p>
+            </div>
           </div>
         </div>
+
+        <div class="col-lg-6">
+          <div class="column2">   <!--python-->
+          <p>
+            <div class="bg-plblack codee">
+          <pre><code class="fs-6">
+          print("Hello World")
+          </code></pre>
+            </div>
+          </p>
+          <p>The <code class="fs-6">print()</code> function is used to display 
+            <code class="fs-6">"Hello World"</code> to the user.
+          </p>
+        </div>
+      </div>
     
+
+      <!--data type-->
+      <div class="row">
+        <div class="col-lg-6">    <!--C-->
+          <div class="column2">
+            <p>There are several data types for C, but these are the frequently used ones:</p>
+        <table class="table table-light table-hover table-striped table-bordered w-auto">
+            <thead>
+              <tr class="table-secondary">
+                <th scope="col" class="text-center align-middle">Data Type</th>
+                <th scope="col" class="text-center align-middle">Size</th>
+                <th scope="col" class="text-center align-middle">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-center align-middle">int</th>
+                <td class="text-center align-middle">2 or 4 bytes</td>
+                <td class="align-middle">Stores whole numbers (integers)</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-center align-middle">float</th>
+                <td class="text-center align-middle">4 bytes</td>
+                <td class="align-middle">Stores floating point numbers, but only sufficient for storing 6-7 decimal digits</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-center align-middle">double</th>
+                <td class="text-center align-middle">8 bytes</td>
+                <td class="align-middle">Stores floating point numbers, with the ability to store until 15 decimal digits.</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-center align-middle">bool</th>
+                <td class="text-center align-middle">1 byte</td>
+                <td class="align-middle">Stores only two kinds of values: True or False.</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-center align-middle">char</th>
+                <td class="text-center align-middle">1 byte</td>
+                <td class="align-middle">Stores a single character. The character can be a letter, number, or ASCII value.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><div class='fw-bold d-inline-flex'>Note:</div> in C, to declare a boolean data type, we need to include the library 
+            <code class="fs-6">&lt;stdbool.h&gt;</code></p>
+        
+          <pre></pre>
+          <p>In C, we also have format specifiers to specify which data type we use.</p>
+          <table class="table table-light table-hover table-striped table-bordered w-auto">
+            <thead>
+              <tr class="table-secondary">
+                <th scope="col" class="text-center align-middle">Format Specifier</th>
+                <th scope="col" class="text-center align-middle">Data Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="text-center align-middle">%d</th>
+                <td class="text-center align-middle">int</td>
+              </tr>
+              <tr>
+                <th class="text-center align-middle">%f</th>
+                <td class="text-center align-middle">float</td>
+              </tr>
+              <tr>
+                <th class="text-center align-middle">%lf</th>
+                <td class="text-center align-middle">double</td>
+              </tr>
+              <tr>
+                <th class="text-center align-middle">%c</th>
+                <td class="text-center align-middle">char</td>
+              </tr>
+              <tr>
+                <th class="text-center align-middle">%s</th>
+                <td class="text-center align-middle">string (also called 'text')</td>
+              </tr>
+              <tr>
+                <th class="text-center align-middle">%d</th>
+                <td class="text-center align-middle">bool</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="column2">   <!--Cpp-->
+            <p>There are several data types for C++, but these are the frequently used ones:</p>
+        <table class="table table-light table-hover table-striped table-bordered w-auto">
+            <thead>
+            <tr class="table-secondary">
+                <th scope="col" class="text-center align-middle">Data Type</th>
+                <th scope="col" class="text-center align-middle">Size</th>
+                <th scope="col" class="text-center align-middle">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row" class="text-center align-middle">integer (int) </th>
+                <td class="text-center align-middle">2 or 4 bytes</td>
+                <td class="align-middle">Stores whole numbers (integers)</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">float</th>
+                <td class="text-center align-middle">4 bytes</td>
+                <td class="align-middle">Stores floating point numbers, but only sufficient for storing 6-7 decimal digits</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">double</th>
+                <td class="text-center align-middle">8 bytes</td>
+                <td class="align-middle">Stores floating point numbers, with the ability to store until 15 decimal digits.</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">boolean (bool)</th>
+                <td class="text-center align-middle">1 byte</td>
+                <td class="align-middle">Stores only two kinds of values: True or False.</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">character (char) </th>
+                <td class="text-center align-middle">1 byte</td>
+                <td class="align-middle">Stores a single character. The character can be a letter, number, or ASCII value.</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center align-middle">auto </th>
+                <td class="text-center align-middle">adjust automatically according to the data type</td>
+                <td class="align-middle">Automatically detects and assigns data type to the variable</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="column2">   <!--python-->
+          <p>There are several data types for Python:</p>
+          <table class="table table-light table-hover table-striped table-bordered w-auto">
+              <thead>
+              <tr class="table-secondary">
+                  <th scope="col" class="text-center align-middle">Data Type</th>
+                  <th scope="col" class="text-center align-middle">Categories</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <th scope="row" class="text-center align-middle">Text Type </th>
+                  <td class="text-center align-middle">str</td>
+              </tr>
+              <tr>
+                  <th scope="row" class="text-center align-middle">Numeric Type</th>
+                  <td class="text-center align-middle">int, float, complex</td>
+          
+              </tr>
+              <tr>
+                  <th scope="row" class="text-center align-middle">Sequence Type</th>
+                  <td class="text-center align-middle">list, tuple, range</td>
+              </tr>
+              <tr>
+                  <th scope="row" class="text-center align-middle">Mapping Type</th>
+                  <td class="text-center align-middle">dict</td>
+              </tr>
+              <tr>
+                  <th scope="row" class="text-center align-middle">Set Type</th>
+                  <td class="text-center align-middle">set, frozenset</td>
+              </tr>
+              <tr>
+                  <th scope="row" class="text-center align-middle">Boolean Type</th>
+                  <td class="text-center align-middle">bool</td>
+              </tr>
+              <tr>
+                  <th scope="row" class="text-center align-middle">Binary Type</th>
+                  <td class="text-center align-middle">bytes, bytearray, memoryview</td>
+              </tr>
+              <tr>
+                  <th scope="row" class="text-center align-middle">None Type</th>
+                  <td class="text-center align-middle">NoneType</td>
+              </tr>
+              </tbody>
+          </table>
+      </div>
+    </div>
+    
+    <!--variable name-->
+    <div class="row">
+      <div class="col-lg-6">    <!--C-->
+        <div class="column2">
+          <p>The general rules for naming variables are:</p>
+          <ul>
+            <li>Names can contain letters, digits, and underscores</li>
+            <li>Names must begin with a letter or an underscore (_)</li>
+            <li>Names are case-sensitive (lowercase and uppercase letters have different meanings)</li>
+            <li>Names cannot contain whitespaces or special characters ($, #, %, etc.)</li>
+            <li>Names cannot contain reserved words, such as int, printf, etc.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="column2">   <!--Cpp-->
+          <p>The general rules for naming variables are:</p>
+        <ul>
+            <li>Names can contain letters, digits, and underscores</li>
+            <li>Names must begin with a letter or an underscore (_)</li>
+            <li>Names are case-sensitive (lowercase and uppercase letters have different meanings)</li>
+            <li>Names cannot contain whitespaces or special characters ($, #, %, etc.)</li>
+            <li>Names cannot contain reserved words, such as int, float, etc.</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="column2">   <!--python-->
+      <p>The general rules for naming variables are:</p>
+      <ul>
+          <li>Names can contain letters, digits, and underscores</li>
+          <li>Names must begin with a letter or an underscore (_)</li>
+          <li>Names are case-sensitive (lowercase and uppercase letters have different meanings)</li>
+          <li>Names cannot contain whitespaces or special characters ($, #, %, etc.)</li>
+          <li>Names cannot contain reserved words, such as int, float, etc.</li>
+      </ul>
+    </div>
+  </div>
+    
+
+  <!--create variable-->
+  <div class="row">
+    <div class="col-lg-6">    <!--C-->
+      <div class="column2">
+        <p>Syntax: <code class="fs-6">data_type variable_name;</code></p>
+          <p>
+            <p class="beforee">Example:</p>
+          <div class="codee">
+          <pre>
+            <code class="fs-6">
+            #include &lt;stdio.h&gt;
+
+            int main() {
+                int myNum;
+                return 0;
+            }
+            </code>
+          </pre>
+          </div>
+        </p>
+        <pre></pre>
+        <p class="afterr">Multiple Variable Declaration</p>
+        <p>Syntax: <code class="fs-6">data_type variable_name1, variable_name2, variable_name3;</code></p>  
+        <p>
+          <p class="beforee">Example:</p>
+        <div class="codee">
+        <pre>
+            <code class="fs-6">
+            #include &lt;stdio.h&gt;
+
+            int main() {
+                int myNum1, myNum2, myNum3;
+                return 0;
+            } 
+            </code>
+        </pre>
+        </div>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="column2">   <!--Cpp-->
+        <p>Syntax: <code class="fs-6">data_type variable_name;</code></p>
+        <p>
+          <p class="beforee">Example:</p>
+        <div class=" codee">
+        <pre>
+            <code class="fs-6">
+            #include &lt;iostream&gt;
+
+            int main() {
+                int myNum;
+                return 0;
+            }
+            </code>
+        </pre>
+        </div>
+        </p>
+        <pre></pre>
+        <p class="afterr">Multiple variable declaration</p>
+        <p>Syntax: <code class="fs-6">data_type variable_name1, variable_name2, variable_name3;</code></p>  
+        <p><p class="beforee">Example:</p>
+        <div class=" codee">
+        <pre>
+            <code class="fs-6">
+            #include &lt;iostream&gt;
+
+            int main() {
+                int myNum1, myNum2, myNum3;
+                return 0;
+            } 
+            </code>
+        </pre>
+        </div>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="column2">   <!--python-->
+      <p>Creating variables also known as declaring variables is an action of making a variable to store data.</p>
+      <p>Example: <code class="fs-6">x = 5</code></p>
+  </div>
+</div>
+
+<!--implicit conversion-->
+<div class="row">
+  <div class="col-lg-6">    <!--C-->
+    <div class="column2">
+      <p>
+        <p class="beforee">Example:</p>
+      <div class="codee2">
+      <pre>
+          <code class="fs-6">
+      #include &lt;stdio.h&gt;
+
+      int main() {
+          int myNum = 9.8;
+          printf("%d",myNum); //the output is 9
+          return 0;
+      }
+          </code>
+      </pre>
+      </div>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="column2">   <!--Cpp-->
+      <p><p class="beforee">Example:</p>
+          <div class=" codee2">
+          <pre>
+              <code class="fs-6 language-c++">
+              #include &lt;iostream&gt;
+      
+              int main() {
+                  int myNum = 9.8;
+                  std::cout &lt;&lt; myNum; //the output is 9
+                  return 0;
+              }
+              </code>
+          </pre>
+          </div>
+          </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-6">
+  <div class="column2">   <!--python-->
+  <p>Example:<br/>
+    <div class="codee">
+      <pre><code class="fs-6">x = 8 	#x is automatically set to int</code></pre>
+    </div>
+  </p>
+</div>
+</div>
+  
+<!--explicit conversion-->
+<div class="row">
+  <div class="col-lg-6">    <!--C-->
+    <div class="column2">
+      <p><p class="beforee">Example:</p>
+          <div class=" codee2">
+          <pre>
+              <code class="fs-6">
+          #include &lt;stdio.h&gt;
+  
+          int main() {
+              int myNum1 = 10;
+              float myNum2 = (float) myNum1;
+              printf("%f",myNum2); //myNum2 will show as 10.0000
+              return 0;
+          }
+              </code>
+          </pre>
+          </div>
+          </p>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="column2">   <!--Cpp-->
+      <p><p class="beforee">Example:</p>
+          <div class=" codee2">
+          <pre>
+              <code class="fs-6 language-c++">
+              #include &lt;iostream&gt;
+      
+              int main() {
+                  int myNum1 = 10;
+                  float myNum2 = (float) myNum1;
+                  std::cout &lt;&lt; myNum2; //myNum2 will show as 10.00
+                  return 0;
+              }
+              </code>
+          </pre>
+          </div>
+          </p>
+    </div>
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="column2">   <!--python-->
+    <p>This conversion is done manually by using constructor functions. There are three 
+      well-known constructor functions:
+      <ul>
+          <li><code class="fs-6">int()</code> - constructs an integer number</li> 
+          <li><code class="fs-6">float()</code> - constructs a float number</li>   
+          <li><code class="fs-6">str()</code> - constructs a string </li>           
+      </ul>
+  </p>
+      <p><p class="beforee">Example:</p>
+      <div class=" codee">
+        <pre>
+        <code class="fs-6">
+        x = int(9.12)	#x will be 9
+        y = float(8)	#y will be 8.0
+        z = str(100)	#z will be '100'
+        </code>
+        </pre>
+      </div>
+    </p>
+  </div>
+  </div>  
+
+  
+  <!--variable scope-->
+  <div class="row">
+    <div class="col-lg-6">    <!--C-->
+      <div class="column2">
+        <p><p class="beforee">Example:</p>
+        <div class=" codee2">
+        <pre>
+        <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int phi = 3.14; //global variable
+
+        int sum (int a, int b){
+            int result; //local variable inside the sum function
+        }
+
+        int main() {
+            int myNum1; //local variable inside the main function
+            return 0;
+        }
+        </code>
+        </pre>
+        </div>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="column2">   <!--Cpp-->
+        <p><p class="beforee">Example:</p>
+        <div class=" codee2">
+        <pre>
+        <code class="fs-6">
+        #include &lt;iostream&gt;
+
+        int phi = 3.14; //global variable
+
+        int sum (int a, int b){
+            int result; //local variable inside the sum function
+        }
+
+        int main() {
+            int myNum1; //local variable inside the main function
+            return 0;
+        }
+        </code>
+        </pre>
+        </div>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="column2">   <!--python-->
+      <p><p class="beforee">Example:</p>
+      <div class=" codee">
+      <pre>
+      <code class="fs-6 language-python">
+      x = "Hello!" 	#this is a global variable
+
+      def myFunc(){
+          y = "Hi!"	#this is a local variable
+      } 
+      </code>
+      </pre>
+      </div>
+      </p>
+  </div>
+</div>
+
+  
+  </div>
   </div>
   
   <div class="dummy"></div>
@@ -267,6 +847,7 @@
       </div>
     </div>
   </div>
+  
 
   <script>
     $(document).ready(function(){
@@ -285,5 +866,7 @@
     });
   </script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </body>
 </html>
