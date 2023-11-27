@@ -102,6 +102,20 @@
     font-weight: bolder;
 }
 
+.submitt{
+    border: 0px;
+    padding: 10px;
+    font-size: 1.2vw;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20%;
+}
+
+.submitt:hover{
+    background-color: #339ab2;
+}
+
 @media (max-width:768px) {
     .centerin{
         text-align: center;
@@ -118,10 +132,18 @@
     .page{
         width: 95%;
     }
-    
-
 }
 
-@media (max-width:410px) {
-    
+@media (max-width:992px) {
+    .submitt{
+        font-size: 1.8vw;
+        width: 15%;
+    } 
+}
+
+@media (max-width:576px) {
+    .submitt{
+        font-size: 13px;
+        width: 80px;
+    } 
 }
