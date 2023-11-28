@@ -149,7 +149,7 @@
         operator (&lt;&lt;) to write and finally, we close the file. 
     </p>
     <p>
-        Syntax:<code class="fs-6"> fprintf(pointer_name, “text we want to write”);</code>
+        Syntax:<code class="fs-6"> fprintf(pointer_name, "text we want to write");</code>
     </p>
     <p>
         Example:<div class=" codee">
@@ -170,12 +170,42 @@
         }
         </code></pre></div>
     </p>
+    <br>
+    <p>
+      We can also append to a file using ofstream.  But, we need to include the mode 
+      <code class="fs-6">std::ios::app</code> in the <code class="fs-6">open()</code> function. 
+  </p>
+  <p>
+      Syntax:<code class="fs-6"> variable_name.open(file_name, std::ios::app);</code>
+  </p>
+  <p>
+      Example:<div class=" codee">
+      <pre><code class="fs-6 language-c++">
+      #include &lt;iostream&gt;
+      #include &lt;fstream&gt;
+      using namespace std;
+
+      int main() {
+        // Declaring a variable 
+        ofstream myfile;
+
+        // Open and append "Hello!" the file 
+        myfile.open("text.txt", ios::app)
+        myfile << "Hello!"
+
+        // Close the file
+        MyFile.close();
+
+        return 0;
+      }
+      </code></pre></div>
+  </p>
 
     <div id="sub2"></div>
 
     <h4 class="fs-3 kanit header">ifstream (Read a File)</h4>
     <p>
-        To write to a file, first we need to include the library <code class="fs-6">&lt;fstream&gt;</code>, 
+        To read a file, first we need to include the library <code class="fs-6">&lt;fstream&gt;</code>, 
         then we open the file with ifstream class or fstream class.  We need to 
         prepare a text string variable to store the file content. Then, we use 
         the <code class='fs-6'>getline()</code> function and finally, we close the file. <span class="fw-bold">Note:</span> 
