@@ -107,8 +107,22 @@
     background-color: #339ab2;
 }
 
-.resultss{
-    display: hidden;
+.leftside{
+    float:left;
+    background-color: rgba(133, 133, 133, 0.455);
+}
+
+.rightside{
+    float: right;
+    background-color: rgba(133, 133, 133, 0.455);   
+}
+
+.lefttext, .righttext{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'kanit',sans-serif;
+    color: gainsboro;
+    text-align: center;
 }
 
 #nav{
