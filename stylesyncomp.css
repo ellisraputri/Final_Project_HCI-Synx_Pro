@@ -103,6 +103,14 @@
     border-color: #166174;
 }
 
+.convert:hover{
+    background-color: #339ab2;
+}
+
+.resultss{
+    display: hidden;
+}
+
 #nav{
 	border-radius: 3px;
     background-color: rgba(133, 133, 133, 0.616);

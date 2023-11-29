@@ -240,17 +240,17 @@
         
         <br/>
         <div class="text-end">
-          <button class="tosca">Compare</button>
+          <button class="tosca convert">Compare</button>
         </div>
  
         <br/><br/>
-        <div class="resultss">
-        <h2 class="fs-3 fw-bold">Result</h2><br/>
+        <h2 class="fs-3 fw-bold ">Result</h2><br/>
+        <div id="compare_center">lala</div>
 
         <!--basic syntax-->
         <div class="row">
-          <div class="col-lg-6">    <!--C-->
-            <div class="column2">
+          <div class="col-lg-6 hiding" id="Basic SyntaxC">    <!--C-->
+            <div class="column2" >
               <div class="beforeeh"></div>
               <pre>                   
                 <div class="codee">
@@ -275,8 +275,9 @@
                 <p>Note: every C statement ends with a semicolon (;)</p>
             </div>
           </div>
-
-          <div class="col-lg-6">
+        
+          
+          <div class="col-lg-6 hiding" id="Basic SyntaxC++">
             <div class="column2">   <!--Cpp-->
               <div class="beforeeh"></div>
               <br>
@@ -302,7 +303,7 @@
             </div>
           </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 hiding" id="Basic SyntaxPy">
           <div class="column2">   <!--python-->
           <p>
             <div class="bg-plblack codee">
@@ -317,10 +318,11 @@
         </div>
       </div>
     </div>
+  
 
       <!--data type-->
       <div class="row">
-        <div class="col-lg-6">    <!--C-->
+        <div class="col-lg-6 hiding" id="Data TypeC">    <!--C-->
           <div class="column2">
             <p>There are several data types for C, but these are the frequently used ones:</p>
         <table class="table table-light table-hover table-striped table-bordered w-auto">
@@ -401,7 +403,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 hiding" id="Data TypeC++">
           <div class="column2">   <!--Cpp-->
             <p>There are several data types for C++, but these are the frequently used ones:</p>
         <table class="table table-light table-hover table-striped table-bordered w-auto">
@@ -449,7 +451,7 @@
       </div>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 hiding" id="Data TypePy">
         <div class="column2">   <!--python-->
           <p>There are several data types for Python:</p>
           <table class="table table-light table-hover table-striped table-bordered w-auto">
@@ -500,7 +502,7 @@
     
     <!--variable name-->
     <div class="row">
-      <div class="col-lg-6">    <!--C-->
+      <div class="col-lg-6 hiding" id="Variable NameC">    <!--C-->
         <div class="column2">
           <p>The general rules for naming variables are:</p>
           <ul>
@@ -513,7 +515,7 @@
         </div>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 hiding" id="Variable NameC++">
         <div class="column2">   <!--Cpp-->
           <p>The general rules for naming variables are:</p>
         <ul>
@@ -526,7 +528,7 @@
         </div>
       </div>
 
-    <div class="col-lg-6">
+    <div class="col-lg-6 hiding" id="Variable NamePy">
       <div class="column2">   <!--python-->
       <p>The general rules for naming variables are:</p>
       <ul>
@@ -542,7 +544,7 @@
 
   <!--create variable-->
   <div class="row">
-    <div class="col-lg-6">    <!--C-->
+    <div class="col-lg-6 hiding" id="Creating VariableC">    <!--C-->
       <div class="column2">
         <p>Syntax: <code class="fs-6">data_type variable_name;</code></p>
           <p>
@@ -581,7 +583,7 @@
       </div>
     </div>
 
-    <div class="col-lg-6">
+    <div class="col-lg-6 hiding" id="Creating VariableC++">
       <div class="column2">   <!--Cpp-->
         <p>Syntax: <code class="fs-6">data_type variable_name;</code></p>
         <p>
@@ -618,7 +620,7 @@
         </p>
       </div>
     </div>
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Creating VariablePy">
     <div class="column2">   <!--python-->
       <p>Creating variables also known as declaring variables is an action of making a variable to store data.</p>
       <p>Example: <code class="fs-6">x = 5</code></p>
@@ -628,7 +630,7 @@
 
 <!--implicit conversion-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Implicit ConversionC">    <!--C-->
     <div class="column2">
       <p>
         <p class="beforee">Example:</p>
@@ -649,7 +651,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Implicit ConversionC++">
     <div class="column2">   <!--Cpp-->
       <p><p class="beforee">Example:</p>
           <div class=" codee2">
@@ -670,7 +672,7 @@
   </div>
 
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Implicit ConversionPy">
   <div class="column2">   <!--python-->
   <p>Example:<br/>
     <div class="codee">
@@ -683,7 +685,7 @@
   
 <!--explicit conversion-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Explicit ConversionC">    <!--C-->
     <div class="column2">
       <p><p class="beforee">Example:</p>
           <div class=" codee2">
@@ -703,7 +705,7 @@
           </p>
     </div>
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Explicit ConversionC++">
     <div class="column2">   <!--Cpp-->
       <p><p class="beforee">Example:</p>
           <div class=" codee2">
@@ -724,7 +726,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Explicit ConversionPy">
   <div class="column2">   <!--python-->
     <p>This conversion is done manually by using constructor functions. There are three 
       well-known constructor functions:
@@ -751,7 +753,7 @@
   
   <!--variable scope-->
   <div class="row">
-    <div class="col-lg-6">    <!--C-->
+    <div class="col-lg-6 hiding" id="Variable ScopeC">    <!--C-->
       <div class="column2">
         <p><p class="beforee">Example:</p>
         <div class=" codee2">
@@ -776,7 +778,7 @@
       </div>
     </div>
 
-    <div class="col-lg-6">
+    <div class="col-lg-6 hiding" id="Variable ScopeC++">
       <div class="column2">   <!--Cpp-->
         <p><p class="beforee">Example:</p>
         <div class=" codee2">
@@ -802,7 +804,7 @@
     </div>
   
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Variable ScopePy">
     <div class="column2">   <!--python-->
       <p><p class="beforee">Example:</p>
       <div class=" codee">
@@ -823,7 +825,7 @@
 
 <!--output-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="OutputC">    <!--C-->
     <div class="column2">
       <p>Syntax: &nbsp;
         <code class="fs-6">printf("some random text")</code> is used to print text inside the " ".
@@ -852,7 +854,7 @@
       </p>
     </div>
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="OutputC++">
     <div class="column2">   <!--Cpp-->
       <p>C++ uses <code class="fs-6">std::cout</code> to print output text or values to the console. 
         <code class="fs-6">std::cout</code> does not insert a new line at the end of the output. 
@@ -884,7 +886,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="OutputPy">
   <div class="column2">   <!--python-->
     <p>Python uses <code class="fs-6">print()</code> to print output text or values to the console. 
       <code class="fs-6">print()</code> in Python inserts a new line at the end of the output 
@@ -907,7 +909,7 @@
 
 <!--input-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="InputC">    <!--C-->
     <div class="column2">
       <p>In C, you can use the <code class="fs-6">scanf()</code> function to get user input. </p>
       <p>Syntax: &nbsp;
@@ -935,7 +937,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="InputC++">
     <div class="column2">   <!--Cpp-->
       <p>In C++, you can use the <code class="fs-6">cin</code> function to get user input.
         <code class="fs-6">cin</code> can also get multiple inputs by separating the inputs 
@@ -964,7 +966,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="InputPy">
   <div class="column2">   <!--python-->
   <p>
     In Python, you can use the input function to get user input.
@@ -992,7 +994,7 @@
 
 <!--comments-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="CommentsC">    <!--C-->
     <div class="column2">
       <p>There are two types of comments in C:</p>
     <ul>
@@ -1042,7 +1044,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="CommentsC++">
     <div class="column2">   <!--Cpp-->
       <p>There are two types of comments in C++:</p>
     <ul>
@@ -1093,7 +1095,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="CommentsPy">
   <div class="column2">   <!--python-->
     <p>Python comment is a single line.</p>
   <p>
@@ -1119,7 +1121,7 @@
 
 <!--escape sequences-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Escape SequencesC">    <!--C-->
     <div class="column2">
       <p>Below are the most commonly used escape sequences for C.</p>
     <table class="table table-light table-hover table-striped table-bordered w-auto">
@@ -1177,7 +1179,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Escape SequencesC++">
     <div class="column2">   <!--Cpp-->
       <p>Below are the most commonly used escape sequences for C++.</p>
         <table class="table table-light table-hover table-striped table-bordered w-auto">
@@ -1235,7 +1237,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Escape SequencesPy">
   <div class="column2">   <!--python-->
     <p>Below are the most commonly used escape sequences for Python.</p>
     <table class="table table-light table-hover table-striped table-bordered w-auto">
@@ -1297,13 +1299,13 @@
 
 <!--exception handling-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Exception HandlingC">    <!--C-->
     <div class="column2">
       <p>There are no specific exception handling function in C.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Exception HandlingC++">
     <div class="column2">   <!--Cpp-->
       <p>C++ exception handling consists of three major keywords:
         <ul>
@@ -1372,7 +1374,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Exception HandlingPy">
   <div class="column2">   <!--python-->
     <p>Python exception handling consists of four major keywords with <code class="fs-6">else</code>
        and <code class="fs-6">finally</code> being optional:
@@ -1425,7 +1427,7 @@
 
 <!--arithmetic operator-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Arithmetic OperatorsC">    <!--C-->
     <div class="column2">
       <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
@@ -1484,7 +1486,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Arithmetic OperatorsC++">
     <div class="column2">   <!--Cpp-->
       <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
@@ -1543,7 +1545,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Arithmetic OperatorsPy">
   <div class="column2">   <!--python-->
     <table class="table table-light table-hover table-striped table-bordered w-auto">
       <thead>
@@ -1605,7 +1607,7 @@
 
 <!--assignment operator-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Assignment OperatorsC">    <!--C-->
     <div class="column2">
       <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
@@ -1676,7 +1678,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Assignment OperatorsC++">
     <div class="column2">   <!--Cpp-->
       <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
@@ -1747,7 +1749,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Assignment OperatorsPy">
   <div class="column2">   <!--python-->
     <table class="table table-light table-hover table-striped table-bordered w-auto">
       <thead>
@@ -1822,7 +1824,7 @@
 
 <!--comparison operator-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Comparison OperatorsC">    <!--C-->
     <div class="column2">
       <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
@@ -1868,7 +1870,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Comparison OperatorsC++">
     <div class="column2">   <!--Cpp-->
       <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
@@ -1914,7 +1916,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Comparison OperatorsPy">
   <div class="column2">   <!--python-->
     <table class="table table-light table-hover table-striped table-bordered w-auto">
       <thead>
@@ -1964,7 +1966,7 @@
 
 <!--logical operator-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Logical OperatorsC">    <!--C-->
     <div class="column2">
       <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
@@ -1999,7 +2001,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Logical OperatorsC++">
     <div class="column2">   <!--Cpp-->
       <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
@@ -2034,7 +2036,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Logical OperatorsPy">
   <div class="column2">   <!--python-->
     <table class="table table-light table-hover table-striped table-bordered w-auto">
       <thead>
@@ -2072,19 +2074,19 @@
 
 <!--identity operator-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Identity OperatorsC">    <!--C-->
     <div class="column2">
       <p>There is no identity operator in C.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Identity OperatorsC++">
     <div class="column2">   <!--Cpp-->
       <p>There is no identity operator in C++.</p>
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Identity OperatorsPy">
   <div class="column2">   <!--python-->
     <table class="table table-light table-hover table-striped table-bordered w-auto">
       <thead>
@@ -2114,19 +2116,19 @@
 
 <!--membership-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Membership OperatorsC">    <!--C-->
     <div class="column2">
       <p>There is no membership operator in C.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Membership OperatorsC++">
     <div class="column2">   <!--Cpp-->
       <p>There is no membership operator in C++.</p>
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Membership OperatorsPy">
   <div class="column2">   <!--python-->
     <table class="table table-light table-hover table-striped table-bordered w-auto">
       <thead>
@@ -2155,7 +2157,7 @@
 
 <!--bitwise operator-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Bitwise OperatorsC">    <!--C-->
     <div class="column2">
       <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
@@ -2201,7 +2203,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Bitwise OperatorsC++">
     <div class="column2">   <!--Cpp-->
       <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
@@ -2247,7 +2249,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Bitwise OperatorsPy">
   <div class="column2">   <!--python-->
     <table class="table table-light table-hover table-striped table-bordered w-auto">
       <thead>
@@ -2297,7 +2299,7 @@
 
 <!--define array-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Define an ArrayC">    <!--C-->
     <div class="column2">
       <p>Syntax1 : <code class="fs-6">array_type array_name[] = {content1, content2, content3};</code></p>
       <p>
@@ -2314,7 +2316,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Define an ArrayC++">
     <div class="column2">   <!--Cpp-->
       <p>Syntax1 : <code class="fs-6">array_type array_name[] = {content1, content2, content3};</code></p>
       <p>
@@ -2331,7 +2333,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Define an ArrayPy">
   <div class="column2">   <!--python-->
   <p><b>Lists</b></p>
     <p>
@@ -2386,7 +2388,7 @@
 
 <!--access array element-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Access Array ElementsC">    <!--C-->
     <div class="column2">
       <p>
         Syntax: <code class="fs-6">array_name[index_number] = new_value;</code>
@@ -2422,7 +2424,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Access Array ElementsC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax: <code class="fs-6">array_name[index_number] = new_value;</code>
@@ -2458,7 +2460,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Access Array ElementsPy">
   <div class="column2">   <!--python-->
   <p><b>Lists</b></p>
   <p>
@@ -2502,7 +2504,7 @@
 
 <!--size array-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Size of an ArrayC">    <!--C-->
     <div class="column2">
       <p>We declare the size of the array as the index number.</p>
       <p>
@@ -2511,7 +2513,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Size of an ArrayC++">
     <div class="column2">   <!--Cpp-->
       <p>We declare the size of the array as the index number.</p>
       <p>
@@ -2541,7 +2543,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Size of an ArrayPy">
   <div class="column2">   <!--python-->
     <p><b>Lists</b></p>
     <p>We can slice a list with the syntax <code class="fs-6">list_name[a:b]</code>. </p>
@@ -2595,7 +2597,7 @@
 
 <!--declare structure-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Declare a StructureC">    <!--C-->
     <div class="column2">
       <p>
         <p class="beforee">Syntax:</p>
@@ -2670,7 +2672,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Declare a StructureC++">
     <div class="column2">   <!--Cpp-->
       <p>
         <p class="beforee">Syntax:</p>
@@ -2746,7 +2748,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Declare a StructurePy">
   <div class="column2">   <!--python-->
   <p>There is no structure in Python.</p>
 </div>
@@ -2756,13 +2758,13 @@
 
 <!--string concatenation-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="String ConcatenationC">    <!--C-->
     <div class="column2">
       <p>There is no built-in function for string concatention in C.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="String ConcatenationC++">
     <div class="column2">   <!--Cpp-->
       <p>C++ uses the operator + to concatenate strings. Another way is to use 
         <code class="fs-6">append()</code> function. </p>
@@ -2780,7 +2782,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="String ConcatenationPy">
   <div class="column2">   <!--python-->
     <p>The + operator can be used to concatenate strings.
     </p>
@@ -2803,7 +2805,7 @@
 
 <!--access string element-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Access String ElementsC">    <!--C-->
     <div class="column2">
       <p>String in C can be accessed just like an array by using the index number. 
         We can then change the value of an element of the string. <br/>
@@ -2812,7 +2814,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Access String ElementsC++">
     <div class="column2">   <!--Cpp-->
       <p>String in C++ can be accessed just like an array by using the index number. 
         We can then change the value of an element of the string. <br/>
@@ -2821,7 +2823,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Access String ElementsPy">
   <div class="column2">   <!--python-->
     <p>String in C++ can be accessed just like a list (but not modifiable) by using the index number. 
       Syntax: <code class="fs-6">print(string1[index_number])</code>
@@ -2832,7 +2834,7 @@
 
 <!--string length-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Length of a StringC">    <!--C-->
     <div class="column2">
       Every C string has a null character inside them so the size of the string “some text”
         is not 9, but instead 10. We can use <code class="fs-6">sizeof(variable_name)</code> 
@@ -2840,7 +2842,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Length of a StringC++">
     <div class="column2">   <!--Cpp-->
       To know a string length, we can use <code class="fs-6">size()</code> 
       function or <code class="fs-6">length()</code> function.<br/>
@@ -2849,7 +2851,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Length of a StringPy">
   <div class="column2">   <!--python-->
     <p> We can also use the <code class="fs-6 ">len()</code> 
       function to return the the length of a string or the amount of the characters in the string.
@@ -2862,7 +2864,7 @@
 
 <!--if elseif else-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="If, Else, Else IfC">    <!--C-->
     <div class="column2">
       <p>
         Syntax:<div class='codee3'>
@@ -2896,7 +2898,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="If, Else, Else IfC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:<div class=' codee3'>
@@ -2930,7 +2932,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="If, Else, Else IfPy">
   <div class="column2">   <!--python-->
   <p>
     Syntax:<div class=' codee3'>
@@ -2962,7 +2964,7 @@
 
 <!--switch case-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Switch CaseC">    <!--C-->
     <div class="column2">
       <p>
         Syntax:<div class='codee'>
@@ -3016,7 +3018,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Switch CaseC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:<div class=' codee'>
@@ -3070,7 +3072,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Switch CasePy">
   <div class="column2">   <!--python-->
     <p>
       Syntax:<div class=' codee'>
@@ -3113,7 +3115,7 @@
 
 <!--while-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="WhileC">    <!--C-->
     <div class="column2">
       <p><b>While</b></p>
       <p>
@@ -3165,7 +3167,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="WhileC++">
     <div class="column2">   <!--Cpp-->
       <p><b>While</b></p>
       <p>
@@ -3217,7 +3219,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="WhilePy">
   <div class="column2">   <!--python-->
     <p><b>While</b></p>
     <p>
@@ -3241,9 +3243,118 @@
 </div>
 
 
+<!--for-->
+<div class="row">
+  <div class="col-lg-6 hiding" id="ForC">    <!--C-->
+    <div class="column2">
+      <p>
+        Syntax:<div class=' codee'>
+        <pre><code class="fs-6 language-c">
+        for (statement 1; statement 2; statement 3) {
+            // code block to be executed
+        }
+        </code></pre></div>
+    </p>
+    <ul>
+        <li>Statement 1 is the initialization of the loop condition.</li>
+        <li>Statement 2 is the condition that has to be met to enable the looping process.</li>
+        <li>Statement 3 is executed (every time) after a code block has been executed. 
+        Statement 3 is usually an increment or decrement of a value.</li>
+    </ul>
+    <p>
+        Example:<div class="codee">
+        <pre><code class="fs-6 ">
+        #include&lt;stdio.h&gt;
+        int main() {
+            for(int i = 0; i < 5 ; i++){
+                printf("Hello");
+            }
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+    </div>
+  </div>
+
+  <div class="col-lg-6 hiding" id="ForC++">
+    <div class="column2">   <!--Cpp-->
+      <p>
+        Syntax:<div class=' codee'>
+        <pre><code class="fs-6 language-c++">
+        for (statement 1; statement 2; statement 3) {
+            // code block to be executed
+        }
+        </code></pre></div>
+    </p>
+    <ul>
+        <li>Statement 1 is the initialization of the loop condition.</li>
+        <li>Statement 2 is the condition that has to be met to enable the looping process.</li>
+        <li>Statement 3 is executed (every time) after a code block has been executed. 
+        Statement 3 is usually an increment or decrement of a value.</li>
+    </ul>
+    <p>
+        Example:<div class=" codee">
+        <pre><code class="fs-6 language-c++">
+        #include&lt;iostream&gt;
+        int main() {
+            for(int i = 0; i < 5 ; i++){
+                std::cout<<"Hello!";
+            }
+            return 0;
+        }
+        </code></pre></div>
+    </p>
+    </div>
+  </div>
+
+<div class="col-lg-6 hiding" id="ForPy">
+  <div class="column2">   <!--python-->
+    <p>
+      Syntax:<div class=' codee'>
+      <pre><code class="fs-6 language-python">
+      for variable in variables:
+          #code block to be executed              
+      </code></pre></div>
+  </p>
+  <p>
+      Example:<div class=" codee">
+      <pre><code class="fs-6 ">
+      fruits=['apple', 'mango', 'banana']
+      for i in fruits:
+          print(i)
+      </code></pre></div>
+  </p>
+  <pre></pre><pre></pre>
+    <p>
+        We can also use the <code class="fs-6">range()</code> 
+        function to specify the number of times we wanted to loop. 
+    </p>
+    <p>
+        Syntax: <code class="fs-6">for variable in range (start, end, step)</code>
+        <ul>
+            <li>The start value is optional. If we don't specify it, then it wil start from 0 by default.</li>
+            <li>The end value is a must when using this function.</li>
+            <li>The step value is also optional. If we do not specify it,
+                then it will use increment by 1 (by default).
+            </li>
+        </ul>
+    </p>
+    <p>
+        Example:
+        <div class=" codee">
+        <pre><code class="fs-6 language-python">
+        for i in range (3):
+            print(i)
+        </code></pre></div>
+    </p>
+</div>
+</div>
+</div>
+
+
 <!--memory address-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Memory AddressC">    <!--C-->
     <div class="column2">
       <p>
         Syntax:
@@ -3271,7 +3382,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Memory AddressC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:
@@ -3302,7 +3413,7 @@
   </div>
 
 <div class="col-lg-6">
-  <div class="column2">   <!--python-->
+  <div class="column2 hiding" id="Memory AddressPy">   <!--python-->
   <p>There is no pointer in Python.</p>
 </div>
 </div>
@@ -3311,7 +3422,7 @@
 
 <!--declare pointer-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Declaring PointerC">    <!--C-->
     <div class="column2">
       <p>
         Syntax:<div class="codee">
@@ -3323,7 +3434,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Declaring PointerC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:<div class=" codee2">
@@ -3335,7 +3446,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Declaring PointerPy">
   <div class="column2">   <!--python-->
   <p>There is no pointer in Python.</p>
 </div>
@@ -3344,7 +3455,7 @@
 
 <!--print with pointer-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Printing with PointerC">    <!--C-->
     <div class="column2">
       <p>
         Syntax:<div class="codee3">
@@ -3390,7 +3501,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Printing with PointerC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:<div class=" codee2">
@@ -3448,7 +3559,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Printing with PointerPy">
   <div class="column2">   <!--python-->
   <p>There is no pointer in Python.</p>
 </div>
@@ -3458,7 +3569,7 @@
 
 <!--pointer of array-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Pointer of ArrayC">    <!--C-->
     <div class="column2">
       <p>
         In C, the name of an array is actually a pointer to the first element of the array.
@@ -3491,7 +3602,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Pointer of ArrayC++">
     <div class="column2">   <!--Cpp-->
       <p>
         In C++, the name of an array is actually a pointer to the first element of the array. 
@@ -3530,7 +3641,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Pointer of ArrayPy">
   <div class="column2">   <!--python-->
   <p>There is no pointer in Python.</p>
 </div>
@@ -3540,13 +3651,13 @@
 
 <!--references-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="ReferencesC">    <!--C-->
     <div class="column2">
       <p>There is no references in C.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="ReferencesC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:<div class=" codee2">
@@ -3590,7 +3701,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="ReferencesPy">
   <div class="column2">   <!--python-->
   <p>There is no references in Python.</p>
 </div>
@@ -3600,7 +3711,7 @@
 
 <!--create function-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Create FunctionC">    <!--C-->
     <div class="column2">
       <p>
         Syntax:<div class="codee3">
@@ -3628,7 +3739,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Create FunctionC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:<div class=" codee3">
@@ -3656,7 +3767,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Create FunctionPy">
   <div class="column2">   <!--python-->
     <p>
       Syntax:<div class=" codee">
@@ -3683,7 +3794,7 @@
 
 <!--call function-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Call a FunctionC">    <!--C-->
     <div class="column2">
       <p>
         Syntax:
@@ -3707,7 +3818,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Call a FunctionC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:
@@ -3731,7 +3842,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Call a FunctionPy">
   <div class="column2">   <!--python-->
     <p>
       Syntax:
@@ -3755,7 +3866,7 @@
 
 <!--argument-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="ArgumentsC">    <!--C-->
     <div class="column2">
       <p>
         Example:<div class="codee2">
@@ -3778,7 +3889,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="ArgumentsC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Example:<div class=" codee2">
@@ -3801,7 +3912,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="ArgumentsPy">
   <div class="column2">   <!--python-->
     <p>
       Example:<div class=" codee2">
@@ -3823,13 +3934,13 @@
 
 <!--lambda-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="LambdaC">    <!--C-->
     <div class="column2">
       <p>C doesn't have any lambda function.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="LambdaC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:<div class=" codee">
@@ -3862,7 +3973,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="LambdaPy">
   <div class="column2">   <!--python-->
     <p>
       Syntax:<div class=" codee">
@@ -3885,13 +3996,13 @@
 
 <!--create class-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Create ClassC">    <!--C-->
     <div class="column2">
       <p>C doesn't have any class properties.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Create ClassC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:<div class=' codee'>
@@ -3920,7 +4031,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Create ClassPy">
   <div class="column2">   <!--python-->
     <p>
       Syntax:<div class=' codee'>
@@ -3943,13 +4054,13 @@
 
 <!--create object-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Create ObjectC">    <!--C-->
     <div class="column2">
       <p>C doesn't have any class properties.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Create ObjectC++">
     <div class="column2">   <!--Cpp-->
       <p>Syntax: <code class="fs-6">class_name object_name;</code></p>
     <p>To access the attributes of the class, we have to use the <code class="fs-6">dot</code> syntax
@@ -3978,7 +4089,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Create ObjectPy">
   <div class="column2">   <!--python-->
     <p>Syntax: <code class="fs-6">object_name = class_name()</code></p>
     <p>To access the attributes of the class, we have to use the <code class="fs-6">dot</code> syntax
@@ -4001,13 +4112,13 @@
 
 <!--crreate method-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Create MethodC">    <!--C-->
     <div class="column2">
       <p>C doesn't have any class properties.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Create MethodC++">
     <div class="column2">   <!--Cpp-->
       <p>
         We can declare methods inside of the class or outside of the class definition.
@@ -4062,7 +4173,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Create MethodPy">
   <div class="column2">   <!--python-->
     <p>
       We can declare methods inside of the class.
@@ -4092,13 +4203,13 @@
 
 <!--constructor-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="ConstructorsC">    <!--C-->
     <div class="column2">
       <p>C doesn't have any class properties.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="ConstructorsC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Syntax:<div class=' codee'>
@@ -4128,7 +4239,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="ConstructorsPy">
   <div class="column2">   <!--python-->
     <p>
       Classes usually have the <code class="fs-6">__init__</code> function. 
@@ -4152,15 +4263,15 @@
 </div>
 
 
-<!--variable name-->
+<!--encapsulation-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="EncapsulationC">    <!--C-->
     <div class="column2">
       <p>C doesn't have any class properties.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="EncapsulationC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Example:<div class=" codee">
@@ -4193,7 +4304,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="EncapsulationPy">
   <div class="column2">   <!--python-->
   <p>Setting a class as private member in Python can be do implicitly by adding 
     two underscores before a variable name.</p>
@@ -4213,13 +4324,13 @@
 
 <!--inheritance-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="InheritanceC">    <!--C-->
     <div class="column2">
       <p>C doesn't have any class properties.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="InheritanceC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Example:<div class=" codee2">
@@ -4248,7 +4359,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="InheritancePy">
   <div class="column2">   <!--python-->
     <p>
       Example:<div class=" codee2">
@@ -4278,13 +4389,13 @@
 
 <!--polymorphism-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="PolymorphismC">    <!--C-->
     <div class="column2">
       <p>C doesn't have any class properties.</p>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="PolymorphismC++">
     <div class="column2">   <!--Cpp-->
       <p>
         Example:<div class=" codee2">
@@ -4331,7 +4442,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="PolymorphismPy">
   <div class="column2">   <!--python-->
   <p>
     Example:<div class=" codee2">
@@ -4363,7 +4474,7 @@
 
 <!--read file-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Read FileC">    <!--C-->
     <div class="column2">
       <p>
         Syntax:<div class="codee">
@@ -4400,7 +4511,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Read FileC++">
     <div class="column2">   <!--Cpp-->
       <p>
         To read a file, first we need to include the library <code class="fs-6">&lt;fstream&gt;</code>, 
@@ -4437,11 +4548,10 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Read FilePy">
   <div class="column2">   <!--python-->
     <p>
-      Read mode (<code class="fs-6">r</code>) is used to access a file content 
-      into our program. Read in Python requires the 
+      Read in Python requires the 
       <code class="fs-6">read()</code> function (to read the whole file) or a 
       <code class="fs-6">readline()</code> function (to read a single line of text).  
   </p>
@@ -4449,7 +4559,7 @@
       Example:<div class="bg-plblack codee2">
       <pre><code class="fs-6 language-python">
       f = open("myfile.txt", 'rt')	#open a file
-      print(f.readline())			#reading a single line
+      print(f.readline())		#reading a single line
       print(f.read())			#reading a whole file
       f.close()				#close the file
       </code></pre></div>
@@ -4461,7 +4571,7 @@
 
 <!--create file-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Create FileC">    <!--C-->
     <div class="column2">
       <p>In C, to create a file, we can just declare a pointer type file and then use
         the <code class="fs-6">fopen()</code> function. After we use the <code class="fs-6">fopen()</code>
@@ -4477,7 +4587,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Create FileC++">
     <div class="column2">   <!--Cpp-->
       <p>
         To create to a file, first we need to include the library <code class="fs-6">&lt;fstream&gt;</code>, then we 
@@ -4503,7 +4613,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Create FilePy">
   <div class="column2">   <!--python-->
     <p>
       To create a new file in Python, we just need to use the 
@@ -4522,7 +4632,7 @@
 
 <!--write file-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Write to a FileC">    <!--C-->
     <div class="column2">
     <p>To write something, we just need to use <code class="fs-6">fprint()</code> function.</p>
     <p>Syntax:<code class="fs-6"> fprintf(pointer_name, "text we want to write");</code></p>
@@ -4548,7 +4658,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Write to a FileC++">
     <div class="column2">   <!--Cpp-->
       <p>
         To write to a file, first we need to include the library <code class="fs-6">&lt;fstream&gt;</code>, then we 
@@ -4580,7 +4690,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Write to a FilePy">
   <div class="column2">   <!--python-->
     <p>To write something, we just need to use <code class="fs-6">write()</code> function.</p>
   <p>
@@ -4597,7 +4707,7 @@
 
 <!--append file-->
 <div class="row">
-  <div class="col-lg-6">    <!--C-->
+  <div class="col-lg-6 hiding" id="Append to a FileC">    <!--C-->
     <div class="column2">
       <p>
         The append mode uses the same 
@@ -4628,7 +4738,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 hiding" id="Append to a FileC++">
     <div class="column2">   <!--Cpp-->
       <p>
         We can append to a file using ofstream.  But, we need to include the mode 
@@ -4662,7 +4772,7 @@
     </div>
   </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 hiding" id="Append to a FilePy">
   <div class="column2">   <!--python-->
     <p>
       The append mode uses the same <code class="fs-6">write()</code> function as the write mode.
@@ -4679,7 +4789,7 @@
 </div>
 </div>
 
-</div>
+
 
 
 

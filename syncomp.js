@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('.downsym').show();
     $('.upsym').hide();
-    $('.resultss').hide();
 
     $("#nav li").hover(
         function(){
@@ -81,8 +80,10 @@ $(document).ready(function(){
         $('.menulala3').slideUp(1);
     });
     
+    $('.hiding').hide();
 
     $('button').click(function(){
+        $('.hiding').hide();
         if (click_compare_value==undefined || click_language1_value==undefined || click_language2_value==undefined){
             let msg = 'PLEASE FILL IN:';
             if(click_compare_value==undefined){
@@ -97,6 +98,56 @@ $(document).ready(function(){
             alert(msg)
         }
         
+        else if (click_language1_value == click_language2_value){
+            alert("The first language and the second language cannot be the same")
+        }
+
+        else{
+            if(click_language1_value == 'C'){
+                let isi1 = document.getElementById(click_compare_value+'C');
+                $(isi1).show();
+
+                if(click_language2_value == 'C++'){
+                    let isi2 = document.getElementById(click_compare_value+'C++');
+                    $(isi2).show();
+                }
+                else if(click_language2_value == 'Python'){
+                    let isi3 = document.getElementById(click_compare_value+'Py');
+                    $(isi3).show();
+                }
+            }
+
+            else if(click_language1_value == 'C++'){
+                let isi1 = document.getElementById(click_compare_value+'C++');
+                let compare_center = document.getElementById('compare_center');
+                compare_center.insertAdjacentElement("beforebegin", isi1);
+
+                if(click_language2_value == 'C'){
+                    let isi2 = document.getElementById(click_compare_value+'C');
+                    //$(isi2).show();
+                }
+                else if(click_language2_value == 'Python'){
+                    let isi3 = document.getElementById(click_compare_value+'Py');
+                    $(isi3).show();
+                }
+            }
+
+            else if(click_language1_value == 'Python'){
+                let isi1 = document.getElementById(click_compare_value+'Py');
+                $(isi1).show();
+
+                if(click_language2_value == 'C'){
+                    let isi2 = document.getElementById(click_compare_value+'C');
+                    $(isi2).show();
+                    
+                }
+                else if(click_language2_value == 'C++'){
+                    let isi3 = document.getElementById(click_compare_value+'C++');
+                    $(isi3).show();
+                }
+            }
+
+        }
 
     });
 
