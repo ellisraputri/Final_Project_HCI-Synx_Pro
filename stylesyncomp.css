@@ -73,6 +73,12 @@
     border-radius: 3px;
 }
 
+.column1_after{
+    background-color: rgba(220, 220, 220, 0.723);
+    border-radius: 3px;
+    border: 3px solid #166174;
+}
+
 .column2{
     padding-top: 10px;
     text-align: left;
@@ -98,12 +104,12 @@
     height: 600px;
 }
 
-.convert{
+.convert, .reset{
     padding: 10px;
     border-color: #166174;
 }
 
-.convert:hover{
+.convert:hover , .reset:hover{
     background-color: #339ab2;
 }
 
