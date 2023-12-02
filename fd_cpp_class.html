@@ -232,7 +232,7 @@
             public:             // Access specifier
               int myNum;        // Attribute (int variable)
               void greet(){
-                std::cout<<"Hello!";
+                std::cout&lt;&lt;"Hello!";
               }
         };
 
@@ -256,7 +256,7 @@
         };
           
         void MyClass::greet(){
-            std::cout<<"Hello!";
+            std::cout&lt;&lt;"Hello!";
         }
           
         int main() {
@@ -291,7 +291,7 @@
         class MyClass {     // The class
             public:           // Access specifier
               MyClass() {     // Constructor
-                std::cout << "Hello World!";
+                std::cout &lt;&lt; "Hello World!";
             }
         };
           
@@ -334,7 +334,7 @@
         int main() {
             Cube myObj;
             myObj.setSide(5);
-            std::cout << myObj.getSide();
+            std::cout &lt;&lt; myObj.getSide();
             return 0;
         }
         </code></pre></div>
@@ -355,7 +355,7 @@
             public:           
                 int members;
                 void welcome(){
-                    std::cout<< "Welcome!";
+                    std::cout&lt;&lt; "Welcome!";
                 }
         };
           
@@ -388,7 +388,7 @@
         class Animal {
             public:
                 void animalSound() {
-                    std::cout << "The animal makes a sound \n";
+                    std::cout &lt;&lt; "The animal makes a sound \n";
                 }
         };
             
@@ -396,7 +396,7 @@
         class Pig : public Animal {
             public:
                 void animalSound() {
-                    std::cout << "The pig says: wee wee \n";
+                    std::cout &lt;&lt; "The pig says: wee wee \n";
                 }
         };
             
@@ -404,7 +404,7 @@
         class Dog : public Animal {
             public:
                 void animalSound() {
-                    std::cout << "The dog says: bow wow \n";
+                    std::cout &lt;&lt; "The dog says: bow wow \n";
                 }
         };
             

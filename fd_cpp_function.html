@@ -236,8 +236,8 @@
         <pre><code class="fs-6 language-c++">
         #include &lt;iostream&gt;
         void displayInfo(int age, int phone){
-            std::cout << "This is your age, " << age;
-            std::cout << "\nThis is your phone number, " << phone;
+            std::cout &lt;&lt; "This is your age, " &lt;&lt; age;
+            std::cout &lt;&lt; "\nThis is your phone number, " &lt;&lt; phone;
         }
         int main() {
             displayInfo(10, 9912);
@@ -260,7 +260,7 @@
             <pre><code class="fs-6 language-c++">
             #include &lt;iostream&gt;
             void display(int age=20){
-                std::cout << age << std::endl;
+                std::cout &lt;&lt; age &lt;&lt; std::endl;
             }
             int main() {
                 display(10); //the output is 10
@@ -289,13 +289,13 @@
                 int firstNum = 10;
                 int secondNum = 20;
               
-                std::cout << "Before swap: " << "\n";
-                std::cout << firstNum << secondNum << "\n";
+                std::cout &lt;&lt; "Before swap: " &lt;&lt; "\n";
+                std::cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; "\n";
               
                 swap(firstNum, secondNum);
               
-                std::cout << "After swap: " << "\n";
-                std::cout << firstNum << secondNum << "\n";
+                std::cout &lt;&lt; "After swap: " &lt;&lt; "\n";
+                std::cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; "\n";
               
                 return 0;
             }
@@ -356,7 +356,7 @@
         #include &lt;iostream&gt;
         int main() {
             auto display = [](int age=20){
-                std::cout << age << std::endl;
+                std::cout &lt;&lt; age &lt;&lt; std::endl;
             };
             display(10); //the output is 10
             display(); //the output is 20
