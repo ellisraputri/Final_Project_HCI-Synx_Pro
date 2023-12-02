@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Synx Pro</title>
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="aos.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
 
 <body>
@@ -96,7 +98,7 @@
           SYNX PRO
         </p>
         
-        <h3 class="mont1 bg-plblack" >A beginner-friendly platform for <br/>
+        <h3 class="mont1 bg-plblack" data-aos="fade-right" data-aos-duration="2000">A beginner-friendly platform for <br/>
         learning programming language.</h3>
       </div>
       <div class="col-md-5">
@@ -109,21 +111,21 @@
   <br/>
 
   <div class="body">
-  <h1 class="text-center kanit header">Our Features</h1>
-  <p class="text-center hover">Hover to see the description!</p>
+  <h1 class="text-center kanit header" data-aos="zoom-in">Our Features</h1>
+  <p class="text-center hover" data-aos="zoom-in" data-aos-once="false">Hover to see the description!</p>
   <div class="row text-center features">
-    <div class="col-md-3" >
+    <div class="col-md-3" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1500">
       <pre></pre>
       <img src="syntaxcomp.png" alt="syntax comparison" title="syntax comparison" class="feature" data-bs-target="feature_desc1"/>
-      <h3 class="fw-normal feature" data-bs-target="feature_desc1">Syntax <br/> Comparison</h3>
+      <h3 class="fw-normal feature fs-4" data-bs-target="feature_desc1">Syntax <br/> Comparison</h3>
       <p class="feature_desc" id="feature_desc1">A tool to compare some syntaxes between two programming languages</p>
       <p><a class="btn btn-secondary" id="button22" href="syntaxcomp.html">View Page</a></p>
     </div>
 
-    <div class="col-md-3" >
+    <div class="col-md-3" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1500">
       <pre></pre>
       <img src="funcdict.png" alt="function_dictionary" title="function_dictionary" class="feature" data-bs-target="feature_desc2"/>
-      <h3 class="fw-normal feature" data-bs-target="feature_desc2">Function <br/>Dictionary</h3>
+      <h3 class="fw-normal feature fs-4" data-bs-target="feature_desc2">Function <br/>Dictionary</h3>
       <p class="feature_desc" id="feature_desc2">Documentation of some beginner-friendly programming material</p>
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle dropdwn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -137,10 +139,10 @@
       </div>
     </div>
 
-    <div class="col-md-3" >
+    <div class="col-md-3" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1500">
       <pre></pre>
       <img src="tips_trick.png" alt="tips and trick" title="tips and trick" class="feature" data-bs-target="feature_desc3"/>
-      <h3 class="fw-normal feature" data-bs-target="feature_desc3">Tips <br/>and Tricks</h3>
+      <h3 class="fw-normal feature fs-4" data-bs-target="feature_desc3">Tips <br/>and Tricks</h3>
       <p class="feature_desc" id="feature_desc3">Tips and tricks in programming languages for beginners</p>
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle dropdwn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -154,10 +156,10 @@
       </div>
     </div>
 
-    <div class="col-md-3"  >
-      <pre></pre>
+    <div class="col-md-3" data-aos="fade-up" data-aos-delay="2500" data-aos-duration="1500">
+      <pre></pre><pre></pre>
       <img src="faq.png" alt="FAQ" title="FAQ" class="feature" data-bs-target="feature_desc4"/>
-      <h3 class="fw-normal feature" data-bs-target="feature_desc4"><pre><br/>FAQ<br/></pre></h3>
+      <h3 class="fw-normal feature fs-4 feature_faq" data-bs-target="feature_desc4">FAQ<br/></h3>
       <p class="feature_desc" id="feature_desc4">Frequently asked questions and answers about programming language</p>
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle dropdwn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -175,10 +177,11 @@
   
   <br/><br/><br/><br/><br/><br/><br/>
   
-  <h1 class="text-center kanit header">Learn More about Languages that We Provide:</h1>
+  <h1 class="text-center kanit header" data-aos="slide-right" data-aos-duration="1500" data-aos-once="false">Learn More about Languages that We Provide:</h1>
   <br/>
 
-  <div class="tabsContainer">
+  <div data-aos="fade" data-aos-delay="1500" data-aos-duration="1500" data-aos-once="false">
+  <div class="tabsContainer" >
     <div class="tabs">
        <div href="#tab1" data-bs-target="tab1" class="tab-active">C</div>
        <div href="#tab2" data-bs-target="tab2">C++</div>
@@ -290,12 +293,13 @@
     </div>
     </div>
   </div>
+</div>
   <br/><br/><br/><br/><br/><br/><br/>
 
-  <h4 class="text-center fs-2 kanit header">Got more question? Contact us!</h4>
+  <h4 class="text-center fs-2 kanit header" data-aos="zoom-in">Got more question? Contact us!</h4>
   <br>
   <div class="row d-flex justify-content-center">
-      <div class="col-lg-4 ">
+      <div class="col-lg-4 " data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
         <div class="form-floating mb-3">
           <input type="text" class="form-control" id="floatingInput1" placeholder="Mega Kimberley"
               style="border: 1px solid gray">
@@ -303,7 +307,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
         <div class="form-floating">
           <input type="email" class="form-control" id="floatingInput2" placeholder="mega123@gmail.com"
               style="border: 1px solid gray">
@@ -311,8 +315,7 @@
         </div>
       </div>
       
-
-      <div class="col-lg-8">
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1500">
         <div class="form-floating">
           <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea" 
               style="height: 30vh; margin-top: 20px; border: 1px solid gray"></textarea>
@@ -321,7 +324,7 @@
       </div>       
   </div>
 <br/>
-  <div class="row text-center">
+  <div class="row text-center" data-aos="zoom-in" data-aos-delay="1100" data-aos-once="false">
     <div class="col-lg-12 m-4 ">
         <button type="submit" class="submitt tosca">Submit</button>
     </div>
@@ -331,16 +334,17 @@
   </div>
 
  <pre></pre><pre></pre><pre></pre><pre></pre>
+ <pre></pre><pre></pre><pre></pre><pre></pre>
   <div class="footer">
     <div class="row">
       <div class="col-md-8 tosca centerin">
         <p>© Copyright 2023 return 0;</p>
       </div>
       <div class="col-md-4 tosca centerin2">
-        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
-        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
-        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
-        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/62895629504490"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Ella-Raputri"><i class="fa-brands fa-github"></i></a>
       </div>
     </div>
   </div>
@@ -349,5 +353,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="index.js"></script>
+  <script src="aos.js"></script>
+  <script>
+    setTimeout(() => {
+        AOS.init();
+    }, 120);
+  </script>
 </body>
 </html>
