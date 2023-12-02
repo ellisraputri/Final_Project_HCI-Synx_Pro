@@ -96,6 +96,7 @@
 
   .sidenavv a:hover{
     color: white;
+    background-color: #339ab2;
   }
 
   .codee{
@@ -130,6 +131,13 @@
     background-color: #339ab2 ;
   }
   
+  #pagination a:hover{
+    background-color: #339ab2;
+  }
+
+  .kotak{
+    width: 25rem;
+  }
 
   @media (max-width:768px) {
     .centerin{
@@ -143,11 +151,6 @@
       margin-left: auto;
       margin-right: auto;
     }
-    
-    .kotak{
-      max-width: 80%;
-    }
-
   }
 
   @media (max-width:1280px){
@@ -162,8 +165,18 @@
 
   }
 
-  @media (max-width:400px) {
+  @media (max-width:530px) {
     .kotak{
-      max-width: 55%;
+      width: 15rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (max-width:300px) {
+    .kotak{
+      width: 12rem;
+      margin-left: auto;
+      margin-right: auto;
     }
   }

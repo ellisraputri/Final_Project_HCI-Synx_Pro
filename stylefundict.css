@@ -124,6 +124,10 @@
 
   }
 
+  .sidenavv a:hover{
+    background-color: #339ab2;
+  }
+
   .sidenavv-active{
     padding: 15px;
     padding-left: 10px;
