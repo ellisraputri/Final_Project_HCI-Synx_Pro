@@ -79,7 +79,7 @@
 
   .sidenavv {
     height: 100%; 
-    margin-top: 100px;
+    margin-top: 70px;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; 
     top: 0; 
@@ -90,8 +90,8 @@
     font-size: 18px;
     font-weight: bold;
     color: white;
+    line-height: 1.5;
     margin-bottom: 15px;
-    line-height: 30px;
   }
 
   .sidenavv a:hover{
@@ -121,7 +121,8 @@
   }
 
   .btn-primary{
-    background-color: #166174 !important
+    background-color: #166174 !important;
+    border: 0px !important;
   }
 
   .sidenavv-active{
@@ -131,8 +132,13 @@
     background-color: #339ab2 ;
   }
   
-  #pagination a:hover{
-    background-color: #339ab2;
+  .pagination a:hover{
+    background-color: #1661745e;
+    color: white;
+  }
+
+  .pagination a{
+    color: white;
   }
 
   .kotak{
@@ -163,6 +169,12 @@
       max-width: 80%;
     }
 
+  }
+
+  @media (max-width: 992px){
+    .sidenavv a{
+      margin-bottom: 5px;
+    }
   }
 
   @media (max-width:530px) {
