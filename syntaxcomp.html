@@ -241,10 +241,10 @@
         <pre></pre><pre></pre>
         <div class="row">
           <div class="d-flex justify-content-start col">
-          <button class="tosca reset">Reset</button>
+          <button class="reset">Reset</button>
         </div>
         <div class="d-flex justify-content-end col">
-          <button class="tosca convert">Compare</button>
+          <button class="convert">Compare</button>
         </div>
         </div>
         
@@ -277,7 +277,7 @@
                 </pre>
               
                 <p class="afterrh">Line 1: &nbsp; <code class="fs-6">#include &lt;stdio.h&gt;</code> &nbsp; is a statement to include the header file library. 
-                  <code class="fs-6">&lt;stdio.h&gt;</code> is a library that lets us work with input and output functions, such as <code class="fs-6">printf()</code>.</p>
+                  <code class="fs-6">&lt;stdio.h&gt;</code>is a library that lets us work with input and output functions, such as <code class="fs-6">printf()</code>.</p>
                 <p>Line 2: blank space. C ignores white space, but we need white spaces to increase our code readability.</p>
                 <p>Line 3: the <code class="fs-6">main()</code> function. As its name implies, <code class="fs-6">main()</code> function consists of the main code to be executed. 
                   Any code inside the curly brackets { } is called “inside the <code class="fs-6">main()</code> function”</p>
@@ -304,7 +304,7 @@
                 </div>
                 </pre>
                 <p class="afterrh">Line 1: &nbsp; <code class="fs-6">#include &lt;iostream&gt;</code> &nbsp; is a statement to include the header file library. 
-                    &lt;iostream&gt; is a library that lets us work with input and output functions, such as <code class="fs-6">cout</code>.</p>
+                    <code class="fs-6">&lt;iostream&gt;</code> is a library that lets us work with input and output functions, such as <code class="fs-6">cout</code>.</p>
                 <p>Line 2: blank space. C++ ignores white space, but we need white spaces to increase our code readability.</p>
                 <p>Line 3: the <code class="fs-6">main()</code> function. As its name implies, <code class="fs-6">main()</code> function consists of the main code to be executed. 
                   Any code inside the curly brackets { } is called “inside the <code class="fs-6">main()</code> function”</p>
@@ -334,7 +334,7 @@
       <!--data type-->
       <div class="row">
         <div class=" hiding" id="Data TypeC">    <!--C-->
-          <div class="column2">
+          <div class="column2 align-items-center">
             <p>There are several data types for C, but these are the frequently used ones:</p>
         <table class="table table-light table-hover table-striped table-bordered w-auto">
             <thead>
@@ -377,7 +377,7 @@
         
           <pre></pre>
           <p>In C, we also have format specifiers to specify which data type we use.</p>
-          <table class="table table-light table-hover table-striped table-bordered w-auto">
+          <table class="m-auto mb-5 table table-light table-hover table-striped table-bordered w-auto">
             <thead>
               <tr class="table-secondary">
                 <th scope="col" class="text-center align-middle">Format Specifier</th>
@@ -464,8 +464,8 @@
 
       <div class=" hiding" id="Data TypePy">
         <div class="column2">   <!--python-->
-          <p>There are several data types for Python:</p>
-          <table class="table table-light table-hover table-striped table-bordered w-auto">
+          <p class="text-center">There are several data types for Python:</p>
+          <table class="table table-light table-hover table-striped table-bordered w-auto m-auto">
               <thead>
               <tr class="table-secondary">
                   <th scope="col" class="text-center align-middle">Data Type</th>
@@ -515,7 +515,7 @@
     <div class="row">
       <div class=" hiding" id="Variable NameC">    <!--C-->
         <div class="column2">
-          <p>The general rules for naming variables are:</p>
+          <p class="text-center">The general rules for naming variables are:</p>
           <ul>
             <li>Names can contain letters, digits, and underscores</li>
             <li>Names must begin with a letter or an underscore (_)</li>
@@ -528,7 +528,7 @@
 
       <div class=" hiding" id="Variable NameC++">
         <div class="column2">   <!--Cpp-->
-          <p>The general rules for naming variables are:</p>
+          <p class="text-center">The general rules for naming variables are:</p>
         <ul>
             <li>Names can contain letters, digits, and underscores</li>
             <li>Names must begin with a letter or an underscore (_)</li>
@@ -541,7 +541,7 @@
 
     <div class=" hiding" id="Variable NamePy">
       <div class="column2">   <!--python-->
-      <p>The general rules for naming variables are:</p>
+      <p class="text-center">The general rules for naming variables are:</p>
       <ul>
           <li>Names can contain letters, digits, and underscores</li>
           <li>Names must begin with a letter or an underscore (_)</li>
@@ -667,15 +667,15 @@
       <p><p class="beforee">Example:</p>
           <div class=" codee2">
           <pre>
-              <code class="fs-6 language-c++">
-              #include &lt;iostream&gt;
-      
-              int main() {
-                  int myNum = 9.8;
-                  std::cout &lt;&lt; myNum; //the output is 9
-                  return 0;
-              }
-              </code>
+          <code class="fs-6 language-c++">
+        #include &lt;iostream&gt;
+
+        int main() {
+            int myNum = 9.8;
+            std::cout &lt;&lt; myNum; //the output is 9
+            return 0;
+        }
+          </code>
           </pre>
           </div>
           </p>
@@ -701,16 +701,16 @@
       <p><p class="beforee">Example:</p>
           <div class=" codee2">
           <pre>
-              <code class="fs-6">
-          #include &lt;stdio.h&gt;
-  
-          int main() {
-              int myNum1 = 10;
-              float myNum2 = (float) myNum1;
-              printf("%f",myNum2); //myNum2 will show as 10.0000
-              return 0;
-          }
-              </code>
+          <code class="fs-6">
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            int myNum1 = 10;
+            float myNum2 = (float) myNum1;
+            printf("%f",myNum2); //myNum2 will show as 10.0000
+            return 0;
+        }
+          </code>
           </pre>
           </div>
           </p>
@@ -721,16 +721,16 @@
       <p><p class="beforee">Example:</p>
           <div class=" codee2">
           <pre>
-              <code class="fs-6 language-c++">
-              #include &lt;iostream&gt;
-      
-              int main() {
-                  int myNum1 = 10;
-                  float myNum2 = (float) myNum1;
-                  std::cout &lt;&lt; myNum2; //myNum2 will show as 10.00
-                  return 0;
-              }
-              </code>
+        <code class="fs-6 language-c++">
+        #include &lt;iostream&gt;
+
+        int main() {
+            int myNum1 = 10;
+            float myNum2 = (float) myNum1;
+            std::cout &lt;&lt; myNum2; //myNum2 will show as 10.0000
+            return 0;
+        }
+        </code>
           </pre>
           </div>
           </p>
@@ -772,14 +772,17 @@
         <code class="fs-6">
         #include &lt;stdio.h&gt;
 
-        int phi = 3.14; //global variable
+        //global variable
+        int phi = 3.14; 
 
         int sum (int a, int b){
-            int result; //local variable inside the sum function
+            //local variable inside the sum function  
+            int result; 
         }
 
         int main() {
-            int myNum1; //local variable inside the main function
+          //local variable inside the main function  
+            int myNum1; 
             return 0;
         }
         </code>
@@ -797,14 +800,17 @@
         <code class="fs-6">
         #include &lt;iostream&gt;
 
-        int phi = 3.14; //global variable
+        //global variable
+        int phi = 3.14; 
 
         int sum (int a, int b){
-            int result; //local variable inside the sum function
+            //local variable inside the sum function
+            int result; 
         }
 
         int main() {
-            int myNum1; //local variable inside the main function
+            //local variable inside the main function
+            int myNum1; 
             return 0;
         }
         </code>
@@ -849,17 +855,17 @@
           <p class="beforee">Example:</p>
         <div class=" codee">
         <pre>
-          <code class="fs-6">
-          #include &lt;stdio.h&gt;
-  
-          int main() {
-              int myNum = 19;
-              
-              printf("Hello World!");
-              printf("%d",myNum);
-              return 0;
-            }            
-          </code>
+      <code class="fs-6">
+      #include &lt;stdio.h&gt;
+
+      int main() {
+          int myNum = 19;
+          
+          printf("Hello World!");
+          printf("%d",myNum);
+          return 0;
+        }            
+      </code>
         </pre>
         </div>
       </p>
@@ -877,23 +883,23 @@
 
     <p>
       <p class="beforee">Example:</p>
-  <div class=" codee">
-  <pre>
-  <code class="fs-6 language-c++">
-  #include &lt;iostream&gt;
+      <div class=" codee">
+      <pre>
+      <code class="fs-6 language-c++">
+      #include &lt;iostream&gt;
 
-  int main() {
-      int myNum = 19;
+      int main() {
+          int myNum = 19;
 
-      std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
-      std::cout &lt;&lt; myNum;
+          std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
+          std::cout &lt;&lt; myNum;
 
-      return 0;
-    }            
-  </code>
-  </pre>
-  </div>
-  </p>
+          return 0;
+        }            
+      </code>
+      </pre>
+      </div>
+      </p>
     </div>
   </div>
 
@@ -930,18 +936,18 @@
         <p class="beforee">Example:</p>
       <div class="codee">
       <pre>
-        <code class="fs-6">
-        #include &lt;stdio.h&gt;
+    <code class="fs-6">
+    #include &lt;stdio.h&gt;
 
-        int main() {
-            int myNum;
-            char myChar;
+    int main() {
+        int myNum;
+        char myChar;
 
-            printf("Input a number and a character:");
-            scanf("%d %c",&myNum, &myChar);
-            return 0;
-        }            
-        </code>
+        printf("Input a number and a character:");
+        scanf("%d %c",&myNum, &myChar);
+        return 0;
+    }            
+    </code>
       </pre>
       </div>
     </p>
@@ -960,19 +966,19 @@
       <p><p class="beforee">Example:</p>
       <div class=" codee2">
       <pre>
-      <code class="fs-6 language-c++" >
-      #include &lt;iostream&gt;
+    <code class="fs-6 language-c++" >
+    #include &lt;iostream&gt;
 
-      int main() {
-          int myNum;
-          char myChar;
+    int main() {
+        int myNum;
+        char myChar;
 
-          std::cout &lt;&lt; "Input a number and a character: ";
-          std::cin &gt;&gt; myNum &gt;&gt; myChar;
-          std::cout &lt;&lt; myNum &lt;&lt; myChar;
-          return 0;
-      }            
-      </code></pre></div>
+        std::cout &lt;&lt; "Input a number and a character: ";
+        std::cin &gt;&gt; myNum &gt;&gt; myChar;
+        std::cout &lt;&lt; myNum &lt;&lt; myChar;
+        return 0;
+    }            
+    </code></pre></div>
       </p>
     </div>
   </div>
@@ -1031,23 +1037,23 @@
       <p >Example:</p>
       <div class=" codee">
         <pre><code class="fs-6">
-          #include &lt;stdio.h&gt;
-  
-          int main() {
-            char myName[20];
+      #include &lt;stdio.h&gt;
 
-            //this line will not be executed
-            printf("Input a name:");
-            fgets(myName, sizeof(myName), stdin);
-            
-            /*
-            printf("hello")
-            The console will not show "hello" because the
-            printf("hello") is in the comment and will not 
-            Be executed.
-            */
-            return 0;
-          }            
+      int main() {
+        char myName[20];
+
+        //this line will not be executed
+        printf("Input a name:");
+        fgets(myName, sizeof(myName), stdin);
+        
+        /*
+        printf("hello")
+        The console will not show "hello" because the
+        printf("hello") is in the comment and will not 
+        Be executed.
+        */
+        return 0;
+      }            
           </code>
         </pre>
       </div>
@@ -1079,28 +1085,28 @@
     
     <p class='afterr'>Example:
     <div class=" codee2">
-        <pre><code class="fs-6 language-c++">
-        #include &lt;iostream&gt;
-        #include &lt;string&gt;
+      <pre><code class="fs-6 language-c++">
+  #include &lt;iostream&gt;
+  #include &lt;string&gt;
 
-        int main() {
-            std::string myName;
+  int main() {
+      std::string myName;
 
-            //this line will not be executed
-            std::cout &lt;&lt; "Input your full name: ";
-            getline(std::cin, myName);
+      //this line will not be executed
+      std::cout &lt;&lt; "Input your full name: ";
+      getline(std::cin, myName);
 
-            /*
-            std::cout &lt;&lt; "hello";
-            The console will not show "hello" because the
-            std::cout &lt;&lt; "hello" is in the comment and will not 
-            be executed.
-            */
+      /*
+      std::cout &lt;&lt; "hello";
+      The console will not show "hello" because the
+      std::cout &lt;&lt; "hello" is in the comment and will not 
+      be executed.
+      */
 
-            return 0;
-        }            
-        </code>
-        </pre>
+      return 0;
+  }            
+      </code>
+      </pre>
     </div>
     </p>
     </div>
@@ -1134,7 +1140,7 @@
 <div class="row">
   <div class=" hiding" id="Escape SequencesC">    <!--C-->
     <div class="column2">
-      <p>Below are the most commonly used escape sequences for C.</p>
+      <p class="text-center">Below are the most commonly used escape sequences for C.</p>
     <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
           <tr class="table-secondary">
@@ -1192,7 +1198,7 @@
 
   <div class=" hiding" id="Escape SequencesC++">
     <div class="column2">   <!--Cpp-->
-      <p>Below are the most commonly used escape sequences for C++.</p>
+      <p class="text-center">Below are the most commonly used escape sequences for C++.</p>
         <table class="table table-light table-hover table-striped table-bordered w-auto">
             <thead>
             <tr class="table-secondary">
@@ -1250,7 +1256,7 @@
 
 <div class=" hiding" id="Escape SequencesPy">
   <div class="column2">   <!--python-->
-    <p>Below are the most commonly used escape sequences for Python.</p>
+    <p class="text-center">Below are the most commonly used escape sequences for Python.</p>
     <table class="table table-light table-hover table-striped table-bordered w-auto">
         <thead>
         <tr class="table-secondary">
@@ -1321,24 +1327,25 @@
       <p>C++ exception handling consists of three major keywords:
         <ul>
             <li><code class="fs-6">throw</code></li>
-            <code class="fs-6">Syntax: throw n;</code><br>
+            Syntax:<code class="fs-6"> throw n;</code><br>
 
             <li><code class="fs-6">try</code></li>
-            The keyword <code class="fs-6">try</code> has to be followed by one or more catch keywords to perform the exception-catching.
+            The keyword <code class="fs-6">try</code> has to be followed by one or more 
+            <code class="fs-6">catch</code> keywords to perform the exception-catching.
             
             <li><code class="fs-6">catch</code></li>
             Syntax:        
             <div class=" codee">
             <pre><code class="fs-6 language-c++">
-            try {
-            // protected code
-            } catch( ExceptionName e1 ) {
-            // code to handle the exception e1
-            } catch( ExceptionName e2 ) {
-            //code to handle the exception e2
-            } catch( ExceptionName eN ) {
-            // code to handle the exception eN
-            }
+        try {
+        // protected code
+        } catch( ExceptionName e1 ) {
+        // code to handle the exception e1
+        } catch( ExceptionName e2 ) {
+        //code to handle the exception e2
+        } catch( ExceptionName eN ) {
+        // code to handle the exception eN
+        }
             </code></pre>
             </div>
         </ul>
@@ -1347,37 +1354,37 @@
     <p> Example:        
         <div class="codee3">
         <pre><code class="fs-6 language-c++">
-        #include &lt;stdio.h&gt;
+      #include &lt;stdio.h&gt;
 
-        double division(int a, int b) {
-            if( b == 0 ){
-                throw "Division by zero!";
-            }
-            return (a/b);
-        }
+      double division(int a, int b) {
+          if( b == 0 ){
+              throw "Division by zero!";
+          }
+          return (a/b);
+      }
 
-        int main () {
-            int x = 50;
-            int y = 0;
-            double z = 0;
+      int main () {
+          int x = 50;
+          int y = 0;
+          double z = 0;
 
-            try { 
-                z = division(x, y);
-                std::cout &lt;&lt; z &lt;&lt; std::endl; 
-            } //test the above code block
+          try { 
+              z = division(x, y);
+              std::cout &lt;&lt; z &lt;&lt; std::endl; 
+          } //test the above code block
 
-            catch (const char* msg) {
-                std::cerr &lt;&lt; msg &lt;&lt; std::endl;
-            } 
-            
-        /*if the result type is const char* 
-        (the result is the message "Division by zero!"), 
-        
-        then cerr (print error message) of the msg. 
-        In this case, msg is "Division by zero!" */
+          catch (const char* msg) {
+              std::cerr &lt;&lt; msg &lt;&lt; std::endl;
+          } 
+          
+      /*if the result type is const char* 
+      (the result is the message "Division by zero!"), 
+      
+      then cerr (print error message) of the msg. 
+      In this case, msg is "Division by zero!" */
 
-            return 0;
-        }
+          return 0;
+      }
         </code></pre>
         </div>
         The output of this block of code is "Division by zero!"
@@ -1620,7 +1627,7 @@
 <div class="row">
   <div class=" hiding" id="Assignment OperatorsC">    <!--C-->
     <div class="column2">
-      <table class="table table-light table-hover table-striped table-bordered w-auto">
+      <table class="table table-light table-hover table-striped table-bordered w-auto m-auto">
         <thead>
           <tr class="table-secondary">
             <th scope="col" class="text-center align-middle">Operator</th>
@@ -1691,7 +1698,7 @@
 
   <div class=" hiding" id="Assignment OperatorsC++">
     <div class="column2">   <!--Cpp-->
-      <table class="table table-light table-hover table-striped table-bordered w-auto">
+      <table class="table table-light table-hover table-striped table-bordered w-auto m-auto">
         <thead>
           <tr class="table-secondary">
             <th scope="col" class="text-center align-middle">Operator</th>
@@ -1762,7 +1769,7 @@
 
 <div class=" hiding" id="Assignment OperatorsPy">
   <div class="column2">   <!--python-->
-    <table class="table table-light table-hover table-striped table-bordered w-auto">
+    <table class="table table-light table-hover table-striped table-bordered w-auto m-auto">
       <thead>
         <tr class="table-secondary">
           <th scope="col" class="text-center align-middle">Operator</th>
@@ -1837,7 +1844,7 @@
 <div class="row">
   <div class=" hiding" id="Comparison OperatorsC">    <!--C-->
     <div class="column2">
-      <table class="table table-light table-hover table-striped table-bordered w-auto">
+      <table class="table table-light table-hover table-striped table-bordered w-auto m-auto">
         <thead>
           <tr class="table-secondary">
             <th scope="col" class="text-center align-middle">Operator</th>
@@ -1883,7 +1890,7 @@
 
   <div class=" hiding" id="Comparison OperatorsC++">
     <div class="column2">   <!--Cpp-->
-      <table class="table table-light table-hover table-striped table-bordered w-auto">
+      <table class="table table-light table-hover table-striped table-bordered w-auto m-auto">
         <thead>
           <tr class="table-secondary">
             <th scope="col" class="text-center align-middle">Operator</th>
@@ -1929,7 +1936,7 @@
 
 <div class=" hiding" id="Comparison OperatorsPy">
   <div class="column2">   <!--python-->
-    <table class="table table-light table-hover table-striped table-bordered w-auto">
+    <table class="table table-light table-hover table-striped table-bordered w-auto m-auto">
       <thead>
         <tr class="table-secondary">
           <th scope="col" class="text-center align-middle">Operator</th>
@@ -2170,7 +2177,7 @@
 <div class="row">
   <div class=" hiding" id="Bitwise OperatorsC">    <!--C-->
     <div class="column2">
-      <table class="table table-light table-hover table-striped table-bordered w-auto">
+      <table class="table table-light table-hover table-striped table-bordered w-auto m-auto">
         <thead>
           <tr class="table-secondary">
             <th scope="col" class="text-center align-middle">Operator</th>
@@ -2216,7 +2223,7 @@
 
   <div class=" hiding" id="Bitwise OperatorsC++">
     <div class="column2">   <!--Cpp-->
-      <table class="table table-light table-hover table-striped table-bordered w-auto">
+      <table class="table table-light table-hover table-striped table-bordered w-auto m-auto">
         <thead>
           <tr class="table-secondary">
             <th scope="col" class="text-center align-middle">Operator</th>
@@ -2262,7 +2269,7 @@
 
 <div class=" hiding" id="Bitwise OperatorsPy">
   <div class="column2">   <!--python-->
-    <table class="table table-light table-hover table-striped table-bordered w-auto">
+    <table class="table table-light table-hover table-striped table-bordered w-auto m-auto">
       <thead>
         <tr class="table-secondary">
           <th scope="col" class="text-center align-middle">Operator</th>
@@ -2317,6 +2324,7 @@
           Example:<div class='codee'>
           <pre><code class="fs-6 ">int myNumber[] = {1,2,3,4,5};</code></pre></div>
       </p>
+      <pre></pre><pre></pre>
       <p>
           Syntax2: <code class="fs-6">array_type array_name[array_size];</code>
       </p>
@@ -2334,6 +2342,7 @@
           Example:<div class='  codee'>
           <pre><code class="fs-6 ">int myNumber[] = {1,2,3,4,5};</code></pre></div>
       </p>
+      <pre></pre><pre></pre>
       <p>
           Syntax2: <code class="fs-6">array_type array_name[array_size];</code>
       </p>
@@ -2408,27 +2417,27 @@
         <p class="beforee">Example code:</p>
         <div class="codee2">
         <pre>
-        <code class="fs-6">
-        #include &lt;stdio.h&gt;
+    <code class="fs-6">
+    #include &lt;stdio.h&gt;
 
-        int main() {
-            int myNumber[] = {25, 50, 75, 100};
-            int yourNumber[4]; 
-            //yourNumber doesn't contain any value
-            //you can't change the size of the array after creation
-            
-            myNumber[0] = 30; //change the value 25 to 30
-            //myNumber will contain 30,50,75,100 now
-            
-            yourNumber[0] = 40;
-            yourNumber[1] = 50;
-            yourNumber[2] = 45;
-            yourNumber[3] = 55;
-            //yourNumber will contain 40,50,45,55 now
-            
-            return 0;
-        }
-        </code>
+    int main() {
+        int myNumber[] = {25, 50, 75, 100};
+        int yourNumber[4]; 
+        //yourNumber doesn't contain any value
+        //you can't change the size of the array after creation
+        
+        myNumber[0] = 30; //change the value 25 to 30
+        //myNumber will contain 30,50,75,100 now
+        
+        yourNumber[0] = 40;
+        yourNumber[1] = 50;
+        yourNumber[2] = 45;
+        yourNumber[3] = 55;
+        //yourNumber will contain 40,50,45,55 now
+        
+        return 0;
+    }
+    </code>
         </pre>
         </div>
     </p>
@@ -2444,27 +2453,27 @@
         <p class="beforee">Example code:</p>
         <div class="codee2">
         <pre>
-        <code class="fs-6">
-        #include &lt;iostream&gt;
+    <code class="fs-6">
+    #include &lt;iostream&gt;
 
-        int main() {
-            int myNumber[] = {25, 50, 75, 100};
-            int yourNumber[4]; 
-            //yourNumber doesn't contain any value
-            //you can't change the size of the array after creation
-            
-            myNumber[0] = 30; //change the value 25 to 30
-            //myNumber will contain 30,50,75,100 now
-            
-            yourNumber[0] = 40;
-            yourNumber[1] = 50;
-            yourNumber[2] = 45;
-            yourNumber[3] = 55;
-            //yourNumber will contain 40,50,45,55 now
-            
-            return 0;
-        }
-        </code>
+    int main() {
+        int myNumber[] = {25, 50, 75, 100};
+        int yourNumber[4]; 
+        //yourNumber doesn't contain any value
+        //you can't change the size of the array after creation
+        
+        myNumber[0] = 30; //change the value 25 to 30
+        //myNumber will contain 30,50,75,100 now
+        
+        yourNumber[0] = 40;
+        yourNumber[1] = 50;
+        yourNumber[2] = 45;
+        yourNumber[3] = 55;
+        //yourNumber will contain 40,50,45,55 now
+        
+        return 0;
+    }
+    </code>
         </pre>
         </div>
     </p>
@@ -2481,6 +2490,7 @@
       Example:<div class=" codee">
       <pre><code class="fs-6 language-python">myNumber[0] = 10</code></pre></div>
   </p>
+  <pre></pre><pre></pre>
 
   <p><b>Tuples</b></p>
   <p>
@@ -2488,6 +2498,7 @@
     Note that we can't change tuple's element. If we want to change it, we have to 
     change the whole tuple (redefine the tuple).
   </p>
+  <pre></pre><pre></pre>
 
   <p><b>Sets</b></p>
   <p>
@@ -2496,11 +2507,12 @@
         #code block
     </code></pre></div>
   </p>
+  <pre></pre><pre></pre>
 
   <p><b>Dictionaries</b></p>
   <p>
     Syntax: <div class="codee3"><pre><code class="fs-6">
-    dict_name2 = {"name": "Mega", "age" : 18, "gender" : "female"}
+    dict_name2 = {"name": "Mega", "age" : 18}
     print(dict_name2["name"]) #the output will be Mega
     </code></pre></div>
   </p>
@@ -2538,17 +2550,17 @@
       you can directly use <code class="fs-6 ">std::size(array)</code> to know the amount of the elements in an array.
       <div class='  codee3'>
       <pre><code class="fs-6 language-c++">
-        #include &lt;iostream&gt;
+    #include &lt;iostream&gt;
 
-          int main() {
-            int myNumbers[5] = {20, 30, 40, 50, 60};
-            
-            int byte_size = sizeof(myNumbers); //value is 20
-            int array_size = sizeof(myNumbers)/sizeof(int); //value is 5
-            int array_size2 = std::size(myNumbers); //value is 5
-            
-            return 0;
-        }    
+      int main() {
+        int myNumbers[5] = {20, 30, 40, 50, 60};
+        
+        int byte_size = sizeof(myNumbers); //value is 20
+        int array_size = sizeof(myNumbers)/sizeof(int); //value is 5
+        int array_size2 = std::size(myNumbers); //value is 5
+        
+        return 0;
+    }    
       </code></pre></div>
     </p>
     </div>
@@ -2563,11 +2575,11 @@
       <div class=" codee3 language-python">
       <pre>
       <code class="fs-6">
-      myList = ["alpha", "beta", "delta", "gamma", "epsilon", "theta"]
-      print(myList[1:4])
-      print(myList[:4])
-      print(myList[1:])
-      print(myList[-4:-1])
+    myList = ["alpha", "beta", "delta", "gamma", "epsilon", "theta"]
+    print(myList[1:4])
+    print(myList[:4])
+    print(myList[1:])
+    print(myList[-4:-1])
       </code></pre>
       </div>
   </p>
@@ -2584,18 +2596,21 @@
       function to return the size of a list or the amount of the elements in the list.<br/>
       Syntax:<code class="fs-6"> len(list_name)</code>
   </p>
+  <pre></pre><pre></pre>
 
     <p><b>Tuples</b></p>
     <p> We can use the <code class="fs-6 ">len()</code> 
       function to return the size of a tuple or the amount of the elements in the tuple.<br/>
       Syntax:<code class="fs-6"> len(tuple_name)</code>
     </p>
+    <pre></pre><pre></pre>
 
     <p><b>Sets</b></p>
     <p> We can use the <code class="fs-6 ">len()</code> 
       function to return the size of a set or the amount of the elements in the set.<br/>
       Syntax:<code class="fs-6"> len(set_name)</code>
     </p>
+    <pre></pre><pre></pre>
     
     <p><b>Dictionaries</b></p>
     <p> We can use the <code class="fs-6 ">len()</code> 
@@ -2784,8 +2799,8 @@
           <div class="  codee2">
           <pre>
           <code class="fs-6 language-c++">
-          variable_result = string1 + string2 + stringn;
-          variable_result = string1.append(string2);  
+    variable_result = string1 + string2 + stringn;
+    variable_result = string1.append(string2);  
           </code>
           </pre>
           </div>
@@ -2847,10 +2862,11 @@
 <div class="row">
   <div class=" hiding" id="Length of a StringC">    <!--C-->
     <div class="column2">
-      Every C string has a null character inside them so the size of the string “some text”
+      Every C string has a null character inside them so the size of the string "some text"
         is not 9, but instead 10. We can use <code class="fs-6">sizeof(variable_name)</code> 
         in the <code class="fs-6">printf</code> statement to know the array size.
     </div>
+    <pre></pre>
   </div>
 
   <div class=" hiding" id="Length of a StringC++">
@@ -2930,11 +2946,11 @@
         int main() {
             int myNum = 10;
             if(myNum < 1){
-                std::cout<<"myNum is less than 1"; 
+                std::cout&lt;&lt;"myNum is less than 1"; 
             }else if (myNum < 10){
-                std::cout<<"myNum is less than 10";
+                std::cout&lt;&lt;"myNum is less than 10";
             }else{
-                std::cout<<"myNum is greater than or equal with 10";
+                std::cout&lt;&lt;"myNum is greater than or equal with 10";
             }
             return 0;
         }
@@ -2980,16 +2996,16 @@
       <p>
         Syntax:<div class='codee'>
         <pre><code class="fs-6 ">
-        switch(expression) {
-            case x:
-                // code block
-                break;
-            case y:
-                // code block
-                break;
-            default:
-                // code block
-        }
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        default:
+            // code block
+    }
         </code></pre></div>
     </p>
     <p><div class='fw-bold d-inline-flex'>Note:</div> the <code class="fs-6">default</code> code block is optional. </p>
@@ -3055,25 +3071,25 @@
             int day = 2;
             switch (day) {
             case 1:
-                std::cout<<"Monday";
+                std::cout&lt;&lt;"Monday";
                 break;
             case 2:
-                std::cout<<"Tuesday";
+                std::cout&lt;&lt;"Tuesday";
                 break;
             case 3:
-                std::cout<<"Wednesday";
+                std::cout&lt;&lt;"Wednesday";
                 break;
             case 4:
-                std::cout<<"Thursday";
+                std::cout&lt;&lt;"Thursday";
                 break;
             case 5:
-                std::cout<<"Friday";
+                std::cout&lt;&lt;"Friday";
                 break;
             case 6:
-                std::cout<<"Saturday";
+                std::cout&lt;&lt;"Saturday";
                 break;
             case 7:
-                std::cout<<"Sunday";
+                std::cout&lt;&lt;"Sunday";
                 break;
             }
             return 0;
@@ -3151,6 +3167,7 @@
         }
         </code></pre></div>
     </p>
+    <pre></pre><pre></pre>
 
     <p><b>Do-While</b></p>
     <p>
@@ -3196,13 +3213,14 @@
         int main() {
             int a = 1;
             while(a < 5){
-	            std::cout<<"a is " &lt;&lt; a &lt;&lt; endl;
+	            std::cout&lt;&lt;"a is " &lt;&lt; a &lt;&lt; endl;
 	            a++;
             }
             return 0;
         }
         </code></pre></div>
     </p>
+    <pre></pre><pre></pre>
 
     <p><b>Do-while</b></p>
     <p>
@@ -3220,7 +3238,7 @@
       int main() {
           int a = 1;
           do{
-              std::cout<<"Hello!";
+              std::cout&lt;&lt;"Hello!";
               a++;
           } while (a < 1);
           return 0;
@@ -3245,8 +3263,8 @@
       <pre><code class="fs-6 ">
       a = 1
       while(a < 5):
-    print(f"a is {a}")
-    a++
+          print(f"a is {a}")
+          a++
       </code></pre></div>
   </p>
 </div>
@@ -3261,9 +3279,9 @@
       <p>
         Syntax:<div class=' codee'>
         <pre><code class="fs-6 language-c">
-        for (statement 1; statement 2; statement 3) {
-            // code block to be executed
-        }
+    for (statement 1; statement 2; statement 3) {
+        // code block to be executed
+    }
         </code></pre></div>
     </p>
     <ul>
@@ -3292,9 +3310,9 @@
       <p>
         Syntax:<div class=' codee'>
         <pre><code class="fs-6 language-c++">
-        for (statement 1; statement 2; statement 3) {
-            // code block to be executed
-        }
+    for (statement 1; statement 2; statement 3) {
+        // code block to be executed
+    }
         </code></pre></div>
     </p>
     <ul>
@@ -3309,7 +3327,7 @@
         #include&lt;iostream&gt;
         int main() {
             for(int i = 0; i < 5 ; i++){
-                std::cout<<"Hello!";
+                std::cout&lt;&lt;"Hello!";
             }
             return 0;
         }
@@ -3370,7 +3388,7 @@
       <p>
         Syntax:
         <code class="fs-6 ">
-        printf(“%p”, &variable_name)
+        printf("%p", &variable_name)
         </code>
     </p>
     <p>
@@ -3398,7 +3416,7 @@
       <p>
         Syntax:
         <code class="fs-6 ">
-        std::cout << &variable_name;
+        std::cout &lt;&lt; &variable_name;
         </code>
     </p>
     <p>
@@ -3521,10 +3539,10 @@
         variable_type* pointer_name1 = &variable_name1;
 
         //print the memory address of variable_name1
-        std::cout << pointer_name1 << std::endl; 
+        std::cout &lt;&lt; pointer_name1 &lt;&lt; std::endl; 
 
         //print variable_name1
-        std::cout << *pointer_name1;                 
+        std::cout &lt;&lt; *pointer_name1;                 
         </code></pre></div>
     </p>
     <p>
@@ -3542,15 +3560,15 @@
             std::string* myptr1 = &myString;
             int* myptr2 = &myAge;
             
-            std::cout << myptr1 << std::endl; //print memory address of myString
-            std::cout << *myptr1 << std::endl;; //dereferencing (print myString)
+            std::cout &lt;&lt; myptr1 &lt;&lt; std::endl; //print memory address of myString
+            std::cout &lt;&lt; *myptr1 &lt;&lt; std::endl;; //dereferencing (print myString)
             
-            std::cout << myptr2 << std::endl;; //print memory address of myAge
-            std::cout << *myptr2 << std::endl;; //dereferencing (print myAge)
+            std::cout &lt;&lt; myptr2 &lt;&lt; std::endl;; //print memory address of myAge
+            std::cout &lt;&lt; *myptr2 &lt;&lt; std::endl;; //dereferencing (print myAge)
             
             *myptr2 = 20;
-            std::cout << myptr2 << std::endl;; //memory address is still same
-            std::cout << *myptr2 << std::endl;; //the value of myAge changed
+            std::cout &lt;&lt; myptr2 &lt;&lt; std::endl;; //memory address is still same
+            std::cout &lt;&lt; *myptr2 &lt;&lt; std::endl;; //the value of myAge changed
             
             return 0;
         } 
@@ -3631,11 +3649,11 @@
             // Change the value of the second element to 23
             *(myNumbers + 1) = 23;
             
-            std::cout << *myNumbers << " "; //print myNumbers[0]
-            std::cout << *(myNumbers+1) << std::endl; //print myNumbers[1]
+            std::cout &lt;&lt; *myNumbers &lt;&lt; " "; //print myNumbers[0]
+            std::cout &lt;&lt; *(myNumbers+1) &lt;&lt; std::endl; //print myNumbers[1]
             
-            std::cout << myNumbers << std::endl;
-            std::cout << &myNumbers[0]; //notice that both are the same
+            std::cout &lt;&lt; myNumbers &lt;&lt; std::endl;
+            std::cout &lt;&lt; &myNumbers[0]; //notice that both are the same
             
             return 0;
         }  
@@ -3676,7 +3694,7 @@
         variable_type variable1;
 
         //referencing
-        variable_type &variable2 = variable1;                  
+        variable_type &variable2 = variable1;
         </code></pre></div>
     </p>
     <p>
@@ -3689,12 +3707,12 @@
             std::string food = "Pizza"; //variable declaration
             std::string &meal = food; //reference declaration
         
-            std::cout << food << "\n";
-            std::cout << meal << "\n";
+            std::cout &lt;&lt; food &lt;&lt; "\n";
+            std::cout &lt;&lt; meal &lt;&lt; "\n";
             
             meal = "rice";
-            std::cout << food << "\n"; //food will also change to rice
-            std::cout << meal;
+            std::cout &lt;&lt; food &lt;&lt; "\n"; //food will also change to rice
+            std::cout &lt;&lt; meal;
             
             return 0;
         }
@@ -3727,9 +3745,9 @@
       <p>
         Syntax:<div class="codee3">
         <pre><code class="fs-6 language-c">
-        return_type function_name (data_type parameter_name){ 
-            //line of codes to be executed
-        }
+  return_type function_name (data_type parameter_name){ 
+      //line of codes to be executed
+  }
         </code></pre></div>
     </p>
     <p>
@@ -3755,9 +3773,9 @@
       <p>
         Syntax:<div class=" codee3">
         <pre><code class="fs-6 language-c++">
-        return_type function_name (data_type parameter_name){  
-            //line of codes to be executed 
-        }
+  return_type function_name (data_type parameter_name){  
+      //line of codes to be executed 
+  }
         </code></pre></div>
     </p>
     <p>
@@ -3907,8 +3925,8 @@
         <pre><code class="fs-6 language-c++">
         #include &lt;iostream&gt;
         void displayInfo(int age, int phone){
-            std::cout << "This is your age, " << age;
-            std::cout << "\nThis is your phone number, " << phone;
+            std::cout &lt;&lt; "This is your age, " &lt;&lt; age;
+            std::cout &lt;&lt; "\nThis is your phone number, " &lt;&lt; phone;
         }
         int main() {
             displayInfo(10, 9912);
@@ -3973,7 +3991,7 @@
         #include &lt;iostream&gt;
         int main() {
             auto display = [](int age=20){
-                std::cout << age << std::endl;
+                std::cout &lt;&lt; age &lt;&lt; std::endl;
             };
             display(10); //the output is 10
             display(); //the output is 20
@@ -4018,10 +4036,10 @@
       <p>
         Syntax:<div class=' codee'>
         <pre><code class="fs-6 language-c++">
-        class class_name{
-            access_specifier:
-                //class members (attributes or methods)
-        };
+    class class_name{
+        access_specifier:
+            //class members (attributes or methods)
+    };
         </code></pre></div>
     </p>
     <p>
@@ -4030,8 +4048,8 @@
         #include&lt;iostream&gt;
         class MyClass {       // The class
             public:             // Access specifier
-              int myNum;        // Attribute (int variable)
-              string myString;  // Attribute (string variable)
+              int myNum;        // Attribute 
+              string myString;  // Attribute 
         };
 
         int main() {
@@ -4080,21 +4098,21 @@
     <p>
         Example:<div class=" codee2">
         <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        class MyClass {       // The class
-            public:             // Access specifier
-              int myNum;        // Attribute (int variable)
-              string myString;  // Attribute (string variable)
-        };
+      #include&lt;iostream&gt;
+      class MyClass {       // The class
+          public:             // Access specifier
+            int myNum;        // Attribute
+            string myString;  // Attribute
+      };
 
-        int main() {
-            MyClass myObj;  // Create an object of MyClass
-          
-            // Access attributes and set values
-            myObj.myNum = 15; 
-            myObj.myString = "Some text";
-            return 0;
-        }
+      int main() {
+          MyClass myObj;  // Create object of MyClass
+        
+          // Access attributes and set values
+          myObj.myNum = 15; 
+          myObj.myString = "Some text";
+          return 0;
+      }
         </code></pre></div>
     </p>
     </div>
@@ -4109,8 +4127,8 @@
     <p>
         Example:<div class=" codee2">
         <pre><code class="fs-6 ">
-        class MyClass:          #The class
-            x = 5 		    #attributes
+        class MyClass:    #The class
+            x = 5         #attributes
           
         myobj = MyClass()
         print(myobj.x)	#the output is 5
@@ -4142,19 +4160,20 @@
         #include&lt;iostream&gt;
         class MyClass {       // The class
             public:             // Access specifier
-              int myNum;        // Attribute (int variable)
+              int myNum;        // Attribute
               void greet(){
-                std::cout<<"Hello!";
+                std::cout&lt;&lt;"Hello!";
               }
         };
 
         int main() {
-            MyClass myObj;  // Create an object of MyClass
+          // Create an object of MyClass  
+          MyClass myObj;  
           
-            // Access attributes and set values
-            myObj.myNum = 15; 
-            myObj.greet();
-            return 0;
+          // Access attributes and set values
+          myObj.myNum = 15; 
+          myObj.greet();
+          return 0;
         }
         </code></pre></div>
     </p>
@@ -4164,21 +4183,22 @@
         #include&lt;iostream&gt;
         class MyClass {       // The class
             public:             // Access specifier
-              int myNum;        // Attribute (int variable)
+              int myNum;        // Attribute 
         };
           
         void MyClass::greet(){
-            std::cout<<"Hello!";
+            std::cout&lt;&lt;"Hello!";
         }
           
         int main() {
-            MyClass myObj;  // Create an object of MyClass
+          // Create an object of MyClass  
+          MyClass myObj;  
         
-            // Access attributes and set values
-            myObj.myNum = 15; 
-            myObj.greet();
-            return 0;
-          }
+          // Access attributes and set values
+          myObj.myNum = 15; 
+          myObj.greet();
+          return 0;
+        }
         </code></pre></div>
     </p>
     </div>
@@ -4233,18 +4253,20 @@
     <p>
         Example:<div class=" codee3">
         <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        class MyClass {     // The class
-            public:           // Access specifier
-              MyClass() {     // Constructor
-                std::cout << "Hello World!";
-            }
-        };
-          
-        int main() {
-            MyClass myObj;   // Create an object of MyClass (this will call the constructor)
-            return 0;
-        }
+      #include&lt;iostream&gt;
+      class MyClass {     // The class
+          public:           // Access specifier
+            MyClass() {     // Constructor
+              std::cout &lt;&lt; "Hello World!";
+          }
+      };
+        
+      int main() {
+          // Create an object of MyClass 
+          //(this will call the constructor)  
+          MyClass myObj;   
+          return 0;
+      }
         </code></pre></div>
     </p>
     </div>
@@ -4307,7 +4329,7 @@
         int main() {
             Cube myObj;
             myObj.setSide(5);
-            std::cout << myObj.getSide();
+            std::cout &lt;&lt; myObj.getSide();
             return 0;
         }
         </code></pre></div>
@@ -4322,11 +4344,11 @@
   <p>
       Example:<div class=" codee2">
       <pre><code class="fs-6 language-python">
-      class MyClass:
-          def __init__(self, name, age):
-              self.__name = name 
-              self.__age = age
-            #the attribute (name and age) is now private
+  class MyClass:
+      def __init__(self, name, age):
+          self.__name = name 
+          self.__age = age
+          #the attribute (name and age) is now private
       </code></pre></div>
   </p>
 </div>
@@ -4347,15 +4369,18 @@
         Example:<div class=" codee2">
         <pre><code class="fs-6 language-c++">
         #include&lt;iostream&gt;
-        class MySchool {     // The base class
+
+        // The base class
+        class MySchool {     
             public:           
                 int members;
                 void welcome(){
-                    std::cout<< "Welcome!";
+                    std::cout&lt;&lt; "Welcome!";
                 }
         };
-          
-        class MyClass: public MySchool {     // The derived class
+        
+        // The derived class
+        class MyClass: public MySchool {     
             public:           				
                 char name = 'b';
         };
@@ -4418,7 +4443,7 @@
         class Animal {
             public:
                 void animalSound() {
-                    std::cout << "The animal makes a sound \n";
+                    std::cout &lt;&lt; "The animal makes a sound \n";
                 }
         };
             
@@ -4426,7 +4451,7 @@
         class Pig : public Animal {
             public:
                 void animalSound() {
-                    std::cout << "The pig says: wee wee \n";
+                    std::cout &lt;&lt; "The pig says: wee wee \n";
                 }
         };
             
@@ -4434,7 +4459,7 @@
         class Dog : public Animal {
             public:
                 void animalSound() {
-                    std::cout << "The dog says: bow wow \n";
+                    std::cout &lt;&lt; "The dog says: bow wow \n";
                 }
         };
             
@@ -4497,26 +4522,26 @@
     <p>
         Example:<div class=" codee2">
         <pre><code class="fs-6">
-        #include&lt;stdio.h&gt;
+      #include&lt;stdio.h&gt;
 
-        int main() {
-            FILE *fptr;
-            // Open a file in read mode
-            fptr = fopen("filename.txt", "r");
+      int main() {
+          FILE *fptr;
+          // Open a file in read mode
+          fptr = fopen("filename.txt", "r");
 
-            // Store the content of the file
-            char myString[100];
+          // Store the content of the file
+          char myString[100];
 
-            // Read the content and store it inside myString
-            fgets(myString, 100, fptr);
+          // Read the content and store it in myString
+          fgets(myString, 100, fptr);
 
-            // Print the file content
-            printf("%s", myString);
+          // Print the file content
+          printf("%s", myString);
 
-            // Close the file
-            fclose(fptr);
-            return 0;
-        }
+          // Close the file
+          fclose(fptr);
+          return 0;
+      }
         </code></pre></div>
     </p>
     </div>
@@ -4528,8 +4553,8 @@
         To read a file, first we need to include the library <code class="fs-6">&lt;fstream&gt;</code>, 
         then we open the file with ifstream class or fstream class.  We need to 
         prepare a text string variable to store the file content. Then, we use 
-        the <code class='fs-6'>getline()</code> function and finally, we close the file. <span class="fw-bold">Note:</span> 
-        <code class='fs-6'>getline()</code>
+        the <code class='fs-6'>getline()</code> function and finally, we close the file. <br>
+        <span class="fw-bold">Note:</span> <code class='fs-6'>getline()</code>
         function only read a single line of text, so if you want to read several 
         line of text, use loops to loop through the <code class='fs-6'>getline()</code> function.
     </p>
@@ -4569,10 +4594,17 @@
   <p>
       Example:<div class="bg-plblack codee2">
       <pre><code class="fs-6 language-python">
-      f = open("myfile.txt", 'rt')	#open a file
-      print(f.readline())		#reading a single line
-      print(f.read())			#reading a whole file
-      f.close()				#close the file
+      #open a file
+      f = open("myfile.txt", 'rt')
+
+      #reading a single line
+      print(f.readline())
+
+      #reading a whole file
+      print(f.read())
+      
+      #close the file
+      f.close()
       </code></pre></div>
   </p>
 </div>
@@ -4707,9 +4739,14 @@
   <p>
       Example:<div class="bg-plblack codee2">
       <pre><code class="fs-6 language-python">
-      f = open("myfile.txt", 'wt')	#open a file
-      f.write("Writing some text")	#write to the file
-      f.close()				#close the file
+      #open a file
+      f = open("myfile.txt", 'wt')
+
+      #write to the file
+      f.write("Writing some text")
+
+      #close the file
+      f.close()
       </code></pre></div>
   </p>
 </div>
@@ -4771,7 +4808,7 @@
   
           // Open and append "Hello!" the file 
           myfile.open("text.txt", ios::app)
-          myfile << "Hello!"
+          myfile &lt;&lt; "Hello!"
   
           // Close the file
           MyFile.close();
@@ -4791,20 +4828,19 @@
   <p>
       Example:<div class="bg-plblack codee2">
       <pre><code class="fs-6 language-python">
-      f = open("myfile.txt", 'at')	#open a file
-      f.write("Adding some text")		#append to the file
-      f.close()				#close the file
+      #open a file
+      f = open("myfile.txt", 'at')
+
+      #append to the file
+      f.write("Adding some text")
+
+      #close the file
+      f.close()
       </code></pre></div>
   </p>
 </div>
 </div>
 </div>
-
-
-
-
-
-
 
 
   </div>
