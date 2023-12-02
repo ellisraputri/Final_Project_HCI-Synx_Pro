@@ -101,6 +101,11 @@
     color:#339ab2;
   }
   
+  .copy{
+    font-family: 'montserrat';
+    border: 0px;
+    padding: 10px;
+  }
 
   .btn-primary{
     background-color: #166174 !important;
