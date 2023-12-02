@@ -30,14 +30,19 @@
     line-height: 1.8;
 }
 
-.footer a:hover{
-    padding: 5px;
-    padding-bottom: 8px;
+.footer i{
+    margin: 10px 5px 10px 25px;
+    font-size: 24px;
+    color:rgba(255, 255, 255, 0.762);
 }
 
+.footer i:hover{
+    color: #00A4BD;
+}
 .footer p{
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .bg-plblack{
