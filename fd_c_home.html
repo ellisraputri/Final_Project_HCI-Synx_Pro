@@ -116,7 +116,7 @@
           </div>
         </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>  Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up fs-6" style="color: #ffffff;"></i></button>
     
     <div class="col-lg-10">
     <div class="content2">
@@ -124,7 +124,8 @@
     <p class="beforee">Let's see one simple example of C program and learn some basic syntax of it.</p>
     
     <pre>
-    <div class="codee" id="div1">
+    <div class="codee">
+      <div id="div1" class="kode">
       <code class="fs-6">
   #include &lt;stdio.h&gt;
   
@@ -133,7 +134,11 @@
       return 0;
   }
       </code>
-<button class='copy fs-6' onclick="CopyToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+    </div>
+<div class="copy" value="div1">
+  <button class='fs-6' onclick="CopyToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+  
     </div>
     </pre>
     <pre></pre>
@@ -283,6 +288,7 @@
 
     <pre></pre><pre></pre><pre></pre>
 
+    
     <nav aria-label="Page navigation">
       <ul class="pagination justify-content-end">
         <li class="page-item disabled">
@@ -300,24 +306,25 @@
         </li>
       </ul>
     </nav>
+  
 
     <br/>
   </div> <!--body-->
 
-  
-    <div class="footer">
+  <pre></pre><pre></pre>
+  <div class="footer">
     <div class="row">
-        <div class="col-md-8 tosca centerin">
+      <div class="col-md-8 tosca centerin">
         <p>© Copyright 2023 return 0;</p>
-        </div>
-        <div class="col-md-4 tosca centerin2">
-        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><img src="all-time pict/insta.webp" alt="instagram" title="instagram" width="20px"/></a>
-        <a href="https://wa.me/62895629504490"><img src="all-time pict/WhatsApp.webp" alt="whatsapp" title="whatsapp"width="20px"/></a>
-        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><img src="all-time pict/linkedin.png" alt="linkedin" title="linkedin" width="20px"/></a>
-        <a href="https://github.com/Ella-Raputri"><img src="all-time pict/github.png" alt="github" title="github" width="20px"/></a>
-        </div>
+      </div>
+      <div class="col-md-4 tosca centerin2">
+        <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/62895629504490"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/ella-raputri-128270187"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Ella-Raputri"><i class="fa-brands fa-github"></i></a>
+      </div>
     </div>
-    </div>
+  </div>
     
     <script src="funcdict.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
