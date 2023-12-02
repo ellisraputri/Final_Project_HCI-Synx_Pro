@@ -7,7 +7,7 @@
   background-color: #166174;
 }
 
-a:hover, .nav-active{
+.topnav a:hover, .nav-active{
   background-color: #339ab2;
 }
 
@@ -51,10 +51,6 @@ a:hover, .nav-active{
 .content1{
   line-height:2.6;
   text-align: justify;
-}
-
-.buttonn{
-  margin-top: 7px;
 }
 
 .kanit{
@@ -199,6 +195,12 @@ a:hover, .nav-active{
 }
 .features .dropdwn{
   padding: 10px;
+}
+#button22{
+  padding: 10px;
+}
+.itemh a:hover{
+  background-color: #339ab2;
 }
 
 
