@@ -89,6 +89,8 @@ $(document).ready(function(){
 
                 $('.languagemenu1').html(click_language1_value);
                 $('.upsym').hide();
+
+                $(".flips").toggleClass('flippp');
             }
         });
 
@@ -124,27 +126,28 @@ $(document).ready(function(){
         }
 
         else{
-            $('.result_text').show();
+            $('.result_text').fadeIn();
+
             if(click_language1_value == 'C'){
                 let isi1 = document.getElementById(click_compare_value+'C');
                 $(isi1).appendTo('.leftside');
                 $('.lefttext').text('C');
-                $(isi1).show();
-                $('.leftside').show();
+                $(isi1).delay(600).fadeIn();
+                $('.leftside').delay(500).fadeIn();
 
                 if(click_language2_value == 'C++'){
                     let isi2 = document.getElementById(click_compare_value+'C++');
                     $(isi2).appendTo('.rightside');
                     $('.righttext').text('C++');
-                    $(isi2).show();
-                    $('.rightside').show();
+                    $(isi2).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
                 else if(click_language2_value == 'Python'){
                     let isi3 = document.getElementById(click_compare_value+'Py');
                     $(isi3).appendTo('.rightside');
                     $('.righttext').text('Python');
-                    $(isi3).show();
-                    $('.rightside').show();
+                    $(isi3).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
             }
 
@@ -152,22 +155,22 @@ $(document).ready(function(){
                 let isi1 = document.getElementById(click_compare_value+'C++');
                 $(isi1).appendTo('.leftside');
                 $('.lefttext').text('C++');
-                $(isi1).show();
-                $('.leftside').show();
+                $(isi1).delay(600).fadeIn();
+                $('.leftside').delay(500).fadeIn();
 
                 if(click_language2_value == 'C'){
                     let isi2 = document.getElementById(click_compare_value+'C');
                     $(isi2).appendTo('.rightside');
                     $('.righttext').text('C');
-                    $(isi2).show();
-                    $('.rightside').show();
+                    $(isi2).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
                 else if(click_language2_value == 'Python'){
                     let isi3 = document.getElementById(click_compare_value+'Py');
                     $(isi3).appendTo('.rightside');
                     $('.righttext').text('Python');
-                    $(isi3).show();
-                    $('.rightside').show();
+                    $(isi3).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
             }
 
@@ -175,22 +178,22 @@ $(document).ready(function(){
                 let isi1 = document.getElementById(click_compare_value+'Py');
                 $(isi1).appendTo('.leftside');
                 $('.lefttext').text('Python');
-                $(isi1).show();
-                $('.leftside').show();
+                $(isi1).delay(600).fadeIn();
+                $('.leftside').delay(500).fadeIn();
 
                 if(click_language2_value == 'C'){
                     let isi2 = document.getElementById(click_compare_value+'C');
                     $(isi2).appendTo('.rightside');
                     $('.righttext').text('C');
-                    $(isi2).show();
-                    $('.rightside').show();
+                    $(isi2).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
                 else if(click_language2_value == 'C++'){
                     let isi3 = document.getElementById(click_compare_value+'C++');
                     $(isi3).appendTo('.rightside');
                     $('.righttext').text('C++');
-                    $(isi3).show();
-                    $('.rightside').show();
+                    $(isi3).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
             }
 
@@ -293,10 +296,18 @@ $(document).ready(function(){
                 click_language1_value = click_language2_value;
                 click_language2_value = temp;
 
-                $('.languagemenu2').html(click_language2_value);
+                $('.languagemenu2').html(click_language2_value + '&ensp;\
+                <i class="fa-solid fa-caret-down downsym"></i>\
+                <i class="fa-solid fa-caret-up upsym"></i>');
 
-                $('.languagemenu1').html(click_language1_value);
+                $('.languagemenu1').html(click_language1_value + '&ensp;\
+                <i class="fa-solid fa-caret-down downsym"></i>\
+                <i class="fa-solid fa-caret-up upsym"></i>');
                 $('.upsym').hide();
+
+                $(".flips").toggleClass('flippp');
+                    
+                
             }
         });
 
@@ -327,27 +338,28 @@ $(document).ready(function(){
         }
 
         else{
-            $('.result_text').show();
+            $('.result_text').fadeIn();
+            
             if(click_language1_value == 'C'){
                 let isi1 = document.getElementById(click_compare_value+'C');
                 $(isi1).appendTo('.leftside');
                 $('.lefttext').text('C');
-                $(isi1).show();
-                $('.leftside').show();
+                $(isi1).delay(600).fadeIn();
+                $('.leftside').delay(500).fadeIn();
 
                 if(click_language2_value == 'C++'){
                     let isi2 = document.getElementById(click_compare_value+'C++');
                     $(isi2).appendTo('.rightside');
                     $('.righttext').text('C++');
-                    $(isi2).show();
-                    $('.rightside').show();
+                    $(isi2).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
                 else if(click_language2_value == 'Python'){
                     let isi3 = document.getElementById(click_compare_value+'Py');
                     $(isi3).appendTo('.rightside');
                     $('.righttext').text('Python');
-                    $(isi3).show();
-                    $('.rightside').show();
+                    $(isi3).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
             }
 
@@ -355,22 +367,22 @@ $(document).ready(function(){
                 let isi1 = document.getElementById(click_compare_value+'C++');
                 $(isi1).appendTo('.leftside');
                 $('.lefttext').text('C++');
-                $(isi1).show();
-                $('.leftside').show();
+                $(isi1).delay(600).fadeIn();
+                $('.leftside').delay(500).fadeIn();
 
                 if(click_language2_value == 'C'){
                     let isi2 = document.getElementById(click_compare_value+'C');
                     $(isi2).appendTo('.rightside');
                     $('.righttext').text('C');
-                    $(isi2).show();
-                    $('.rightside').show();
+                    $(isi2).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
                 else if(click_language2_value == 'Python'){
                     let isi3 = document.getElementById(click_compare_value+'Py');
                     $(isi3).appendTo('.rightside');
                     $('.righttext').text('Python');
-                    $(isi3).show();
-                    $('.rightside').show();
+                    $(isi3).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
             }
 
@@ -378,28 +390,31 @@ $(document).ready(function(){
                 let isi1 = document.getElementById(click_compare_value+'Py');
                 $(isi1).appendTo('.leftside');
                 $('.lefttext').text('Python');
-                $(isi1).show();
-                $('.leftside').show();
+                $(isi1).delay(600).fadeIn();
+                $('.leftside').delay(500).fadeIn();
 
                 if(click_language2_value == 'C'){
                     let isi2 = document.getElementById(click_compare_value+'C');
                     $(isi2).appendTo('.rightside');
                     $('.righttext').text('C');
-                    $(isi2).show();
-                    $('.rightside').show();
+                    $(isi2).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
                 else if(click_language2_value == 'C++'){
                     let isi3 = document.getElementById(click_compare_value+'C++');
                     $(isi3).appendTo('.rightside');
                     $('.righttext').text('C++');
-                    $(isi3).show();
-                    $('.rightside').show();
+                    $(isi3).delay(600).fadeIn();
+                    $('.rightside').delay(500).fadeIn();
                 }
             }
 
         }
 
     });
+
+
+    
     }
 
     

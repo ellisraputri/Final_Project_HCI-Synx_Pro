@@ -105,8 +105,12 @@
 }
 
 .convert, .reset{
-    padding: 10px;
-    border-color: #166174;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border:none;
+    border-radius: 30px;
+    background-color: #166174;
 }
 
 .convert:hover , .reset:hover{
@@ -116,16 +120,16 @@
 .leftside{
     float:left;
     background-color: rgba(133, 133, 133, 0.455);
+    padding-bottom: 30px;
 }
 
 .rightside{
     float: right;
-    background-color: rgba(133, 133, 133, 0.455);   
+    background-color: rgba(133, 133, 133, 0.455);
 }
 
 .lefttext, .righttext{
     margin-top: 10px;
-    margin-bottom: 10px;
     font-family: 'kanit',sans-serif;
     color: gainsboro;
     text-align: center;
@@ -247,6 +251,15 @@
 
 .menulala2 a:hover, .menulala3 a:hover, .menulala1 a:hover{
     background-color: #339bb2a1;
+}
+
+.fliparrow{
+    transition: 1.2s;
+	transform-style: preserve-3d;
+}
+
+.flippp{
+    transform: rotateY(180deg);
 }
 
 @media (max-width:768px) {
