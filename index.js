@@ -33,7 +33,7 @@
   /*feature */
   $('.feature').hover(function(){
     var feature = $(this).data('bs-target');
-    $('#'+ feature).toggle();
+    $('#'+ feature).slideToggle('slow');
   });
 
 

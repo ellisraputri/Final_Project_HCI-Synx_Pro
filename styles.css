@@ -17,14 +17,20 @@
   padding-right: 20px;
 }
 
-.footer a:hover{
-  padding: 5px;
-  padding-bottom: 8px;
+.footer i{
+  margin: 10px 5px 10px 25px;
+  font-size: 24px;
+  color:rgba(255, 255, 255, 0.894);
+}
+
+.footer i:hover{
+  color: #00A4BD;
 }
 
 .footer p{
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .bg-plblack{
@@ -33,10 +39,6 @@
 
 .grey{
   background-color: rgba(133, 133, 133, 0.425);
-}
-
-.footer img{
-  margin: 10px;
 }
 
 .nav-item{
@@ -196,6 +198,10 @@
 }
 .feature{
   font-family: "Montserrat", sans-serif;
+  margin: 10px 0 20px 0;
+}
+.feature_faq{
+  margin-bottom: 33px;
 }
 .features .dropdwn{
   padding: 10px;
