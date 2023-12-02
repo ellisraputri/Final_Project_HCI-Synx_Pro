@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -119,8 +120,9 @@
     <div class="content2">
     <h2 class="fs-1 kanit">Introduction</h2>
     <p class="beforee">Let's see one simple example of C program and learn some basic syntax of it.</p>
+    
     <pre>
-    <div class="codee">
+    <div class="codee" id="div1">
       <code class="fs-6">
   #include &lt;stdio.h&gt;
   
@@ -129,8 +131,12 @@
       return 0;
   }
       </code>
+<button class='copy fs-6' onclick="CopyToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
     </div>
     </pre>
+    <pre></pre>
+
+    <br/>
     <p class="afterr">Line 1: &nbsp; <code class="fs-6">#include &lt;stdio.h&gt;</code> &nbsp; is a statement to include the header file library. 
       <code class="fs-6">&lt;stdio.h&gt;</code> is a library that lets us work with input and output functions, such as <code class="fs-6">printf()</code>.</p>
     <p>Line 2: blank space. C ignores white space, but we need white spaces to increase our code readability.</p>
