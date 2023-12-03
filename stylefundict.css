@@ -51,7 +51,7 @@
   }
 
   .afterr{
-    margin-top: -40px;
+    margin-top: -50px;
   }
 
   .beforee{
@@ -184,6 +184,53 @@
   .pagination a{
     color: white;
   }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 5;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 30px;
+    width: 50px;
+    font-family: 'montserrat'
+  }
+  
+  #myBtn:hover {
+    transform: scale(1.1);
+    background-color: rgb(147, 147, 147);
+  }
+
+  .copy button{
+    font-family: 'montserrat';
+    border: 0px;
+    padding: 7px 10px;
+    border-radius: 20px;
+    margin-top: -10px;
+    transition: transform .2s;
+  }
+
+  .copy button:hover{
+    transform: scale(1.1);
+    background-color: rgb(147, 147, 147);
+  }
+
+  .copy{
+    margin-top: -65px;
+    margin-bottom: -60px;
+    margin-left: -10px;
+  }
+
+  .kode{
+    padding: 0;
+    margin-top: -60px;
+    margin-bottom: -50px;
+  }
   
   @media(max-width:1280px){
     .codee{
@@ -216,6 +263,11 @@
     .codee{
         max-width: 100%;
     }
+  }
 
-
+  @media (max-width:380px) {
+    #myBtn{
+      width: 50px;
+      font-size: 14px;
+    }
   }
