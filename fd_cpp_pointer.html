@@ -118,6 +118,7 @@
           </div>
         </div>
   
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button>
     <div class="col-lg-10">
     <div class="content2">
         <h1 class="fs-1 kanit">Pointers</h1>
@@ -143,11 +144,12 @@
         <p>
             Syntax:
             <code class="fs-6 ">
-            std::cout << &variable_name;
+            std::cout &lt;&lt; &variable_name;
             </code>
         </p>
         <p style="margin-bottom: -40px;">Example:</p>
-    <pre><div class="codee ">
+        <div class="overflowed">
+        <pre><div class="codee ">
         <div id="div1" class="kode">
         <code class="fs-6 language-c++">
     #include &lt;iostream&gt;
@@ -163,11 +165,11 @@
   <button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
       </div>
-    </pre>
+    </pre></div>
         <p style="margin-top: -60px;">
             Output:<div class=" codee">
             <pre><code class="fs-6 ">
-            0x7ffe874a510c
+  0x7ffe874a510c
             </code></pre></div>
         </p>
         <p>
@@ -188,7 +190,8 @@
             the same as the variable type of the variable that the pointer points to.
         </p>
         <p style="margin-bottom: -40px;">Syntax:</p>
-    <pre><div class="codee ">
+        <div class="overflowed">
+        <pre><div class="codee ">
         <div id="div2" class="kode">
         <code class="fs-6 language-c++">
     variable_type variable_name1;
@@ -199,7 +202,7 @@
   <button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
       </div>
-    </pre>
+    </pre></div>
 
         <p style="margin-top: -80px;">
             You can also print the variable that the pointer points by dereferencing by using
@@ -207,6 +210,7 @@
             If we don't use <code class="fs-6">*</code>, then the compiler will print the memory address of the variable.
         </p>
         <p style="margin-bottom: -40px;">Syntax:</p>
+        <div class="overflowed">
         <pre><div class="codee ">
         <div id="div3" class="kode">
         <code class="fs-6 language-c++">
@@ -214,19 +218,20 @@
     variable_type* pointer_name1 = &variable_name1;
 
     //print the memory address of variable_name1
-    std::cout << pointer_name1 << std::endl; 
+    std::cout &lt;&lt; pointer_name1 &lt;&lt; std::endl; 
 
     //print variable_name1
-    std::cout << *pointer_name1;
+    std::cout &lt;&lt; *pointer_name1;
         </code>
       </div>
   <div class="copy">
   <button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
       </div>
-    </pre>
+    </pre></div>
 
     <p class="afterr" style="margin-bottom: -40px;">Example:</p>
+    <div class="overflowed">
     <pre><div class="codee3">
         <div id="div4" class="kode">
         <code class="fs-6 language-c++">
@@ -242,15 +247,15 @@
         std::string* myptr1 = &myString;
         int* myptr2 = &myAge;
         
-        std::cout << myptr1 << std::endl; //print memory address of myString
-        std::cout << *myptr1 << std::endl;; //dereferencing (print myString)
+        std::cout &lt;&lt; myptr1 &lt;&lt; std::endl; //print memory address of myString
+        std::cout &lt;&lt; *myptr1 &lt;&lt; std::endl;; //dereferencing (print myString)
         
-        std::cout << myptr2 << std::endl;; //print memory address of myAge
-        std::cout << *myptr2 << std::endl;; //dereferencing (print myAge)
+        std::cout &lt;&lt; myptr2 &lt;&lt; std::endl;; //print memory address of myAge
+        std::cout &lt;&lt; *myptr2 &lt;&lt; std::endl;; //dereferencing (print myAge)
         
         *myptr2 = 20;
-        std::cout << myptr2 << std::endl;; //memory address is still same
-        std::cout << *myptr2 << std::endl;; //the value of myAge changed
+        std::cout &lt;&lt; myptr2 &lt;&lt; std::endl;; //memory address is still same
+        std::cout &lt;&lt; *myptr2 &lt;&lt; std::endl;; //the value of myAge changed
         
         return 0;
     } 
@@ -260,17 +265,17 @@
   <button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
       </div>
-    </pre>
+    </pre></div>
 
         <p style="margin-top: -80px;">
             Output:<div class=" codee">
             <pre><code class="fs-6 ">
-            0x7fffcc479cd0
-            Car
-            0x7fffcc479ccc
-            18
-            0x7fffcc479ccc
-            20
+    0x7fffcc479cd0
+    Car
+    0x7fffcc479ccc
+    18
+    0x7fffcc479ccc
+    20
             </code></pre></div>
         </p>
     
@@ -282,7 +287,8 @@
             Therefore, we can access the elements in an array by dereferencing.
         </p>
         <p style="margin-bottom: -40px;">Example:</p>
-    <pre><div class="codee2">
+        <div class="overflowed">
+        <pre><div class="codee2">
         <div id="div5" class="kode">
         <code class="fs-6 language-c++">
     #include &lt;iostream&gt;
@@ -292,11 +298,11 @@
         // Change the value of the second element to 23
         *(myNumbers + 1) = 23;
         
-        std::cout << *myNumbers << " "; //print myNumbers[0]
-        std::cout << *(myNumbers+1) << std::endl; //print myNumbers[1]
+        std::cout &lt;&lt; *myNumbers &lt;&lt; " "; //print myNumbers[0]
+        std::cout &lt;&lt; *(myNumbers+1) &lt;&lt; std::endl; //print myNumbers[1]
         
-        std::cout << myNumbers << std::endl;
-        std::cout << &myNumbers[0]; //notice that both are the same
+        std::cout &lt;&lt; myNumbers &lt;&lt; std::endl;
+        std::cout &lt;&lt; &myNumbers[0]; //notice that both are the same
         
         return 0;
     }
@@ -306,14 +312,14 @@
   <button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
       </div>
-    </pre>
+    </pre></div>
 
         <p style="margin-top: -60px;">
             Output:<div class=" codee">
             <pre><code class="fs-6 ">
-            25 23
-            0x7fffc29fd180
-            0x7fffc29fd180                
+    25 23
+    0x7fffc29fd180
+    0x7fffc29fd180                
             </code></pre></div>
         </p>
 
@@ -327,6 +333,7 @@
             have the same variable type as the variable that is being referenced.
         </p>
         <p style="margin-bottom: -40px;">Syntax:</p>
+        <div class="overflowed">
         <pre><div class="codee ">
             <div id="div6" class="kode">
             <code class="fs-6 language-c++">
@@ -340,13 +347,14 @@
   <button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
       </div>
           </div>
-        </pre>
+        </pre></div>
 
         <p style="margin-top: -60px;">
             If we change the <code class="fs-6">variable2</code> to a new value, 
             then <code class="fs-6">variable1</code> 's value will also change.
         </p>
         <p style="margin-bottom: -40px;">Example:</p>
+        <div class="overflowed">
         <pre><div class="codee2 ">
             <div id="div7" class="kode">
             <code class="fs-6 language-c++">
@@ -357,12 +365,12 @@
         std::string food = "Pizza"; //variable declaration
         std::string &meal = food; //reference declaration
     
-        std::cout << food << "\n";
-        std::cout << meal << "\n";
+        std::cout &lt;&lt; food &lt;&lt; "\n";
+        std::cout &lt;&lt; meal &lt;&lt; "\n";
         
         meal = "rice";
-        std::cout << food << "\n"; //food will also change to rice
-        std::cout << meal;
+        std::cout &lt;&lt; food &lt;&lt; "\n"; //food will also change to rice
+        std::cout &lt;&lt; meal;
         
         return 0;
     }
@@ -372,15 +380,15 @@
   <button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
       </div>
           </div>
-        </pre>
+        </pre></div>
 
         <p style="margin-top: -60px;">
             Output:<div class=" codee">
             <pre><code class="fs-6 ">
-            Pizza
-            Pizza
-            rice
-            rice                
+    Pizza
+    Pizza
+    rice
+    rice                
             </code></pre></div>
         </p>
     

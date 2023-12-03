@@ -118,6 +118,7 @@
           </div>
         </div>
   
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button>
     <div class="col-lg-10">
     <div class="content2">
     <h1 class="fs-1 kanit">File Handling</h1>
@@ -155,6 +156,7 @@
         Syntax:<code class="fs-6"> fprintf(pointer_name, "text we want to write");</code>
     </p>
     <p style="margin-bottom: -40px;">Example:</p>
+    <div class="overflowed">
     <pre><div class="codee ">
         <div id="div1" class="kode">
         <code class="fs-6 language-c++">
@@ -178,7 +180,7 @@
   <button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
       </div>
-    </pre>
+    </pre></div>
   <p style="margin-top: -60px;">
       We can also append to a file using <code class="fs-6">ofstream</code>.  But, we need to include the mode 
       <code class="fs-6">std::ios::app</code> in the <code class="fs-6">open()</code> function. 
@@ -187,6 +189,7 @@
       Syntax:<code class="fs-6"> variable_name.open(file_name, std::ios::app);</code>
   </p>
   <p style="margin-bottom: -40px;">Example:</p>
+  <div class="overflowed">
     <pre><div class="codee ">
         <div id="div2" class="kode">
         <code class="fs-6 language-c++">
@@ -213,7 +216,7 @@
   <button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
       </div>
-    </pre>
+    </pre></div>
 
     <div id="sub2" class="afterr"></div>
 
@@ -228,6 +231,7 @@
         line of text, use loops to loop through the <code class='fs-6'>getline()</code> function.
     </p>
     <p style="margin-bottom: -40px;">Example:</p>
+    <div class="overflowed">
     <pre><div class="codee ">
         <div id="div3" class="kode">
         <code class="fs-6 language-c++">
@@ -255,7 +259,7 @@
   <button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
       </div>
-    </pre>
+    </pre></div>
 
 
     <div id="sub3" style="margin-top: -60px;"></div>
@@ -264,6 +268,7 @@
       <code class="fs-6">fstream</code> can do both what <code class="fs-6">ifstream</code> 
         and <code class="fs-6">ofstream</code> does. Example:
     </p>
+    <div class="overflowed">
     <pre><div class="codee ">
         <div id="div4" class="kode">
         <code class="fs-6 language-c++">
@@ -287,9 +292,10 @@
   <button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
       </div>
-    </pre>
+    </pre></div>
 
   <div style="margin-top: -80px;"></div>
+  <div class="overflowed">
     <pre><div class="codee ">
       <div id="div5" class="kode">
       <code class="fs-6 language-c++">
@@ -318,7 +324,7 @@
 <button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
 </div>
     </div>
-  </pre>
+  </pre></div>
 
 
     <pre></pre><pre></pre><pre></pre>

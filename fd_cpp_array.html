@@ -118,6 +118,7 @@
           </div>
         </div>
   
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button>
     <div class="col-lg-10">
     <div class="content2">
     <h1 class="fs-1 kanit ">Arrays</h1>
@@ -140,6 +141,7 @@
         <p>Syntax1 : <code class="fs-6">array_type array_name[] = {content1, content2, content3};</code></p>
         <p>
             Example:
+            <div class="overflowed">
               <pre><div class="codee"><div id="div1" class="kode">
                 <code class="fs-6">int myNumber[] = {1,2,3,4,5};</code>
               </div>
@@ -147,13 +149,14 @@
     <button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
           </div>
           </div>
-            </pre>
+            </pre></div>
         </p>
         <p style="margin-top: -60px;">
             Syntax2: <code class="fs-6">array_type array_name[array_size];</code>
         </p>
         <p>
           Example:
+          <div class="overflowed">
             <pre><div class="codee"><div id="div2" class="kode">
               <code class="fs-6">int yourNumber[6];</code>
             </div>
@@ -161,7 +164,7 @@
   <button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
         </div>
         </div>
-          </pre>
+          </pre></div>
       </p>
       <p style="margin-top: -90px;">
         You can also specify the size and the elements of the array at once when
@@ -179,6 +182,7 @@
         </p>
         <p>
           Example:
+          <div class="overflowed">
             <pre><div class="codee"><div id="div2a" class="kode">
               <code class="fs-6 language-c++">myNumber[0] = 10;</code>
             </div>
@@ -186,7 +190,7 @@
   <button class='fs-6' onclick="copyDivToClipboard('div2a')"><i class="fa-regular fa-copy"></i>  Copy</button>
         </div>
         </div>
-          </pre>
+          </pre></div>
       </p>
         <p style="margin-top:-80px;">
             If the array's elements are still not defined like in the yourNumber array in syntax2 in defining array, 
@@ -194,7 +198,7 @@
         </p>
 
         <p class="beforee">Example:</p>
-
+        <div class="overflowed">
         <pre><div class="codee2">
             <div id="div3" class="kode">
             <code class="fs-6">
@@ -224,7 +228,7 @@
   <button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
 </div>
           </div>
-        </pre>
+        </pre></div>
         
         <pre></pre><pre></pre><pre></pre>
 
@@ -233,7 +237,7 @@
             For loop will be explained in the conditional and loops page.
         </p>
         <p class="beforee">Example:</p>
-
+        <div class="overflowed">
         <pre><div class="codee">
             <div id="div4" class="kode">
             <code class="fs-6 language-c++">
@@ -261,11 +265,11 @@
   <button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
 </div>
           </div>
-        </pre>
+        </pre></div>
 
         <p style="margin-bottom: -40px;"> In C++ 2011, there is also a new kind of for loops for array. <br/>
             Syntax : </p>
-        
+            <div class="overflowed">
         <pre><div class="codee">
           <div id="div5" class="kode">
           <code class="fs-6 language-c++">
@@ -279,9 +283,10 @@
 <button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
 </div>
         </div>
-      </pre>
+      </pre></div>
 
         <p style="margin-top: -20px; margin-bottom: -40px;"> For example, the <code class="fs-6">for</code> loops in previous example, 
+          <div class="overflowed">
           <pre><div class="codee">
             <div id="div6" class="kode">
             <code class="fs-6 language-c++">
@@ -294,9 +299,10 @@
   <button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
           </div>
-        </pre>
+        </pre></div>
           
         <p style="margin-top: -70px; margin-bottom: -40px;"> Can be simplified to this and they still have the same output.</p>
+        <div class="overflowed">
         <pre><div class="codee">
           <div id="div7" class="kode">
           <code class="fs-6 language-c++">
@@ -310,7 +316,7 @@
 <button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
 </div>
         </div>
-      </pre>  
+      </pre>  </div>
         
 
         <pre></pre><pre></pre>
@@ -321,6 +327,7 @@
           <code class="fs-6 ">sizeof(array_type)</code> to know 
           how many elements that exist in the array. If you want to use easier method, 
           you can directly use <code class="fs-6 ">std::size(array)</code> to know the amount of the elements in an array.
+          <div class="overflowed">
           <pre><div class="codee2">
             <div id="div8" class="kode">
             <code class="fs-6 language-c++">
@@ -341,7 +348,7 @@
   <button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
           </div>
-        </pre>
+        </pre></div>
 
         <div id="sub2" style="margin-top: -70px;"></div>
         <h4 class="fs-3 kanit header">Structures</h4>
@@ -356,6 +363,7 @@
             then followed by the structure's variable names that you want to use in your program.
         </p>
         <p class="beforee">Syntax:</p>
+        <div class="overflowed">
         <pre><div class="codee3">
           <div id="div9" class="kode">
           <code class="fs-6 language-c++">
@@ -373,7 +381,7 @@
 <button class='fs-6' onclick="copyDivToClipboard('div9')"><i class="fa-regular fa-copy"></i>  Copy</button>
 </div>
         </div>
-      </pre>
+      </pre></div>
 
         <pre></pre>
         <p class="afterr">
@@ -381,6 +389,7 @@
           a name, so it can be treated as a datatype.
         </p>
         <p style="margin-bottom: -40px;">Syntax:</p>
+        <div class="overflowed">
         <pre><div class="codee">
           <div id="div10" class="kode">
           <code class="fs-6 language-c++">
@@ -400,7 +409,7 @@
 <button class='fs-6' onclick="copyDivToClipboard('div10')"><i class="fa-regular fa-copy"></i>  Copy</button>
 </div>
         </div>
-      </pre>
+      </pre></div>
         
 
 
@@ -414,7 +423,8 @@
           Syntax: <code class="fs-6">struct_variable_name = {value1, value2, …, valuen};</code>
         </p>
         <p>We can also assign the values of a structure variable to another structure variable.</p>
-        <p style="margin-bottom: -40px;">Syntax:</p> 
+        <p style="margin-bottom: -40px;">Syntax:</p>
+        <div class="overflowed">
           <pre><div class="codee3">
             <div id="div11" class="kode">
             <code class="fs-6 language-c++">
@@ -427,10 +437,11 @@
   <button class='fs-6' onclick="copyDivToClipboard('div11')"><i class="fa-regular fa-copy"></i>  Copy</button>
   </div>
           </div>
-        </pre>
+        </pre></div> 
 
         
             <p class="afterr" style="margin-bottom: -40px;">Example code:</p>
+            <div class="overflowed">
             <pre><div class="codee3">
               <div id="div12" class="kode">
               <code class="fs-6 language-c++">
@@ -465,21 +476,21 @@
     <button class='fs-6' onclick="copyDivToClipboard('div12')"><i class="fa-regular fa-copy"></i>  Copy</button>
     </div>
             </div>
-          </pre>
-        
+          </pre></div>
+       
 
-        <pre></pre>
         <p class="beforee" style="margin-top: -50px;">Output:</p>
-            <div class="  codee">
-            <pre>
-            <code class="fs-6 language-plaintext">
-                5000 Aster 2019
-                3000 Bianca 2022
-                2000 Charlie 2021
-                2000 Charlie 2022
-            </code>
-            </pre>
-            </div>
+        <div class="overflowed">
+          <pre><div class="codee2 ">
+               <div class="kode">
+               <code class="fs-6 language-plaintext">
+      5000 Aster 2019
+      3000 Bianca 2022
+      2000 Charlie 2021
+      2000 Charlie 2022 
+               </code>
+             </div>
+             </div></pre></div>
 
         <div id="sub3" class='afterr'></div>
 
@@ -495,6 +506,7 @@
         </p>
 
         <p style="margin-bottom: -50px;">Syntax:</p>
+        <div class="overflowed">
         <pre><div class="codee2">
           <div id="div13" class="kode">
           <code class="fs-6 language-c++">
@@ -507,7 +519,7 @@
 <button class='fs-6' onclick="copyDivToClipboard('div13')"><i class="fa-regular fa-copy"></i>  Copy</button>
 </div>
         </div>
-      </pre>
+      </pre></div>
         
 
         <br/>
@@ -527,6 +539,7 @@
 
         
         <p class="beforee">Example code:</p>
+        <div class="overflowed">
         <pre><div class="codee3">
           <div id="div14" class="kode">
           <code class="fs-6 language-c++">
@@ -554,22 +567,23 @@
 <button class='fs-6' onclick="copyDivToClipboard('div14')"><i class="fa-regular fa-copy"></i>  Copy</button>
 </div>
         </div>
-      </pre>
+      </pre></div>
 
       <pre></pre><pre></pre>
 
         <p class='afterr'>
             <p class="beforee">Output:</p>
-            <div class="  codee">
-            <pre>
-            <code class="fs-6 language-plaintext">
-            hello world! has a length of 12
-            halloworld! has a length of 11
-            </code>
-            </pre>
-            </div>
+        <div class="overflowed">
+          <pre><div class="codee2 ">
+               <div class="kode">
+               <code class="fs-6 language-plaintext">
+      hello world! has a length of 12
+      halloworld! has a length of 11 
+               </code>
+             </div>
+             </div></pre></div>
         </p>
-   
+  
     </div> <!--content2-->
     </div> <!--col 10-->
     </div> <!--row-->

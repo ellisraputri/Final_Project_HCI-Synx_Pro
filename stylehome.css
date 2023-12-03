@@ -106,6 +106,20 @@
     margin-bottom: -50px;
   }
 
+  .overflowed .kode{
+    white-space: pre; 
+    overflow-x: scroll;
+  }
+  
+  .kode::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .kode {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
   .sidenavv {
     height: 100%; 
     margin-top: 70px;

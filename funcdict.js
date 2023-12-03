@@ -1,5 +1,4 @@
-$(document).ready(function(){
-  let mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("myBtn");
   window.onscroll = function(){scrollFunction()};
   
   function scrollFunction(){
@@ -10,7 +9,6 @@ $(document).ready(function(){
       mybutton.style.display = "none";
     }
   }
-});
 
 function topFunction(){
   $('html , body').animate({scrollTop:0},'1000');

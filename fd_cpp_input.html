@@ -118,6 +118,7 @@
           </div>
         </div>
   
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button>
     <div class="col-lg-10">
     <div class="content2">
     <h1 class="fs-1 kanit">Input and Output</h1>
@@ -153,6 +154,7 @@
         </p>
 
         <p style="margin-bottom: -40px;">Example:</p>
+        <div class="overflowed">
     <pre><div class="codee ">
         <div id="div1" class="kode">
         <code class="fs-6 language-c++">
@@ -173,13 +175,13 @@
   </div>
       </div>
     </pre>
-
+        </div>
         <p class="beforee afterr">Output:</p>
         <div class=" codee">
         <pre>
             <code class="fs-6 language-plaintext">
-            Hello World!
-            19  
+    Hello World!
+    19  
             </code>
         </pre>
         </div>
@@ -192,6 +194,7 @@
          instead.</p>
         
          <p style="margin-bottom: -40px;">Example:</p>
+         <div class="overflowed">
          <pre><div class="codee ">
              <div id="div2" class="kode">
              <code class="fs-6 language-c++">
@@ -213,7 +216,7 @@
        </div>
            </div>
          </pre>
-
+</div>
 
         <div id="sub2" class="afterr"></div>
 
@@ -228,7 +231,8 @@
             <code class="fs-6">std::cin &gt;&gt; input1 &gt;&gt; input2 &gt;&gt; inputn;</code>
         </p>
         <p style="margin-bottom: -40px;">Example:</p>
-         <pre><div class="codee2 ">
+        <div class="overflowed">
+        <pre><div class="codee2 ">
              <div id="div3" class="kode">
              <code class="fs-6 language-c++">
       #include &lt;iostream&gt;
@@ -248,17 +252,18 @@
     <button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
        </div>
            </div>
-         </pre>
+         </pre></div>
         
         <p class="beforee afterr">Output:</p>
-        <div class=" codee">
-        <pre>
-        <code class="fs-6 language-plaintext">
+        <div class="overflowed">
+          <pre><div class="codee2 ">
+               <div class="kode">
+               <code class="fs-6 language-plaintext">
     Input a number and a character: 23 C
     23C
-        </code>
-        </pre>
-        </div>
+               </code>
+             </div>
+             </div></pre></div>
         
         <p> <code class="fs-6">cin</code> can also take string input, but it will only accept the string until it sees a 
             white space. To avoid this error, we use <code class="fs-6">getline(std::cin, variable_name)</code> to get the
@@ -270,7 +275,8 @@
                 we are using the <code class="fs-6">std::string</code> type of variable.</p>
         
         <p style="margin-bottom: -40px;">Example:</p>
-         <pre><div class="codee ">
+        <div class="overflowed">
+        <pre><div class="codee ">
              <div id="div4" class="kode">
              <code class="fs-6 language-c++">
       #include &lt;iostream&gt;
@@ -290,17 +296,18 @@
     <button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
        </div>
            </div>
-         </pre>
+         </pre></div>
         
     <p class="beforee afterr">Output:</p>
-    <div class=" codee">
-    <pre>
-    <code class="fs-6 language-plaintext">
+    <div class="overflowed">
+      <pre><div class="codee2 ">
+           <div class="kode">
+           <code class="fs-6 language-plaintext">
     Input your full name: John Doe
     John Doe
-    </code>
-    </pre>
-    </div>
+           </code>
+         </div>
+         </div></pre></div>
     <p class="afterr">If we don't use the <code class="fs-6">getline</code> function, the 
         <code class="fs-6">myName</code> variable will only contains John, not John Doe.
     </p> 
@@ -323,6 +330,7 @@
             <p>Any text between <code class="fs-6">/*</code> and <code class="fs-6">*/</code> will not be 
                 executed by the compiler. <br/>
                 <p style="margin-bottom: -40px;">Example:</p>
+                <div class="overflowed">
                 <pre><div class="codee ">
                     <div id="div5" class="kode">
                     <code class="fs-6 language-c++">
@@ -335,11 +343,12 @@
   <button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
               </div>
                   </div>
-                </pre>
+                </pre></div>
         </ul>
         <pre></pre>
 
         <p class="afterr" style="margin-bottom: -40px;">Example:</p>
+        <div class="overflowed">
         <pre><div class="codee2 ">
             <div id="div6" class="kode">
             <code class="fs-6 language-c++">
@@ -367,7 +376,7 @@
    <button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
       </div>
           </div>
-        </pre>
+        </pre></div>
         
 
         <div id="sub4" class="afterr"></div>
@@ -377,6 +386,7 @@
             It started with a backslash (\) and followed by another character.</p>
         
             <p class="afterr" style="margin-bottom: -40px;">Example:</p>
+            <div class="overflowed">
             <pre><div class="codee ">
                 <div id="div7" class="kode">
                 <code class="fs-6 language-c++">
@@ -400,7 +410,7 @@
     <button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
           </div>
               </div>
-            </pre>
+            </pre></div>
 
 
         <p class="afterr">Below are the most commonly used escape sequences.</p>
@@ -476,7 +486,8 @@
                 <li><code class="fs-6">catch</code></li>
                 The <code class="fs-6">catch</code> keyword indicates the catching of an exception.
                 <p style="margin-bottom: -40px;">Syntax:</p>
-            <pre><div class="codee ">
+                <div class="overflowed">
+                <pre><div class="codee ">
                 <div id="div8" class="kode">
                 <code class="fs-6 language-c++">
       try {
@@ -494,14 +505,15 @@
     <button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
           </div>
               </div>
-            </pre>
+            </pre></div>
                 
             </ul>
            
         </p>
 
         <p class="afterr" style="margin-bottom: -40px;">Example:</p>
-            <pre><div class="codee3 ">
+        <div class="overflowed">   
+        <pre><div class="codee3 ">
                 <div id="div9" class="kode">
                 <code class="fs-6 language-c++">
     #include &lt;stdio.h&gt;
@@ -544,7 +556,7 @@
     <button class='fs-6' onclick="copyDivToClipboard('div9')"><i class="fa-regular fa-copy"></i>  Copy</button>
           </div>
               </div>
-            </pre>
+            </pre></div> 
                 
             </ul>
            
