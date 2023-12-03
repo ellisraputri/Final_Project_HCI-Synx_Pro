@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C - File Handling</title>
     <link rel="stylesheet" href="stylefundict.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,20 +114,28 @@
             </div>
           </div>
         </div>
-  
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button>
     <div class="col-lg-10">
     <div class="content2">
     <h1 class="fs-1 kanit">File Handling</h1>
     <p>In C, to edit a file, we can just declare a pointer type file and then use
         the <code class="fs-6">fopen()</code> function.
     </p>
-    <p>
-        Syntax:<div class="codee">
-        <pre><code class="fs-6 language-c">
-        FILE *fptr
-        fptr = fopen(filename, mode);
-        </code></pre></div>
-    </p>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div1" class="kode">
+        <code class="fs-6 language-c">
+    FILE *fptr
+    fptr = fopen(filename, mode);
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     <p>Description:</p>
     <ul>
         <li><code class="fs-6">filename</code>: the name of the file you want to open</li>
@@ -156,25 +165,33 @@
     <p>
         Syntax:<code class="fs-6"> fprintf(pointer_name, “text we want to write”);</code>
     </p>
-    <p>
-        Example:<div class="codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
+    <p class="beforee">Example:</p>
 
-        int main() {
-            FILE *fptr;
-            // Open a file in writing mode
-            fptr = fopen("filename.txt", "w");
+    <pre><div class="codee">
+        <div id="div2" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
 
-            // Write some text to the file
-            fprintf(fptr, "Some text");
+    int main() {
+        FILE *fptr;
+        // Open a file in writing mode
+        fptr = fopen("filename.txt", "w");
 
-            // Close the file
-            fclose(fptr);
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+        // Write some text to the file
+        fprintf(fptr, "Some text");
+
+        // Close the file
+        fclose(fptr);
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
 
     <div id="sub2"></div>
 
@@ -187,25 +204,33 @@
     <p>
         Syntax:<code class="fs-6"> fprintf(pointer_name, “text we want to write”);</code>
     </p>
-    <p>
-        Example:<div class="codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
+    <p class="beforee">Example:</p>
 
-        int main() {
-            FILE *fptr;
-            // Open a file in append mode
-            fptr = fopen("filename.txt", "a");
+    <pre><div class="codee">
+        <div id="div3" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
 
-            // Append some text to the file
-            fprintf(fptr, "\nHi everybody!");
+    int main() {
+        FILE *fptr;
+        // Open a file in append mode
+        fptr = fopen("filename.txt", "a");
 
-            // Close the file
-            fclose(fptr);
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+        // Append some text to the file
+        fprintf(fptr, "\nHi everybody!");
+
+        // Close the file
+        fclose(fptr);
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
 
     <div id="sub3"></div>
 
@@ -219,38 +244,54 @@
         only can get a single line of content, so to get multiple lines of content, 
         we need to do looping.
     </p>
-    <p>
-        Syntax:<div class="codee">
-        <pre><code class="fs-6 language-c">
-        char string_name[string_size];
-        fgets(string_name, string_size, pointer_name);
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class=" codee2">
-        <pre><code class="fs-6">
-        #include&lt;stdio.h&gt;
+    <p class="beforee">Syntax:</p>
 
-        int main() {
-            FILE *fptr;
-            // Open a file in read mode
-            fptr = fopen("filename.txt", "r");
+    <pre><div class="codee">
+        <div id="div4" class="kode">
+        <code class="fs-6 language-c">
+    char string_name[string_size];
+    fgets(string_name, string_size, pointer_name);
+        </code>
+      </div>
 
-            // Store the content of the file
-            char myString[100];
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
+    <p class="beforee">Example:</p>
 
-            // Read the content and store it inside myString
-            fgets(myString, 100, fptr);
+    <pre><div class="codee2">
+        <div id="div5" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
 
-            // Print the file content
-            printf("%s", myString);
+    int main() {
+        FILE *fptr;
+        // Open a file in read mode
+        fptr = fopen("filename.txt", "r");
 
-            // Close the file
-            fclose(fptr);
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+        // Store the content of the file
+        char myString[100];
+
+        // Read the content and store it inside myString
+        fgets(myString, 100, fptr);
+
+        // Print the file content
+        printf("%s", myString);
+
+        // Close the file
+        fclose(fptr);
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     
     </div>
     </div>

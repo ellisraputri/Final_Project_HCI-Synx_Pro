@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C - Pointers</title>
     <link rel="stylesheet" href="stylefundict.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -114,6 +115,7 @@
           </div>
         </div>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button> 
     <div class="col-lg-10">
     <div class="content2">
     <h1 class="fs-1 kanit">Pointers</h1>
@@ -142,17 +144,25 @@
         printf(“%p”, &variable_name)
         </code>
     </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            int myNum = 16;
-            printf("%p", &myNum);
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div1" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        int myNum = 16;
+        printf("%p", &myNum);
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     <p>
         Output:<div class="codee">
         <pre><code class="fs-6 ">
@@ -178,50 +188,74 @@
         and before the variable name. The variable type of the pointer has to
         be the same as the variable type of the variable that the pointer points to.
     </p>
-    <p>
-        Syntax:<div class="codee">
-        <pre><code class="fs-6 language-c">
-        variable_type variable_name1;
-        variable_type* pointer_name1 = &variable_name1;
-        </code></pre></div>
-    </p>
+    <p class="beforee">Syntax:</p>
+
+    <pre><div class="codee">
+        <div id="div2" class="kode">
+        <code class="fs-6 language-c">
+    variable_type variable_name1;
+    variable_type* pointer_name1 = &variable_name1;
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     <p>
         You can also print the variable that the pointer points by dereferencing by using
         <code class="fs-6">*</code> before the variable <code class='fs-6'>name</code> in the <code class='fs-6'>printf</code> statement.
         If we don't use <code class="fs-6">*</code>, then the compiler will print the memory address of the variable.
     </p>
-    <p>
-        Syntax:<div class="codee3">
-        <pre><code class="fs-6 language-c">
-        variable_type variable_name1;
-        variable_type* pointer_name1 = &variable_name1;
-        printf("%p", pointer_name1); //print the memory address of variable_name1
-        printf("format specifier of variable_name1", *pointer_name1); 
-        //print variable_name1
-        </code></pre></div>
-    </p>
-    <p>
-        Example code:<div class=" codee2">
-        <pre><code class="fs-6 language-c">
-        #include&lt;stdio.h&gt;
-        int main() {
-            //variable declaration
-            char myChar = 'C';
-            int myAge = 18;
+    <p class="beforee">Syntax:</p>
 
-            //pointer declaration
-            char* myptr1 = &myChar;
-            int* myptr2 = &myAge;
+    <pre><div class="codee3">
+        <div id="div3" class="kode">
+        <code class="fs-6">
+    variable_type variable_name1;
+    variable_type* pointer_name1 = &variable_name1;
+    printf("%p", pointer_name1); //print the memory address of variable_name1
+    printf("format specifier of variable_name1", *pointer_name1); 
+    //print variable_name1
+        </code>
+      </div>
 
-            printf("%p\n", myptr1); //print memory address of myChar
-            printf("%c\n", *myptr1); //dereferencing (print myChar)
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
+    <p class="beforee">Example:</p>
 
-            printf("%p\n", myptr2); //print memory address of myAge
-            printf("%d", *myptr2); //dereferencing (print myAge)
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    <pre><div class="codee2">
+        <div id="div4" class="kode">
+        <code class="fs-6 language-c">
+    #include&lt;stdio.h&gt;
+    int main() {
+        //variable declaration
+        char myChar = 'C';
+        int myAge = 18;
+
+        //pointer declaration
+        char* myptr1 = &myChar;
+        int* myptr2 = &myAge;
+
+        printf("%p\n", myptr1); //print memory address of myChar
+        printf("%c\n", *myptr1); //dereferencing (print myChar)
+
+        printf("%p\n", myptr2); //print memory address of myAge
+        printf("%d", *myptr2); //dereferencing (print myAge)
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     <p>
         Output:<div class="  codee">
         <pre><code class="fs-6 ">
@@ -239,22 +273,30 @@
         format specifier <code class="fs-6">%p</code> is actually the same value as printing
         <code class="fs-6">&array_name[0]</code>. Therefore, we can access the elements in an array by dereferencing.
     </p>
-    <p>
-        Example code:<div class=" codee2">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            int myNumbers[4] = {25, 50, 75, 100};
+    <p class="beforee">Example:</p>
 
-            // Change the value of the second element to 23
-            *(myNumbers + 1) = 23;
+    <pre><div class="codee2">
+        <div id="div5" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        int myNumbers[4] = {25, 50, 75, 100};
 
-            printf("%d ", *myNumbers); //print myNumbers[0]
-            printf("%d", *(myNumbers + 1)); //print myNumbers[1]
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+        // Change the value of the second element to 23
+        *(myNumbers + 1) = 23;
+
+        printf("%d ", *myNumbers); //print myNumbers[0]
+        printf("%d", *(myNumbers + 1)); //print myNumbers[1]
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     <p>
         Output:<div class=" codee">
         <pre><code class="fs-6 ">

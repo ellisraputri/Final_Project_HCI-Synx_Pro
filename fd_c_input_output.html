@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C - Input and Output</title>
     <link rel="stylesheet" href="stylefundict.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,7 +114,7 @@
             </div>
           </div>
         </div>
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button> 
     <div class="col-lg-10">
     <div class="content2">
     <h1 class="fs-1 kanit">Input and Output</h1>
@@ -141,24 +142,28 @@
         Format specifier is used to specify which data type that you want to use. You can 
         see what is a format specifier in the variable and data type page.</p>
 
-      <p>
         <p class="beforee">Example:</p>
-      <div class=" codee">
-      <pre>
-        <code class="fs-6">
-        #include &lt;stdio.h&gt;
 
-        int main() {
-            int myNum = 19;
-            
-            printf("Hello World!");
-            printf("%d",myNum);
-            return 0;
-          }            
-        </code>
-      </pre>
-      </div>
-    </p>
+        <pre><div class="codee">
+            <div id="div1" class="kode">
+            <code class="fs-6">
+    #include &lt;stdio.h&gt;
+
+    int main() {
+        int myNum = 19;
+        
+        printf("Hello World!");
+        printf("%d",myNum);
+        return 0;
+      } 
+            </code>
+          </div>
+          
+<div class="copy" value="div1">
+  <button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+          </div>
+        </pre>
 
     <div id="sub2" class="afterr"></div>
 
@@ -173,25 +178,29 @@
         <code class="fs-6">scanf()</code> can also accept multiple inputs.
     </p>
 
-      <p>
-        <p class="beforee">Example:</p>
-      <div class="codee">
-      <pre>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div2" class="kode">
         <code class="fs-6">
-        #include &lt;stdio.h&gt;
+    #include &lt;stdio.h&gt;
 
-        int main() {
-            int myNum;
-            char myChar;
+    int main() {
+        int myNum;
+        char myChar;
 
-            printf("Input a number and a character:");
-            scanf("%d %c",&myNum, &myChar);
-            return 0;
-        }            
+        printf("Input a number and a character:");
+        scanf("%d %c",&myNum, &myChar);
+        return 0;
+    } 
         </code>
-      </pre>
       </div>
-    </p>
+      
+<div class="copy" value="div2">
+<button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
 
     <p class="afterr"> <code class="fs-6">scanf()</code> can also take string input, but it will only accept the string until it sees a 
         white space. To avoid this error, we use <code class="fs-6">fgets(fullName, sizeof(fullName), stdin)</code>
@@ -199,24 +208,28 @@
         use <code class="fs-6">scanf("%s", &variable_name)</code> if the string does 
         not contain any white space between the contents.</p>
     
-    <p>
-      <p class="beforee">Example:</p>
-      <div class=" codee">
-      <pre>
-        <code class="fs-6">
-        #include &lt;stdio.h&gt;
+        <p class="beforee">Example:</p>
 
-        int main() {
-            char myName[20];
+        <pre><div class="codee">
+            <div id="div3" class="kode">
+            <code class="fs-6">
+    #include &lt;stdio.h&gt;
 
-            printf("Input a name:");
-            fgets(myName, sizeof(myName), stdin);
-            return 0;
-        }            
-        </code>
-      </pre>
-      </div>
-    </p>
+    int main() {
+        char myName[20];
+
+        printf("Input a name:");
+        fgets(myName, sizeof(myName), stdin);
+        return 0;
+    } 
+            </code>
+          </div>
+          
+<div class="copy" value="div3">
+  <button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+          </div>
+        </pre>
 
     <div id="sub3" class="afterr"></div>
 
@@ -232,74 +245,90 @@
         </p>
 
         <li>Multiple Line Comments</li>
-        <p>
-          <p class="beforee">Syntax:  Any text between <code class="fs-6">/*</code> and <code class="fs-6">*/</code> will not be 
-            executed by the compiler.</p>
-            <div class=" codee">
-            <pre>
+        <p class="beforee">Syntax:</p>
+
+        <pre><div class="codee">
+            <div id="div4" class="kode">
             <code class="fs-6">
-        /*	Hello world!
-            Some comment here
-        */                       
+      /*	Hello world!
+          Some comment here
+      */ 
             </code>
-          </pre>
-        </div>
-        </p>
+          </div>
+          
+<div class="copy" value="div4">
+  <button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+          </div>
+        </pre>       
     </ul>
     <pre></pre>
     
     <p class="afterr">
-      <p >Example:</p>
-      <div class=" codee">
-        <pre><code class="fs-6">
-          #include &lt;stdio.h&gt;
-  
-          int main() {
-            char myName[20];
+      <p class="beforee">Example:</p>
 
-            //this line will not be executed
-            printf("Input a name:");
-            fgets(myName, sizeof(myName), stdin);
-            
-            /*
-            printf("hello")
-            The console will not show "hello" because the
-            printf("hello") is in the comment and will not 
-            Be executed.
-            */
-            return 0;
-          }            
+      <pre><div class="codee">
+          <div id="div5" class="kode">
+          <code class="fs-6">
+    #include &lt;stdio.h&gt;
+  
+    int main() {
+      char myName[20];
+
+      //this line will not be executed
+      printf("Input a name:");
+      fgets(myName, sizeof(myName), stdin);
+      
+      /*
+      printf("hello")
+      The console will not show "hello" because the
+      printf("hello") is in the comment and will not 
+      Be executed.
+      */
+      return 0;
+    } 
           </code>
-        </pre>
-      </div>
-    </p>
+        </div>
+        
+<div class="copy" value="div5">
+<button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+        </div>
+      </pre>
+
+
 
     <div id="sub4"></div>
-
     <h4 class="fs-3 kanit header">Escape Sequences</h4>
-    <p>Escape sequences are mostly used to control or format the output.
-        Example:        
-        <div class="codee">
-        <pre><code class="fs-6">
-          #include &lt;stdio.h&gt;
+    <p>Escape sequences are mostly used to control or format the output.</p>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div6" class="kode">
+        <code class="fs-6">
+    #include &lt;stdio.h&gt;
   
-          int main() {
-            printf("Hello,\nWorld!");
+    int main() {
+      printf("Hello,\nWorld!");
 
-            /*The output will be
-            Hello,
-            World!
-            Instead of 
-            Hello,World!
-            */
+      /*The output will be
+      Hello,
+      World!
+      Instead of 
+      Hello,World!
+      */
 
-            return 0;
-          }            
-          </code></pre>
-        </div>
+      return 0;
+    }
+        </code>
+      </div>
+      
+<div class="copy" value="div6">
+<button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
 
-    </p>
-    <pre></pre><pre></pre>
 
     <p>Below are the most commonly used escape sequences.</p>
     <table class="table table-light table-hover table-striped table-bordered w-auto">

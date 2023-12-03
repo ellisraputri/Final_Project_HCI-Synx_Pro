@@ -169,7 +169,7 @@
   }
 
   #sub1, #sub2, #sub3, #sub4, #sub5, #sub6, #sub7{
-    height: 80px;
+    height: 60px;
   }
 
   .dummy{
@@ -223,7 +223,7 @@
   .copy{
     margin-top: -65px;
     margin-bottom: -60px;
-    margin-left: -10px;
+    margin-left: -5px;
   }
 
   .kode{
