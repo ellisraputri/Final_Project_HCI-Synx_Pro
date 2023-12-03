@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C++ - Pointers</title>
+    <script src="funcdict.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="stylefundict.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -144,20 +146,25 @@
             std::cout << &variable_name;
             </code>
         </p>
-        <p>
-            Example:<div class=" codee">
-            <pre><code class="fs-6 language-c++">
-            #include &lt;iostream&gt;
+        <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee ">
+        <div id="div1" class="kode">
+        <code class="fs-6 language-c++">
+    #include &lt;iostream&gt;
 
-            int main(){
-                int myNum = 16;
-                std::cout &lt;&lt; &myNum;
-                return 0;
-            }
-                    
-            </code></pre></div>
-        </p>
-        <p>
+    int main(){
+        int myNum = 16;
+        std::cout &lt;&lt; &myNum;
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+        <p style="margin-top: -60px;">
             Output:<div class=" codee">
             <pre><code class="fs-6 ">
             0x7ffe874a510c
@@ -180,61 +187,82 @@
             type and before the variable name. The variable type of the pointer has to be 
             the same as the variable type of the variable that the pointer points to.
         </p>
-        <p>
-            Syntax:<div class=" codee2">
-            <pre><code class="fs-6 language-c++">
-            variable_type variable_name1;
-            variable_type* pointer_name1 = &variable_name1;
-            </code></pre></div>
-        </p>
-        <p>
+        <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee ">
+        <div id="div2" class="kode">
+        <code class="fs-6 language-c++">
+    variable_type variable_name1;
+    variable_type* pointer_name1 = &variable_name1;
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+        <p style="margin-top: -80px;">
             You can also print the variable that the pointer points by dereferencing by using
             <code class="fs-6">*</code> before the variable <code class='fs-6'>name</code> in the <code class='fs-6'>cout</code> statement.
             If we don't use <code class="fs-6">*</code>, then the compiler will print the memory address of the variable.
         </p>
-        <p>
-            Syntax:<div class=" codee2">
-            <pre><code class="fs-6 language-c++">
-            variable_type variable_name1;
-            variable_type* pointer_name1 = &variable_name1;
+        <p style="margin-bottom: -40px;">Syntax:</p>
+        <pre><div class="codee ">
+        <div id="div3" class="kode">
+        <code class="fs-6 language-c++">
+    variable_type variable_name1;
+    variable_type* pointer_name1 = &variable_name1;
 
-            //print the memory address of variable_name1
-            std::cout << pointer_name1 << std::endl; 
+    //print the memory address of variable_name1
+    std::cout << pointer_name1 << std::endl; 
 
-            //print variable_name1
-            std::cout << *pointer_name1;                 
-            </code></pre></div>
-        </p>
-        <p>
-            Example code:<div class=" codee3">
-            <pre><code class="fs-6 language-c++">
-            #include&lt;iostream&gt;
-            #include&lt;string&gt;
+    //print variable_name1
+    std::cout << *pointer_name1;
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
 
-            int main(){
-                //variable declaration
-                std::string myString = "Car";
-                int myAge = 18;
-                
-                //pointer declaration
-                std::string* myptr1 = &myString;
-                int* myptr2 = &myAge;
-                
-                std::cout << myptr1 << std::endl; //print memory address of myString
-                std::cout << *myptr1 << std::endl;; //dereferencing (print myString)
-                
-                std::cout << myptr2 << std::endl;; //print memory address of myAge
-                std::cout << *myptr2 << std::endl;; //dereferencing (print myAge)
-                
-                *myptr2 = 20;
-                std::cout << myptr2 << std::endl;; //memory address is still same
-                std::cout << *myptr2 << std::endl;; //the value of myAge changed
-                
-                return 0;
-            } 
-            </code></pre></div>
-        </p>
-        <p>
+    <p class="afterr" style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee3">
+        <div id="div4" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    #include&lt;string&gt;
+
+    int main(){
+        //variable declaration
+        std::string myString = "Car";
+        int myAge = 18;
+        
+        //pointer declaration
+        std::string* myptr1 = &myString;
+        int* myptr2 = &myAge;
+        
+        std::cout << myptr1 << std::endl; //print memory address of myString
+        std::cout << *myptr1 << std::endl;; //dereferencing (print myString)
+        
+        std::cout << myptr2 << std::endl;; //print memory address of myAge
+        std::cout << *myptr2 << std::endl;; //dereferencing (print myAge)
+        
+        *myptr2 = 20;
+        std::cout << myptr2 << std::endl;; //memory address is still same
+        std::cout << *myptr2 << std::endl;; //the value of myAge changed
+        
+        return 0;
+    } 
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+        <p style="margin-top: -80px;">
             Output:<div class=" codee">
             <pre><code class="fs-6 ">
             0x7fffcc479cd0
@@ -246,34 +274,41 @@
             </code></pre></div>
         </p>
     
-        <pre></pre><pre></pre>
+        <pre></pre><pre></pre><pre></pre><pre></pre>
         <p>
             In C++, the name of an array is actually a pointer to the first element of the array. 
             In other words, when we print <code class="fs-6">array_name</code> 
             is actually the same value as printing <code class="fs-6">&array_name[0]</code>. 
             Therefore, we can access the elements in an array by dereferencing.
         </p>
-        <p>
-            Example code:<div class=" codee3">
-            <pre><code class="fs-6 language-c++">
-            #include &lt;iostream&gt;
-            int main(){
-                int myNumbers[4] = {25, 50, 75, 100};
-                
-                // Change the value of the second element to 23
-                *(myNumbers + 1) = 23;
-                
-                std::cout << *myNumbers << " "; //print myNumbers[0]
-                std::cout << *(myNumbers+1) << std::endl; //print myNumbers[1]
-                
-                std::cout << myNumbers << std::endl;
-                std::cout << &myNumbers[0]; //notice that both are the same
-                
-                return 0;
-            }  
-            </code></pre></div>
-        </p>
-        <p>
+        <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee2">
+        <div id="div5" class="kode">
+        <code class="fs-6 language-c++">
+    #include &lt;iostream&gt;
+    int main(){
+        int myNumbers[4] = {25, 50, 75, 100};
+        
+        // Change the value of the second element to 23
+        *(myNumbers + 1) = 23;
+        
+        std::cout << *myNumbers << " "; //print myNumbers[0]
+        std::cout << *(myNumbers+1) << std::endl; //print myNumbers[1]
+        
+        std::cout << myNumbers << std::endl;
+        std::cout << &myNumbers[0]; //notice that both are the same
+        
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+        <p style="margin-top: -60px;">
             Output:<div class=" codee">
             <pre><code class="fs-6 ">
             25 23
@@ -291,41 +326,55 @@
             Defining a reference variable uses the operator <code class="fs-6">&</code> and has to
             have the same variable type as the variable that is being referenced.
         </p>
-        <p>
-            Syntax:<div class=" codee2">
-            <pre><code class="fs-6 language-c++">
-            variable_type variable1;
+        <p style="margin-bottom: -40px;">Syntax:</p>
+        <pre><div class="codee ">
+            <div id="div6" class="kode">
+            <code class="fs-6 language-c++">
+    variable_type variable1;
 
-            //referencing
-            variable_type &variable2 = variable1;                  
-            </code></pre></div>
-        </p>
-        <p>
+    //referencing
+    variable_type &variable2 = variable1;
+            </code>
+          </div>
+      <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+      </div>
+          </div>
+        </pre>
+
+        <p style="margin-top: -60px;">
             If we change the <code class="fs-6">variable2</code> to a new value, 
             then <code class="fs-6">variable1</code> 's value will also change.
         </p>
-        <p>
-            Example code:<div class=" codee2">
-            <pre><code class="fs-6 language-c++">
-            #include &lt;iostream&gt;
-            #include &lt;string&gt;
-            
-            int main() {
-                std::string food = "Pizza"; //variable declaration
-                std::string &meal = food; //reference declaration
-            
-                std::cout << food << "\n";
-                std::cout << meal << "\n";
-                
-                meal = "rice";
-                std::cout << food << "\n"; //food will also change to rice
-                std::cout << meal;
-                
-                return 0;
-            }
-            </code></pre></div>
-        </p>
-        <p>
+        <p style="margin-bottom: -40px;">Example:</p>
+        <pre><div class="codee2 ">
+            <div id="div7" class="kode">
+            <code class="fs-6 language-c++">
+    #include &lt;iostream&gt;
+    #include &lt;string&gt;
+    
+    int main() {
+        std::string food = "Pizza"; //variable declaration
+        std::string &meal = food; //reference declaration
+    
+        std::cout << food << "\n";
+        std::cout << meal << "\n";
+        
+        meal = "rice";
+        std::cout << food << "\n"; //food will also change to rice
+        std::cout << meal;
+        
+        return 0;
+    }
+            </code>
+          </div>
+      <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+      </div>
+          </div>
+        </pre>
+
+        <p style="margin-top: -60px;">
             Output:<div class=" codee">
             <pre><code class="fs-6 ">
             Pizza

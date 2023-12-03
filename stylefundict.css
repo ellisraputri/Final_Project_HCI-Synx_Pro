@@ -231,6 +231,20 @@
     margin-top: -60px;
     margin-bottom: -50px;
   }
+
+  .overflowed .kode{
+    white-space: pre; 
+    overflow-x: scroll;
+  }
+  
+  .kode::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .kode {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
   
   @media(max-width:1280px){
     .codee{
