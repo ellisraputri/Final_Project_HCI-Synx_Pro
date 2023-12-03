@@ -146,8 +146,9 @@
         <h4 class="fs-4 fw-bolder toch">Table of Contents</h4>
         <ol>
           <a href="#sub1"><li>Create Classes and Objects</li></a>
-          <a href="#sub2"><li>Inheritance</li></a>
-          <a href="#sub3"><li>Polymorphism</li></a>
+          <a href="#sub2"><li>Encapsulation</li></a>
+          <a href="#sub3"><li>Inheritance</li></a>
+          <a href="#sub4"><li>Polymorphism</li></a>
         </ol>
         </div>
     
@@ -273,7 +274,7 @@
             <code class="fs-6">dot</code> syntax). 
         </p>
         <p class="beforee">Example:</p>     
-        <pre><div class="codee2">
+        <pre><div class="codee">
             <div id="div6" class="kode">
             <code class="fs-6 language-python">
     class MyClass:
@@ -295,8 +296,33 @@
 </div>
 </div>
         </pre><pre></pre>
-      
+
         <div id="sub2"></div>
+        <h4 class="fs-3 kanit header">Encapsulation</h4>
+        <p>
+          Encapsulation ensures sensitive data hidden from users.
+          Setting a class as private member in Python can be do implicitly by adding 
+          two underscores before a variable name.
+        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee">
+            <div id="div7" class="kode">
+            <code class="fs-6 language-python">
+  class MyClass:
+  def __init__(self, name, age):
+      self.__name = name 
+      self.__age = age
+      #the attribute (name and age) is now private
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+      
+        <div id="sub3"></div>
         <h4 class="fs-3 kanit header">Inheritance</h4>
         <p>
             Inheritance means inheriting the attributes and methods from one class to another.
@@ -365,7 +391,7 @@
 </div>
         </pre><pre></pre>
     
-        <div id="sub3"></div>
+        <div id="sub4"></div>
         <h4 class="fs-3 kanit header">Polymorphism</h4>
         <p>
             Polymorphism enables users to use methods to perform different tasks.

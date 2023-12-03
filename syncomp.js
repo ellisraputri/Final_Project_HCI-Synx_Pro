@@ -94,7 +94,7 @@ $(document).ready(function(){
             }
         });
 
-        $('.reset').click(function(){
+        $('.resetb').click(function(){
             location.reload();
         });
 
@@ -205,6 +205,7 @@ $(document).ready(function(){
 
 //the configuration for devices excluding phone and tablet
     else{
+        $('.resetb').hide();
         $('.reset').hide();
 
         $("#nav li").hover(
