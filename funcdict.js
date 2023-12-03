@@ -10,39 +10,21 @@ $(document).ready(function(){
       mybutton.style.display = "none";
     }
   }
-  
-  
-  
-  
-
-
 });
-
-/*
-$('.copy').click(function(){
-  let copy_value = $(this).attr('value');
-  CopyToClipboard(copy_value);
-});
-*/
 
 function topFunction(){
   $('html , body').animate({scrollTop:0},'1000');
 }
 
-function CopyToClipboard(containerid) {
-    if (document.selection) {
-      var range = document.body.createTextRange();
-      range.moveToElementText(document.getElementById(containerid));
-      range.select().createTextRange();
-      
-    } else if (window.getSelection) {
-      var range = document.createRange();
-      range.selectNode(document.getElementById(containerid));
-      window.getSelection().addRange(range);
-      
-      alert("Text has been copied")
-    }
-  }
+function copyDivToClipboard(containerId) {
+  var range = document.createRange();
+  range.selectNode(document.getElementById(containerId));
+  window.getSelection().removeAllRanges(); // clear current selection
+  window.getSelection().addRange(range); // to select text
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();// to deselect
+  alert("Text has been copied.")
+}
 
 
 
