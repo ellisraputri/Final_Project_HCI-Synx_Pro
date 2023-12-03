@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python - Input and Output</title>
     <link rel="stylesheet" href="stylefundict.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,7 +114,7 @@
             </div>
           </div>
         </div>
-  
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button>
         <div class="col-lg-10">
         <div class="content2">
         <h1 class="fs-1 kanit">Input and Output</h1>
@@ -135,34 +136,44 @@
             <code class="fs-6">print()</code> in Python inserts a new line at the end of the output 
             and insert a whitespace to separate each element automatically.
         </p>
-        <p class="beforee">Syntax:</p>
-        <p>
-            <div class=" codee2">
-            <pre>
+        <p class="beforee">Syntax:</p>     
+        <pre><div class="codee2">
+            <div id="div1" class="kode">
             <code class="fs-6 language-python">
-            print("Some random text")
-            print(variable_name1, variable_name2)         
+    print("Some random text")
+    print(variable_name1, variable_name2) 
             </code>
-            </pre>
-            </div>
-        </p>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+
+        </pre>
+
         <p class="afterr beforee">
             In Python, when we want to print <code class="fs-6">int</code> type of variable together with
             <code class="fs-6">string</code>, we have to type cast it into <code class="fs-6">str</code> first,
             so that it can be printed. Another way is to use the <code class="fs-6">f</code>
             operator and format function.
         </p>
-        <p>
-            <div class=" codee3">
-            <pre>
+   
+        <pre><div class="codee3">
+            <div id="div2" class="kode">
             <code class="fs-6 language-python">
-            print("Some text has " +  str(other_variable) + " length")
-            print(f"Some text has {other_variable} length")
-            print("Hello {} {}, hope you're well!".format(variable1, variable2))         
+    print("Some text has " +  str(other_variable) + " length")
+    print(f"Some text has {other_variable} length")
+    print("Hello {} {}, hope you're well!".format(variable1, variable2))   
             </code>
-            </pre>
-            </div>
-        </p>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+
+        </pre>
         <p class="afterr">
             If we don't want Python to automatically insert a new line after each line printed
             or insert a white space to separate the variables, we can specify it using
@@ -175,22 +186,28 @@
         <p>
             Syntax: <code class="fs-6">print(variable_name1, variable_name2, end=" ", sep="")</code>
         </p>
-        <p>Example code:
-            <div class=" codee2">
-            <pre><code class="fs-6">
-            myAge = 18
-            yourAge = 20
-            
-            print("Hello World", "bye")
-            print('Hello World', 'bye', end="", sep="\n")
-            
-            print("\nI am " + str(myAge) + " years old")
-            print(f"You are {yourAge} years old")
-            print("The ages are {} and {}.".format(myAge, yourAge))
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div3" class="kode">
+            <code class="fs-6">
+    myAge = 18
+    yourAge = 20
+    
+    print("Hello World", "bye")
+    print('Hello World', 'bye', end="", sep="\n")
+    
+    print("\nI am " + str(myAge) + " years old")
+    print(f"You are {yourAge} years old")
+    print("The ages are {} and {}.".format(myAge, yourAge))
             </code>
-            </pre>
-        </div>
-        </p>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+
+        </pre>
         <p><p class="afterr">Output:</p>
             <div class=" codee">
             <pre><code class="fs-6 language-plaintext">
@@ -216,18 +233,24 @@
         <p>
             Syntax: <code class="fs-6">variable_name = input("Enter a string: ")</code>
         </p>
-        <p>Example code:
-            <div class=" codee2">
-            <pre><code class="fs-6 language-python">
-            #input is treated as string
-            myNum = input("Enter a number: ") 
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div4" class="kode">
+            <code class="fs-6 language-python">
+    #input is treated as string
+    myNum = input("Enter a number: ") 
 
-            #input is treated as int
-            myNum2 = int(input("Enter a number: "))
+    #input is treated as int
+    myNum2 = int(input("Enter a number: "))
             </code>
-            </pre>
-        </div>
-        </p>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+
+        </pre>
 
         <div id="sub3" class="afterr"></div>
         <h4 class="fs-3 kanit header">Comments</h4>
@@ -238,40 +261,52 @@
             Syntax: <code class="fs-6">#some comment here</code><br>
             Any text between <code class="fs-6">#</code> and the end of the line will not be executed by the compiler.
         </p>
-        <p>Example:
-        <div class=" codee2">
-        <pre><code class="fs-6">
-            #this line will not be executed
-            myNum = input("Enter a number: ")
-            print(myNum)
-            
-            #print("hello")
-            #"hello" will not be printed out because
-            #it is in the comment block.           
-        </code>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div5" class="kode">
+            <code class="fs-6">
+    #this line will not be executed
+    myNum = input("Enter a number: ")
+    print(myNum)
+    
+    #print("hello")
+    #"hello" will not be printed out because
+    #it is in the comment block.
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+
         </pre>
-        </div>
-        </p>
 
         <div id="sub4" class="afterr"></div>
 
         <h4 class="fs-3 kanit header">Escape Sequences</h4>
         <p>Escape sequences are mostly used to control or format the output.
-            It started with a backslash (\) and followed by another character.
-            Example:        
-            <div class=" codee">
-            <pre><code class="fs-6">
-            print("Hello,\nWorld!");
+            It started with a backslash (<code class="fs-6">\</code>) and followed by another character.
+        </p><p class="beforee">Example:</p>     
+        <pre><div class="codee">
+            <div id="div6" class="kode">
+            <code class="fs-6">
+    print("Hello,\nWorld!");
 
-            #The output will be
-            #Hello,
-            #World!
-            #Instead of 
-            #Hello,World!   
-            </code></pre>
-            </div>
-        </p>
-        <pre></pre><pre></pre>
+    #The output will be
+    #Hello,
+    #World!
+    #Instead of 
+    #Hello,World!     
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+            </pre>
+
 
         <p>Below are the most commonly used escape sequences.</p>
         <table class="table table-light table-hover table-striped table-bordered w-auto">
@@ -350,39 +385,51 @@
                 The <code class="fs-6">finally</code> keyword lets you execute code regardless of the result of the exception-catching.
             </ul>
         </p>
-        <p> Syntax:        
-            <div class=" codee">
-            <pre><code class="fs-6">
-            try:
-                #code block
-            except error_name:
-                #code block
-            except:
-                #code block
-            else:
-                #code block
-            finally:
-                #code block
-            </code></pre>
-            </div>
-        </p>
-        <br>
-        <p> Example code:        
-            <div class=" codee2">
-            <pre><code class="fs-6">
-            try:
-                print(x)
-            except NameError:
-                print("Variable x is not defined")
-            except:
-                print("Something else went wrong")
-            else:
-                print("Nothing went wrong")
-            finally:
-                print("Exception handling process is done")
-            </code></pre>
-            </div>
-        </p>
+        <p class="beforee">Syntax:</p>     
+        <pre><div class="codee">
+            <div id="div7" class="kode">
+            <code class="fs-6">
+    try:
+        #code block
+    except error_name:
+        #code block
+    except:
+        #code block
+    else:
+        #code block
+    finally:
+        #code block
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div8" class="kode">
+            <code class="fs-6">
+    try:
+      print(x)
+    except NameError:
+      print("Variable x is not defined")
+    except:
+      print("Something else went wrong")
+    else:
+      print("Nothing went wrong")
+    finally:
+      print("Exception handling process is done")
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
         <p> Output:        
             <div class=" codee">
             <pre><code class="fs-6 language-plaintext">
@@ -392,10 +439,10 @@
             </div>
             In this case, the variable x is not defined, so there is
             <code class="fs-6">NameError</code>. Therefore, the message 
-            "Variable x is not defined" is printed. If the error is not 
-            <code class="fs-6">NameError</code>, then the message "Something else went wrong"
+            <code class="fs-6">Variable x is not defined</code> is printed. If the error is not 
+            <code class="fs-6">NameError</code>, then the message <code class="fs-6">Something else went wrong</code>
             will be printed and if there is no error at all, then the message 
-            "Nothing went wrong" will be printed. The message in
+            <code class="fs-6">Nothing went wrong</code> will be printed. The message in
             <code class="fs-6">finally</code> will always be printed regardless the result.
         </p>
         

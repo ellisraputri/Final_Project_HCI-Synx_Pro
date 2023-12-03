@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python - File Handling</title>
     <link rel="stylesheet" href="stylefundict.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -114,6 +115,7 @@
           </div>
         </div>
   
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button>  
         <div class="col-lg-10">
         <div class="content2">
         <h1 class="fs-1 kanit">File Handling</h1>
@@ -158,16 +160,23 @@
             <code class="fs-6">read()</code> function (to read the whole file) or a 
             <code class="fs-6">readline()</code> function (to read a single line of text).  
         </p>
-        <p>
-            Example:<div class="bg-plblack codee2">
-            <pre><code class="fs-6 language-python">
-            f = open("myfile.txt", 'rt')	#open a file
-            print(f.readline())			#reading a single line
-            print(f.read())			#reading a whole file
-            f.close()				#close the file
-            </code></pre></div>
-        </p>
-    
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div1" class="kode">
+            <code class="fs-6 language-python">
+    f = open("myfile.txt", 'rt')	#open a file
+    print(f.readline())			#reading a single line
+    print(f.read())			#reading a whole file
+    f.close()				#close the file 
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+   
         <div id="sub2"></div>
     
         <h4 class="fs-3 kanit header">Write</h4>
@@ -178,16 +187,23 @@
             and replaced by the new content we just wrote in. To write something, we just need 
             to use <code class="fs-6">write()</code> function.
         </p>
-        <p>
-            Example:<div class="bg-plblack codee2">
-            <pre><code class="fs-6 language-python">
-            f = open("myfile.txt", 'wt')	#open a file
-            f.write("Writing some text")	#write to the file
-            f.close()				#close the file
-            </code></pre></div>
-        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div2" class="kode">
+            <code class="fs-6 language-python">
+    f = open("myfile.txt", 'wt')	#open a file
+    f.write("Writing some text")	#write to the file
+    f.close()				#close the file 
+            </code>
+          </div>
 
-        <div id="sub3"></div>
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+      <div id="sub3"></div>
     
         <h4 class="fs-3 kanit header">Append</h4>
         <p>
@@ -195,14 +211,21 @@
             something new in the file without replacing the old content. 
             The append mode uses the same <code class="fs-6">write()</code> function as the write mode.
         </p>
-        <p>
-            Example:<div class="bg-plblack codee2">
-            <pre><code class="fs-6 language-python">
-            f = open("myfile.txt", 'at')	#open a file
-            f.write("Adding some text")		#append to the file
-            f.close()				#close the file
-            </code></pre></div>
-        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div3" class="kode">
+            <code class="fs-6 language-python">
+    f = open("myfile.txt", 'at')	#open a file
+    f.write("Adding some text")		#append to the file
+    f.close()				#close the file
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
         
         <div id="sub4"></div>
     
@@ -211,13 +234,20 @@
             To create a new file in Python, we just need to use the 
             <code class="fs-6">open()</code> function.
         </p>
-        <p>
-            Example:<div class="bg-plblack codee">
-            <pre><code class="fs-6 language-python">
-            f = open("newfile.txt", 'xt')
-            </code></pre></div>
-            Result: a new empty file will be created
-        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee">
+            <div id="div4" class="kode">
+            <code class="fs-6 language-python">
+    f = open("newfile.txt", 'xt')
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+        <p>Result: a new empty file will be created</p>
 
       </div> <!--content2-->
     </div> <!--col 10-->

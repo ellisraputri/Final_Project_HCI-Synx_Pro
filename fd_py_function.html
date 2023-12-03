@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python - Functions</title>
     <link rel="stylesheet" href="stylefundict.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -114,6 +115,7 @@
           </div>
         </div>
   
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button>  
         <div class="col-lg-10">
         <div class="content2">
         <h1 class="fs-1 kanit">Functions</h1>
@@ -132,47 +134,71 @@
         
         <h4 class="fs-3 kanit header">Create Function</h4>
         <p>We create a function with the keyword <code class="fs-6">def</code>.</p>
-        <p>
-            Syntax:<div class=" codee">
-            <pre><code class="fs-6 language-python">
-            def function_name (parameters):  
-                #line of codes to be executed 
-            </code></pre></div>
-        </p>
-        <p>
-            Example:<div class=" codee">
-            <pre><code class="fs-6 language-python">
-            total=10
-            def store(a):
-                total+=a
-            
-            goods=10
-            store(goods)
-            </code></pre></div>
-        </p>
+        <p class="beforee">Syntax:</p>     
+        <pre><div class="codee">
+            <div id="div1" class="kode">
+            <code class="fs-6 language-python">
+    def function_name (parameters):  
+        #line of codes to be executed
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee">
+            <div id="div2" class="kode">
+            <code class="fs-6 language-python">
+    total=10
+    def store(a):
+        total+=a
+    
+    goods=10
+    store(goods)
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
         <p>
             The function above will not return any value, but it will change the variable <code class="fs-6">total</code>.
         </p>
-        <p>
-            Example:<div class=" codee">
-            <pre><code class="fs-6 language-python">
-            def store (a):
-                total = 10
-                total +=a
-                return total
-            
-            goods=10
-            result = store (goods)            
-            </code></pre></div>
-        </p>
-        <pre></pre>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee">
+            <div id="div3" class="kode">
+            <code class="fs-6 language-python">
+    def store (a):
+        total = 10
+        total +=a
+        return total
+    
+    goods=10
+    result = store (goods)
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+ 
+        
         <p>
             Notice that the function above has the <code class="fs-6">return</code> statement.
             The <code class="fs-6">return</code> statement is used to return value to other functions.
             And, because the function has a return value, we need to prepare a variable
             to store the return value (in this case, 
             the variable name is <code class="fs-6">result</code>).
-        </p>
+        </p><br/>
     
         <div id="sub2"></div>
     
@@ -187,17 +213,25 @@
             Syntax:
             <code class="fs-6">function_name (parameters)</code>
         </p>
-        <p>
-            Example:<div class=" codee2">
-            <pre><code class="fs-6 ">
-            total=10
-            def store(a):
-                total+=a
-            
-            goods=10
-            store(goods)	#calling the function
-            </code></pre></div>
-        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div4" class="kode">
+            <code class="fs-6 language-python">
+    total=10
+    def store(a):
+        total+=a
+    
+    goods=10
+    store(goods)	#calling the function
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
     
         <div id="sub3"></div>
     
@@ -209,37 +243,53 @@
             that has been passed to a function, or we can say that the argument is the input
             from other functions to a particular function.
         </p>
-        <p>
-            Example:<div class=" codee2">
-            <pre><code class="fs-6 ">
-            def displayInfo(age, phone):
-                print(f"This is your age, {age}")
-                print(f"This is your phone number, {phone}")
-            
-            displayInfo(10, 9912);
-            </code></pre></div>
-        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div5" class="kode">
+            <code class="fs-6 language-python">
+    def displayInfo(age, phone):
+        print(f"This is your age, {age}")
+        print(f"This is your phone number, {phone}")
+    
+    displayInfo(10, 9912);
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
         <p>
             In this example, <code class="fs-6">10</code> and <code class="fs-6">9912</code> are the arguments, 
             while <code class="fs-6">age</code> and <code class="fs-6">phone</code> are the parameters.
         </p>
-        <pre></pre><pre></pre>
+        <pre></pre>
         <p>
             We can also set a default parameter value for a function. So, if you call a
             function but do not provide an argument to it, it will automatically use the default value.
             A parameter with a default value is called an optional parameter.
         </p>
-        <p>
-            Example:<div class=" codee2">
-                <pre><code class="fs-6 language-python">
-                def display (age=20):
-                  print(age)
-                
-                display(10)	#the output will be 10
-                display()	#the output will be 20
-                </code></pre></div>
-        </p>
-        <pre></pre><pre></pre>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div6" class="kode">
+            <code class="fs-6 language-python">
+    def display (age=20):
+      print(age)
+    
+    display(10)	#the output will be 10
+    display()	#the output will be 20
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+        
         <p>
             Sometimes when we make a program, we do not know how many arguments that will 
             be passed into a function. So, we can add arbitrary arguments 
@@ -247,74 +297,112 @@
             of the parameter's name. 
         </p>
         <p>Syntax: <code class="fs-6">*parameter_name</code></p>
-        <p>
-            Example:<div class=" codee">
-                <pre><code class="fs-6 language-python">
-                def display (*toys):
-                    for toy in toys:
-                        print(toy)
-                
-                display("car", "plane", "doll")
-                </code></pre></div>
-        </p>
-        <pre></pre><pre></pre>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee">
+            <div id="div7" class="kode">
+            <code class="fs-6 language-python">
+    def display (*toys):
+        for toy in toys:
+            print(toy)
+    
+    display("car", "plane", "doll")
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+
         <p>
             In Python, we can also pass a parameter using 
             keyword arguments. So, the order of the arguments passed does not matter.
         </p>
-        <p>
-            Example:<div class=" codee2">
-            <pre><code class="fs-6 language-python">
-            def displayInfo(age, phone):
-                print(f"This is your age, {age}")
-                print(f"This is your phone number, {phone}")
-            
-            displayInfo(phone = 9912, age = 10)
-            </code></pre></div>
-        </p>
-        <pre></pre><pre></pre>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div8" class="kode">
+            <code class="fs-6 language-python">
+    def displayInfo(age, phone):
+        print(f"This is your age, {age}")
+        print(f"This is your phone number, {phone}")
+    
+    displayInfo(phone = 9912, age = 10) 
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+       
         <p>
             If you do not know how many keyword arguments that will be passed into your 
             function, just use the arbitrary keyword arguments (<code class="fs-6">**kwargs</code>). 
             This way the function will receive a dictionary of arguments and access them.
         </p>
         <p>Syntax: <code class="fs-6">**parameter_name</code></p>
-        <p>
-            Example:<div class=" codee">
-            <pre><code class="fs-6 language-python">
-            def display (**name):
-            for key, value in name.items():
-                print("%s = %s" % (key, value))
-          
-            display(fname="Jane", lname="Houston")
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee">
+            <div id="div9" class="kode">
+            <code class="fs-6 language-python">
+    def display (**name):
+    for key, value in name.items():
+        print("%s = %s" % (key, value))
+  
+    display(fname="Jane", lname="Houston")
 
-            #the output will be:
-            # fname = Jane
-            # lname = Houston
-            </code></pre></div>
-        </p>
-    
+    #the output will be:
+    # fname = Jane
+    # lname = Houston 
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div9')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+   
         <div id="sub4"></div>
         <h4 class="fs-3 kanit header">Lambda</h4>
         <p>
             Lambda is an expression that allows us to define function objects which can be
             used inline. 
         </p>
-        <p>
-            Syntax:<div class=" codee">
-            <pre><code class="fs-6 language-python">
-            lambda arguments : expression
-            </code></pre></div>
-        </p>
-        <p>
-            Example:<div class=" codee">
-            <pre><code class="fs-6 language-python">
-            x = lambda a : a + 10
-            print(x(5))                
-            </code></pre></div>
-            The output will be 15.
-        </p>
-    
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee">
+            <div id="div10" class="kode">
+            <code class="fs-6 language-python">
+    lambda arguments : expression
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div10')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee">
+            <div id="div11" class="kode">
+            <code class="fs-6 language-python">
+    x = lambda a : a + 10
+    print(x(5)) 
+    #the output will be 15
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div11')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre> 
 
     </div> <!--content2-->
     </div> <!--col 10-->

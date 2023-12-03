@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python - Classes</title>
     <link rel="stylesheet" href="stylefundict.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,7 +114,8 @@
             </div>
           </div>
         </div>
-  
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button>
         <div class="col-lg-10">
         <div class="content2">
         <h1 class="fs-1 kanit">Classes</h1>
@@ -153,39 +155,60 @@
         
         <h4 class="fs-3 kanit header">Create Classes and Objects</h4>
         <h5 class="fs-5 fw-bold">Create a Class</h5>
-        <p>
-            Syntax:<div class=' codee'>
-            <pre><code class="fs-6 language-python">
-            class MyClass:
-                #lines of code            
-            </code></pre></div>
-        </p>
-        <p>
-            Example:<div class=" codee">
-            <pre><code class="fs-6 language-python">
-            class MyClass: #The class
-                x = 5 	#attributes
-            </code></pre></div>
-        </p>
+        <p class="beforee">Syntax:</p>     
+        <pre><div class="codee">
+            <div id="div1" class="kode">
+            <code class="fs-6 language-python">
+    class MyClass:
+        #lines of code
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee">
+            <div id="div2" class="kode">
+            <code class="fs-6 language-python">
+    class MyClass: #The class
+        x = 5 	#attributes
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
         
-        <pre></pre><pre></pre><pre></pre>
+        <pre></pre>
         <h5 class="fs-5 fw-bold">Create an Object</h5>
         <p>Syntax: <code class="fs-6">object_name = class_name()</code></p>
         <p>To access the attributes of the class, we have to use the <code class="fs-6">dot</code> syntax
             <code class="fs-6">(object_name.attribute)</code>.
         </p>
-        <p>
-            Example:<div class=" codee2">
-            <pre><code class="fs-6 ">
-            class MyClass:          #The class
-                x = 5 		    #attributes
-              
-            myobj = MyClass()
-            print(myobj.x)	#the output is 5
-            </code></pre></div>
-        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div3" class="kode">
+            <code class="fs-6 language-python">
+    class MyClass:          #The class
+        x = 5 		    #attributes
+      
+    myobj = MyClass()
+    print(myobj.x)	#the output is 5
+            </code>
+          </div>
 
-        <pre></pre><pre></pre><pre></pre>
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+        <pre></pre>
         <h5 class="fs-5 fw-bold">The <code class="fs-6">__init__</code> function</h5>
         <p>
             Classes usually have the <code class="fs-6">__init__</code> function. 
@@ -193,65 +216,86 @@
             The <code class="fs-6">__init__</code> function is used to 
             assign value to object properties and other operations needed when an object is created.
         </p>
-        <p>
-            Example:<div class=" codee2">
-            <pre><code class="fs-6 language-python">
-            class MyClass:
-                def __init__(self, name, age):
-                    self.name = name
-                    self.age = age
-            
-            myobj = MyClass("John", "20")
-            print(myobj.name)
-            print(myobj.age)
-            </code></pre></div>
-        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div4" class="kode">
+            <code class="fs-6 language-python">
+    class MyClass:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+    
+    myobj = MyClass("John", "20")
+    print(myobj.name)
+    print(myobj.age)
+            </code>
+          </div>
 
-        <pre></pre><pre></pre><pre></pre>
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+        <pre></pre>
         <h5 class="fs-5 fw-bold">The <code class="fs-6">__str__</code> function</h5>
         <p>
             This function controls what should be returned 
             when the class object is represented as a string.
         </p>
-        <p>
-            Example:<div class=" codee2">
-            <pre><code class="fs-6 language-python">
-            class MyClass:
-                def __init__(self, name, age):
-                    self.name = name
-                    self.age = age
-                def __str__(self):
-                    return f"{self.name} is {self.age}"
-            
-            myobj = MyClass("John", "20")
-            print(myobj)
-            </code></pre></div>
-        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div5" class="kode">
+            <code class="fs-6 language-python">
+    class MyClass:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+        def __str__(self):
+            return f"{self.name} is {self.age}"
     
-        <pre></pre><pre></pre><pre></pre>
+    myobj = MyClass("John", "20")
+    print(myobj)
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+    
+        <pre></pre>
         <h5 class="fs-5 fw-bold">Create Methods</h5>
         <p>
             We can declare methods inside of the class.
             And, to call the method, we use the same way as calling attributes (using the 
             <code class="fs-6">dot</code> syntax). 
         </p>
-        <p>
-            Example:<div class=" codee2">
-            <pre><code class="fs-6 language-python">
-            class MyClass:
-                def __init__(self, name, age):
-                    self.name = name
-                    self.age = age
-                def __str__(self):
-                    return f"{self.name} is {self.age}"
-                def greet(self):
-                    print(f"Hello, {self.name}!")
-            
-            myobj = MyClass("John", "20")
-            myobj.greet()
-            </code></pre></div>
-        </p>
-        
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div6" class="kode">
+            <code class="fs-6 language-python">
+    class MyClass:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+        def __str__(self):
+            return f"{self.name} is {self.age}"
+        def greet(self):
+            print(f"Hello, {self.name}!")
+    
+    myobj = MyClass("John", "20")
+    myobj.greet()  
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre><pre></pre>
+      
         <div id="sub2"></div>
         <h4 class="fs-3 kanit header">Inheritance</h4>
         <p>
@@ -259,52 +303,67 @@
             We say that the class that inherits from another class is a derived class (child class),
             while the class being inherited from is the base class (parent class). 
         </p>
-        <p>
-            Example:<div class=" codee2">
-            <pre><code class="fs-6 language-python">
-            #parent class
-            class Person:					
-                def __init__(self, fname, lname):
-                    self.firstname = fname
-                    self.lastname = lname
-            
-                def printname(self):
-                    print(self.firstname, self.lastname)
-                
-            #the child class
-            class Student(Person):	
-                def __init__(self, fname, lname):
-                    Person.__init__(self, fname, lname)
-                
-            x = Student("Mega", "Kim")
-            x.printname()
-            </code></pre></div>
-        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div7" class="kode">
+            <code class="fs-6 language-python">
+    #parent class
+    class Person:					
+        def __init__(self, fname, lname):
+            self.firstname = fname
+            self.lastname = lname
+    
+        def printname(self):
+            print(self.firstname, self.lastname)
+        
+    #the child class
+    class Student(Person):	
+        def __init__(self, fname, lname):
+            Person.__init__(self, fname, lname)
+        
+    x = Student("Mega", "Kim")
+    x.printname() 
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+       
         <p>
             We can also use the <code class="fs-6">super()</code> function in the child class. 
             This function will automatically inherit all the methods and properties from its parent class. 
         </p>
-        <p>
-            Example:<div class=" codee2">
-            <pre><code class="fs-6 language-python">
-            #parent class
-            class Person:					
-                def __init__(self, fname, lname):
-                    self.firstname = fname
-                    self.lastname = lname
-                
-                def printname(self):
-                    print(self.firstname, self.lastname)
-                
-            #the child class
-            class Student(Person):	
-                def __init__(self, fname, lname):
-                    super().__init__(fname, lname)
-                
-            x = Student("Mega", "Kim")
-            x.printname()                
-            </code></pre></div>
-        </p>
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div8" class="kode">
+            <code class="fs-6 language-python">
+    #parent class
+    class Person:					
+        def __init__(self, fname, lname):
+            self.firstname = fname
+            self.lastname = lname
+        
+        def printname(self):
+            print(self.firstname, self.lastname)
+        
+    #the child class
+    class Student(Person):	
+        def __init__(self, fname, lname):
+            super().__init__(fname, lname)
+        
+    x = Student("Mega", "Kim")
+    x.printname() 
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre><pre></pre>
     
         <div id="sub3"></div>
         <h4 class="fs-3 kanit header">Polymorphism</h4>
@@ -312,30 +371,37 @@
             Polymorphism enables users to use methods to perform different tasks.
             This allows users to perform a single action in different ways.
         </p>
-        <p>
-            Example:<div class=" codee2">
-            <pre><code class="fs-6 language-python">
-            class Pig:
-                def __init__(self, name):
-                  self.name = name
-                
-                def animalSound(self):
-                  print("The pig says wee wee")
-              
-            class Dog:
-                def __init__(self, name):
-                  self.name = name
-                
-                def animalSound(self):
-                  print("The dog says bow wow")
-                  
-            mypig = Pig("Piggy")
-            mydog = Dog("Doggy")
-            mypig.animalSound()
-            mydog.animalSound()  
-            </code></pre></div>
-        </p>
-    
+        <p class="beforee">Example:</p>     
+        <pre><div class="codee2">
+            <div id="div9" class="kode">
+            <code class="fs-6 language-python">
+    class Pig:
+        def __init__(self, name):
+          self.name = name
+        
+        def animalSound(self):
+          print("The pig says wee wee")
+      
+    class Dog:
+        def __init__(self, name):
+          self.name = name
+        
+        def animalSound(self):
+          print("The dog says bow wow")
+          
+    mypig = Pig("Piggy")
+    mydog = Dog("Doggy")
+    mypig.animalSound()
+    mydog.animalSound()  
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div9')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+   
 
     </div> <!--content2-->
     </div> <!--col 10-->

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python - Home</title>
     <link rel="stylesheet" href="stylehome.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,14 +114,14 @@
             </div>
           </div>
         </div>
-  
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button> 
         <div class="col-lg-10">
           <div class="content2">
           <h2 class="fs-1 kanit">Introduction</h2>
           <p>
               Compared to other languages, Python has a simpler syntax. Python does not need to include
               certain libraries to perform simple functions, such as 
-              <code class="fs-6">print</code> or <code class="fs-6">input</code>
+              <code class="fs-6">print</code> or <code class="fs-6">input</code>.
               Libraries are only imported when we want to perform much more advanced functions that need
               the function in the module, such as advanced math operation that needs the
               <code class="fs-6">math</code> module, etc.
@@ -131,16 +132,20 @@
             heavily relies on indentation (or whitespace) to define the scope of a function.
             Other programming languages often use curly brackets for this purpose.
           </p>
-          <p>
+          <p class="beforee">
             Let us see one simple example of Python:
-          </p>
-          <p>
-            <div class="bg-plblack codee">
-          <pre><code class="fs-6">
-          print("Hello World")
-          </code></pre>
+          </p><br/>
+          <pre><div class="codee">
+              <div id="div1" class="kode">
+              <code class="fs-6">
+      print("Hello World")
+              </code>
             </div>
-          </p>
+<div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+          </pre>
           <p>The <code class="fs-6">print()</code> function is used to display 
             <code class="fs-6">"Hello World"</code> to the user.
           </p>

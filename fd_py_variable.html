@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python - Variable and Data Type</title>
     <link rel="stylesheet" href="stylefundict.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,7 +114,7 @@
               </div>
             </div>
           </div>
-  
+          <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button> 
     <div class="col-lg-10">
     <div class="content2">
     <h1 class="fs-1 kanit">Variable and Data Type</h1>
@@ -178,14 +179,20 @@
         </table>
         <pre></pre>
 
-        <p class="beforee">To get a data type in Python, we use the <code class="fs-6">type()</code> function. Example:
-            <div class= ' codee'><pre>
-            <code class="fs-6">
-            x=6
-            print(type(x)) #the output will be int
-            </code>
-           </pre> </div> 
-        </p>
+        <p class="beforee">To get a data type in Python, we use the <code class="fs-6">type()</code> function. Example:</p>
+        <pre><div class="codee">
+          <div id="div1" class="kode">
+          <code class="fs-6">
+    x=6
+    print(type(x)) #the output will be int
+          </code>
+        </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+      </pre>
         
         <div id="sub2" class="afterr"></div>
         <h4 class="fs-3 kanit header">Variable Name</h4>
@@ -195,7 +202,7 @@
             <li>Names must begin with a letter or an underscore (_)</li>
             <li>Names are case-sensitive (lowercase and uppercase letters have different meanings)</li>
             <li>Names cannot contain whitespaces or special characters ($, #, %, etc.)</li>
-            <li>Names cannot contain reserved words, such as int, float, etc.</li>
+            <li>Names cannot contain reserved words, such as <code class="fs-6">int</code>, <code class="fs-6">float</code>, etc.</li>
         </ul>
 
         <div id="sub3"></div>
@@ -209,47 +216,62 @@
         <p>Assigning value means storing a value in a variable. 
             You can assign a value when declaring a variable.</p>
         <p>Syntax: <code class="fs-6">variable_name = value;</code></p>
-        <p><p class="beforee">Example:</p>
-        <div class=" codee">
-        <pre>
+        <p class="beforee">Example:</p>
+
+        <pre><div class="codee">
+            <div id="div2" class="kode">
             <code class="fs-6">
-            x = 5
-            y = 'me'
+    x = 5
+    y = 'me'
             </code>
+          </div>
+
+<div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
         </pre>
-        </div>
-        </p>
 
         <pre></pre>
         <p class="afterr">To change a variable value, we just need to assign a new value to an existing variable.
             The new assigned value will overwrite the previous value.
         </p>
-        <p><p class="beforee">Example:</p>
-        <div class=" codee">
-        <pre>
+        <p class="beforee">Example:</p>
+
+        <pre><div class="codee">
+            <div id="div3" class="kode">
             <code class="fs-6">
-            x = 20 	#the value of x is 20
-            x = 100 	#the value of x is now 100
+    x = 20 	#the value of x is 20
+    x = 100 	#the value of x is now 100
             </code>
+          </div>
+
+<div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
         </pre>
-        </div>
-        </p>
 
         <pre></pre>
         <p class="afterr">We can also copy the value of a variable to another variable.</p>
         <p>Syntax: <code class="fs-6">variable_name1 = variable_name2;</code></p>
-        <p><p class="beforee">Example:</p>
-        <div class=" codee">
-        <pre>
-            <code class="fs-6">
-            x = 10
-            y = x	#the value of y becomes 10
-            </code>
-        </pre>
-        </div>
-        </p>
+        <p class="beforee">Example:</p>
 
-        <pre></pre>
+        <pre><div class="codee">
+            <div id="div4" class="kode">
+            <code class="fs-6">
+    x = 10
+    y = x	#the value of y becomes 10
+            </code>
+          </div>
+
+<div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+
+        <br/><br/>
         <p class="afterr">In Python, the data type is set automatically when we assign a value to a variable.</p>
         <table class="table table-light table-hover table-striped table-bordered w-auto">
             <thead>
@@ -260,60 +282,60 @@
             </thead>
             <tbody>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = 'Hello'</code> </th>
+                <th scope="row" class="text-center align-middle">x = 'Hello' </th>
                 <td class="text-center align-middle">str</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = 20</code></th>
+                <th scope="row" class="text-center align-middle">x = 20</th>
                 <td class="text-center align-middle">int</td>
         
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = 10.9</code></th>
+                <th scope="row" class="text-center align-middle">x = 10.9</th>
                 <td class="text-center align-middle">float</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = 3j</code></th>
+                <th scope="row" class="text-center align-middle">x = 3j</th>
                 <td class="text-center align-middle">complex</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = [1,2,3,5] </code></th>
+                <th scope="row" class="text-center align-middle">x = [1,2,3,5] </th>
                 <td class="text-center align-middle">list</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = (1,2,3) </code></th>
+                <th scope="row" class="text-center align-middle">x = (1,2,3) </th>
                 <td class="text-center align-middle">tuple</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = range(9) </code></th>
+                <th scope="row" class="text-center align-middle">x = range(9) </th>
                 <td class="text-center align-middle">range</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = {"name" : "John", "age" : 19} </code></th>
+                <th scope="row" class="text-center align-middle">x = {"name" : "John", "age" : 19} </th>
                 <td class="text-center align-middle">dict</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = {1,2,3} </code></th>
+                <th scope="row" class="text-center align-middle">x = {1,2,3} </th>
                 <td class="text-center align-middle">set</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = frozenset({1,2,3}) </code></th>
+                <th scope="row" class="text-center align-middle">x = frozenset({1,2,3}) </th>
                 <td class="text-center align-middle">frozenset</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = bytearray(5) </code></th>
+                <th scope="row" class="text-center align-middle">x = bytearray(5) </th>
                 <td class="text-center align-middle">bytearray</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = True </code></th>
+                <th scope="row" class="text-center align-middle">x = True </th>
                 <td class="text-center align-middle">bool</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = memoryview(bytes(5)) </code></th>
+                <th scope="row" class="text-center align-middle">x = memoryview(bytes(5)) </th>
                 <td class="text-center align-middle">memoryview</td>
             </tr>
             <tr>
-                <th scope="row" class="text-center align-middle"><code class="fs-6">x = None </code></th>
+                <th scope="row" class="text-center align-middle">x = None </th>
                 <td class="text-center align-middle">NoneType</td>
             </tr>
             </tbody>
@@ -325,16 +347,24 @@
         <h4 class="fs-3 kanit header">Casting</h4>
         <p>Casting, also known as type conversion is an action of converting a value of one data type 
             to another data type. 
-            For example, the conversion of int to float or vice versa. 
+            For example, the conversion of <code class="fs-6">int</code> to <code class="fs-6">float</code> or vice versa. 
             There are two types of conversion in Python:</p>
         <ol>
             <li class="fw-bold fs-5">Implicit Conversion</li>
             <p>This conversion occurs automatically when we assign a value to a variable.</p>
-            <p>Example:<br/>
-            <div class="codee">
-              <pre><code class="fs-6">x = 8 	#x is automatically set to int</code></pre>
+            <p class="beforee">Example:</p>
+            <pre>
+              <div class="codee"><div id="div5" class="kode">
+              <code class="fs-6">
+    x = 8 	#x is automatically set to int
+              </code>
             </div>
-            </p>
+        
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+  </pre>
             <pre></pre>
 
             <li class="fw-bold fs-5">Explicit Conversion</li>
@@ -346,19 +376,26 @@
                     <li><code class="fs-6">str()</code> - constructs a string </li>           
                 </ul><br/>
             </p>
-            <p><p class="beforee">Example:</p>
-            <div class=" codee">
-            <pre>
-      <code class="fs-6">
-      x = int(9.12)	#x will be 9
-      y = float(8)	#y will be 8.0
-      z = str(100)	#z will be '100'
-      </code>
+            <p class="beforee">Example:</p>
+
+            <pre><div class="codee">
+                <div id="div6" class="kode">
+                <code class="fs-6">
+    x = int(9.12)	#x will be 9
+    y = float(8)	#y will be 8.0
+    z = str(100)	#z will be '100'
+                </code>
+              </div>
+  
+<div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
             </pre>
-            </div>
-            </p>
         </ol>
 
+
+        <br/><br/>
         <div id="sub6" class='afterr'></div>
 
         <h4 class="fs-3 kanit header">Variable Scope</h4>
@@ -367,33 +404,43 @@
             can only be accessed in a particular function, while global variable can be accessed 
             by all functions in the entire program. 
         </p>
-        <p><p class="beforee">Example:</p>
-        <div class=" codee">
-        <pre>
-        <code class="fs-6 language-python">
-        x = "Hello!" 	#this is a global variable
+        <p class="beforee">Example:</p>
 
-        def myFunc(){
-            y = "Hi!"	#this is a local variable
-        } 
-        </code>
+        <pre><div class="codee">
+            <div id="div7" class="kode">
+            <code class="fs-6">
+    x = "Hello!" 	#this is a global variable
+
+    def myFunc(){
+        y = "Hi!"	#this is a local variable
+    } 
+            </code>
+          </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
         </pre>
-        </div>
-        </p>
         
-        <p class="afterr">We can also use the global keyword to make a local variable become global variable.
-          <p class="beforee">Example:</p>            
-            <div class=" codee">
-            <pre>
-        <code class="fs-6 language-python">
-        def myFunc(){
-            global y
-            y = "Hi!"	#y is now a global variable
-        } 
-        </code>
-            </pre>
-            </div>
-            </p>
+        <br/>
+        <p class="afterr">We can also use the global keyword to make a local variable become global variable.</p>
+        <p class="beforee">Example:</p>
+        <pre><div class="codee">
+          <div id="div8" class="kode">
+          <code class="fs-6">
+    def myFunc(){
+        global y
+        y = "Hi!"	#y is now a global variable
+    } 
+          </code>
+        </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+      </pre>
 
     </div> <!--content2-->
     </div> <!--col 10-->
