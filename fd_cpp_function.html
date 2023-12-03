@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C++ - Functions</title>
+    <script src="funcdict.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="stylefundict.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -141,51 +143,72 @@
         But, a function could also not return anything.
         This type of function will use the return type of <code class="fs-6">void</code>.
     </p>
-    <p>
-        Syntax:<div class=" codee3">
-        <pre><code class="fs-6 language-c++">
-        return_type function_name (data_type parameter_name){  //declaration
-            //line of codes to be executed or definition
-        }
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 ">
-        #include&lt;iostream&gt;
-        total=10;
-        void store (int a){
-            total+=a;
-        }
-        int main() {
-            int goods=10;
-            store(goods);
-            return 0;
-        }
-        </code></pre></div>
-    </p>
-    <p>
+    <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee3 ">
+        <div id="div1a" class="kode">
+        <code class="fs-6 language-c++">
+    return_type function_name (data_type parameter_name){  //declaration
+      //line of codes to be executed or definition
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div1a')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+    <p class="afterr" style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+        <div id="div1" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    total=10;
+    void store (int a){
+        total+=a;
+    }
+    int main() {
+        int goods=10;
+        store(goods);
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+    <p class="afterr">
         The function above will not return any value, but it will change the variable <code class="fs-6">total</code>.
     </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 ">
-        #include&lt;iostream&gt;
-        int store (int a){
-            int total=10;
-            total+=a;
-            return total;
-        }
-        int main() {
-            int goods=10;
-            int result;
-            
-            result = store (goods);
-            return 0;
-        }
-        </code></pre></div>
-    </p>
-    <p>
+    <p  style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+        <div id="div2" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    int store (int a){
+        int total=10;
+        total+=a;
+        return total;
+    }
+    int main() {
+        int goods=10;
+        int result;
+        
+        result = store (goods);
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+    <p style="margin-top: -80px;">
         Notice that the function above has the <code class="fs-6">return</code> statement.
         The <code class="fs-6">return</code> statement is used to return value to other functions.
         And, because the function has a return value, we need to prepare a variable
@@ -206,23 +229,29 @@
         Syntax:
         <code class="fs-6">function_name (parameters);</code>
     </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 ">
-        #include&lt;iostream&gt;
-        total=10;
-        void store (int a){
-            total+=a;
-        }
-        int main() {
-            int goods=10;
-            store(goods); //calling the function
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    <p  style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+        <div id="div3" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    total=10;
+    void store (int a){
+        total+=a;
+    }
+    int main() {
+        int goods=10;
+        store(goods); //calling the function
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
 
-    <div id="sub3"></div>
+    <div id="sub3" style="margin-top: -60px;"></div>
 
     <h4 class="fs-3 kanit header">Arguments</h4>
     <p>
@@ -232,21 +261,28 @@
         that has been passed to a function, or we can say that the argument is the input
         from other functions to a particular function.
     </p>
-    <p>
-        Example:<div class=" codee2">
-        <pre><code class="fs-6 language-c++">
-        #include &lt;iostream&gt;
-        void displayInfo(int age, int phone){
-            std::cout &lt;&lt; "This is your age, " &lt;&lt; age;
-            std::cout &lt;&lt; "\nThis is your phone number, " &lt;&lt; phone;
-        }
-        int main() {
-            displayInfo(10, 9912);
-            return 0;
-        }
-        </code></pre></div>
-    </p>
-    <p>
+    <p  style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee2">
+        <div id="div4" class="kode">
+        <code class="fs-6 language-c++">
+    #include &lt;iostream&gt;
+    void displayInfo(int age, int phone){
+        std::cout &lt;&lt; "This is your age, " &lt;&lt; age;
+        std::cout &lt;&lt; "\nThis is your phone number, " &lt;&lt; phone;
+    }
+    int main() {
+        displayInfo(10, 9912);
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+    <p style="margin-top: -80px;">
         In this example, <code class="fs-6">10</code> and <code class="fs-6">9912</code> are the arguments, 
         while <code class="fs-6">age</code> and <code class="fs-6">phone</code> are the parameters.
     </p>
@@ -256,115 +292,150 @@
         function but do not provide an argument to it, it will automatically use the default value.
         A parameter with a default value is called an optional parameter.
     </p>
-    <p>
-        Example:<div class=" codee">
-            <pre><code class="fs-6 language-c++">
-            #include &lt;iostream&gt;
-            void display(int age=20){
-                std::cout &lt;&lt; age &lt;&lt; std::endl;
-            }
-            int main() {
-                display(10); //the output is 10
-                display(); //the output is 20
-                return 0;
-            }
-            </code></pre></div>
-    </p>
-    <p>
+    <p  style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+        <div id="div5" class="kode">
+        <code class="fs-6 language-c++">
+    #include &lt;iostream&gt;
+    void display(int age=20){
+        std::cout &lt;&lt; age &lt;&lt; std::endl;
+    }
+    int main() {
+        display(10); //the output is 10
+        display(); //the output is 20
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+    <p style="margin-top: -50px;">
         C++ also enables users to pass the parameter using references. 
         In the previous examples, we pass the normal variable as a parameter. 
         But, we actually can pass references as a parameter. 
         This is called <em>pass by reference</em>. 
     </p>
-    <p>
-        Example:<div class=" codee2">
-            <pre><code class="fs-6 language-c++">
-            #include &lt;iostream&gt;
-            void swap(int &x, int &y) {
-                int temp = x;
-                x = y;
-                y = temp;
-            }
-              
-            int main() {
-                int firstNum = 10;
-                int secondNum = 20;
-              
-                std::cout &lt;&lt; "Before swap: " &lt;&lt; "\n";
-                std::cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; "\n";
-              
-                swap(firstNum, secondNum);
-              
-                std::cout &lt;&lt; "After swap: " &lt;&lt; "\n";
-                std::cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; "\n";
-              
-                return 0;
-            }
-            </code></pre></div>
-    </p>
-    <p>
+    <p  style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+        <div id="div6" class="kode">
+        <code class="fs-6 language-c++">
+    #include &lt;iostream&gt;
+    void swap(int &x, int &y) {
+        int temp = x;
+        x = y;
+        y = temp;
+    }
+      
+    int main() {
+        int firstNum = 10;
+        int secondNum = 20;
+      
+        std::cout &lt;&lt; "Before swap: " &lt;&lt; "\n";
+        std::cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; "\n";
+      
+        swap(firstNum, secondNum);
+      
+        std::cout &lt;&lt; "After swap: " &lt;&lt; "\n";
+        std::cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; "\n";
+      
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+    
+    <p class="afterr">
         C++ also enables function overloading. 
         Function overloading means multiple functions having the same name 
         with different parameters.
     </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include &lt;iostream&gt;
-        int adding(int x, int y) {
-            return x+y;
-        }
-        float adding (float x, float y){
-            return x+y;
-        }
-        double adding (double x, double y){
-            return x+y;
-        }
-            
-        int main() {
-            int first = adding (20 + 10);
-            float second = adding (9.1 + 1.2);
-            double third = adding (9.23444 + 12.901);
-            return 0;
-        }
-            </code></pre></div>
-    </p>
+    <p  style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+        <div id="div7" class="kode">
+        <code class="fs-6 language-c++">
+    #include &lt;iostream&gt;
+    int adding(int x, int y) {
+        return x+y;
+    }
+    float adding (float x, float y){
+        return x+y;
+    }
+    double adding (double x, double y){
+        return x+y;
+    }
+        
+    int main() {
+        int first = adding (20 + 10);
+        float second = adding (9.1 + 1.2);
+        double third = adding (9.23444 + 12.901);
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
 
-    <div id="sub4"></div>
+
+    <div id="sub4" style="margin-top: -60px;"></div>
     <h4 class="fs-3 kanit header">Lambda</h4>
     <p>
         Lambda is an expression that allows us to define function objects which can be
         used inline. So, in other words, we do not need to declare a function outside the 
         <code class="fs-6">main()</code>.
     </p>
-    <p>
-        Syntax:<div class=" codee">
-        <pre><code class="fs-6 ">
-        data_type function_name = [] () {
-            //lines of code
-        };
-        </code></pre></div>
-    </p>
-    <p>Explanation:</p>
+    <p  style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee">
+        <div id="div8" class="kode">
+        <code class="fs-6 language-c++">
+    data_type function_name = [] () {
+      //lines of code
+    };
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+    
+    <p style="margin-top: -60px;">Explanation:</p>
     <ul>
         <li><code class="fs-6">[]</code> is the lambda introducer which denotes the start of 
             lambda expression</li>
         <li><code class="fs-6">()</code> is the parameter list</li>
     </ul>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include &lt;iostream&gt;
-        int main() {
-            auto display = [](int age=20){
-                std::cout &lt;&lt; age &lt;&lt; std::endl;
-            };
-            display(10); //the output is 10
-            display(); //the output is 20
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    <p  style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee">
+        <div id="div9" class="kode">
+        <code class="fs-6 language-c++">
+    #include &lt;iostream&gt;
+    int main() {
+        auto display = [](int age=20){
+            std::cout &lt;&lt; age &lt;&lt; std::endl;
+        };
+        display(10); //the output is 10
+        display(); //the output is 20
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div9')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
 
     </div>
     </div>
