@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C++ - Conditional and Loops</title>
+    <script src="funcdict.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="stylefundict.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -136,148 +138,207 @@
 
     <h5 class="fs-5 fw-bold">If, Else, and Else If</h5>
     <p>If statement specifies a block of code to be executed when a condition is true.</p>
-    <p>
-        Syntax:<div class=' codee2'>
-        <pre><code class="fs-6 language-c++">
-        if (condition) {
+    <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee2 ">
+        <div id="div1" class="kode">
+        <code class="fs-6 language-c++">
+    if (condition) {
         // block of code to be executed if the condition is true
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+    
+    <p class="afterr" style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+        <div id="div2" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    int main() {
+        int myNum = 10;
+        if(myNum == 10){
+            std::cout &lt;&lt; "myNum is 10"; 
         }
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        int main() {
-            int myNum = 10;
-            if(myNum == 10){
-                std::cout &lt;&lt; "myNum is 10"; 
-            }
-            return 0;
-        }
-        </code></pre></div>
-    </p>
-    <p>
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+    
+    <p class="afterr">
         In the example, the code <code class="fs-6">std::cout &lt;&lt; "myNum is 10";</code> 
         will only be executed when the value of <code class="fs-6">myNum</code> is 10.
     </p>
 
-    <pre></pre><pre></pre>
     <p>
         However, in other cases, we need another statement to specify code to be executed
         when the condition is false. Then, we can use <code class="fs-6">else</code> for this case.
     </p>
-    <p>
-        Syntax:<div class=' codee2'>
-        <pre><code class="fs-6 language-c++">
+    <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee2 ">
+        <div id="div3" class="kode">
+        <code class="fs-6 language-c++">
         if (condition) {
             // block of code to be executed if the condition is true
         } else {
             // block of code to be executed if the condition is false
         }
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        int main() {
-            int myNum = 10;
-            if(myNum == 10){
-	            std::cout &lt;&lt; "myNum is 10"; 
-            }else{
-	            std::cout &lt;&lt; "myNum is not 10";
-            }
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
 
-    <pre></pre><pre></pre>
-    <p>
+    <p class="afterr" style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+        <div id="div4" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    int main() {
+        int myNum = 10;
+        if(myNum == 10){
+            std::cout &lt;&lt; "myNum is 10"; 
+        }else{
+            std::cout &lt;&lt; "myNum is not 10";
+        }
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+    
+    <p class="afterr">
         Lastly, the <code class="fs-6">else if</code> statement is used when there are more than two conditions that may occur.
         <code class="fs-6">Else if</code> statement specifies a new condition if the first condition is false.
     </p>
-    <p>
-        Syntax:<div class=' codee3'>
-        <pre><code class="fs-6 language-c++">
-        if (condition1) {
-            // block of code to be executed if condition1 is true
-        } else if (condition2) {
-        // block of code to be executed if the condition1 is false and condition2 is true
-        } else {
-        // block of code to be executed if the condition1 is false and condition2 is false
-        }
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class=" codee2">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        int main() {
-            int myNum = 10;
-            if(myNum &lt; 1){
-                std::cout&lt;&lt;"myNum is less than 1"; 
-            }else if (myNum&lt;10){
-                std::cout&lt;&lt;"myNum is less than 10";
-            }else{
-                std::cout&lt;&lt;"myNum is greater than or equal with 10";
-            }
-            return 0;
-        }
-        </code></pre></div>
-    </p>
-    <pre></pre><pre></pre>
+    <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee3 ">
+        <div id="div5" class="kode">
+        <code class="fs-6 language-c++">
+    if (condition1) {
+        // block of code to be executed if condition1 is true
+    } else if (condition2) {
+    // block of code to be executed if the condition1 is false and condition2 is true
+    } else {
+    // block of code to be executed if the condition1 is false and condition2 is false
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
 
-    <p>Short-hand <code class="fs-6">if-else</code>, also called ternary operator, 
+    <p class="afterr" style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee2">
+        <div id="div6" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    int main() {
+        int myNum = 10;
+        if(myNum &lt; 1){
+            std::cout&lt;&lt;"myNum is less than 1"; 
+        }else if (myNum&lt;10){
+            std::cout&lt;&lt;"myNum is less than 10";
+        }else{
+            std::cout&lt;&lt;"myNum is greater than or equal with 10";
+        }
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+
+    <p class="afterr">Short-hand <code class="fs-6">if-else</code>, also called ternary operator, 
         is a simple construction of an <code class="fs-6">if-else</code> statement. 
         The ternary operator is used to simplify a block of 
         <code class="fs-6">if-else</code> statements to a single line of code.
     </p>
-    <p>
-        Syntax:<div class=' codee2'>
-        <pre><code class="fs-6 language-plaintext">
-        variable = (condition) ? expressionTrue : expressionFalse;
-        </code></pre></div>
-    </p>
-    <p>
-        Below is the simplified version of the previous 
-        <code class="fs-6">if-else</code> example:<div class=" codee3">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        #include&lt;string&gt;
-        int main() {
-            int myNum = 10;
-            string result = (myNum == 10)? "myNum is 10" : "myNum is not 10";
-            std::cout&lt;&lt;result;
-        }
-        </code></pre></div>
-    </p>
+    <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee2 ">
+        <div id="div7" class="kode">
+        <code class="fs-6 language-c++">
+    variable = (condition) ? expressionTrue : expressionFalse;
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
 
-    <pre></pre><pre></pre><pre></pre><pre></pre>
+    <p class="afterr" style="margin-bottom: -40px;">Below is the simplified version of the previous 
+        <code class="fs-6">if-else</code> example:</p>
+    <pre><div class="codee3">
+        <div id="div8" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    #include&lt;string&gt;
+    int main() {
+        int myNum = 10;
+        string result = (myNum == 10)? "myNum is 10" : "myNum is not 10";
+        std::cout&lt;&lt;result;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+    <pre></pre><pre></pre>
     
-    <h5 class="fs-5 fw-bold">Switch Statement</h5>
+    <h5 class="fs-5 fw-bold afterr">Switch Statement</h5>
     <p>
         Besides the <code class="fs-6">if-else</code> statement, there is also the <code class="fs-6">switch</code> statement.
         The <code class="fs-6">switch</code> statement is used when there are too many conditions involving one variable.
         Instead of using many <code class="fs-6">if-else</code> statements, you can use the <code class="fs-6">switch</code> statement.
     </p>
-    <p>
-        Syntax:<div class=' codee'>
-        <pre><code class="fs-6 language-c++">
-        switch(expression) {
-            case x:
-                // code block
-                break;
-            case y:
-                // code block
-                break;
-            default:
-                // code block
-        }
-        </code></pre></div>
-    </p>
-    <p>
+    <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee ">
+        <div id="div9" class="kode">
+        <code class="fs-6 language-c++">
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        default:
+            // code block
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div9')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+    <p class="afterr">
         The expression in the code specifies which variable that will be inspected. 
         If the expression fits the case x, then the program runs the first code block, etc.
         If the expression does not fit in any of the cases, it will run the <code class="fs-6">default</code> code block.
@@ -285,41 +346,48 @@
         breaks out the <code class="fs-6">switch</code> block and stops the execution.
     </p>
     <p><div class='fw-bold d-inline-flex'>Note:</div> the <code class="fs-6">default</code> code block is optional. </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        int main() {
-            int day = 2;
-            switch (day) {
-            case 1:
-                std::cout&lt;&lt;"Monday";
-                break;
-            case 2:
-                std::cout&lt;&lt;"Tuesday";
-                break;
-            case 3:
-                std::cout&lt;&lt;"Wednesday";
-                break;
-            case 4:
-                std::cout&lt;&lt;"Thursday";
-                break;
-            case 5:
-                std::cout&lt;&lt;"Friday";
-                break;
-            case 6:
-                std::cout&lt;&lt;"Saturday";
-                break;
-            case 7:
-                std::cout&lt;&lt;"Sunday";
-                break;
-            }
-            return 0;
+    <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee ">
+        <div id="div10" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    int main() {
+        int day = 2;
+        switch (day) {
+        case 1:
+            std::cout&lt;&lt;"Monday";
+            break;
+        case 2:
+            std::cout&lt;&lt;"Tuesday";
+            break;
+        case 3:
+            std::cout&lt;&lt;"Wednesday";
+            break;
+        case 4:
+            std::cout&lt;&lt;"Thursday";
+            break;
+        case 5:
+            std::cout&lt;&lt;"Friday";
+            break;
+        case 6:
+            std::cout&lt;&lt;"Saturday";
+            break;
+        case 7:
+            std::cout&lt;&lt;"Sunday";
+            break;
         }
-        </code></pre></div>
-    </p>
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div10')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
     
-    <div id="sub2"></div>
+    
+    <div id="sub2" style="margin-top: -40px;"></div>
 
     <h4 class="fs-3 kanit header">Loops</h4>
     <p>As its name says, loops are used to loop codes.
@@ -330,29 +398,43 @@
     <h5 class="fs-5 fw-bold">While Loop</h5>
     <p><code class="fs-6">While</code> loop loops through a block of code as 
         long as the specified condition is true.</p>
-    <p>
-        Syntax:<div class=' codee'>
-        <pre><code class="fs-6 language-c++">
-        while (condition) {
-            // code block to be executed
+    <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee ">
+        <div id="div11" class="kode">
+        <code class="fs-6 language-c++">
+    while (condition) {
+        // code block to be executed
+    }
+        </code>
+        </div>
+    <div class="copy">
+    <button class='fs-6' onclick="copyDivToClipboard('div11')"><i class="fa-regular fa-copy"></i>  Copy</button>
+    </div>
+        </div>
+    </pre>
+
+    <p class="afterr" style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+        <div id="div12" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    int main() {
+        int a = 1;
+        while(a&lt;5){
+            std::cout&lt;&lt;"a is " &lt;&lt; a &lt;&lt; endl;
+            a++;
         }
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        int main() {
-            int a = 1;
-            while(a&lt;5){
-	            std::cout&lt;&lt;"a is " &lt;&lt; a &lt;&lt; endl;
-	            a++;
-            }
-            return 0;
-        }
-        </code></pre></div>
-    </p>
-    <p>
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div12')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+    
+    <p style="margin-top: -40px;">
         The loop in the example will produce the output below:
     </p>
     <p>
@@ -365,7 +447,7 @@
         </code></pre></div>
     </p>
     <p>
-        Notice that the loop while keeps looping until a&lt;5.
+        Notice that the loop while keeps looping until a &lt; 5.
         When the loop reaches a = 5, it will stop looping and the program is terminated.
     </p>
     
@@ -379,29 +461,43 @@
         while <code class="fs-6">do-while</code> loop runs at least once in every condition 
         (even if the condition is false).
     </p>
-    <p>
-        Syntax:<div class=' codee'>
-        <pre><code class="fs-6 language-c++">
-        do {
-            // code block to be executed
-        }while (condition);
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        int main() {
-            int a = 1;
-            do{
-                std::cout&lt;&lt;"Hello!";
-                a++;
-            } while (a&lt;1);
-            return 0;
-        }
-        </code></pre></div>
-    </p>
-    <p>
+    <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee ">
+        <div id="div13" class="kode">
+        <code class="fs-6 language-c++">
+    do {
+        // code block to be executed
+    }while (condition);
+        </code>
+        </div>
+    <div class="copy">
+    <button class='fs-6' onclick="copyDivToClipboard('div13')"><i class="fa-regular fa-copy"></i>  Copy</button>
+    </div>
+        </div>
+    </pre>
+
+    <p class="afterr" style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+        <div id="div14" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    int main() {
+        int a = 1;
+        do{
+            std::cout&lt;&lt;"Hello!";
+            a++;
+        } while (a&lt;1);
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div14')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+
+    <p style="margin-top: -80px;">
         The example loop above will still run once, even if the condition is false.
         If we use a <code class="fs-6">while</code> loop in this example, the loop will not run.
     </p>
@@ -410,33 +506,47 @@
 
     <h5 class="fs-5 fw-bold">For Loop</h5>
     <p><code class="fs-6">For</code> loop is used when we know how many times we want to loop through a block.</p>
-    <p>
-        Syntax:<div class=' codee'>
-        <pre><code class="fs-6 language-c++">
-        for (statement 1; statement 2; statement 3) {
-            // code block to be executed
-        }
-        </code></pre></div>
-    </p>
-    <ul>
+    <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee ">
+        <div id="div15" class="kode">
+        <code class="fs-6 language-c++">
+    for (statement 1; statement 2; statement 3) {
+        // code block to be executed
+    }
+        </code>
+        </div>
+    <div class="copy">
+    <button class='fs-6' onclick="copyDivToClipboard('div15')"><i class="fa-regular fa-copy"></i>  Copy</button>
+    </div>
+        </div>
+    </pre>
+    
+    <ul style="margin-top: -80px;">
         <li>Statement 1 is the initialization of the loop condition.</li>
         <li>Statement 2 is the condition that has to be met to enable the looping process.</li>
         <li>Statement 3 is executed (every time) after a code block has been executed. 
         Statement 3 is usually an increment or decrement of a value.</li>
     </ul>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        int main() {
-            for(int i = 0; i&lt;5 ; i++){
-                std::cout&lt;&lt;"Hello!";
-            }
-            return 0;
+    <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee ">
+        <div id="div16" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    int main() {
+        for(int i = 0; i&lt;5 ; i++){
+            std::cout&lt;&lt;"Hello!";
         }
-        </code></pre></div>
-    </p>
-    <p>The output of the program above will be a “Hello” text repeated five times.</p>
+        return 0;
+    }
+        </code>
+        </div>
+    <div class="copy">
+    <button class='fs-6' onclick="copyDivToClipboard('div16')"><i class="fa-regular fa-copy"></i>  Copy</button>
+    </div>
+        </div>
+    </pre>
+
+    <p style="margin-top: -80px;">The output of the program above will be a “Hello” text repeated five times.</p>
     <p>Code explanation:</p>
     <ul>
         <li>Statement 1 initializes the variable i = 0</li>
@@ -457,24 +567,31 @@
         As seen before, a <code class="fs-6">break</code> statement is used to jump out of a <code class="fs-6">switch</code> statement.
         A <code class="fs-6">break</code> statement can also be used to jump out of a loop. 
     </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        int main() {
-            int a = 1;
-            while(a&lt;10){
-                std::cout&lt;&lt;"Hello!";
-                if(a == 4){
-		    break;
-                }
-                a++;
+    <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee ">
+        <div id="div17" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    int main() {
+        int a = 1;
+        while(a&lt;10){
+            std::cout&lt;&lt;"Hello!";
+            if(a == 4){
+        break;
             }
-            return 0;
+            a++;
         }
-        </code></pre></div>
-    </p>
-    <p>
+        return 0;
+    }
+        </code>
+        </div>
+    <div class="copy">
+    <button class='fs-6' onclick="copyDivToClipboard('div17')"><i class="fa-regular fa-copy"></i>  Copy</button>
+    </div>
+        </div>
+    </pre>
+
+    <p style="margin-top: -80px;">
         The code above will produce the output of <code class="fs-6">Hello!</code> printed 4 times.
         When the variable <code class="fs-6">a</code> reaches 4, it will automatically jump out of the loop,
         resulting in only 4 printed outputs.
@@ -485,22 +602,29 @@
         The <code class="fs-6">continue</code> statement is used to skip the rest of the code and jump
         to the next iteration in the loop.
     </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        int main() {
-            for(int i=0; i&lt;5; i++){
-                if(i == 3){
-                    continue;
-                }
-                std::cout&lt;&lt;i;
+    <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee ">
+        <div id="div18" class="kode">
+        <code class="fs-6 language-c++">
+    #include&lt;iostream&gt;
+    int main() {
+        for(int i=0; i&lt;5; i++){
+            if(i == 3){
+                continue;
             }
-            return 0;
+            std::cout&lt;&lt;i;
         }
-        </code></pre></div>
-    </p>
-    <p>
+        return 0;
+    }
+        </code>
+        </div>
+    <div class="copy">
+    <button class='fs-6' onclick="copyDivToClipboard('div18')"><i class="fa-regular fa-copy"></i>  Copy</button>
+    </div>
+        </div>
+    </pre>
+
+    <p style="margin-top: -80px;">
         If we run the code above, we will get the output
         “0124” with no '3'. This is because when i reaches 3,
         we use the <code class="fs-6">continue</code> statement to skip the rest of the loop and 

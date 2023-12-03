@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C++ - Classes</title>
     <link rel="stylesheet" href="stylefundict.css"/>
+    <script src="funcdict.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -156,16 +158,24 @@
 
     <h4 class="fs-3 kanit header">Create Classes and Objects</h4>
     <h5 class="fs-5 fw-bold">Create a Class</h5>
-    <p>
-        Syntax:<div class=' codee'>
-        <pre><code class="fs-6 language-c++">
-        class class_name{
-            access_specifier:
-                //class members (attributes or methods)
-        };
-        </code></pre></div>
-    </p>
-    <p>
+    <p style="margin-bottom: -50px;">Syntax:</p>
+    <pre><div class="codee">
+      <div id="div1" class="kode">
+      <code class="fs-6">
+    class class_name{
+      access_specifier:
+          //class members (attributes or methods)
+    };
+      </code>
+    </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+    </div>
+  </pre>
+    
+    <p style="margin-top: -40px;">
         Access specifier is the keyword that specifies the scope of the members of the class.
         There are three access specifiers in C++:
     </p>
@@ -175,101 +185,131 @@
         <li><code class="'fs-6">protected</code>: members cannot be accessed from outside the class,
             but they can be accessed in the inherited classes.</li>
     </ul>
-    <p>
-        Example:<div class=" codee2">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        class MyClass {       // The class
-            public:             // Access specifier
-              int myNum;        // Attribute (int variable)
-              string myString;  // Attribute (string variable)
-        };
+    <p style="margin-bottom:-40px;">Example:</p>
+    <pre><div class="codee2">
+      <div id="div2" class="kode">
+      <code class="fs-6">
+    #include&lt;iostream&gt;
+    class MyClass {       // The class
+        public:             // Access specifier
+          int myNum;        // Attribute (int variable)
+          string myString;  // Attribute (string variable)
+    };
 
-        int main() {
-          return 0;
-        }
-        </code></pre></div>
-    </p>
+    int main() {
+      return 0;
+    }
+      </code>
+    </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+    </div>
+  </pre>
     
-    <pre></pre><pre></pre>
+    
     <h5 class="fs-5 fw-bold">Create an Object</h5>
     <p>Syntax: <code class="fs-6">class_name object_name;</code></p>
     <p>To access the attributes of the class, we have to use the <code class="fs-6">dot</code> syntax
         <code class="fs-6">(object_name.attribute)</code>.
     </p>
-    <p>
-        Example:<div class=" codee2">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        class MyClass {       // The class
-            public:             // Access specifier
-              int myNum;        // Attribute (int variable)
-              string myString;  // Attribute (string variable)
-        };
+    <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee2">
+      <div id="div3" class="kode">
+      <code class="fs-6">
+    #include&lt;iostream&gt;
+    class MyClass {       // The class
+        public:             // Access specifier
+          int myNum;        // Attribute (int variable)
+          string myString;  // Attribute (string variable)
+    };
 
-        int main() {
-            MyClass myObj;  // Create an object of MyClass
-          
-            // Access attributes and set values
-            myObj.myNum = 15; 
-            myObj.myString = "Some text";
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    int main() {
+        MyClass myObj;  // Create an object of MyClass
+      
+        // Access attributes and set values
+        myObj.myNum = 15; 
+        myObj.myString = "Some text";
+        return 0;
+    }
+      </code>
+    </div>
 
-    <pre></pre><pre></pre>
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+    </div>
+  </pre>
+    
+
     <h5 class="fs-5 fw-bold">Create Methods</h5>
     <p>
         We can declare methods inside of the class or outside of the class definition.
         And, to call the method, we use the same way as calling attributes (using the 
         <code class="fs-6">dot</code> syntax). 
     </p>
-    <p>
-        Example of the inside of the class method:<div class=" codee2">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        class MyClass {       // The class
-            public:             // Access specifier
-              int myNum;        // Attribute (int variable)
-              void greet(){
-                std::cout&lt;&lt;"Hello!";
-              }
-        };
-
-        int main() {
-            MyClass myObj;  // Create an object of MyClass
-          
-            // Access attributes and set values
-            myObj.myNum = 15; 
-            myObj.greet();
-            return 0;
-        }
-        </code></pre></div>
-    </p>
-    <p>
-        Example of the outside of the class method:<div class=" codee2">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        class MyClass {       // The class
-            public:             // Access specifier
-              int myNum;        // Attribute (int variable)
-        };
-          
-        void MyClass::greet(){
+    <p style="margin-bottom: -40px;">Example of the inside of the class method:
+      <pre><div class="codee2">
+        <div id="div4" class="kode">
+        <code class="fs-6">
+    #include&lt;iostream&gt;
+    class MyClass {       // The class
+        public:             // Access specifier
+          int myNum;        // Attribute (int variable)
+          void greet(){
             std::cout&lt;&lt;"Hello!";
-        }
-          
-        int main() {
-            MyClass myObj;  // Create an object of MyClass
-        
-            // Access attributes and set values
-            myObj.myNum = 15; 
-            myObj.greet();
-            return 0;
           }
-        </code></pre></div>
-    </p>
+    };
+
+    int main() {
+        MyClass myObj;  // Create an object of MyClass
+      
+        // Access attributes and set values
+        myObj.myNum = 15; 
+        myObj.greet();
+        return 0;
+    }
+        </code>
+      </div>
+  <div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+  </div>
+      </div>
+    </pre>
+        
+    <p style="margin-bottom: -40px; margin-top: -40px;">Example of the outside of the class method:</p>
+    <pre><div class="codee2">
+      <div id="div5" class="kode">
+      <code class="fs-6">
+    #include&lt;iostream&gt;
+    class MyClass {       // The class
+        public:             // Access specifier
+          int myNum;        // Attribute (int variable)
+    };
+      
+    void MyClass::greet(){
+        std::cout&lt;&lt;"Hello!";
+    }
+      
+    int main() {
+        MyClass myObj;  // Create an object of MyClass
+    
+        // Access attributes and set values
+        myObj.myNum = 15; 
+        myObj.greet();
+        return 0;
+      }
+      </code>
+    </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+    </div>
+  </pre>
+
+    
     <pre></pre><pre></pre>
     <h5 class="fs-5 fw-bold">Constructors</h5>
     <p>
@@ -277,33 +317,49 @@
         is created. Constructors have the same name as the class and it is always public.
         Constructors also do not have any return value.
     </p>
-    <p>
-        Syntax:<div class=' codee'>
-        <pre><code class="fs-6 language-c++">
-        class_name (){
-            //lines of code	
-        }
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class=" codee3">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        class MyClass {     // The class
-            public:           // Access specifier
-              MyClass() {     // Constructor
-                std::cout &lt;&lt; "Hello World!";
-            }
-        };
-          
-        int main() {
-            MyClass myObj;   // Create an object of MyClass (this will call the constructor)
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    <p style="margin-bottom: -40px;">Syntax:</p>
+    <pre><div class="codee">
+      <div id="div6" class="kode">
+      <code class="fs-6">
+    class_name (){
+      //lines of code	
+    }
+      </code>
+    </div>
 
-    <div id="sub2"></div>
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+    </div>
+  </pre>
+    
+    <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee3">
+      <div id="div7" class="kode">
+      <code class="fs-6">
+    #include&lt;iostream&gt;
+    class MyClass {     // The class
+        public:           // Access specifier
+          MyClass() {     // Constructor
+            std::cout &lt;&lt; "Hello World!";
+        }
+    };
+      
+    int main() {
+        MyClass myObj;   // Create an object of MyClass (this will call the constructor)
+        return 0;
+    }
+      </code>
+    </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+    </div>
+  </pre>
+    
+
+    <div id="sub2" class="afterr"></div>
     <h4 class="fs-3 kanit header">Encapsulation</h4>
     <p>
         Encapsulation ensures sensitive data hidden from users. To do this,
@@ -312,115 +368,140 @@
         <code class="fs-6">private</code> member, you can provide <code class="fs-6">public</code>
         <code class="fs-6">get</code> and <code class="fs-6">set</code> methods.
     </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        class Cube {
-            private:
-              // Private attribute
-              int side;
-          
-            public:
-              // Setter
-              void setSide(int s) {
-                side = s;
-              }
-              // Getter
-              int getSide() {
-                return side;
-              }
-        };
-          
-        int main() {
-            Cube myObj;
-            myObj.setSide(5);
-            std::cout &lt;&lt; myObj.getSide();
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee">
+      <div id="div8" class="kode">
+      <code class="fs-6">
+    #include&lt;iostream&gt;
+    class Cube {
+        private:
+          // Private attribute
+          int side;
+      
+        public:
+          // Setter
+          void setSide(int s) {
+            side = s;
+          }
+          // Getter
+          int getSide() {
+            return side;
+          }
+    };
+      
+    int main() {
+        Cube myObj;
+        myObj.setSide(5);
+        std::cout &lt;&lt; myObj.getSide();
+        return 0;
+    }
+      </code>
+    </div>
 
-    <div id="sub3"></div>
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+    </div>
+  </pre>
+    
+
+    <div id="sub3" class="afterr"></div>
     <h4 class="fs-3 kanit header">Inheritance</h4>
     <p>
         Inheritance means inheriting the attributes and methods from one class to another.
         We say that the class that inherits from another class is a derived class (child class),
         while the class being inherited from is the base class (parent class). 
     </p>
-    <p>
-        Example:<div class=" codee2">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        class MySchool {     // The base class
-            public:           
-                int members;
-                void welcome(){
-                    std::cout&lt;&lt; "Welcome!";
-                }
-        };
-          
-        class MyClass: public MySchool {     // The derived class
-            public:           				
-                char name = 'b';
-        };
-          
-        int main() {
-            MyClass myObj;
-            myObj.welcome();   
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee2">
+      <div id="div9" class="kode">
+      <code class="fs-6">
+    #include&lt;iostream&gt;
+    class MySchool {     // The base class
+        public:           
+            int members;
+            void welcome(){
+                std::cout&lt;&lt; "Welcome!";
+            }
+    };
+      
+    class MyClass: public MySchool {     // The derived class
+        public:           				
+            char name = 'b';
+    };
+      
+    int main() {
+        MyClass myObj;
+        myObj.welcome();   
+        return 0;
+    }
+      </code>
+    </div>
 
-    <div id="sub4"></div>
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div9')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+    </div>
+  </pre>
+    
+
+    <div id="sub4" class="afterr"></div>
     <h4 class="fs-3 kanit header">Polymorphism</h4>
     <p>
         Polymorphism enables users to use methods to perform different tasks.
         This allows users to perform a single action in different ways.
     </p>
-    <p>
-        Example:<div class=" codee2">
-        <pre><code class="fs-6 language-c++">
-        #include&lt;iostream&gt;
-        #include&lt;string&gt;
+    <p style="margin-bottom: -40px;">Example:</p>
+    <pre><div class="codee2">
+      <div id="div10" class="kode">
+      <code class="fs-6">
+    #include&lt;iostream&gt;
+    #include&lt;string&gt;
 
-        // Base class
-        class Animal {
-            public:
-                void animalSound() {
-                    std::cout &lt;&lt; "The animal makes a sound \n";
-                }
-        };
-            
-        // Derived class
-        class Pig : public Animal {
-            public:
-                void animalSound() {
-                    std::cout &lt;&lt; "The pig says: wee wee \n";
-                }
-        };
-            
-        // Derived class
-        class Dog : public Animal {
-            public:
-                void animalSound() {
-                    std::cout &lt;&lt; "The dog says: bow wow \n";
-                }
-        };
-            
-        int main() {
-            Animal myAnimal;
-            Pig myPig;
-            Dog myDog;
-            
-            myAnimal.animalSound();
-            myPig.animalSound();
-            myDog.animalSound();
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    // Base class
+    class Animal {
+        public:
+            void animalSound() {
+                std::cout &lt;&lt; "The animal makes a sound \n";
+            }
+    };
+        
+    // Derived class
+    class Pig : public Animal {
+        public:
+            void animalSound() {
+                std::cout &lt;&lt; "The pig says: wee wee \n";
+            }
+    };
+        
+    // Derived class
+    class Dog : public Animal {
+        public:
+            void animalSound() {
+                std::cout &lt;&lt; "The dog says: bow wow \n";
+            }
+    };
+        
+    int main() {
+        Animal myAnimal;
+        Pig myPig;
+        Dog myDog;
+        
+        myAnimal.animalSound();
+        myPig.animalSound();
+        myDog.animalSound();
+        return 0;
+    }
+      </code>
+    </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div10')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+    </div>
+  </pre>
+
+    
 
     </div>
     </div>
