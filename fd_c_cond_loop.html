@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C - Conditional and Loops</title>
     <link rel="stylesheet" href="stylefundict.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,7 +114,7 @@
             </div>
           </div>
         </div>
-  
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fs-6" style="color: #ffffff;"></i></button>  
     <div class="col-lg-10">
     <div class="content2">
     <h1 class="fs-1 kanit">Conditional and Loops</h1>
@@ -134,125 +135,191 @@
     </p>
 
     <h5 class="fs-5 fw-bold">If, Else, and Else If</h5>
-    <p>If statement specifies a block of code to be executed when a condition is true.</p>
-    <p>
-        Syntax:<div class='codee2'>
-        <pre><code class="fs-6 language-c">
-        if (condition) {
+    <p><code class="fs-6">if</code> statement specifies a block of code to be executed when a condition is true.</p>
+    <p class="beforee">Syntax:</p>
+
+    <pre><div class="codee2">
+        <div id="div1" class="kode">
+        <code class="fs-6 language-c">
+    if (condition) {
         // block of code to be executed if the condition is true
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
+
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div2" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        int myNum = 10;
+        if(myNum == 10){
+            printf("myNum is 10"); 
         }
-        </code></pre></div>
-    </p>
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
     <p>
-        Example:<div class="codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            int myNum = 10;
-            if(myNum == 10){
-                printf("myNum is 10"); 
-            }
-            return 0;
-        }
-        </code></pre></div>
-    </p>
-    <p>
-        In the example, the code <code class="fs-6">printf(“myNum is 10”);</code> 
+        In the example, the code <code class="fs-6">printf("myNum is 10");</code> 
         will only be executed when the value of <code class="fs-6">myNum</code> is 10.
     </p>
 
-    <pre></pre><pre></pre>
+    <pre></pre>
     <p>
         However, in other cases, we need another statement to specify code to be executed
         when the condition is false. Then, we can use <code class="fs-6">else</code> for this case.
     </p>
-    <p>
-        Syntax:<div class='codee2'>
-        <pre><code class="fs-6 ">
-        if (condition) {
-            // block of code to be executed if the condition is true
-        } else {
-            // block of code to be executed if the condition is false
-        }
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class="codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            int myNum = 10;
-            if(myNum == 10){
-	            printf("myNum is 10"); 
-            }else{
-	            printf("myNum is not 10");
-            }
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    <p class="beforee">Syntax:</p>
 
-    <pre></pre><pre></pre>
+    <pre><div class="codee2">
+        <div id="div3" class="kode">
+        <code class="fs-6">
+    if (condition) {
+        // block of code to be executed if the condition is true
+    } else {
+        // block of code to be executed if the condition is false
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div4" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        int myNum = 10;
+        if(myNum == 10){
+            printf("myNum is 10"); 
+        }else{
+            printf("myNum is not 10");
+        }
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
+
+
     <p>
         Lastly, the <code class="fs-6">else if</code> statement is used when there are more than two conditions that may occurred.
         <code class="fs-6">Else if</code> statement specifies a new condition if the first condition is false.
     </p>
-    <p>
-        Syntax:<div class='codee3'>
-        <pre><code class="fs-6 language-c">
-        if (condition1) {
-            //block of code to be executed if condition1 is true
-        } else if (condition2) {
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee3">
+        <div id="div5" class="kode">
+        <code class="fs-6 language-c">
+    if (condition1) {
+        //block of code to be executed if condition1 is true
+    } else if (condition2) {
         //block of code to be executed if the condition1 is false and condition2 is true
-        } else {
+    } else {
         //block of code to be executed if the condition1 is false and condition2 is false
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee2">
+        <div id="div6" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        int myNum = 10;
+        if(myNum&lt;1){
+            printf("myNum is less than 1"); 
+        }else if (myNum&lt;10){
+            printf("myNum is less than 10");
+        }else{
+            printf("myNum is greater than or equal with 10");
         }
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class="codee2">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            int myNum = 10;
-            if(myNum&lt;1){
-                printf("myNum is less than 1"); 
-            }else if (myNum&lt;10){
-                printf("myNum is less than 10");
-            }else{
-                printf("myNum is greater than or equal with 10");
-            }
-            return 0;
-        }
-        </code></pre></div>
-    </p>
-    <pre></pre><pre></pre>
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>       
 
     <p>Short-hand <code class="fs-6">if-else</code>, also called ternary operator, 
         is a simple construction of an <code class="fs-6">if-else</code> statement. 
         The ternary operator is used to simplify a block of 
         <code class="fs-6">if-else</code> statements to a single line of code.
     </p>
-    <p>
-        Syntax:<div class='codee2'>
-        <pre><code class="fs-6 language-c">
-        variable = (condition) ? expressionTrue : expressionFalse;
-        </code></pre></div>
-    </p>
-    <p>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee2">
+        <div id="div7" class="kode">
+        <code class="fs-6 language-c">
+variable = (condition) ? expressionTrue : expressionFalse;
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
+    <p class="beforee">
         Below is the simplified version of the previous 
-        <code class="fs-6">if-else</code> example:<div class="bg-plblack codee3">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            int myNum = 10;
-            myNum = (myNum == 10)? printf("myNum is 10"):printf("myNum is not 10");
-            return 0;
-        }
-        </code></pre></div>
+        <code class="fs-6">if-else</code> example:
     </p>
 
-    <pre></pre><pre></pre><pre></pre><pre></pre>
+    <pre><div class="codee">
+        <div id="div8" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        int myNum = 10;
+        myNum = (myNum == 10)? printf("myNum is 10"):printf("myNum is not 10");
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
+
+<br/>
     
     <h5 class="fs-5 fw-bold">Switch Statement</h5>
     <p>
@@ -260,21 +327,29 @@
         The <code class="fs-6">switch</code> statement is used when there are too many conditions involving one variable.
         Instead of using many <code class="fs-6">if-else</code> statements, you can use the <code class="fs-6">switch</code> statement.
     </p>
-    <p>
-        Syntax:<div class='codee'>
-        <pre><code class="fs-6 ">
-        switch(expression) {
-            case x:
-                // code block
-                break;
-            case y:
-                // code block
-                break;
-            default:
-                // code block
-        }
-        </code></pre></div>
-    </p>
+    <p class="beforee">Syntax:</p>
+
+    <pre><div class="codee">
+        <div id="div9" class="kode">
+        <code class="fs-6">
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        default:
+            // code block
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div9')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     <p>
         The expression in the code specifies which variable that will be inspected. 
         If the expression fits the case x, then the program runs the first code block, etc.
@@ -283,39 +358,46 @@
         breaks out the <code class="fs-6">switch</code> block and stops the execution.
     </p>
     <p><div class='fw-bold d-inline-flex'>Note:</div> the <code class="fs-6">default</code> code block is optional. </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            int day = 2;
-            switch (day) {
-            case 1:
-                printf("Monday");
-                break;
-            case 2:
-                printf("Tuesday");
-                break;
-            case 3:
-                printf("Wednesday");
-                break;
-            case 4:
-                printf("Thursday");
-                break;
-            case 5:
-                printf("Friday");
-                break;
-            case 6:
-                printf("Saturday");
-                break;
-            case 7:
-                printf("Sunday");
-                break;
-            }
-            return 0;
+    <p class="beforee">Example:</p>
+    <pre><div class="codee">
+        <div id="div10" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        int day = 2;
+        switch (day) {
+        case 1:
+            printf("Monday");
+            break;
+        case 2:
+            printf("Tuesday");
+            break;
+        case 3:
+            printf("Wednesday");
+            break;
+        case 4:
+            printf("Thursday");
+            break;
+        case 5:
+            printf("Friday");
+            break;
+        case 6:
+            printf("Saturday");
+            break;
+        case 7:
+            printf("Sunday");
+            break;
         }
-        </code></pre></div>
-    </p>
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div10')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     
     <div id="sub2"></div>
 
@@ -328,28 +410,44 @@
     <h5 class="fs-5 fw-bold">While Loop</h5>
     <p><code class="fs-6">While</code> loop loops through a block of code as 
         long as the specified condition is true.</p>
-    <p>
-        Syntax:<div class=' codee'>
-        <pre><code class="fs-6 ">
-        while (condition) {
-            // code block to be executed
+        <p class="beforee">Example:</p>
+
+        <pre><div class="codee">
+            <div id="div11" class="kode">
+            <code class="fs-6">
+    while (condition) {
+        // code block to be executed
+    }
+            </code>
+          </div>
+
+<div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div11')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
+        <p class="beforee">Example:</p>
+
+        <pre><div class="codee">
+            <div id="div12" class="kode">
+            <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        int a = 1;
+        while(a&lt;5){
+            printf("a is %d\n", a);
+            a++;
         }
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            int a = 1;
-            while(a&lt;5){
-	            printf("a is %d\n", a);
-	            a++;
-            }
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+        return 0;
+    }
+            </code>
+          </div>
+
+<div class="copy">
+  <button class='fs-6' onclick="copyDivToClipboard('div12')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+        </pre>
     <p>
         The loop in the example will produce the output below:
     </p>
@@ -377,28 +475,46 @@
         while <code class="fs-6">do-while</code> loop runs at least once in every condition 
         (even if the condition is false).
     </p>
-    <p>
-        Syntax:<div class=' codee'>
-        <pre><code class="fs-6 ">
-        do {
-            // code block to be executed
-        }while (condition);
-        </code></pre></div>
-    </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            int a = 1;
-            do{
-	        printf("Hello!");
-	        a++;
-            } while (a&lt;1);
-            return 0;
-        }
-        </code></pre></div>
-    </p>
+    <p class="beforee">Syntax:</p>
+
+    <pre><div class="codee">
+        <div id="div13" class="kode">
+        <code class="fs-6">
+    do {
+        // code block to be executed
+    }while (condition);
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div13')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
+
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div14" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        int a = 1;
+        do{
+        printf("Hello!");
+        a++;
+        } while (a&lt;1);
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div14')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>   
+    
     <p>
         The example loop above will still run once, even if the condition is false.
         If we use a <code class="fs-6">while</code> loop in this example, the loop will not run.
@@ -408,43 +524,60 @@
 
     <h5 class="fs-5 fw-bold">For Loop</h5>
     <p><code class="fs-6">For</code> loop is used when we know how many times we want to loop through a block.</p>
-    <p>
-        Syntax:<div class=' codee'>
-        <pre><code class="fs-6 language-c">
-        for (statement 1; statement 2; statement 3) {
-            // code block to be executed
-        }
-        </code></pre></div>
-    </p>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div15" class="kode">
+        <code class="fs-6 language-c">
+    for (statement 1; statement 2; statement 3) {
+        // code block to be executed
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div15')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
+    
     <ul>
         <li>Statement 1 is the initialization of the loop condition.</li>
         <li>Statement 2 is the condition that has to be met to enable the looping process.</li>
         <li>Statement 3 is executed (every time) after a code block has been executed. 
         Statement 3 is usually an increment or decrement of a value.</li>
     </ul>
-    <p>
-        Example:<div class="codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            for(int i = 0; i&lt;5 ; i++){
-                printf("Hello");
-            }
-            return 0;
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div16" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        for(int i = 0; i&lt;5 ; i++){
+            printf("Hello");
         }
-        </code></pre></div>
-    </p>
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div16')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     <p>The output of the program above will be a “Hello” text repeated five times.</p>
     <p><b>Code explanation:</b></p>
     <ul>
-        <li>Statement 1 initializes the variable i = 0</li>
+        <li>Statement 1 initializes the variable <code class="fs-6">i = 0</code></li>
         <li>Statement 2 specifies the condition for the loop. 
             If the condition is true, then the looping will keep happening.</li>
         <li>
             Statement 3 increases the value of i each time the code block has been executed. 
             So, each time a code block has been executed, the value of i also increases by 1. 
-            Then, when the code already runs 5 times (the value of i = 5), 
-            the loop will stop (because the condition of i&lt;5 is not true anymore). 
+            Then, when the code already runs 5 times (the value of <code class="fs-6">i = 5</code>), 
+            the loop will stop (because the condition of <code class="fs-6">i&lt;5</code> is not true anymore). 
         </li>
     </ul>
 
@@ -455,23 +588,31 @@
         As seen before, a <code class="fs-6">break</code> statement is used to jump out of a <code class="fs-6">switch</code> statement.
         A <code class="fs-6">break</code> statement can also be used to jump out of a loop. 
     </p>
-    <p>
-        Example:<div class="codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            int a = 1;
-            while(a&lt;10){
-	        printf("Hello!");
-	        if(a == 4){
-		    break;
-                }
-                a++;
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div17" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        int a = 1;
+        while(a&lt;10){
+        printf("Hello!");
+        if(a == 4){
+        break;
             }
-            return 0;
+            a++;
         }
-        </code></pre></div>
-    </p>
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div17')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     <p>
         The code above will produce the output of <code class="fs-6">Hello!</code> printed 4 times.
         When the variable <code class="fs-6">a</code> reaches 4, it will automatically jump out of the loop,
@@ -483,24 +624,32 @@
         The <code class="fs-6">continue</code> statement is used to skip the rest of the code and jump
         to the next iteration in the loop.
     </p>
-    <p>
-        Example:<div class="codee">
-        <pre><code class="fs-6 ">
-        #include&lt;stdio.h&gt;
-        int main() {
-            for(int i=0; i&lt;5; i++){
-                if(i == 3){
-                    continue;
-                }
-                printf("%d", i);
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div18" class="kode">
+        <code class="fs-6">
+    #include&lt;stdio.h&gt;
+    int main() {
+        for(int i=0; i&lt;5; i++){
+            if(i == 3){
+                continue;
             }
-            return 0;
+            printf("%d", i);
         }
-        </code></pre></div>
-    </p>
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div18')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+    </pre>
     <p>
         If we run the code above, we will get the output
-        “0124” with no '3'. This is because when i reaches 3,
+        “0124” with no '3'. This is because when <code class="fs-6">i</code> reaches 3,
         we use the <code class="fs-6">continue</code> statement to skip the rest of the loop and 
         move on to the next iteration (<code class="fs-6">i = 4</code>).
     </p>

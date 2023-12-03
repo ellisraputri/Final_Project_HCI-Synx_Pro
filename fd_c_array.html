@@ -141,7 +141,7 @@ int myNumber[] = {1,2,3,4,5};
       </code>
     </div>
 
-<div class="copy" value="div1">
+<div class="copy" >
 <button class='fs-6' onclick="copyDivToClipboard('div1')"><i class="fa-regular fa-copy"></i>  Copy</button>
 </div>
 </div>
@@ -149,12 +149,19 @@ int myNumber[] = {1,2,3,4,5};
     <p>
         Syntax2: <code class="fs-6">array_type array_name[array_size];</code>
     </p>
-    <p>
-        Example:<div class=" codee">
-        <pre><code class="fs-6 ">int yourNumber[6];</code></pre></div>
-    </p>
+    <pre><div class="codee"><div id="div2" class="kode">
+      <code class="fs-6">
+int yourNumber[6];
+      </code>
+    </div>
 
-    <pre></pre><pre></pre><pre></pre>
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div2')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+  </pre>
+
+    <pre></pre><pre></pre>
 
     <h5 class="fs-5 fw-bold">Access and Set the Values of Elements of an Array</h5>
     <p>To access an array's element, we need to refer to its index number. 
@@ -162,70 +169,85 @@ int myNumber[] = {1,2,3,4,5};
     </p>
     <p>
         Syntax: <code class="fs-6">array_name[index_number] = new_value;</code>
-    </p>
+        <br/> Example:
+      </p>
+    <pre><div class="codee"><div id="div3" class="kode">
+      <code class="fs-6 language-c">
+myNumber[0] = 10;
+      </code>
+    </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div3')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+</div>
+  </pre>
     <p>
-        Example:<div class="codee">
-        <pre><code class="fs-6 language-c">myNumber[0] = 10;</code></pre></div>
-    </p>
-    <p>
-        If the array's elements are still not defined like in the yourNumber array in syntax2 in defining array, 
+        If the array's elements are still not defined like in the <code class="fs-6">yourNumber</code> array in <code class="fs-6">syntax2</code> in defining array, 
         then the system will automatically set the values according to the new value.
     </p>
-    <p>
-        <p class="beforee">Example code:</p>
-        <div class="codee2">
-        <pre>
-        <code class="fs-6">
-        #include &lt;stdio.h&gt;
+    <p class="beforee">Example:</p>
 
-        int main() {
-            int myNumber[] = {25, 50, 75, 100};
-            int yourNumber[4]; 
-            //yourNumber doesn't contain any value
-            //you can't change the size of the array after creation
-            
-            myNumber[0] = 30; //change the value 25 to 30
-            //myNumber will contain 30,50,75,100 now
-            
-            yourNumber[0] = 40;
-            yourNumber[1] = 50;
-            yourNumber[2] = 45;
-            yourNumber[3] = 55;
-            //yourNumber will contain 40,50,45,55 now
-            
-            return 0;
-        }
+    <pre><div class="codee">
+        <div id="div4" class="kode">
+        <code class="fs-6">
+    #include &lt;stdio.h&gt;
+
+    int main() {
+        int myNumber[] = {25, 50, 75, 100};
+        int yourNumber[4]; 
+        //yourNumber doesn't contain any value
+        //you can't change the size of the array after creation
+        
+        myNumber[0] = 30; //change the value 25 to 30
+        //myNumber will contain 30,50,75,100 now
+        
+        yourNumber[0] = 40;
+        yourNumber[1] = 50;
+        yourNumber[2] = 45;
+        yourNumber[3] = 55;
+        //yourNumber will contain 40,50,45,55 now
+        
+        return 0;
+    }
         </code>
-        </pre>
-        </div>
-    </p>
-    
-    <pre></pre>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div4')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
+
 
     <h5 class="fs-5 fw-bold">Loop through an Array</h5>
-    <p>You can loop through the array elements with the for loop.
-        For loop will be explained in the conditional and loops page.
+    <p>You can loop through the array elements with the <code class="fs-6">for</code> loop.
+      <code class="fs-6">for</code> loop will be explained in the conditional and loops page.
     </p>
-    <p>
-        <p class="beforee">Example code:</p>
-        <div class="codee">
-        <pre>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee">
+        <div id="div5" class="kode">
         <code class="fs-6">
-        #include &lt;stdio.h&gt;
+    #include &lt;stdio.h&gt;
 
-        int main() {
-            int myNumbers[] = {25, 50, 75, 100};
-            int i;
+    int main() {
+        int myNumbers[] = {25, 50, 75, 100};
+        int i;
 
-            for (i = 0; i &lt; 4; i++) {
-                printf("%d\n", myNumbers[i]);
-            }
-            return 0;
-        } 
+        for (i = 0; i &lt; 4; i++) {
+            printf("%d\n", myNumbers[i]);
+        }
+        return 0;
+    } 
         </code>
-        </pre>
-        </div>
-    </p>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div5')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
 
     <div id="sub2" class="afterr"></div>
     <h4 class="fs-3 kanit header">Structures</h4>
@@ -238,24 +260,28 @@ int myNumber[] = {1,2,3,4,5};
         Use the <code class="fs-6">struct</code> keyword inside the <code class="fs-6">main()</code> method,
         followed by the name of the structure and then the name of the structure variable:
     </p>
-    <p>
-        <p class="beforee">Syntax:</p>
-        <div class="codee">
-        <pre>
-        <code class="fs-6">
-        struct struct_name{
-            Variable_type1 variable_name1;
-            Variable_type2 variable_name2;
-            …
-        };
+    <p class="beforee">Syntax:</p>
 
-        int main(){
-            Struct struct_name structure_variable_name;
-        }
+    <pre><div class="codee">
+        <div id="div6" class="kode">
+        <code class="fs-6">
+    struct struct_name{
+        Variable_type1 variable_name1;
+        Variable_type2 variable_name2;
+        …
+    };
+
+    int main(){
+        Struct struct_name structure_variable_name;
+    }
         </code>
-        </pre>
-        </div>
-    </p>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div6')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
 
     <pre></pre>
     <p class="afterr">
@@ -267,22 +293,25 @@ int myNumber[] = {1,2,3,4,5};
     </p>
     <p>
         For string, as it is an array of characters, when we want to access them,
-        we have to use strcpy instead of just assigning it with the operator “=”. 
+        we have to use <code class="fs-6">strcpy</code> instead of just assigning it with the operator <code class="fs-6">=</code>. 
         To use the function <code class="fs-6">strcpy()</code>, 
         we need to include the header file <code class="fs-6">&lt;string.h&gt;</code>.
     </p>
-    <p>
-        <p class="beforee">Syntax:</p>
-        <div class="codee2">
-        <pre>
+    <p class="beforee">Syntax:</p>
+
+    <pre><div class="codee2">
+        <div id="div7" class="kode">
         <code class="fs-6">
-        #include &lt;string.h&gt;
-            strcpy(structure_variable_name.variable_name1, "text");
+    #include &lt;string.h&gt;
+      strcpy(structure_variable_name.variable_name1, "text");
         </code>
-        </pre>
-        </div>
-    </p>
-    <pre></pre><pre></pre>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div7')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
 
     <p class="afterr">
         We can also assign values to multiple variables at once with this syntax.
@@ -291,54 +320,61 @@ int myNumber[] = {1,2,3,4,5};
         Syntax: <code class="fs-6">struct struct_name structure_variable_name = {value1, value2, …, valuen};</code>
     </p>
     <p>We can also assign the values of a structure variable to another structure variable.</p>
-    <p>
-        <p class="beforee">Syntax:</p>
-        <div class="codee2">
-        <pre>
-        <code class="fs-6">
-        struct struct_name structure_variable_name1 = {value1, …};
-        struct struct_name structure_variable_name2;
-        
-        structure_variable_name2 = structure_variable_name1;
-        </code>
-        </pre>
-        </div>
-    </p>
-    <pre></pre>
+    <p class="beforee">Example:</p>
 
-    <p>
-        <p class="beforee">Example code:</p>
-        <div class="codee2">
-        <pre>
+    <pre><div class="codee2">
+        <div id="div8" class="kode">
         <code class="fs-6">
-        #include &lt;stdio.h&gt;
-
-        struct Phone {
-            int price;
-            char brand[10];
-            int year;
-        };
-        
-        int main() {
-            struct Phone phone1 = {5000, "Aster", 2019};
-            struct Phone phone2 = {3000, "Bianca", 2022};
-            struct Phone phone3 = {2000, "Charlie", 2021};
-            struct Phone phone4;
-            
-            phone4 = phone3; //assign the value of phone3 to phone4
-            phone4.year = 2022; //change phone4's year to 2022
-            
-            printf("%d %s %d\n", phone1.price, phone1.brand, phone1.year);
-            printf("%d %s %d\n", phone2.price, phone2.brand, phone2.year);
-            printf("%d %s %d\n", phone3.price, phone3.brand, phone3.year);
-            printf("%d %s %d\n", phone4.price, phone4.brand, phone4.year);
-        
-            return 0;
-        }
+    struct struct_name structure_variable_name1 = {value1, …};
+    struct struct_name structure_variable_name2;
+    
+    structure_variable_name2 = structure_variable_name1;
         </code>
-        </pre>
-        </div>
-    </p>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div8')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
+
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee2">
+        <div id="div9" class="kode">
+        <code class="fs-6">
+    #include &lt;stdio.h&gt;
+
+    struct Phone {
+        int price;
+        char brand[10];
+        int year;
+    };
+    
+    int main() {
+        struct Phone phone1 = {5000, "Aster", 2019};
+        struct Phone phone2 = {3000, "Bianca", 2022};
+        struct Phone phone3 = {2000, "Charlie", 2021};
+        struct Phone phone4;
+        
+        phone4 = phone3; //assign the value of phone3 to phone4
+        phone4.year = 2022; //change phone4's year to 2022
+        
+        printf("%d %s %d\n", phone1.price, phone1.brand, phone1.year);
+        printf("%d %s %d\n", phone2.price, phone2.brand, phone2.year);
+        printf("%d %s %d\n", phone3.price, phone3.brand, phone3.year);
+        printf("%d %s %d\n", phone4.price, phone4.brand, phone4.year);
+    
+        return 0;
+    }
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div9')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
 
     <pre></pre>
     <p class="afterr">
@@ -362,19 +398,24 @@ int myNumber[] = {1,2,3,4,5};
         C does not have a string type variable,
         so we have to use array of characters when we want to make a string variable.
     </p>
-    <p>
-        <p class="beforee">Syntax:</p>
-        <div class="codee2">
-        <pre>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee2">
+        <div id="div10" class="kode">
         <code class="fs-6">
-        char variable_name1[] = "text";
-        char variable_name2[] = {'t', 'e', 'x', 't', '\0'};
+    char variable_name1[] = "text";
+    char variable_name2[] = {'t', 'e', 'x', 't', '\0'};  
         </code>
-        </pre>
-        </div>
-    </p>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div10')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
+  
     <p class="afterr">
-        Every C string has a null character inside them so the size of the string “some text”
+        Every C string has a null character inside them so the size of the string <code class="fs-6">“some text”</code>
         is not 9, but instead 10. We can use <code class="fs-6">sizeof(variable_name)</code> 
         in the <code class="fs-6">printf</code> statement to know the array size.
         If we assign it like how we assign <code class="fs-6">variable_name2</code>,
@@ -385,45 +426,56 @@ int myNumber[] = {1,2,3,4,5};
         you can use the same method when we modify the array earlier.
         You can also loop through strings with for loops because they are arrays.
     </p>
-    <p>
-        <p class="beforee">Syntax:</p>
-        <div class="codee">
-        <pre>
-        <code class="fs-6">
-        char variable_name1[] = "some text";
-        Variable_name1[index_number] = 'value';
-        </code>
-        </pre>
-        </div>
-    </p>
-    <pre></pre><pre></pre><pre></pre>
-    <p class="afterr">
-        <p class="beforee">Example code:</p>
-        <div class="codee3">
-        <pre>
-        <code class="fs-6">
-        #include &lt;stdio.h&gt;
+    <p class="beforee">Syntax:</p>
 
-        int main(){
-            char string1[] = {'s', 'o', 'm', 'e', ' ', 't', 'e', 'x', 't', '\0'};
-            char string2[] = "some text";
-            
-            string2[1] = 'a'; //changing o in some to a
-            printf("%s\n", string1);  
-            
-            for (int i = 0; i&lt;sizeof(string2)-1; ++i) {
-                printf("%c,", string2[i]);
-            } 
-            
-            printf("\nSize of string1 is %lu\n", sizeof(string1));   
-            printf("Size of string2 is %lu\n", sizeof(string2));
-            return 0;
-        }
+    <pre><div class="codee">
+        <div id="div11" class="kode">
+        <code class="fs-6">
+    char variable_name1[] = "some text";
+    Variable_name1[index_number] = 'value';
         </code>
-        </pre>
-        </div>
-    </p>
-    <p class="afterr"> 
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div11')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>
+    
+        <pre></pre>
+    <p class="afterr"></p>
+    <p class="beforee">Example:</p>
+
+    <pre><div class="codee3">
+        <div id="div12" class="kode">
+        <code class="fs-6">
+    #include &lt;stdio.h&gt;
+
+    int main(){
+        char string1[] = {'s', 'o', 'm', 'e', ' ', 't', 'e', 'x', 't', '\0'};
+        char string2[] = "some text";
+        
+        string2[1] = 'a'; //changing o in some to a
+        printf("%s\n", string1);  
+        
+        for (int i = 0; i&lt;sizeof(string2)-1; ++i) {
+            printf("%c,", string2[i]);
+        } 
+        
+        printf("\nSize of string1 is %lu\n", sizeof(string1));   
+        printf("Size of string2 is %lu\n", sizeof(string2));
+        return 0;
+    } 
+        </code>
+      </div>
+
+<div class="copy">
+<button class='fs-6' onclick="copyDivToClipboard('div12')"><i class="fa-regular fa-copy"></i>  Copy</button>
+</div>
+      </div>
+    </pre>  
+        
+        <p class="afterr"> 
         <p class="beforee">Output:</p>
         <div class=" codee">
         <pre>
