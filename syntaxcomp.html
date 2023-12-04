@@ -552,7 +552,7 @@
             <li>Names must begin with a letter or an underscore (_)</li>
             <li>Names are case-sensitive (lowercase and uppercase letters have different meanings)</li>
             <li>Names cannot contain whitespaces or special characters ($, #, %, etc.)</li>
-            <li>Names cannot contain reserved words, such as int, printf, etc.</li>
+            <li>Names cannot contain reserved words, such as <code class="fs-6">int</code>, <code class="fs-6">printf</code>, etc.</li>
           </ul>
           <pre></pre>
             <a href="fd_c_variable.html#sub2" style="text-decoration: none;">
@@ -570,7 +570,7 @@
             <li>Names must begin with a letter or an underscore (_)</li>
             <li>Names are case-sensitive (lowercase and uppercase letters have different meanings)</li>
             <li>Names cannot contain whitespaces or special characters ($, #, %, etc.)</li>
-            <li>Names cannot contain reserved words, such as int, float, etc.</li>
+            <li>Names cannot contain reserved words, such as <code class="fs-6">int</code>, <code class="fs-6">float</code>, etc.</li>
         </ul>
         <pre></pre>
             <a href="fd_cpp_variable.html#sub2" style="text-decoration: none;">
@@ -588,7 +588,7 @@
           <li>Names must begin with a letter or an underscore (_)</li>
           <li>Names are case-sensitive (lowercase and uppercase letters have different meanings)</li>
           <li>Names cannot contain whitespaces or special characters ($, #, %, etc.)</li>
-          <li>Names cannot contain reserved words, such as int, float, etc.</li>
+          <li>Names cannot contain reserved words, such as <code class="fs-6">int</code>, <code class="fs-6">float </code>, etc.</li>
       </ul>
       <pre></pre>
       <a href="fd_py_variable.html#sub2" style="text-decoration: none;">
@@ -1196,7 +1196,7 @@
       </div>
     </p>
     <pre></pre>
-    <a href="fd_py_input_output.html#sub3" style="text-decoration: none;">
+    <a href="fd_c_input_output.html#sub3" style="text-decoration: none;">
       <button class="arrow-button float-end">Click here to learn more!
       <span class="arrow"></span></button>
     </a>
@@ -2826,6 +2826,10 @@
         Syntax: <code class="fs-6">array_name[index_number] = new_value;</code>
     </p>
     </div>
+    <a href="fd_c_array.html#sub1" style="text-decoration: none;">
+      <button class="arrow-button float-end">Click here to learn more!
+      <span class="arrow"></span></button>
+    </a>
   </div>
 
   <div class=" hiding" id="Size of an ArrayC++">
@@ -3215,7 +3219,7 @@
     <div class="column2">   <!--Cpp-->
       To know a string length, we can use <code class="fs-6">size()</code> 
       function or <code class="fs-6">length()</code> function.<br/>
-      Syntax: <code class="fs-6">string1,size()</code> or
+      Syntax: <code class="fs-6">string1.size()</code> or
       <code class="fs-6">string1.length()</code>
       <pre></pre>
     <a href="fd_cpp_array.html#sub3" style="text-decoration: none;">
@@ -3609,7 +3613,7 @@
     </p>
     <pre></pre><pre></pre>
 
-    <p><b>Do-while</b></p>
+    <p><b>Do-While</b></p>
     <p>
       Syntax:<div class=' codee'>
       <pre><code class="fs-6 language-c++">
@@ -5138,7 +5142,8 @@
     <div class="column2">   <!--Cpp-->
       <p>
         To read a file, first we need to include the library <code class="fs-6">&lt;fstream&gt;</code>, 
-        then we open the file with ifstream class or fstream class.  We need to 
+        then we open the file with <code class="fs-6">ifstream</code> class or 
+        <code class="fs-6">fstream</code> class.  We need to 
         prepare a text string variable to store the file content. Then, we use 
         the <code class='fs-6'>getline()</code> function and finally, we close the file. <br>
         <span class="fw-bold">Note:</span> <code class='fs-6'>getline()</code>
@@ -5236,7 +5241,8 @@
     <div class="column2">   <!--Cpp-->
       <p>
         To create to a file, first we need to include the library <code class="fs-6">&lt;fstream&gt;</code>, then we 
-        open the file with ofstream class or fstream class. If there is no file with the file 
+        open the file with <code class="fs-6">ofstream</code> class or 
+        <code class="fs-6">fstream</code> class. If there is no file with the file 
         name we specified, then the system will automatically create a new file for us.
     </p>
     <p>
@@ -5256,7 +5262,7 @@
         </code></pre></div>
     </p>
     <pre></pre>
-    <a href="fd_cpp_file.html#sub2" style="text-decoration: none;">
+    <a href="fd_cpp_file.html#sub1" style="text-decoration: none;">
       <button class="arrow-button float-end">Click here to learn more!
       <span class="arrow"></span></button>
     </a>
@@ -5322,8 +5328,9 @@
     <div class="column2">   <!--Cpp-->
       <p>
         To write to a file, first we need to include the library <code class="fs-6">&lt;fstream&gt;</code>, then we 
-        open the file with ofstream class or fstream class. Then we use the insertion 
-        operator (&lt;&lt;) to write and finally, we close the file. 
+        open the file with <code class="fs-6">ofstream</code> class or 
+        <code class="fs-6">fstream</code> class. Then we use the insertion 
+        operator (<code class="fs-6">&lt;&lt;</code>) to write and finally, we close the file. 
     </p>
     <p>
         Syntax:<code class="fs-6"> fprintf(pointer_name, “text we want to write”);</code>
@@ -5421,7 +5428,7 @@
   <div class=" hiding" id="Append to a FileC++">
     <div class="column2">   <!--Cpp-->
       <p>
-        We can append to a file using ofstream.  But, we need to include the mode 
+        We can append to a file using <code class="fs-6">ofstream</code>.  But, we need to include the mode 
         <code class="fs-6">std::ios::app</code> in the <code class="fs-6">open()</code> function. 
     </p>
     <p>
