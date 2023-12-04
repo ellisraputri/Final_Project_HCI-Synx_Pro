@@ -17,7 +17,7 @@
              setTimeout(() => {
                 span.classList.remove('active');
                 span.classList.add('fade'); 
-             }, (span + 1) * 100);
+             }, (span + 1) * 50);
            });
         }, 5000);
  
