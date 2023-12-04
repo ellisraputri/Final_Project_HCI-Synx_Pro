@@ -245,7 +245,25 @@
     -ms-overflow-style: none;  
     scrollbar-width: none;  
   }
+
+  .cheatsheet a{
+    color: #00A4BD;
+    text-decoration: none;
+  }
+
+  .cheatsheet a:hover{
+    color: #6ee6f8;
+    text-decoration: underline;
+  }
+
+  .module{
+    color:#339ab2;
+  }
   
+  .module:hover{
+    color: rgb(41, 38, 38);
+  }
+
   @media(max-width:1280px){
     .codee{
         max-width: 85%;
@@ -277,6 +295,9 @@
     .codee{
         max-width: 100%;
     }
+    object{
+      height:400px;
+    }
   }
 
   @media (max-width:380px) {
@@ -284,4 +305,5 @@
       width: 50px;
       font-size: 14px;
     }
+
   }
