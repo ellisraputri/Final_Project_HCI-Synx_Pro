@@ -289,11 +289,15 @@
   } 
 
   .mont1{
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .imagebreak{
-    width: 15%;
+    width: 20%;
+  }
+
+  .mont-subra{
+    font-size: 10vw;
   }
 }
 
@@ -303,6 +307,9 @@
   }
   .mont1{
     font-size: 5vw;
+  }
+  .mont-subra{
+    font-size: 12vw;
   }
 }
 
