@@ -52,10 +52,6 @@
     background-color: rgba(133, 133, 133, 0.425);
 }
 
-.footer img{
-    margin: 10px;
-}
-
 .nav-item{
     margin-left: 10px;
     margin-right: 10px;
@@ -287,7 +283,7 @@
     margin-top: 10px;
   }
   
-  .arrow-button > .arrow {
+.arrow-button > .arrow {
     width: 6px;
     height: 6px;
     border-right: 2px solid white;
@@ -296,9 +292,9 @@
     transform: rotate(-45deg);
     margin: 0 6px;
     transition: all .3s ease;
-  }
-  
-  .arrow-button > .arrow::before {
+}
+
+.arrow-button > .arrow::before {
     display: block;
     background-color: currentColor;
     width: 3px;
@@ -311,22 +307,26 @@
     transition: all .3s ease;
     content: "";
     right: 0;
-  }
-  
-  .arrow-button:hover > .arrow {
+}
+
+.arrow-button:hover > .arrow {
     transform: rotate(-45deg) translate(4px, 4px);
     border-color: text-hover-color;
-  }
-  
-  .arrow-button:hover > .arrow::before {
+}
+
+.arrow-button:hover > .arrow::before {
     opacity: 1;
     width: 8px;
-  }
-  
-  .arrow-button:hover {
+}
+
+.arrow-button:hover {
     background-color: #339ab2;
     color: #fff;
-  }
+}
+
+.downsym, .upsym, .fa-caret-right{
+    margin-top: 2px;
+}
 
 @media (max-width:768px) {
     .centerin{
