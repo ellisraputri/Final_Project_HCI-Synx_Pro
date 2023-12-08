@@ -32,7 +32,7 @@ $(document).ready(function(){
 
     $(".buttonnext").click(function(){
         value+=1;
-        $('.page'+(value-1)).fadeOut(300);
+        $('.page'+(value-1)).hide("slide", { direction: "left", distance:"2%"}, 300);
         $('.page'+(value)).delay(300.001).show("slide", { direction: "right", distance:"2%"}, 300);
         $('.mid').text(value + " / 5")
         $.fn.checkvalue(value);
@@ -40,7 +40,7 @@ $(document).ready(function(){
 
     $(".buttonprev").click(function(){
         value-=1;
-        $('.page'+(value+1)).fadeOut(300);
+        $('.page'+(value+1)).hide("slide", { direction: "left", distance:"2%"}, 300);
         $('.page'+(value)).delay(300.001).show("slide", { direction: "right", distance:"2%"}, 300);
         $('.mid').text(value + " / 5")
         $.fn.checkvalue(value);
