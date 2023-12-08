@@ -20,7 +20,7 @@ background-color: #339bb223;
 }
 
 .header2{
-    color:#68a5b6;
+    color:#46b8d8;
 }
 
 .body{
@@ -128,6 +128,14 @@ button:hover{
 
 .dummy{
     height: 400px;
+}
+
+.front h3, .swiper p{
+    line-height: 2.0;
+}
+
+.swiper h6{
+    line-height: 1.5;
 }
 
 
