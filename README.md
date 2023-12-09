@@ -20,6 +20,8 @@
 ## Project Description
 Synx Pro is a website that helps beginner programmers learn about new programming languages. Synx Pro provides four main features to familiarize beginner programmers to programming languages they want to learn. The main features are function dictionaries, syntax comparison, tips and tricks, and FAQs. For now, Synx Pro also only has the programming languages C, C++, and Python. Besides them, there is also the home page that functions as the landing page for users when they open Synx Pro for the first time.
 
+<br>
+
 ## Contents
 <details>
 <summary>&ensp;<b>Home Page</b></summary>
@@ -106,7 +108,6 @@ Synx Pro is a website that helps beginner programmers learn about new programmin
 - _Unique features:_
     - Clickable and interactive accordion bars.
 
-<br>
 </details>
 
 <br>
@@ -155,7 +156,7 @@ Synx Pro is a website that helps beginner programmers learn about new programmin
 - **syncomp.js** : Javascript for Syntax Comparison page
 - **tips.js** : Javascript for Tips and Tricks pages
 
-<br>
+
 </details>
 
 <br>
