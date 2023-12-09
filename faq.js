@@ -63,9 +63,26 @@ $(document).ready(function(){
 
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
+    input = document.getElementById("myInput2");
     filter = input.value.toUpperCase();
     ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+function myFunctionMobile() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL2");
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
@@ -91,20 +108,24 @@ $(document).ready(function(){
             $('#findA').toggleClass('findIcon');
         });
     }
+
     $("#myInput2").focus(function(){
         $("#myUL li a").css("display","block");
-      });
-      $("#myInput2").blur(function(){
-        $("#myUL li a").css("display","none");
+        $('#ico2').css("display","block");
     });
 
+    $("#ico2").click(function(){
+        $("#myUL li a").css("display","none");
+        $('#ico2').css("display","none");
+    });
+    
 
     //ipad and mobile
     $("#myInput").focus(function(){
-        $("#myUL li a").css("display","block");
+        $("#myUL2 li a").css("display","block");
       });
       $("#myInput").blur(function(){
-        $("#myUL li a").css("display","none");
+        $("#myUL2 li a").css("display","none");
         $('.input-search').css("display","none");
       });
     

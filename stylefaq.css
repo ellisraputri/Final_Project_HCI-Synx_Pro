@@ -113,6 +113,10 @@
 .findIcon{
     margin-top: 12px;
 }
+#ico2{
+    display: none;
+    margin-top: 10px;
+}
 
 #findA{
     margin-top: 10px;
@@ -129,28 +133,59 @@
 #myUL {
     list-style-type: none;
     padding: 0;
-    right: 25px;
+    margin-left: 57%;
     position: fixed;
     overflow-y: scroll;
     max-height: 100vh;
+    z-index: 3;
 }
 
+@media (max-width:1850px){
+    #myUL {
+        margin-left: 60%;
+    }
+}
+@media (max-width:1750px){
+    #myUL {
+        margin-left: 64%;
+    }
+} 
+@media (max-width:1650px){
+    #myUL {
+        margin-left: 68%;
+    }
+} 
+@media (max-width:1550px){
+    #myUL {
+        margin-left: 73%;
+    }
+} 
+@media (max-width:1450px){
+    #myUL {
+        margin-left: 78%;
+    }
+} 
+@media (max-width:1350px){
+    #myUL {
+        margin-left: 83%;
+    }
+} 
 
 #myUL li a {
-    border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6;
+    border: 1px solid rgb(76, 77, 80);
+    margin-top: -1px; 
+    background-color: rgb(34,37,41);
     padding: 12px;
     text-decoration: none;
     font-size: 18px;
-    color: black;
+    color: white;
     display: none;
     width: 210px;
     text-align: center;
 }
 
 #myUL li a:hover:not(.header) {
-    background-color: #eee; 
+    background-color: rgb(76, 77, 80); 
 }
 
 
@@ -179,14 +214,63 @@
 }
 .input-search input {
     width: 100%;
+    border: none;
 }
 .input-search div {
-    margin-left: 20px; /* Adjust as needed */
+    margin-left: 20px; 
+    border: 0px;
 }
 
 #findB{
-    margin-right: 50vw;
+    margin-right: 70vw;
 }
+
+@media (max-width:915px) {
+    #findB{
+        margin-right: 50vw;
+    }
+}
+@media (max-width:552px) {
+    #findB{
+        margin-right: 35vw;
+    }
+}
+@media (max-width:425px) {
+    #findB{
+        margin-right: 1vw;
+    }
+}
+
+#myUL2 {
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    overflow-y: scroll;
+    max-height: 100vh;
+    z-index: 6;
+    width: 100%;
+    position: fixed;
+}
+
+#myUL2 li a {
+    border: 1px solid rgb(76, 77, 80);
+    margin-top: -1px; 
+    background-color: rgb(34,37,41);
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: none;
+    width: 100%;
+    z-index: 7;
+    text-align: center;
+}
+
+#myUL2 li a:hover:not(.header) {
+    background-color: rgb(76, 77, 80); 
+}
+
+
 
 
 @media (max-width:768px) {
