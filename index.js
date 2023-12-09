@@ -49,6 +49,8 @@
     $('#' + tab).show();
   });
 
+  
+
 });
 
 
@@ -75,20 +77,24 @@
 //Send Mails
 var fields={};
 let msg = 'Please recheck and refill:\n';
+$(".spin").hide();
 
 document.addEventListener("DOMContentLoaded", function() {
   fields.fullName = document.getElementById('full_name');
   fields.email = document.getElementById('emails');
   fields.message = document.getElementById('message');
 })
+
 function isNotEmpty(value) {
   if (value == null || typeof value == 'undefined' ) return false;
   return (value.length > 0);
 }
+
 function isEmail(email) {
   let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
   return regex.test(String(email).toLowerCase());
 }
+
 function fieldValidation(field, validationFunction) {
   if (field == null){
     return false;
@@ -106,14 +112,14 @@ function fieldValidation(field, validationFunction) {
   }
   return isFieldValid;
 }
+
 function isValid() {
   var valid = true;
-  
+  msg='Please recheck and refill:\n'
   valid &= fieldValidation(fields.fullName, isNotEmpty);
   valid &= fieldValidation(fields.email, isEmail);
   valid &= fieldValidation(fields.message, isNotEmpty);
-  alert(msg)
-  msg='Please recheck and refill:\n'
+  
   return valid;
 }
 
@@ -133,16 +139,22 @@ function sendMail() {
   const templateID = "template_bgjsff5";
 
   if(isValid()){
+    $(".submitt").delay(100).hide();
+    $('.spin').delay(300).show();
     emailjs.send(serviceID, templateID, params)
     .then(res=>{
         document.getElementById("full_name").value = "";
         document.getElementById("emails").value = "";
         document.getElementById("message").value = "";
-        console.log(res);
         alert("Your message sent successfully!")
+        $(".submitt").delay(200).show();
+        $('.spin').hide();
 
     })
     .catch(err=>console.log(err));
+  }
+  else{
+    alert(msg);
   }
     
 
