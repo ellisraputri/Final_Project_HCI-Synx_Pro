@@ -59,3 +59,38 @@ $(document).ready(function(){
         $('.page').removeAttr('data-aos-delay');
     }
 });
+
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+let width = screen.width;
+
+$(document).ready(function(){
+  $("#myInput").focus(function(){
+    $("#myUL li a").css("display","block");
+  });
+  $("#myInput").blur(function(){
+    $("#myUL li a").css("display","none");
+  });
+
+  $('#findB').click(function(){
+    $('#myInput').toggle();
+  });
+
+
+});
