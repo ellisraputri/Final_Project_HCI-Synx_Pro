@@ -108,6 +108,13 @@
     font-weight: bolder;
 }
 
+.page a{
+    color: rgba(255, 255, 255, 0.762);
+}
+.page a:hover{
+   color: #46b8d8;
+}
+
 
 /*searchbar desktop*/
 .findIcon{
