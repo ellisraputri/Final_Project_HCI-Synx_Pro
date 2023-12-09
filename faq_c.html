@@ -26,12 +26,14 @@
         <a class="navbar-brand text-uppercase" href="index.html">
           <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
         </a>
-        <form class="d-flex form11" role="search">
-          <i class="fa-solid fa-magnifying-glass" id='findA' style="color: #ffffff;"></i>
+        <form class="d-xxl-none d-xl-none d-md-flex d-lg-flex d-sm-flex d-xs-flex form11" role="search">
           <i class="fa-solid fa-magnifying-glass" id='findB' style="color: #ffffff;"></i>
-          <input class="form-control me-2" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for topics.." 
-          title="Type in a topic">
+          <div class="input-search">
+            <i class="fa-solid fa-xmark ico"></i>            
+              <div><input class="form-control" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search topics..."title="Type in a topic"></div>     
+          </div>
         </form>
+
         <button class="navbar-toggler button11" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,6 +70,11 @@
               </ul>
             </li>             
           </ul>
+          <form class="d-xxl-flex d-xl-flex d-md-none d-lg-none d-sm-none d-xs-none role="search">
+            <i class="fa-solid fa-magnifying-glass" id='findA' style="color: #ffffff;"></i>
+            <input class="form-control me-2" type="text" id="myInput2" onkeyup="myFunction()" placeholder="Search topics..." 
+            title="Type in a topic">
+          </form>
         </div>
       </div>
     </nav>

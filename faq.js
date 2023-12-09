@@ -78,19 +78,40 @@ function myFunction() {
     }
 }
 
-let width = screen.width;
-
 $(document).ready(function(){
-  $("#myInput").focus(function(){
-    $("#myUL li a").css("display","block");
-  });
-  $("#myInput").blur(function(){
-    $("#myUL li a").css("display","none");
-  });
+    //desktop
+    var is_1300 = false;
+    if( $('#myInput2').css('display')=='none') {
+        is_1300 = true;       
+    }
 
-  $('#findB').click(function(){
-    $('#myInput').toggle();
-  });
+    if (is_1300 == true) {
+        $('#findA').click(function(){
+            $('#myInput2').toggle();
+            $('#findA').toggleClass('findIcon');
+        });
+    }
+    $("#myInput2").focus(function(){
+        $("#myUL li a").css("display","block");
+      });
+      $("#myInput2").blur(function(){
+        $("#myUL li a").css("display","none");
+    });
 
 
+    //ipad and mobile
+    $("#myInput").focus(function(){
+        $("#myUL li a").css("display","block");
+      });
+      $("#myInput").blur(function(){
+        $("#myUL li a").css("display","none");
+        $('.input-search').css("display","none");
+      });
+    
+      $('#findB').click(function(){
+        $('.input-search').show();
+      });
+      $('.ico').click(function(){
+        $('.input-search').hide();
+      });
 });
