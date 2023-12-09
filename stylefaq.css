@@ -42,8 +42,9 @@
 .footer p{
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
-}
+    margin-left: 12px;
+    font-family: 'Montserrat';
+  }
 
 .bg-plblack{
     background-color: rgba(0, 0, 0, 0.328);
