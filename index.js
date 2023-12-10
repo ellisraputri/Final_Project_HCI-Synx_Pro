@@ -77,10 +77,6 @@
     $("#myInput").focus(function(){
         $("#myUL2 li a").css("display","block");
       });
-      $("#myInput").blur(function(){
-        $("#myUL2 li a").css("display","none");
-        $('.input-search').css("display","none");
-      });
     
       $('#findB').click(function(){
         $('.input-search').show();
