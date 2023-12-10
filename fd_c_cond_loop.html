@@ -17,52 +17,439 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="topnav">
-        <nav class="navbar navbar-expand-xl tosca fixed-top">
-          <div class="container-fluid fw-bold tata">
-            <a class="navbar-brand text-uppercase" href="index.html">
-              <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-white"  href="index.html">Home</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="syntaxcomp.html">Syntax Comparison</a>
-                </li>
-                <li class="nav-item dropdown underline11">
-                  <a class="nav-link text-white dropdown-toggle under" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
-                  <ul class="dropdown-menu menuactive">
-                    <li><a class="dropdown-item active " aria-current="page" style="background-color: #339ab2;" href="fd_c_home.html">C</a></li> 
-                    <li><a class="dropdown-item" href="fd_cpp_home.html">C++</a></li>
-                    <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
-                  <ul class="dropdown-menu tosca-hover">
-                    <li><a class="dropdown-item" href="tips_c.html">C</a></li>
-                    <li><a class="dropdown-item" href="tips_cpp.html">C++</a></li>
-                    <li><a class="dropdown-item" href="tips_py.html">Python</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="faq_c.html">C</a></li>
-                    <li><a class="dropdown-item" href="faq_cpp.html">C++</a></li>
-                    <li><a class="dropdown-item" href="faq_py.html">Python</a></li>
-                  </ul>
-                </li>             
-              </ul>
-            </div>
+  <div class="topnav">
+    <nav class="navbar navbar-expand-xl tosca fixed-top">
+      <div class="container-fluid fw-bold">
+        <a class="navbar-brand text-uppercase" href="index.html">
+          <img height='50px' src="all-time pict/logo_synx_pro.png" alt="Synx Pro"/>
+        </a>
+        <form class="d-xxl-none d-xl-none d-md-flex d-lg-flex d-sm-flex d-xs-flex form11" role="search">
+          <i class="fa-solid fa-magnifying-glass" id='findB' style="color: #ffffff;"></i>
+          <div class="input-search">
+            <i class="fa-solid fa-xmark ico"></i>            
+              <div><input class="form-control" type="text" id="myInput" onkeyup="myFunctionMobile()" placeholder="Search topics..."title="Type in a topic"></div>     
           </div>
-        </nav>
+        </form>
+
+        <button class="navbar-toggler button11" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white"  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white"  href="syntaxcomp.html">Syntax Comparison</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Function Dictionary</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active " style="background-color: #339ab2;" aria-current="page"  href="fd_c_home.html">C</a></li>
+                <li><a class="dropdown-item" href="fd_cpp_home.html">C++</a></li>
+                <li><a class="dropdown-item" href="fd_py_home.html">Python</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">Tips and Trick</a>
+              <ul class="dropdown-menu tosca-hover">
+                <li><a class="dropdown-item "  href="tips_c.html">C</a></li>
+                <li><a class="dropdown-item" href="tips_cpp.html">C++</a></li>
+                <li><a class="dropdown-item" href="tips_py.html">Python</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown underline11">
+              <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">FAQ</a>
+              <ul class="dropdown-menu menuactive">
+                <li><a class="dropdown-item"  href="faq_c.html">C</a></li>
+                <li><a class="dropdown-item" href="faq_cpp.html">C++</a></li>
+                <li><a class="dropdown-item" href="faq_py.html">Python</a></li>
+              </ul>
+            </li>             
+          </ul>
+          <form class="d-xxl-flex d-xl-flex d-md-none d-lg-none d-sm-none d-xs-none" role="search">
+            <i class="fa-solid fa-magnifying-glass" id='findA' style="color: #ffffff;"></i>
+            <input class="form-control me-2" type="text" id="myInput2" onkeyup="myFunction()" placeholder="Search topics..." 
+            title="Type in a topic"> 
+            <i class="fa-solid fa-xmark" id="ico2"></i>
+          </form>
+           
+        </div>
       </div>
+    </nav>
+  </div>
+  <pre></pre> 
+  <ul id="myUL">
+    <br/><br/><pre></pre>
+    <li><a href="index.html">Homepage</a></li>
+    <li><a href="syntaxcomp.html">Syntax Comparison</a></li>
+    
+    <!-- C -->
+    <li><a href="fd_c_home.html">Introduction C</a></li>
+    <li><a href="fd_c_home.html">Basic Syntax C</a></li>
+    <li><a href="fd_c_variable.html">Variable and Data Type C</a></li>
+    <li><a href="fd_c_variable.html#sub1">Data Type C</a></li>
+    <li><a href="fd_c_variable.html#sub2">Variable Name C</a></li>
+    <li><a href="fd_c_variable.html#sub3">Creating Variable C</a></li>
+    <li><a href="fd_c_variable.html#sub4">Assign Value to Variable C</a></li>
+    <li><a href="fd_c_variable.html#sub5">Casting C</a></li>
+    <li><a href="fd_c_variable.html#sub6">Variable Scope C</a></li>
+    
+    <li><a href="fd_c_input_output.html">Input Output C</a></li>
+    <li><a href="fd_c_input_output.html#sub1">Output C</a></li>
+    <li><a href="fd_c_input_output.html#sub2">Input C</a></li>
+    <li><a href="fd_c_input_output.html#sub3">Comments C</a></li>
+    <li><a href="fd_c_input_output.html#sub4">Escape Sequences C</a></li>
+    
+    <li><a href="fd_c_operator.html">Operators C</a></li>
+    <li><a href="fd_c_operator.html#sub1">Arithmetic Operators C</a></li>
+    <li><a href="fd_c_operator.html#sub2">Assignment Operators C</a></li>
+    <li><a href="fd_c_operator.html#sub3">Comparison Operators C</a></li>
+    <li><a href="fd_c_operator.html#sub4">Logical Operators C</a></li>
+    <li><a href="fd_c_operator.html#sub5">Bitwise Operators C</a></li>
+    
+    <li><a href="fd_c_array.html">Arrays C</a></li>
+    <li><a href="fd_c_array.html#sub2">Structures C</a></li>
+    <li><a href="fd_c_array.html#sub3">Strings C</a></li>
+
+    <li><a href="fd_c_cond_loop.html">Conditional and Loops C</a></li>
+    <li><a href="fd_c_cond_loop.html#sub1">Conditional C</a></li>
+    <li><a href="fd_c_cond_loop.html#sub2">Loops C</a></li>
+
+    <li><a href="fd_c_pointer.html">Pointers C</a></li>
+    <li><a href="fd_c_pointer.html#sub1">Memory Address C</a></li>
+
+    <li><a href="fd_c_function.html">Functions C</a></li>
+    <li><a href="fd_c_function.html#sub1">Create Function C</a></li>
+    <li><a href="fd_c_function.html#sub2">Calling Function C</a></li>
+    <li><a href="fd_c_function.html#sub3">Arguments C</a></li>
+    
+    <li><a href="fd_c_module.html">Modules C</a></li>
+    <li><a href="fd_c_module.html#sub1">Libraries C</a></li>
+
+    <li><a href="fd_c_file.html">File Handling C</a></li>
+    <li><a href="fd_c_file.html#sub1">Write File C</a></li>
+    <li><a href="fd_c_file.html#sub2">Append File C</a></li>
+    <li><a href="fd_c_file.html#sub3">Read File C</a></li>
+
+    <li><a href="fd_c_cheatsheet.html">Cheat Sheet C</a></li>
+
+    <!-- Cpp -->
+    <li><a href="fd_cpp_home.html">Introduction C++</a></li>
+    <li><a href="fd_cpp_home.html">Basic Syntax C++</a></li>
+    <li><a href="fd_cpp_variable.html">Variable and Data Type C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub1">Data Type C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub2">Variable Name C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub3">Creating Variable C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub4">Assign Value to Variable C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub5">Casting C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub6">Variable Scope C++</a></li>
+    
+    <li><a href="fd_cpp_input.html">Input Output C++</a></li>
+    <li><a href="fd_cpp_input.html#sub1">Output C++</a></li>
+    <li><a href="fd_cpp_input.html#sub2">Input C++</a></li>
+    <li><a href="fd_cpp_input.html#sub3">Comments C++</a></li>
+    <li><a href="fd_cpp_input.html#sub4">Escape Sequences C++</a></li>
+    <li><a href="fd_cpp_input.html#sub5">Exception Handling C++</a></li>
+    
+    <li><a href="fd_cpp_operator.html">Operators C++</a></li>
+    <li><a href="fd_cpp_operator.html#sub1">Arithmetic Operators C++</a></li>
+    <li><a href="fd_cpp_operator.html#sub2">Assignment Operators C++</a></li>
+    <li><a href="fd_cpp_operator.html#sub3">Comparison Operators C++</a></li>
+    <li><a href="fd_cpp_operator.html#sub4">Logical Operators C++</a></li>
+    <li><a href="fd_cpp_operator.html#sub5">Bitwise Operators C++</a></li>
+    
+    <li><a href="fd_cpp_array.html">Arrays C++</a></li>
+    <li><a href="fd_cpp_array.html#sub2">Structures C++</a></li>
+    <li><a href="fd_cpp_array.html#sub3">Strings C++</a></li>
+
+    <li><a href="fd_cpp_condloop.html">Conditional and Loops C++</a></li>
+    <li><a href="fd_cpp_condloop.html#sub1">Conditional C++</a></li>
+    <li><a href="fd_cpp_condloop.html#sub2">Loops C++</a></li>
+
+    <li><a href="fd_cpp_pointer.html">Pointers C++</a></li>
+    <li><a href="fd_cpp_pointer.html#sub1">Memory Address C++</a></li>
+    <li><a href="fd_cpp_pointer.html#sub3">References C++</a></li>
+
+    <li><a href="fd_cpp_function.html">Functions C++</a></li>
+    <li><a href="fd_cpp_function.html#sub1">Create Function C++</a></li>
+    <li><a href="fd_cpp_function.html#sub2">Calling Function C++</a></li>
+    <li><a href="fd_cpp_function.html#sub3">Arguments C++</a></li>
+    <li><a href="fd_cpp_function.html#sub4">Lambda C++</a></li>
+
+    <li><a href="fd_cpp_class.html">Classes C++</a></li>
+    <li><a href="fd_cpp_class.html#sub1">Create Classes and Objects C++</a></li>
+    <li><a href="fd_cpp_class.html#sub2">Encapsulation C++</a></li>
+    <li><a href="fd_cpp_class.html#sub3">Inheritance C++</a></li>
+    <li><a href="fd_cpp_class.html#sub4">Polymorphism C++</a></li>
+    
+    <li><a href="fd_cpp_module.html">Modules C++</a></li>
+    <li><a href="fd_cpp_module.html#sub1">Libraries C++</a></li>
+
+    <li><a href="fd_cpp_file.html">File Handling C++</a></li>
+    <li><a href="fd_cpp_file.html#sub1">Ofstream (Create and Write File) C++</a></li>
+    <li><a href="fd_cpp_file.html#sub2">Ifstream (Read File) C++</a></li>
+    <li><a href="fd_cpp_file.html#sub3">fstream C++</a></li>
+
+    <li><a href="fd_cpp_cheatsheet.html">Cheat Sheet C++</a></li>
+
+    <!-- Python -->
+    <li><a href="fd_py_home.html">Introduction Python</a></li>
+    <li><a href="fd_py_home.html">Basic Syntax Python</a></li>
+    <li><a href="fd_py_variable.html">Variable and Data Type Python</a></li>
+    <li><a href="fd_py_variable.html#sub1">Data Type Python</a></li>
+    <li><a href="fd_py_variable.html#sub2">Variable Name Python</a></li>
+    <li><a href="fd_py_variable.html#sub3">Creating Variable Python</a></li>
+    <li><a href="fd_py_variable.html#sub4">Assign Value to Variable Python</a></li>
+    <li><a href="fd_py_variable.html#sub5">Casting Python</a></li>
+    <li><a href="fd_py_variable.html#sub6">Variable Scope Python</a></li>
+    
+    <li><a href="fd_py_input.html">Input Output Python</a></li>
+    <li><a href="fd_py_input.html#sub1">Output Python</a></li>
+    <li><a href="fd_py_input.html#sub2">Input Python</a></li>
+    <li><a href="fd_py_input.html#sub3">Comments Python</a></li>
+    <li><a href="fd_py_input.html#sub4">Escape Sequences Python</a></li>
+    <li><a href="fd_py_input.html#sub5">Exception Handling Python</a></li>
+    
+    <li><a href="fd_py_operator.html">Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub1">Arithmetic Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub2">Assignment Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub3">Comparison Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub4">Logical Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub5">Identity Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub6">Membership Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub7">Bitwise Operators Python</a></li>
+    
+    <li><a href="fd_py_array.html#sub1">Lists Python</a></li>
+    <li><a href="fd_py_array.html#sub2">Tuples Python</a></li>
+    <li><a href="fd_py_array.html#sub3">Sets Python</a></li>
+    <li><a href="fd_py_array.html#sub4">Dictionaries Python</a></li>
+    <li><a href="fd_py_array.html#sub5">Strings Python</a></li>
+
+    <li><a href="fd_py_condloop.html">Conditional and Loops Python</a></li>
+    <li><a href="fd_py_condloop.html#sub1">Conditional Python</a></li>
+    <li><a href="fd_py_condloop.html#sub2">Loops Python</a></li>
+
+    <li><a href="fd_py_function.html">Functions Python</a></li>
+    <li><a href="fd_py_function.html#sub1">Create Function Python</a></li>
+    <li><a href="fd_py_function.html#sub2">Calling Function Python</a></li>
+    <li><a href="fd_py_function.html#sub3">Arguments Python</a></li>
+    <li><a href="fd_py_function.html#sub4">Lambda Python</a></li>
+
+    <li><a href="fd_py_class.html">Classes Python</a></li>
+    <li><a href="fd_py_class.html#sub1">Create Classes and Objects Python</a></li>
+    <li><a href="fd_py_class.html#sub2">Encapsulation Python</a></li>
+    <li><a href="fd_py_class.html#sub3">Inheritance Python</a></li>
+    <li><a href="fd_py_class.html#sub4">Polymorphism Python</a></li>
+    
+    <li><a href="fd_py_module.html">Modules Python</a></li>
+    <li><a href="fd_py_module.html#sub1">Libraries Python</a></li>
+
+    <li><a href="fd_py_file.html">File Handling Python</a></li>
+    <li><a href="fd_py_file.html#sub1">Read File Python</a></li>
+    <li><a href="fd_py_file.html#sub2">Write File Python</a></li>
+    <li><a href="fd_py_file.html#sub3">Append File Python</a></li>
+    <li><a href="fd_py_file.html#sub4">Create File Python</a></li>
+
+    <li><a href="fd_py_cheatsheet.html">Cheat Sheet Python</a></li>
+
+    <li><a href="tips_c.html">Tips and Trick C</a></li>
+    <li><a href="tips_c.html#tipsCcourse">Course Videos C</a></li>
+    <li><a href="tips_cpp.html">Tips and Trick C++</a></li>
+    <li><a href="tips_cpp.html#courseCPPvid">Course Videos C++</a></li>
+    <li><a href="tips_py.html">Tips and Trick Python</a></li>
+    <li><a href="tips_py.html#courseVid">Course Videos Python</a></li>
+
+    <li><a href="faq_c.html">FAQ C</a></li>
+    <li><a href="faq_cpp.html">FAQ C++</a></li>
+    <li><a href="faq_py.html">FAQ Python</a></li>
+  </ul>
+
+  <ul id="myUL2">
+    <br/><br/><pre></pre>
+    <li><a href="index.html">Homepage</a></li>
+    <li><a href="syntaxcomp.html">Syntax Comparison</a></li>
+    
+    <!-- C -->
+    <li><a href="fd_c_home.html">Introduction C</a></li>
+    <li><a href="fd_c_home.html">Basic Syntax C</a></li>
+    <li><a href="fd_c_variable.html">Variable and Data Type C</a></li>
+    <li><a href="fd_c_variable.html#sub1">Data Type C</a></li>
+    <li><a href="fd_c_variable.html#sub2">Variable Name C</a></li>
+    <li><a href="fd_c_variable.html#sub3">Creating Variable C</a></li>
+    <li><a href="fd_c_variable.html#sub4">Assign Value to Variable C</a></li>
+    <li><a href="fd_c_variable.html#sub5">Casting C</a></li>
+    <li><a href="fd_c_variable.html#sub6">Variable Scope C</a></li>
+    
+    <li><a href="fd_c_input_output.html">Input Output C</a></li>
+    <li><a href="fd_c_input_output.html#sub1">Output C</a></li>
+    <li><a href="fd_c_input_output.html#sub2">Input C</a></li>
+    <li><a href="fd_c_input_output.html#sub3">Comments C</a></li>
+    <li><a href="fd_c_input_output.html#sub4">Escape Sequences C</a></li>
+    
+    <li><a href="fd_c_operator.html">Operators C</a></li>
+    <li><a href="fd_c_operator.html#sub1">Arithmetic Operators C</a></li>
+    <li><a href="fd_c_operator.html#sub2">Assignment Operators C</a></li>
+    <li><a href="fd_c_operator.html#sub3">Comparison Operators C</a></li>
+    <li><a href="fd_c_operator.html#sub4">Logical Operators C</a></li>
+    <li><a href="fd_c_operator.html#sub5">Bitwise Operators C</a></li>
+    
+    <li><a href="fd_c_array.html">Arrays C</a></li>
+    <li><a href="fd_c_array.html#sub2">Structures C</a></li>
+    <li><a href="fd_c_array.html#sub3">Strings C</a></li>
+
+    <li><a href="fd_c_cond_loop.html">Conditional and Loops C</a></li>
+    <li><a href="fd_c_cond_loop.html#sub1">Conditional C</a></li>
+    <li><a href="fd_c_cond_loop.html#sub2">Loops C</a></li>
+
+    <li><a href="fd_c_pointer.html">Pointers C</a></li>
+    <li><a href="fd_c_pointer.html#sub1">Memory Address C</a></li>
+
+    <li><a href="fd_c_function.html">Functions C</a></li>
+    <li><a href="fd_c_function.html#sub1">Create Function C</a></li>
+    <li><a href="fd_c_function.html#sub2">Calling Function C</a></li>
+    <li><a href="fd_c_function.html#sub3">Arguments C</a></li>
+    
+    <li><a href="fd_c_module.html">Modules C</a></li>
+    <li><a href="fd_c_module.html#sub1">Libraries C</a></li>
+
+    <li><a href="fd_c_file.html">File Handling C</a></li>
+    <li><a href="fd_c_file.html#sub1">Write File C</a></li>
+    <li><a href="fd_c_file.html#sub2">Append File C</a></li>
+    <li><a href="fd_c_file.html#sub3">Read File C</a></li>
+
+    <li><a href="fd_c_cheatsheet.html">Cheat Sheet C</a></li>
+
+    <!-- Cpp -->
+    <li><a href="fd_cpp_home.html">Introduction C++</a></li>
+    <li><a href="fd_cpp_home.html">Basic Syntax C++</a></li>
+    <li><a href="fd_cpp_variable.html">Variable and Data Type C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub1">Data Type C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub2">Variable Name C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub3">Creating Variable C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub4">Assign Value to Variable C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub5">Casting C++</a></li>
+    <li><a href="fd_cpp_variable.html#sub6">Variable Scope C++</a></li>
+    
+    <li><a href="fd_cpp_input.html">Input Output C++</a></li>
+    <li><a href="fd_cpp_input.html#sub1">Output C++</a></li>
+    <li><a href="fd_cpp_input.html#sub2">Input C++</a></li>
+    <li><a href="fd_cpp_input.html#sub3">Comments C++</a></li>
+    <li><a href="fd_cpp_input.html#sub4">Escape Sequences C++</a></li>
+    <li><a href="fd_cpp_input.html#sub5">Exception Handling C++</a></li>
+    
+    <li><a href="fd_cpp_operator.html">Operators C++</a></li>
+    <li><a href="fd_cpp_operator.html#sub1">Arithmetic Operators C++</a></li>
+    <li><a href="fd_cpp_operator.html#sub2">Assignment Operators C++</a></li>
+    <li><a href="fd_cpp_operator.html#sub3">Comparison Operators C++</a></li>
+    <li><a href="fd_cpp_operator.html#sub4">Logical Operators C++</a></li>
+    <li><a href="fd_cpp_operator.html#sub5">Bitwise Operators C++</a></li>
+    
+    <li><a href="fd_cpp_array.html">Arrays C++</a></li>
+    <li><a href="fd_cpp_array.html#sub2">Structures C++</a></li>
+    <li><a href="fd_cpp_array.html#sub3">Strings C++</a></li>
+
+    <li><a href="fd_cpp_condloop.html">Conditional and Loops C++</a></li>
+    <li><a href="fd_cpp_condloop.html#sub1">Conditional C++</a></li>
+    <li><a href="fd_cpp_condloop.html#sub2">Loops C++</a></li>
+
+    <li><a href="fd_cpp_pointer.html">Pointers C++</a></li>
+    <li><a href="fd_cpp_pointer.html#sub1">Memory Address C++</a></li>
+    <li><a href="fd_cpp_pointer.html#sub3">References C++</a></li>
+
+    <li><a href="fd_cpp_function.html">Functions C++</a></li>
+    <li><a href="fd_cpp_function.html#sub1">Create Function C++</a></li>
+    <li><a href="fd_cpp_function.html#sub2">Calling Function C++</a></li>
+    <li><a href="fd_cpp_function.html#sub3">Arguments C++</a></li>
+    <li><a href="fd_cpp_function.html#sub4">Lambda C++</a></li>
+
+    <li><a href="fd_cpp_class.html">Classes C++</a></li>
+    <li><a href="fd_cpp_class.html#sub1">Create Classes and Objects C++</a></li>
+    <li><a href="fd_cpp_class.html#sub2">Encapsulation C++</a></li>
+    <li><a href="fd_cpp_class.html#sub3">Inheritance C++</a></li>
+    <li><a href="fd_cpp_class.html#sub4">Polymorphism C++</a></li>
+    
+    <li><a href="fd_cpp_module.html">Modules C++</a></li>
+    <li><a href="fd_cpp_module.html#sub1">Libraries C++</a></li>
+
+    <li><a href="fd_cpp_file.html">File Handling C++</a></li>
+    <li><a href="fd_cpp_file.html#sub1">Ofstream (Create and Write File) C++</a></li>
+    <li><a href="fd_cpp_file.html#sub2">Ifstream (Read File) C++</a></li>
+    <li><a href="fd_cpp_file.html#sub3">fstream C++</a></li>
+
+    <li><a href="fd_cpp_cheatsheet.html">Cheat Sheet C++</a></li>
+
+    <!-- Python -->
+    <li><a href="fd_py_home.html">Introduction Python</a></li>
+    <li><a href="fd_py_home.html">Basic Syntax Python</a></li>
+    <li><a href="fd_py_variable.html">Variable and Data Type Python</a></li>
+    <li><a href="fd_py_variable.html#sub1">Data Type Python</a></li>
+    <li><a href="fd_py_variable.html#sub2">Variable Name Python</a></li>
+    <li><a href="fd_py_variable.html#sub3">Creating Variable Python</a></li>
+    <li><a href="fd_py_variable.html#sub4">Assign Value to Variable Python</a></li>
+    <li><a href="fd_py_variable.html#sub5">Casting Python</a></li>
+    <li><a href="fd_py_variable.html#sub6">Variable Scope Python</a></li>
+    
+    <li><a href="fd_py_input.html">Input Output Python</a></li>
+    <li><a href="fd_py_input.html#sub1">Output Python</a></li>
+    <li><a href="fd_py_input.html#sub2">Input Python</a></li>
+    <li><a href="fd_py_input.html#sub3">Comments Python</a></li>
+    <li><a href="fd_py_input.html#sub4">Escape Sequences Python</a></li>
+    <li><a href="fd_py_input.html#sub5">Exception Handling Python</a></li>
+    
+    <li><a href="fd_py_operator.html">Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub1">Arithmetic Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub2">Assignment Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub3">Comparison Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub4">Logical Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub5">Identity Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub6">Membership Operators Python</a></li>
+    <li><a href="fd_py_operator.html#sub7">Bitwise Operators Python</a></li>
+    
+    <li><a href="fd_py_array.html#sub1">Lists Python</a></li>
+    <li><a href="fd_py_array.html#sub2">Tuples Python</a></li>
+    <li><a href="fd_py_array.html#sub3">Sets Python</a></li>
+    <li><a href="fd_py_array.html#sub4">Dictionaries Python</a></li>
+    <li><a href="fd_py_array.html#sub5">Strings Python</a></li>
+
+    <li><a href="fd_py_condloop.html">Conditional and Loops Python</a></li>
+    <li><a href="fd_py_condloop.html#sub1">Conditional Python</a></li>
+    <li><a href="fd_py_condloop.html#sub2">Loops Python</a></li>
+
+    <li><a href="fd_py_function.html">Functions Python</a></li>
+    <li><a href="fd_py_function.html#sub1">Create Function Python</a></li>
+    <li><a href="fd_py_function.html#sub2">Calling Function Python</a></li>
+    <li><a href="fd_py_function.html#sub3">Arguments Python</a></li>
+    <li><a href="fd_py_function.html#sub4">Lambda Python</a></li>
+
+    <li><a href="fd_py_class.html">Classes Python</a></li>
+    <li><a href="fd_py_class.html#sub1">Create Classes and Objects Python</a></li>
+    <li><a href="fd_py_class.html#sub2">Encapsulation Python</a></li>
+    <li><a href="fd_py_class.html#sub3">Inheritance Python</a></li>
+    <li><a href="fd_py_class.html#sub4">Polymorphism Python</a></li>
+    
+    <li><a href="fd_py_module.html">Modules Python</a></li>
+    <li><a href="fd_py_module.html#sub1">Libraries Python</a></li>
+
+    <li><a href="fd_py_file.html">File Handling Python</a></li>
+    <li><a href="fd_py_file.html#sub1">Read File Python</a></li>
+    <li><a href="fd_py_file.html#sub2">Write File Python</a></li>
+    <li><a href="fd_py_file.html#sub3">Append File Python</a></li>
+    <li><a href="fd_py_file.html#sub4">Create File Python</a></li>
+
+    <li><a href="fd_py_cheatsheet.html">Cheat Sheet Python</a></li>
+
+    <li><a href="tips_c.html">Tips and Trick C</a></li>
+    <li><a href="tips_c.html#tipsCcourse">Course Videos C</a></li>
+    <li><a href="tips_cpp.html">Tips and Trick C++</a></li>
+    <li><a href="tips_cpp.html#courseCPPvid">Course Videos C++</a></li>
+    <li><a href="tips_py.html">Tips and Trick Python</a></li>
+    <li><a href="tips_py.html#courseVid">Course Videos Python</a></li>
+
+    <li><a href="faq_c.html">FAQ C</a></li>
+    <li><a href="faq_cpp.html">FAQ C++</a></li>
+    <li><a href="faq_py.html">FAQ Python</a></li>
+  </ul>
     
     <pre></pre><pre></pre><pre></pre><pre></pre>
     <pre></pre><pre></pre><pre></pre><pre></pre>
