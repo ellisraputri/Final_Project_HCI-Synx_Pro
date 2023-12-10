@@ -143,13 +143,21 @@
     margin-left: 57%;
     position: fixed;
     overflow-y: scroll;
-    max-height: 100vh;
+    max-height: 80vh;
     z-index: 3;
+    font-family: Montserrat;
+}
+
+@media (min-width: 1851px){
+    #myUL{
+        max-height: 50vh;
+    }
 }
 
 @media (max-width:1850px){
     #myUL {
         margin-left: 60%;
+        max-height: 60vh;
     }
 }
 @media (max-width:1750px){
@@ -253,10 +261,11 @@
     padding: 0;
     position: fixed;
     overflow-y: scroll;
-    max-height: 100vh;
+    max-height: 40vh;
     z-index: 6;
     width: 100%;
     position: fixed;
+    font-family: 'Montserrat';
 }
 
 #myUL2 li a {
