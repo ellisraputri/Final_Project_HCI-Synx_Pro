@@ -83,6 +83,7 @@
       });
       $('.ico').click(function(){
         $('.input-search').hide();
+        $("#myUL2 li a").css("display","none");
       })
   
 
