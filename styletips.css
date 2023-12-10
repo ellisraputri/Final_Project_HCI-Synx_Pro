@@ -370,3 +370,9 @@ button:hover{
 #myUL2 li a:hover:not(.header) {
     background-color: rgb(76, 77, 80); 
 }
+
+@media (max-width:1200px) {
+    #findA, #ico2, #myInput2{
+        display: none;
+    }
+}
