@@ -165,7 +165,7 @@ function myFunctionMobile() {
 
 //Send Mails
 var fields={};
-let msg = 'Please recheck and refill:\n';
+let msg = 'PLEASE RECHECK AND REFILL:\n';
 $(".spin").hide();
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -191,20 +191,20 @@ function fieldValidation(field, validationFunction) {
 
   let isFieldValid = validationFunction(field.value);
   if (validationFunction == isNotEmpty && isFieldValid === false && field === fields.fullName){
-    msg += '- Full Name section \n';
+    msg += '- "Full Name" section \n';
   }
   else if (validationFunction == isEmail && isFieldValid===false){
-    msg += "- Email section\n"
+    msg += '- "Email" section\n'
   }
   else if (validationFunction == isNotEmpty && isFieldValid === false && field === fields.message){
-    msg += '- Message section';
+    msg += '- "Message" section';
   }
   return isFieldValid;
 }
 
 function isValid() {
   var valid = true;
-  msg='Please recheck and refill:\n'
+  msg='PLEASE RECHECK AND REFILL:\n'
   valid &= fieldValidation(fields.fullName, isNotEmpty);
   valid &= fieldValidation(fields.email, isEmail);
   valid &= fieldValidation(fields.message, isNotEmpty);
