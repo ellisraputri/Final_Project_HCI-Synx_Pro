@@ -58,45 +58,9 @@ $(document).ready(function(){
     if(isMobile == true){
         $('.page').removeAttr('data-aos-delay');
     }
-});
 
 
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput2");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "block";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-
-function myFunctionMobile() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL2");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "block";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-
-$(document).ready(function(){
-    //desktop
+// searchbar desktop
     var is_1300 = false;
     if( $('#myInput2').css('display')=='none') {
         is_1300 = true;       
@@ -136,3 +100,39 @@ $(document).ready(function(){
         $('.input-search').hide();
       });
 });
+
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput2");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+function myFunctionMobile() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL2");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+

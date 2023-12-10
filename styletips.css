@@ -199,3 +199,174 @@ button:hover{
         font-size: 0.9rem;
     }
 }
+
+
+/*searchbar desktop*/
+.findIcon{
+    margin-top: 12px;
+}
+#ico2{
+    display: none;
+    margin-top: 10px;
+}
+
+#findA{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 12px;
+}
+
+#myInput2 {
+    width: 180px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+  
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 57%;
+    position: fixed;
+    overflow-y: scroll;
+    max-height: 80vh;
+    z-index: 3;
+    font-family: Montserrat;
+}
+
+@media (min-width: 1851px){
+    #myUL{
+        max-height: 50vh;
+    }
+}
+
+@media (max-width:1850px){
+    #myUL {
+        margin-left: 60%;
+        max-height: 60vh;
+    }
+}
+@media (max-width:1750px){
+    #myUL {
+        margin-left: 64%;
+    }
+} 
+@media (max-width:1650px){
+    #myUL {
+        margin-left: 68%;
+    }
+} 
+@media (max-width:1550px){
+    #myUL {
+        margin-left: 73%;
+    }
+} 
+@media (max-width:1450px){
+    #myUL {
+        margin-left: 78%;
+    }
+} 
+@media (max-width:1350px){
+    #myUL {
+        margin-left: 83%;
+    }
+} 
+
+#myUL li a {
+    border: 1px solid rgb(76, 77, 80);
+    margin-top: -1px; 
+    background-color: rgb(34,37,41);
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: none;
+    width: 210px;
+    text-align: center;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: rgb(76, 77, 80); 
+}
+
+
+@media only screen and (max-width: 1318px) {
+    #myInput2 {
+        display: none;
+        width: 80px;
+    }
+}
+
+
+/*searchbar mobile*/
+.input-search{
+    position: fixed;
+    display: none;
+    left: 0px;
+    top: 10px;
+    width: 100%;
+    background-color: #166174;
+    padding: 10px;
+}
+
+.input-search .ico {
+    margin-top: 10px;
+    float: left;
+}
+.input-search input {
+    width: 100%;
+    border: none;
+}
+.input-search div {
+    margin-left: 20px; 
+    border: 0px;
+}
+
+#findB{
+    margin-right: 70vw;
+}
+
+@media (max-width:915px) {
+    #findB{
+        margin-right: 50vw;
+    }
+}
+@media (max-width:552px) {
+    #findB{
+        margin-right: 35vw;
+    }
+}
+@media (max-width:425px) {
+    #findB{
+        margin-right: 1vw;
+    }
+}
+
+#myUL2 {
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    overflow-y: scroll;
+    max-height: 40vh;
+    z-index: 6;
+    width: 100%;
+    position: fixed;
+    font-family: 'Montserrat';
+}
+
+#myUL2 li a {
+    border: 1px solid rgb(76, 77, 80);
+    margin-top: -1px; 
+    background-color: rgb(34,37,41);
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: none;
+    width: 100%;
+    z-index: 7;
+    text-align: center;
+}
+
+#myUL2 li a:hover:not(.header) {
+    background-color: rgb(76, 77, 80); 
+}
