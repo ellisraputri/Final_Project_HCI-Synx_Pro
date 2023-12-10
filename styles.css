@@ -495,7 +495,7 @@
   padding: 0;
   position: fixed;
   overflow-y: scroll;
-  max-height: 40vh;
+  max-height: 60vh;
   z-index: 6;
   width: 100%;
   position: fixed;
