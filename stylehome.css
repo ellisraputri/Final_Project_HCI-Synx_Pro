@@ -11,7 +11,7 @@
     background-color: #339ab2;
   }
 
-  .menuactive a:hover{
+  #menuactive a:hover{
     background-color: #3499b060;
   }
 
@@ -141,6 +141,19 @@
   .sidenavv a:hover{
     color: white;
     background-color: #339ab2;
+  }
+
+  @media (min-width: 1200px) {
+    .sidenavv{
+      max-height: calc(100vh - 9rem);
+      overflow-y: auto;
+    }
+  }
+  @media (min-width: 992px) and (max-width:1199px){
+    .sidenavv{
+      max-height: calc(100vh - 4rem);
+      overflow-y: auto;
+    }
   }
 
   .codee{
@@ -281,7 +294,7 @@
 #findA{
   margin-top: 10px;
   margin-right: 10px;
-  margin-left: 12px;
+  margin-left: 15px;
 }
 
 #myInput2 {

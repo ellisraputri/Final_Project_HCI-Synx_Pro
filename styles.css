@@ -231,10 +231,25 @@
   margin-right: 5px;
 }
 
+.contentss, .contentss1{
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.tabs div:not(.tab-active):hover{
+  background-color: #c8c8c86a;
+}
+
+@media (max-width: 992px){
+  .contentss p, .contentss h2{
+    padding-left: 5%;
+  }
+}
+
 
 /*Swiper*/
 .swiper {
-  width: 70%;
+  width: 85%;
 }
 
 .swiper-slide {
@@ -362,7 +377,7 @@
 #findA{
   margin-top: 10px;
   margin-right: 10px;
-  margin-left: 12px;
+  margin-left: 15px;
 }
 
 #myInput2 {

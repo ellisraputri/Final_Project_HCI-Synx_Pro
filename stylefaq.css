@@ -11,9 +11,9 @@
     background-color: #339ab2;
   }
 
-.menuactive a:hover{
+  #menuactive a:hover{
     background-color: #3499b060;
-}
+  }
 
 .header{
     color: #339ab2;  
@@ -128,7 +128,7 @@
 #findA{
     margin-top: 10px;
     margin-right: 10px;
-    margin-left: 12px;
+    margin-left: 15px;
 }
 
 #myInput2 {
