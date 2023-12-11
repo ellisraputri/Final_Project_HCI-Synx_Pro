@@ -7,7 +7,7 @@
     background-color: #166174;
 }
 
-.topnav a:hover, .nav-active{
+#navbarNavDropdown a:hover, .nav-active{
     background-color: #339ab2;
 }
 

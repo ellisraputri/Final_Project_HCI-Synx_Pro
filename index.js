@@ -9,7 +9,7 @@
         logoSpan.forEach((span, index) => {
              setTimeout(() => {
                 span.classList.add('active');
-             }, (index + 1) * 150);
+             }, (index + 1) * 100);
         });
  
         setTimeout(() => {
@@ -24,7 +24,7 @@
         setTimeout(() => {
           intro.style.top  = '-100vh';
           $('html, body').animate({scrollTop:0},'50');
-       }, 2500);    
+       }, 1800);    
      });
  });
 
