@@ -200,6 +200,8 @@
 
   .kotak{
     width: 25rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   #myBtn {
@@ -462,17 +464,16 @@
 .arrow-button {
   display: flex;
   color: white;
-  /* background-color: #339bb29b; */
+  background-color: #258ca3e4; 
   border-radius: 20px;
   transition: all .3s ease;
   font-weight: bold;
   cursor: pointer;
   align-items: center;
   font-size: 14px;
-  padding:4px 10px 4px 10px;
+  padding:4px 12px 4px 12px;
   border:none;
-  margin-bottom: 30px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .arrow-button > .arrow {
@@ -512,6 +513,6 @@
 }
 
 .arrow-button:hover {
-  background-color: #339ab2;
+  background-color: #37a6bf;
   color: #fff;
 }
