@@ -156,7 +156,7 @@
 	text-align: center;
 	height: 40px;
 	position: relative;
-    width:max-content;
+    width:90%;
 }
 
 #nav li a{
@@ -183,6 +183,11 @@
     margin-left: 30%;
 }
 
+.languagemenu1, .languagemenu2{
+    width: 96%;
+    margin: 0;
+}
+
 #nav ul{
 	padding: 0px;
     background-color: #222529;
@@ -206,6 +211,7 @@
     visibility:hidden;
 	position: absolute;
 	top: 40px;
+    left: 40px;
     border-radius: 5px;
 }
 
@@ -249,14 +255,14 @@
     border-radius: 5px;
 }
 
-#nav i{
+#nav i:not(.laa){
     float: right;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .menulala2 a:hover, .menulala3 a:hover, .menulala1 a:hover{
-    background-color: #339bb2a1;
+    background-color: #51bbd3ae;
 }
 
 .fliparrow{
@@ -266,6 +272,15 @@
 
 .flippp{
     transform: rotateY(180deg);
+}
+.fliparrow button{
+    color: #dddddd92;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fliparrow button:hover{
+    color: #fff;
 }
 
 .arrow-button {
@@ -344,8 +359,10 @@
 
     #nav ul ul{
         top: 40px;
-        left:50px;
+        left:30px;
     }
+
+    
 
     .mnlala2 ul, .mnlala3 ul{
         left: 35%;
@@ -379,7 +396,23 @@
     .mnlala2, .mnlala3{
         margin-left: 40%;
     }
+    #nav ul{
+        left: 35%;
+    }
 }
+
+@media (max-width: 320px){
+    #nav ul{
+        left: 4px;
+    }
+}
+
+@media (max-width: 450px){
+    #nav ul{
+        left: 80px;
+    }
+}
+
 
 
 /*searchbar desktop*/

@@ -79,6 +79,9 @@ $(document).ready(function(){
             if (click_language1_value==undefined || click_language2_value==undefined){
                 alert('Please select all of the languages first.')
             }
+            else if(click_language1_value == click_language2_value){
+                alert("Language 1 and Language 2 is the same.");
+            }
             else{
                 let temp;
                 temp = click_language1_value;
@@ -262,8 +265,8 @@ $(document).ready(function(){
         $('.menus1').click(function(){
             click_compare_value=$(this).attr('value');
             $('.comparemenu').html(click_compare_value + '&ensp;\
-            <i class="fa-solid fa-caret-down downsym"></i>\
-            <i class="fa-solid fa-caret-up upsym"></i>');
+            <i class="fa-solid fa-caret-down downsym laa"></i>\
+            <i class="fa-solid fa-caret-up upsym laa"></i>');
             
             $('.menulala1').slideUp(1);
             $('.lala2').triggerHandler('hover');
@@ -290,6 +293,9 @@ $(document).ready(function(){
         $('.flips').click(function(){
             if (click_language1_value==undefined || click_language2_value==undefined){
                 alert('Please select all of the languages first.')
+            }
+            else if(click_language1_value == click_language2_value){
+                alert("Language 1 and Language 2 is the same.");
             }
             else{
                 let temp;
