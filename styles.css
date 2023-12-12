@@ -290,7 +290,10 @@
   padding: 10px;
 }
 .itemh a:hover{
-  background-color: #339ab2;
+  background-color: #51bbd3ae;
+}
+.features button:hover{
+  background-color: #676666c7;
 }
 
 
