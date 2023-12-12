@@ -120,6 +120,7 @@
 
 .buttonprev, .buttonnext{
     border-radius: 50%;
+    padding: 3px 10px;
     border:none;
 }
 
