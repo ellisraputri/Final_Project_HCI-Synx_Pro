@@ -1,5 +1,7 @@
 # Final Project HCI - Synx Pro
 
+<img src="all-time pict/synxpro form.png" alt="Synx Pro Logo" width="300">
+
 **Team:** return 0;
 
 **Class:** L1AC
