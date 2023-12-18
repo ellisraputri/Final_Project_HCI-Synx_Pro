@@ -28,7 +28,7 @@ Synx Pro is a website that helps beginner programmers learn about new programmin
 
 - The Home Page is a landing page for users when accessing Synx Pro. 
 
-- _Unique features:_
+- Unique features:
     - Intro page before the main content
     - Color-changing logo and animated cover image.
     - Short introduction of Synx Pro's features
@@ -54,11 +54,11 @@ Synx Pro is a website that helps beginner programmers learn about new programmin
 
 - Syntax Comparison as stated in its name is used to compare one programming language’s syntax to another programming language’s syntax.
 
-- _Unique features:_
+- Unique features:
     - Comparing topics across programming languages provided (C, C++, Python) 
     - Link to the related topic's function dictionary.
 
-- _Topics provided for syntax comparing:_
+- Topics provided for syntax comparing:
     - Basic Syntax
     - Variable and Data Type (Data Type, Variable Name, Creating Variable, Implicit Conversion, Explicit Conversion, and Variable Scope)
     - Input and Output (Output, Input, Comments, Escape Sequences, and Exception Handling)
@@ -85,7 +85,7 @@ Synx Pro is a website that helps beginner programmers learn about new programmin
 
 - Function Dictionary is a feature that explains basic topics of a programming language. Each programming language has its own function dictionary. 
 
-- _Unique features:_
+- Unique features:
     - Side navigation bar for each programming language
     - Topic explanations with copyable code snippets
     - Highlighted code snippets
@@ -94,7 +94,7 @@ Synx Pro is a website that helps beginner programmers learn about new programmin
     - External link to module's documentation
     - Previewable and downloadable cheatsheet
 
-- _Topics for Each Programming Language:_
+- Topics for Each Programming Language:
     - C (Introduction, Variable and Data Type, Input Output, Operators, Arrays, Conditional and Loops, Pointers, Functions, Modules, File Handling, and Cheat Sheet)
     - C++ (Introduction, Variable and Data Type, Input Output, Operators, Arrays, Conditional and Loops, Pointers, Functions, Classes, Modules, File Handling, and Cheat Sheet)
     - Python (Introduction, Variable and Data Type, Input Output, Operators, Arrays, Conditional and Loops, Functions, Classes, Modules, File Handling, and Cheat Sheet)
@@ -113,7 +113,7 @@ Synx Pro is a website that helps beginner programmers learn about new programmin
 
 - Tips and Tricks is a page that consists of tips and tricks for users when studying a particular programming language. Same with the function dictionary, each programming language has its own tips and tricks page.
 
-- _Unique features:_
+- Unique features:
   - Tips and tricks flash cards.
   - Swipeable tips and tricks videos and link to the videos.
   - Swipeable course videos and link to the videos.
@@ -133,10 +133,10 @@ Synx Pro is a website that helps beginner programmers learn about new programmin
 
 - FAQ is a feature that contains interactive accordions about a beginner’s commonly asked questions about the respective programming language.  
 
-- _Unique features:_
+- Unique feature:
     - Clickable and interactive accordion bars.
 
-- Here are some images of this page:
+- Here is the image of this page:
 
   <img src="prototype_images/faq.png" alt ="FAQ Image (1)" width = "600">
 
@@ -196,10 +196,11 @@ Synx Pro is a website that helps beginner programmers learn about new programmin
 ## External Source Used
 
 - **[Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)**: main framework for styling 
-- **[SwiperJS](https://swiperjs.com/)** : images and videos slider
+- **[SwiperJS](https://swiperjs.com/)**: images and videos slider
 - **[Aos JS](https://github.com/michalsnik/aos)**: animation on scroll effects
 - **[Highlight JS](https://highlightjs.org/)**: highlighting code snippets
 - **[jQuery UI](https://jqueryui.com/)**: flip animations
+- **[EmailJS](https://www.emailjs.com/docs/introduction/how-does-emailjs-work/)**: making the contact form usable
 
 <br>
 

@@ -8,44 +8,84 @@ $(document).ready(function(){
     $("#answer7").hide();
     $("#answer8").hide();
 
+    $('.downsym1').show();
+    $('.upsym1').hide();
+
+    $('.downsym2').show();
+    $('.upsym2').hide();
+
+    $('.downsym3').show();
+    $('.upsym3').hide();
+
+    $('.downsym4').show();
+    $('.upsym4').hide();
+
+    $('.downsym5').show();
+    $('.upsym5').hide();
+
+    $('.downsym6').show();
+    $('.upsym6').hide();
+
+    $('.downsym7').show();
+    $('.upsym7').hide();
+
+    $('.downsym8').show();
+    $('.upsym8').hide();
+
     $("#faq1").click(function(){
         $("#answer1").slideToggle();
         $("#faq1").toggleClass('faqact');
+        $('.downsym1').toggle();
+        $('.upsym1').toggle();
     });
 
     $("#faq2").click(function(){
         $("#answer2").slideToggle();
         $("#faq2").toggleClass('faqact');
+        $('.downsym2').toggle();
+        $('.upsym2').toggle();
     });
 
     $("#faq3").click(function(){
         $("#answer3").slideToggle();
         $("#faq3").toggleClass('faqact');
+        $('.downsym3').toggle();
+        $('.upsym3').toggle();
     });
 
     $("#faq4").click(function(){
         $("#answer4").slideToggle();
         $("#faq4").toggleClass('faqact');
+        $('.downsym4').toggle();
+        $('.upsym4').toggle();
     });
 
     $("#faq5").click(function(){
         $("#answer5").slideToggle();
         $("#faq5").toggleClass('faqact');
+        $('.downsym5').toggle();
+        $('.upsym5').toggle();
     });
 
     $("#faq6").click(function(){
         $("#answer6").slideToggle();
         $("#faq6").toggleClass('faqact');
+        $('.downsym6').toggle();
+        $('.upsym6').toggle();
     });
 
     $("#faq7").click(function(){
         $("#answer7").slideToggle();
         $("#faq7").toggleClass('faqact');
+        $('.downsym7').toggle();
+        $('.upsym7').toggle();
     });
 
     $("#faq8").click(function(){
         $("#answer8").slideToggle();
         $("#faq8").toggleClass('faqact');
+        $('.downsym8').toggle();
+        $('.upsym8').toggle();
     });
 
     var isMobile = false; 

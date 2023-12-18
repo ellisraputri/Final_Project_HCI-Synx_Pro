@@ -92,7 +92,7 @@
     color: black;
     text-align: center;
     padding: 20px;
-    
+    font-size: 18px; 
 }
 
 .flip .front{
@@ -197,7 +197,7 @@ button:hover:not([disabled]) {
 @media (max-width:410px) {
     .flip .kk{
         max-height: 80px;
-        font-size: 0.9rem;
+        font-size: 16px;
     }
 }
 
