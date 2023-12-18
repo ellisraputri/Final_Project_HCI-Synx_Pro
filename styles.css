@@ -397,12 +397,13 @@
   }
 
   .break500{
+    margin-top: 10vw;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .mont-subra{
-    font-size: 10vw;
+  .text-animate{
+    font-size: 6.8vw;
   }
   .feature_desc{
     max-width: 50%;
@@ -410,6 +411,15 @@
     margin-right: auto;
   }
 }
+
+@media (max-width: 767px){
+  .break500{
+    margin-top: 0;
+  }
+  .text-animate{
+    font-size: 10vw;
+  }
+} 
 
 @media (max-width: 552px){
   .dummy{
@@ -423,6 +433,9 @@
   }
   .feature_desc{
     max-width: 75%;
+  }
+  .break500{
+    margin-top: 0;
   }
 }
 
